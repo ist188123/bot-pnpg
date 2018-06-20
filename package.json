@@ -2,7 +2,7 @@
   "name": "as",
   "version": "1.0",
   "description": "Bot pn",
-  "main": "index.js",
+  "main": "as.js",
   "author": "eu",
   "license": "PNGN",
   "dependencies": {

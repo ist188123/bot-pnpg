@@ -19,4 +19,9 @@ client.on('message', msg => {
   }
 });
 
+
+client.on('ready', () => {
+    console.log('WINGGGGGGG!');
+});
+
 client.login(process.env.BOT_TOKEN);

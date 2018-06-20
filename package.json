@@ -1,0 +1,11 @@
+{
+  "name": "as",
+  "version": "1.0",
+  "description": "Bot pn",
+  "main": "index.js",
+  "author": "eu",
+  "license": "PNGN",
+  "dependencies": {
+  "discord.js": "^11.2.1"
+  }
+}

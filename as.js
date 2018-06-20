@@ -1,27 +1,24 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
+const bot = new Discord.Client();
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
+const prefix = '</';
+
+bot.on('message', message => {
+
+    let msg = message.content.toUpperCase();
+    let sender = message.author;
+    let cont = message.content.slice(prefix.length).split(" ");
+    let args = cont.slice(1);
+
+    if (msg === prefix + 'PING') {
+        message.channel.send('PONG!');
+        return;
+    }
+
 });
 
-client.on('message', msg => {
-  if (msg.content === 'ola') {
-    msg.reply('ola, quere marcar uma RAID?');
-  }
-});
-
-
-
-client.on('message', msg => {
-  if (msg.content === 'quero') {
-    msg.reply('Qual o tipo de RAID?');
-  }
-});
-
-
-client.on('ready', () => {
+bot.on('ready', () => {
     console.log('WINGGGGGGG!');
 });
 
-client.login(process.env.BOT_TOKEN);
+bot.login(process.env.BOT_TOKEN);

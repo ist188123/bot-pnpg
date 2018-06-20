@@ -6,13 +6,24 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  if (msg.content === '!1') {
-    msg.reply('RAID NIVEL',msg.content);
-  }
-  if (msg.content === 'sim') {
-    msg.reply('Qual o tipo de RAID?');
-  }
+  //NAO RESPONDE A ELE PROPRIO
+   if (message.author.client) return;
+  
+  
+  //SE A MENSAGEM INICIA COM O CARATER !
+  if (message.content.indexOf('!') === 0) {
+  //LE A MENSAGEM EXCLUINDO O !
+     var text = message.content.substring(1);
+    
+    message.reply(text);
+    
+  
+    
+    
+  }   
+    
 });
+
 
 
 client.login(process.env.BOT_TOKEN);

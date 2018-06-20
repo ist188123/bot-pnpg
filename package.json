@@ -1,11 +1,15 @@
 {
-  "name": "as",
-  "version": "1.0",
-  "description": "Bot pn",
+  "name": "node-example",
+  "version": "1.0.0",
+  "description": "This example is so cool.",
   "main": "as.js",
-  "author": "eu",
-  "license": "PNGN",
-  "dependencies": {
-  "discord.js": "^11.2.1"
-  }
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "author": "me",
+  "license": "MIT"
 }

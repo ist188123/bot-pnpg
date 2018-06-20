@@ -6,9 +6,6 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  //NAO RESPONDE A ELE PROPRIO
-   if (message.author.client) return;
-  
   
   //SE A MENSAGEM INICIA COM O CARATER !
   if (message.content.indexOf('!') === 0) {

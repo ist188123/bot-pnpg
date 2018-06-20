@@ -6,8 +6,8 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  if (msg.content === 'ola') {
-    msg.reply('ola, quere marcar uma RAID?');
+  if (msg.content === '!1') {
+    msg.reply('RAID NIVEL',msg.content);
   }
   if (msg.content === 'sim') {
     msg.reply('Qual o tipo de RAID?');

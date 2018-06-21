@@ -22,7 +22,7 @@ if (msg.channel.name == 'raids-marcacao') {
      var text = msg.content.substring(1);
  
     text=text +'\n' +
-	      msg.channel.name+'\n'+
+	      +'\n'+
 	     'For raids, use **!raid boss timeLeft location**\n' +
 				'For eggs, use **!egg tierNumber timeLeft location**\n' +
 				'For quests, use **!quest reward task location**\n' +

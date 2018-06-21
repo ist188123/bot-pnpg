@@ -12,7 +12,7 @@ client.on('message', msg => {
 	
 if (msg.channel.name == 'raids-marcacao') {
 		
-
+if (msg.author.client) return;
 	
   //SE A MENSAGEM INICIA COM O CARATER !
   if (msg.content.indexOf('!') === 0) {

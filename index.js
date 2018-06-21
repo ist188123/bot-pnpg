@@ -33,7 +33,7 @@ if (msg.channel.name == 'raids-marcacao') {
   
       // msg.reply(text);
 	msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage('RAID'+text);
-	msg.channel.fetchMessage();
+	//msg.channel.fetchMessage();
   
   
   }   // fim do inicio carater

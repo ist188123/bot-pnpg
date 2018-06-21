@@ -12,7 +12,7 @@ client.on('message', msg => {
 	
 if (msg.channel.name == 'raids-marcacao') {
 		
-if (msg.author.client) return;
+
 	
   //SE A MENSAGEM INICIA COM O CARATER !
   if (msg.content.indexOf('!') === 0) {
@@ -20,20 +20,14 @@ if (msg.author.client) return;
 	  
   //LE A MENSAGEM EXCLUINDO O !
      var text = msg.content.substring(1);
- 
-    
+   msg.reply(msg.channel.name);
+    msg.reply(text);
   }   
  
 	
 	
 	
 	
-	
-	
-	
-	
-	
-	msg.reply(text);	
 		
 	}
 });

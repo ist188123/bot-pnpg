@@ -21,7 +21,7 @@ if (msg.channel.name == 'raids-marcacao') {
 	  
   //LE A MENSAGEM EXCLUINDO O !
      var text = msg.content.substring(1);
- var local="piscinas"
+ 
 	  
    text='**RAID '+text+'**'	  
 	  
@@ -37,7 +37,7 @@ if (msg.channel.name == 'raids-marcacao') {
 	  
 	 
   .setTitle("This is your title, it can hold 256 characters")
-  .setAuthor("Author Name", "https://"+local)
+  .setAuthor("Author Name", "https://"+"piscinas")
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */

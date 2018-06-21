@@ -8,11 +8,11 @@ client.on('ready', () => {
 client.on('message', msg => {
   
   //SE A MENSAGEM INICIA COM O CARATER !
-  if (message.content.indexOf('!') === 0) {
+  if (msg.content.indexOf('!') === 0) {
   //LE A MENSAGEM EXCLUINDO O !
-     var text = message.content.substring(1);
+     var text = msg.content.substring(1);
     
-    message.reply(text);
+    msg.reply(text);
     
   
     

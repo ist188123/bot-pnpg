@@ -37,7 +37,7 @@ if (msg.channel.name == 'raids-marcacao') {
 	 const embed = new Discord.RichEmbed()  
 	 
   .setTitle("This is your title, it can hold 256 characters")
-  .setAuthor("Author Name", "https://")
+  .setAuthor("Author Name", "http://i.imgur.com/yVpymuV.png")
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */

@@ -32,7 +32,7 @@ if (msg.channel.name == 'raids-marcacao') {
   
   
        msg.reply(text);
-	msg.guild.channels.find("name", "raids-pinhal-novo").reply(text);
+	msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(text);
 	
   
   

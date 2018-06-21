@@ -29,14 +29,10 @@ if (msg.channel.name == 'raids-marcacao') {
       // msg.reply(text);
 	
 	//msg.channel.fetchMessage();
-  
   const embed = new Discord.RichEmbed()
-  .setTitle("12h30")
-  .setAuthor(text, "https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png")
+  .setTitle("This is your title, it can hold 256 characters")
+  .setAuthor("Author Name", "https://i.imgur.com/lm8s41J.png")
   /*
-   * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
-   */
- /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
   .setColor(0x00AE86)
@@ -60,8 +56,6 @@ if (msg.channel.name == 'raids-marcacao') {
    */
   .addBlankField(true)
   .addField("Inline Field 3", "You can have a maximum of 25 fields.", true);
-
-  msg.channel.send({embed});
   msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage({embed});	  
 	  
 	  

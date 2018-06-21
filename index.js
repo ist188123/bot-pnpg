@@ -37,7 +37,7 @@ if (msg.channel.name == 'raids-marcacao') {
 	  
 	 
   .setTitle("This is your title, it can hold 256 characters")
-  .setAuthor("Author Name", "https://"+"piscinas")
+  .setAuthor("Author Name", "https://")
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */

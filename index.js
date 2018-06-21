@@ -27,10 +27,17 @@ if (msg.channel.name == 'raids-marcacao') {
 				'For eggs, use **!egg tierNumber timeLeft location**\n' +
 				'For quests, use **!quest reward task location**\n' +
 				'For wild spawns, use **!wild pokemonName location**\n' ;
-  }   
  
-	msg.reply(text);
+  
+  
+  
+       msg.reply(text);
 	msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(text);
+	
+  
+  
+  }   // fim do inicio carater
+ 
 	
 	
 		

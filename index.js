@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
- const embed = new Discord.RichEmbed()
+
  
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -34,7 +34,7 @@ if (msg.channel.name == 'raids-marcacao') {
 	  
 	  
 	  
-	  
+	 const embed = new Discord.RichEmbed()  
 	 
   .setTitle("This is your title, it can hold 256 characters")
   .setAuthor("Author Name", "https://")

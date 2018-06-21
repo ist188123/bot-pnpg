@@ -46,18 +46,16 @@ if (msg.channel.name == 'raids-marcacao') {
    */
   .setTimestamp()
   .setURL("https://www.google.com/maps/place/Pinhal+Novo/@38.6321418,-8.9198928,14.66z/data=!4m5!3m4!1s0xd19409858c24d63:0x500ebbde4910920!8m2!3d38.6318721!4d-8.9150933")
-  .addField("TREINADORES PRESENTES",
-    "Damasc=10\n"+
-    "SDamasc022.	    ")
+  .addField("TREINADORES PRESENTES", "Damasc010\nSDamasc022")
   /*
    * Inline fields may not display as inline if the thumbnail and/or image is too big.
    */
-  //.addField("Inline Field", "They can also be inline.", true)
+  .addField("", "", true)
   /*
    * Blank field, useful to create some space.
    */
-  .addBlankField(true);
-  //.addField("Inline Field 3", "You can have a maximum of 25 fields.", true);
+  .addBlankField(true)
+  .addField("", "", true);
 
   msg.channel.send({embed});
   msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage({embed});	  

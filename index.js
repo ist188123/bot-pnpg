@@ -21,7 +21,7 @@ if (msg.channel.name == 'raids-marcacao') {
   //LE A MENSAGEM EXCLUINDO O !
      var text = msg.content.substring(1);
  
-    text=text +'\n' +
+    text='\n' +text +'\n' +
 	      +'\n'+
 	     'For raids, use **!raid boss timeLeft location**\n' +
 				'For eggs, use **!egg tierNumber timeLeft location**\n' +
@@ -31,9 +31,9 @@ if (msg.channel.name == 'raids-marcacao') {
   
   
   
-       msg.reply(text);
-	msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(text);
-	
+      // msg.reply(text);
+	msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage('RAID'+text);
+	msg.channel.fetchMessage();
   
   
   }   // fim do inicio carater

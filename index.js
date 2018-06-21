@@ -6,30 +6,36 @@ client.on('ready', () => {
 });
 
 
-const sendMessage = (msg, cb) => {
-		client.emit('message', msg, cb);
-	};
-
 
 client.on('message', msg => {
   
+	
+if (message.channel.name == 'raids-marcacao') {
+		
+
+	
   //SE A MENSAGEM INICIA COM O CARATER !
   if (msg.content.indexOf('!') === 0) {
+	  
+	  
   //LE A MENSAGEM EXCLUINDO O !
      var text = msg.content.substring(1);
-    
-    msg.reply(text);
-    
-  sendMessage(msg, (result) => {
-				assert(result.indexOf('FUTURE SIGHT damage against Venusaur\nLv20:   103') > -1);
-				assert(result.match(/damage against/g).length >= 3);
-				done();
-			});
-
-    
+ 
     
   }   
-    
+ 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	msg.reply(text);	
+		
+	}
 });
 
 

@@ -5,6 +5,12 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
+
+const sendMessage = (msg, cb) => {
+		client.emit('message', msg, cb);
+	};
+
+
 client.on('message', msg => {
   
   //SE A MENSAGEM INICIA COM O CARATER !
@@ -14,7 +20,12 @@ client.on('message', msg => {
     
     msg.reply(text);
     
-  
+  sendMessage(msg, (result) => {
+				assert(result.indexOf('FUTURE SIGHT damage against Venusaur\nLv20:   103') > -1);
+				assert(result.match(/damage against/g).length >= 3);
+				done();
+			});
+
     
     
   }   

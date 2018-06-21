@@ -10,7 +10,7 @@ client.on('ready', () => {
 client.on('message', msg => {
   
 	
-if (message.channel.name == 'raids-marcacao') {
+if (msg.channel.name == 'raids-marcacao') {
 		
 
 	

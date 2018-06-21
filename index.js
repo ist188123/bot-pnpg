@@ -21,16 +21,11 @@ if (msg.channel.name == 'raids-marcacao') {
   //LE A MENSAGEM EXCLUINDO O !
      var text = msg.content.substring(1);
  
-    text='\n' +text +'\n' +
-	      +'\n'+
-	     'For raids, use **!raid boss timeLeft location**\n' +
-				'For eggs, use **!egg tierNumber timeLeft location**\n' +
-				'For quests, use **!quest reward task location**\n' +
-				'For wild spawns, use **!wild pokemonName location**\n' ;
- 
-  
-  
-  
+	  
+   text='**RAID '+text+'**'	  
+	  
+	  
+    
       // msg.reply(text);
 	msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage('RAID'+text);
 	//msg.channel.fetchMessage();

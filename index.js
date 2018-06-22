@@ -32,7 +32,7 @@ if (msg.channel.name == 'raids-marcacao') {
 		  var canal='RAID'+text
 		  canal=canal.split('!').join('').toLowerCase();
 	//cria canal
-		  if(msg.guild.channels.find("name", canal)){
+		  if(msg.guild.channels.find("name", canal.split(' ').join('-').toLowerCase()  )){
 		  }else{
 			  
 	msg.guild.createChannel(canal, "text");

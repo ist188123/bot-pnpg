@@ -42,17 +42,25 @@ if (msg.channel.name == 'raids-marcacao') {
    */
   .setTimestamp()
   .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
-  .addField("1682 - 1764 / 2103-2205 Nuvens(cloudy)",
-   "dd")
+  .addField("Niveis CP",
+   "1682 - 1764 / 2103-2205 Nuvens(cloudy)")
   /*
    * Inline fields may not display as inline if the thumbnail and/or image is too big.
    */
-  .addField("Inline Field", "They can also be inline.", true)
+  .addField("Treinadores:", "Damas010\nSDamasc022.", true)
   /*
    * Blank field, useful to create some space.
    */
   .addBlankField(true)
-  .addField("Fraco contra:", "Fraco: Fire Spin/Overheat", true);  
+  .addField("Fraco contra:", "Entei (Fire Spin/Overheat)\n" +
+"Moltres (Fire Spin/Overheat)\n" +
+"Charizard (Fire Spin/Blast Burn)\n" +
+"Flareon (Fire Spin/Overheat)\n" +
+"Ho-Oh (Steel Wing/Fire Blast)\n" +
+"Machamp (Counter/Dynamic Punch)\n" +
+"Tyranitar (Smack Down/Stone Edge)\n" +
+"Blaziken (Counter/Overheat)\n" +
+"Breloom (Counter/Dynamic Punch)", true);  
    msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage({embed});	  
 	  
 	  

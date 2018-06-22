@@ -39,7 +39,7 @@ if (msg.channel.name == 'raids-marcacao') {
 		  }	  
 		  
 		  
-		 msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(canal.split(' ').join('-'));	 
+		 msg.guild.channels.find("name", canal.split(' ').join('-')).sendMessage("sdfsdfsadfd");	 
 	        
 		 
 		  

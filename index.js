@@ -54,9 +54,9 @@ const embed = new Discord.RichEmbed()
   .addBlankField(true)
   .addField("", "", true);
 
-  msg.channel.send({embed});
+  //msg.channel.send({embed});
 	  
-	  
+msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage({embed});	  
 	  
 	  
 	  

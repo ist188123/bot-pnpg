@@ -36,7 +36,7 @@ const embed = new Discord.RichEmbed()
   .setColor(0x00AE86)
   .setDescription("")
   .setFooter("Fim mensagem RAID pinhal novo.", "http://i.imgur.com/w1vhFSR.png")
- // .setImage("http://i.imgur.com/yVpymuV.png")
+ .setImage("http://i.imgur.com/yVpymuV.png")
   .setThumbnail("https://exraidspinhalnovo.webnode.pt/_files/200000018-6874a696da/450/regice.png")
   /*
    * Takes a Date object, defaults to current date.

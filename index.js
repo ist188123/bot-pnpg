@@ -43,7 +43,7 @@ if (msg.channel.name == 'raids-marcacao') {
   .setTimestamp()
   .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
   .addField("Niveis CP",
-   "1682 - 1764 / 2103-2205 Nuvens(cloudy)")
+   "1682 - 1764 / 2103-2205 Nuvens(cloudy)\n\n")
   /*
    * Inline fields may not display as inline if the thumbnail and/or image is too big.
    */
@@ -52,7 +52,7 @@ if (msg.channel.name == 'raids-marcacao') {
    * Blank field, useful to create some space.
    */
   .addBlankField(true)
-  .addField("Fraco contra:", "Entei (Fire Spin/Overheat)\n" +
+  .addField("\n\n\n\n\n\Fraco contra:", "Entei (Fire Spin/Overheat)\n" +
 "Moltres (Fire Spin/Overheat)\n" +
 "Charizard (Fire Spin/Blast Burn)\n" +
 "Flareon (Fire Spin/Overheat)\n" +

@@ -39,7 +39,7 @@ if (msg.channel.name == 'raids-marcacao') {
 		  
 		  
 		  
-	msg.channels.find("name",canal).send("Welcome!")	  
+	msg.guild.channels.find("name",canal).send("Welcome!")	  
 		  
 		  
 	  

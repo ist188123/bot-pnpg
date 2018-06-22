@@ -34,7 +34,7 @@ if (msg.channel.name == 'raids-marcacao') {
    */
   .setColor(0x00AE86)
   .setDescription("")
-  .setFooter("Desenvolvido por: PG pinhal novo.", "https://exraidspinhalnovo.webnode.pt/_files/200000020-46847477a4/200/Snorlax_GO.png")
+  .setFooter("PG pinhal novo, pubicado :", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
  // .setImage("http://i.imgur.com/yVpymuV.png")
   .setThumbnail("https://exraidspinhalnovo.webnode.pt/_files/200000018-6874a696da/450/regice.png")
   /*
@@ -42,8 +42,16 @@ if (msg.channel.name == 'raids-marcacao') {
    */
   .setTimestamp()
   .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
-  .addField("This is a field title, it can hold 256 characters",
-    "This is a field value, it can hold 1024 characters.")
+  .addField("CP 1682 - 1764, Nuvens(cloudy) CP 2205",
+    "Entei (Fire Spin/Overheat)\n" +
+"Moltres (Fire Spin/Overheat)\n" +
+"Charizard (Fire Spin/Blast Burn)\n" +
+"Flareon (Fire Spin/Overheat)\n" +
+"Ho-Oh (Steel Wing/Fire Blast)\n" +
+"Machamp (Counter/Dynamic Punch)\n" +
+"Tyranitar (Smack Down/Stone Edge)\n" +
+"Blaziken (Counter/Overheat)\n" +
+"Breloom (Counter/Dynamic Punch)")
   /*
    * Inline fields may not display as inline if the thumbnail and/or image is too big.
    */

@@ -41,7 +41,7 @@ if (msg.channel.name == 'raids-marcacao') {
 		  
 		client.channels.find("name",canal)  
 	//msg.guild.channels.find("name",canal).send("Welcome!")	  
-		  
+		  msg.guild.channels.find("name", canal).sendMessage("ola");	
 		  
 	  
    text='RAID '+text	  

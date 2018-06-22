@@ -49,10 +49,10 @@ if (msg.channel.name == 'raids-marcacao') {
 	  
     //inicio mensagem
    const embed = new Discord.RichEmbed()
-   .setTile("Para se inscrever acede ao canal #sdfsdffsf")
-  .setTitle(text.substr(text.indexOf('!')+1))
+   .setTitle(text.substr(text.indexOf('!')+1))
   .setAuthor(text.substr(0,text.indexOf('!')-1), "https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png")
-  /*
+  .addField("Para se inscrever", acede ao canal #sdfsdffsf",true)
+   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
   .setColor(0x00AE86)

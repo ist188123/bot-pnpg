@@ -43,7 +43,7 @@ if (msg.channel.name == 'raids-marcacao') {
   .setTimestamp()
   .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
   .addField("1682 - 1764 / 2103-2205 Nuvens(cloudy)",
-   "")
+   "dd")
   /*
    * Inline fields may not display as inline if the thumbnail and/or image is too big.
    */

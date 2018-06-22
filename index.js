@@ -20,7 +20,7 @@ if (msg.channel.name == 'raids-marcacao') {
 	  
 
 	  
-	  if(msg.startsWith("!5")){
+	  if(msg.content.startsWith("!5")){
 	  
 	
   //LE A MENSAGEM EXCLUINDO O !

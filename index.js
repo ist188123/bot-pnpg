@@ -18,7 +18,13 @@ if (msg.channel.name == 'raids-marcacao') {
   //SE A MENSAGEM INICIA COM O CARATER !
   if (msg.content.indexOf('!') === 0) {
 	  
-	client.guild.createChannel("raid-on-5-temp", "text");  
+	  
+	  client.createChannel('oranges', 0, newchan => {
+    newchan.edit({ "topic":"This channel is for discussing our shared love of oranges." });
+});
+	  
+	  
+	
   //LE A MENSAGEM EXCLUINDO O !
      var text = msg.content.substring(1);
  

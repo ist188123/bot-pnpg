@@ -22,18 +22,26 @@ if (msg.channel.name == 'raids-marcacao') {
 	  
 	  if(msg.content.startsWith("!5")){
 	  
-	//cria canal
-		  if(msg.guild.channels.find("name", "xpto")){
-		  }else{
-			  var canal="coisas boas"
-	msg.guild.createChannel(canal, "text");
-		  }
+	
 		  
 		  
 		  
   //LE A MENSAGEM EXCLUINDO O !
      var text = msg.content.substring(1);
  
+		  
+	//cria canal
+		  if(msg.guild.channels.find("name", "xpto")){
+		  }else{
+			  var canal=text.substr(0,text.indexOf('!')-1
+	msg.guild.createChannel(canal, "text");
+		  }	  
+		  
+		  
+		  
+		  
+		  
+		  
 	  
    text='RAID '+text	  
 	  

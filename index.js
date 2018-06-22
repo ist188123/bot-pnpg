@@ -19,9 +19,7 @@ if (msg.channel.name == 'raids-marcacao') {
   if (msg.content.indexOf('!') === 0) {
 	  
 	  
-	  client.createChannel('oranges', 0, newchan => {
-    newchan.edit({ "topic":"This channel is for discussing our shared love of oranges." });
-});
+	  
 	  
 	  
 	

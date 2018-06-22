@@ -25,7 +25,8 @@ if (msg.channel.name == 'raids-marcacao') {
 	//cria canal
 		  if(msg.guild.channels.find("name", "xpto")){
 		  }else{
-	msg.guild.createChannel(text.substr(0,text.indexOf('!')-1+text.substr(text.indexOf('!')+1), "text");
+			  var canal=text.substr(text.indexOf('!')+1)+text.substr(0,text.indexOf('!')-1)
+	msg.guild.createChannel(canal, "text");
 		  }
 		  
 		  

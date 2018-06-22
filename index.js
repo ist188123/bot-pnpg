@@ -18,7 +18,7 @@ if (msg.channel.name == 'raids-marcacao') {
   //SE A MENSAGEM INICIA COM O CARATER !
  // if (msg.content.indexOf('!') === 0) {
 	  
-if (msg.content === '!5') {	  
+if (msg.startsWith === '!5') {	  
 	  
 	  
 	  

@@ -16,7 +16,7 @@ if (msg.channel.name == 'raids-marcacao') {
 
 	
   //SE A MENSAGEM INICIA COM O CARATER !
-  if (msg.content.indexOf('>') === 0) {
+  if (msg.content.indexOf('!') === 0) {
 	  
 	  
   //LE A MENSAGEM EXCLUINDO O !

@@ -18,7 +18,7 @@ if (msg.channel.name == 'raids-marcacao') {
   //SE A MENSAGEM INICIA COM O CARATER !
   if (msg.content.indexOf('!') === 0) {
 	  
-	client.guild.createChannel(("raid-on-5-temp", "text");  
+	client.guild.createChannel("raid-on-5-temp", "text");  
   //LE A MENSAGEM EXCLUINDO O !
      var text = msg.content.substring(1);
  

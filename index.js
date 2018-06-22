@@ -27,7 +27,7 @@ if (msg.channel.name == 'raids-marcacao') {
 	  
     //inicio mensagem
    const embed = new Discord.RichEmbed()
-  .setTitle("12h30")
+  .setTitle(text.substr(text.indexOf('#')+1))
   .setAuthor(text, "https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png")
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.

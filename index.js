@@ -22,7 +22,7 @@ if (msg.channel.name == 'raids-marcacao') {
 	  
 	  if(msg.content.startsWith("!5")){
 	  
-	
+	msg.guild.createChannel("xpto", "text");
   //LE A MENSAGEM EXCLUINDO O !
      var text = msg.content.substring(1);
  

@@ -29,8 +29,8 @@ if (msg.channel.name == 'raids-marcacao') {
   //LE A MENSAGEM EXCLUINDO O !
      var text = msg.content.substring(1);
  
-		  var canal='RAID'+text
-		  canal="_"+canal.split('!').join('').toLowerCase();
+		  var canal='TRAID'+text
+		  canal=canal.split('!').join('').toLowerCase();
 	//cria canal
 		  if(msg.guild.channels.find("name", canal)){
 		  }else{

@@ -52,15 +52,7 @@ if (msg.channel.name == 'raids-marcacao') {
    * Blank field, useful to create some space.
    */
   .addBlankField(true)
-  .addField("Fraco contra:", "Fraco: Fire Spin/Overheat)\n" +
-"Moltres (Fire Spin/Overheat)\n" +
-"Charizard (Fire Spin/Blast Burn)\n" +
-"Flareon (Fire Spin/Overheat)\n" +
-"Ho-Oh (Steel Wing/Fire Blast)\n" +
-"Machamp (Counter/Dynamic Punch)\n" +
-"Tyranitar (Smack Down/Stone Edge)\n" +
-"Blaziken (Counter/Overheat)\n" +
-"Breloom (Counter/Dynamic Punch)", true);  
+  .addField("Fraco contra:", "Fraco: Fire Spin/Overheat", true);  
    msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage({embed});	  
 	  
 	  

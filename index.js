@@ -38,8 +38,8 @@ if (msg.channel.name == 'raids-marcacao') {
 		  }	  
 		  
 		  
-		  
-	msg.guild.channels.find("name",canal).send("Welcome!")	  
+		client.channels.find("name",canal)  
+	//msg.guild.channels.find("name",canal).send("Welcome!")	  
 		  
 		  
 	  

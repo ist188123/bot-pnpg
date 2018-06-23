@@ -23,6 +23,18 @@ client.on('message', msg => {
 		if(msg.content.startsWith("!vou")){
 	        msg.guild.channels.find("name",msg.channel.name).sendMessage(msg.author.toString());	
 			
+			
+			
+		msg.channel.fetchMessages({around: "352292052538753025", limit: 1})
+  .then(messages => {
+    const fetchedMsg = messages.first(); // messages is a collection!)
+    // do something with it
+    fetchedMsg.edit("This fetched message was edited");
+  });	
+			
+			
+			
+			
 		}
 	    
 	

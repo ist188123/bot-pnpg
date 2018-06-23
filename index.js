@@ -10,6 +10,13 @@ client.on('ready', () => {
 client.on('message', msg => {
   
 	
+	if (msg.channel.name.startsWith('_raids') {
+	    
+	    
+	    }
+	
+	
+	
 if (msg.channel.name == 'raids-marcacao') {
 		
 
@@ -29,7 +36,7 @@ if (msg.channel.name == 'raids-marcacao') {
      var text = msg.content.substring(1);
  
 		  var canal='RAID'+text
-		  canal=canal.split('!').join('').toLowerCase();
+		  canal="_"+canal.split('!').join('').toLowerCase();
 		 var nomecanal=canal.split(' ').join('-').toLowerCase();
 	//cria canal
 		  if(msg.guild.channels.find("name", nomecanal  )){

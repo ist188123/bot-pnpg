@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-
  
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -46,7 +45,8 @@ if (msg.channel.name == 'raids-marcacao') {
 		  
 	  
    text='RAID '+text	  
-	
+	var refcanal="";
+		  
     //inicio mensagem
    const embed = new Discord.RichEmbed()
    .setTitle(text.substr(text.indexOf('!')+1))
@@ -56,7 +56,7 @@ if (msg.channel.name == 'raids-marcacao') {
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
   .setColor(0x00AE86)
-  .setDescription("Para se inscrever utilize o canal: "+nomecanal.concat("#",nomecanal) )
+  .setDescription("Para se inscrever utilize o canal: "+refcanal.concat("#",nomecanal) )
   .setFooter("PG pinhal novo, pubicado :", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
  // .setImage("http://i.imgur.com/yVpymuV.png")
   .setThumbnail("https://exraidspinhalnovo.webnode.pt/_files/200000018-6874a696da/450/regice.png")

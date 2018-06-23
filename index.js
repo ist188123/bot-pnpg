@@ -10,7 +10,7 @@ client.on('ready', () => {
 client.on('message', msg => {
   
 	
-	if (msg.channel.name.startsWith('_raids') {
+	if (msg.channel.name.startsWith('_raid') {
 	    
 	    
 	    }
@@ -35,7 +35,7 @@ if (msg.channel.name == 'raids-marcacao') {
   //LE A MENSAGEM EXCLUINDO O !
      var text = msg.content.substring(1);
  
-		  var canal='_RAID'+text
+		  var canal='_raid'+text
 		  canal=canal.split('!').join('').toLowerCase();
 		 var nomecanal=canal.split(' ').join('-').toLowerCase();
 	//cria canal

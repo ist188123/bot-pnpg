@@ -25,11 +25,7 @@ client.on('message', msg => {
 			
 			
 			
-		// THIS CHANGES IN DISCORD VERSION 12!!!!!
-msg.channel.messages.fetch({around: "352292052538753025", limit: 1})
-  .then(messages => {
-    messages.first().edit("This fetched message was edited");
-  });
+		
 			
 			
 			
@@ -103,7 +99,7 @@ if (msg.channel.name == 'raids-marcacao') {
   /*
    * Inline fields may not display as inline if the thumbnail and/or image is too big.
    */
-  .addField("Treinadores:", "Damas010\nSDamasc022.", true)
+  .addField("Treinadores:", msg.author.toString(), true)
   /*
    * Blank field, useful to create some space.
    */

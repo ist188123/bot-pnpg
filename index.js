@@ -8,13 +8,13 @@ client.on('ready', () => {
 
 
 
-
+client.on('message', msg => {
 
 
 //funcao
 
 
-function criaRaid(ncanal,text){
+function criaRaid(ncanal,text,treinador){
   //inicio mensagem
    const embed = new Discord.RichEmbed()
    .setTitle(text.substr(text.indexOf('!')+1))
@@ -38,7 +38,7 @@ function criaRaid(ncanal,text){
   /*
    * lista dos jogadores que vão RAID.
    */
-  .addField("Treinadores:", msg.author.toString(), true)
+  .addField("Treinadores:",treinador , true)
   /*
    * Blank field, useful to create some space.
    */
@@ -71,7 +71,7 @@ function criaRaid(ncanal,text){
 
 
 
-client.on('message', msg => {
+
   
 	
 	 
@@ -88,7 +88,7 @@ client.on('message', msg => {
 	        msg.guild.channels.find("name",msg.channel.name).sendMessage("Inserido na RAID :"+msg.author.toString());	
 			
 			
-		criaRaid(msg.channel.name,"!5 piscina !12h30".substring(1))	
+		criaRaid(msg.channel.name,"!5 piscina !12h30".substring(1),msg.author.toString())	
 		
 			
 			

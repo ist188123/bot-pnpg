@@ -9,10 +9,21 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   
-	loop.while(msg.channel.name.startsWith('_raid')){
-		
-		
-	}
+	
+	  let defaultChannel = "";
+         msg.guild.channels.forEach((channel) => {
+               if(channel.type == "text" && defaultChannel == "") {
+               
+               }
+         })
+         
+ 
+
+	
+	
+	
+	
+	
 	
 	if (msg.channel.name.startsWith('_raid')) {
 	         //msg.guild.channels.find("name", canal.split(' ').join('-')).sendMessage("sdfsdfsadfd");

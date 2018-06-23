@@ -11,7 +11,7 @@ client.on('message', msg => {
   
 	
 	  let defaultChannel = "";
-         msg.guild.channels.forEach((channel) => {
+         msg.channels.forEach((channel) => {
                if(channel.type == "text" && defaultChannel == "") {
                msg.guild.channels.find("name",channel ).sendMessage("um dois tres");
                }

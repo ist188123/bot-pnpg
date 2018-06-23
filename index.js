@@ -13,7 +13,7 @@ client.on('message', msg => {
 	  let defaultChannel = "";
          msg.guild.channels.forEach((channel) => {
                if(channel.type == "text" && defaultChannel == "") {
-               
+               console.log(msg.channel.name)
                }
          })
          

@@ -24,7 +24,7 @@ function criaRaid(ncanal,text,treinador){
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
   .setColor(0x00AE86)
-  .setDescription("Para se inscrever utilize o canal: "+msg.channels.get("name",ncanal) )
+  .setDescription("Para se inscrever utilize o canal: #"+ncanal )
   .setFooter("PG pinhal novo, pubicado :", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
  // .setImage("http://i.imgur.com/yVpymuV.png")
   .setThumbnail("https://exraidspinhalnovo.webnode.pt/_files/200000018-6874a696da/450/regice.png")
@@ -88,7 +88,7 @@ function criaRaid(ncanal,text,treinador){
 	        msg.guild.channels.find("name",msg.channel.name).sendMessage("Inserido na RAID :"+msg.author.toString());	
 			
 			
-		criaRaid(msg.channel.name,"!5 piscina !12h30".substring(1),msg.author.toString())	
+		criaRaid(msg.channel.name,"!raid5 piscina !12h30".substring(1),msg.author.toString())	
 		
 			
 			

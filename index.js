@@ -51,12 +51,12 @@ if (msg.channel.name == 'raids-marcacao') {
    const embed = new Discord.RichEmbed()
    .setTitle(text.substr(text.indexOf('!')+1))
   .setAuthor(text.substr(0,text.indexOf('!')-1), "https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png")
-   .addField("Para se inscrever utilize o canal:", "#"nomecanal, true)
+  
    /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
   .setColor(0x00AE86)
-  .setDescription('' )
+  .setDescription("Para se inscrever utilize o canal: #'& nomecanal)
   .setFooter("PG pinhal novo, pubicado :", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
  // .setImage("http://i.imgur.com/yVpymuV.png")
   .setThumbnail("https://exraidspinhalnovo.webnode.pt/_files/200000018-6874a696da/450/regice.png")

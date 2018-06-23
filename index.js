@@ -24,7 +24,7 @@ client.on('message', msg => {
 	        msg.guild.channels.find("name",msg.channel.name).sendMessage("Inserido na RAID :"+msg.author.toString());	
 			
 			
-			
+		criaRaid(msg.channel.name,"!5 piscina !12h30")	
 		
 			
 			
@@ -43,10 +43,7 @@ if (msg.channel.name == 'raids-marcacao') {
 		
 
 	
-  //SE A MENSAGEM INICIA COM O CARATER !
- // if (msg.content.indexOf('!') === 0) {
-	  
-
+ 
 	  
 	  if(msg.content.startsWith("!5")){
 	  
@@ -66,7 +63,7 @@ if (msg.channel.name == 'raids-marcacao') {
 			  
 	msg.guild.createChannel(canal, "text");
 			
-	msg.channel.setParent('355908108431917066', { lockPermissions: false })
+	
 		  }	  
 		  
 		//var refcanal=refcanal.concat("#",nomecanal) 
@@ -96,7 +93,7 @@ if (msg.channel.name == 'raids-marcacao') {
 //funcao
 
 
-function criaRaid(){
+function criaRaid(ncanal,text){
   //inicio mensagem
    const embed = new Discord.RichEmbed()
    .setTitle(text.substr(text.indexOf('!')+1))
@@ -106,7 +103,7 @@ function criaRaid(){
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
   .setColor(0x00AE86)
-  .setDescription("Para se inscrever utilize o canal: "+refcanal.concat("#",nomecanal) )
+  .setDescription("Para se inscrever utilize o canal: "+ncanal )
   .setFooter("PG pinhal novo, pubicado :", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
  // .setImage("http://i.imgur.com/yVpymuV.png")
   .setThumbnail("https://exraidspinhalnovo.webnode.pt/_files/200000018-6874a696da/450/regice.png")

@@ -88,7 +88,7 @@ client.on('message', msg => {
 	        msg.guild.channels.find("name",msg.channel.name).sendMessage("Inserido na RAID :"+msg.author.toString());	
 			
 			
-		criaRaid(msg.channel.name,"!5 piscina !12h30")	
+		criaRaid(msg.channel.name,"!5 piscina !12h30".substring(1))	
 		
 			
 			

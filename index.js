@@ -10,13 +10,7 @@ client.on('ready', () => {
 client.on('message', msg => {
   
 	
-	  let defaultChannel = "";
-         msg.channels.forEach((channel) => {
-               if(channel.type == "text" && defaultChannel == "") {
-               msg.guild.channels.find("name",channel ).sendMessage("um dois tres");
-               }
-         })
-         
+	 
  
 
 	
@@ -26,7 +20,9 @@ client.on('message', msg => {
 	
 	
 	if (msg.channel.name.startsWith('_raid')) {
-	         //msg.guild.channels.find("name", canal.split(' ').join('-')).sendMessage("sdfsdfsadfd");
+		if(msg.content.startsWith("!vou")){
+	        msg.guild.channels.find("name",msg.channel.name).sendMessage("vou.....");	  
+		}
 	    }
 	
 	

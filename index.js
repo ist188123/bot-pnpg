@@ -9,9 +9,13 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   
+	loop.while(msg.channel.name.startsWith('_raid')){
+		
+		
+	}
 	
 	if (msg.channel.name.startsWith('_raid')) {
-	    
+	         //msg.guild.channels.find("name", canal.split(' ').join('-')).sendMessage("sdfsdfsadfd");
 	    }
 	
 	

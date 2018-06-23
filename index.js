@@ -65,7 +65,7 @@ if (msg.channel.name == 'raids-marcacao') {
 		  }else{
 			  
 	msg.guild.createChannel(canal, "text");
-			msg.channel.name.setParent('174674066072928256')
+			
 	//msg.channel.setParent('355908108431917066', { lockPermissions: false })
 		  }	  
 		  

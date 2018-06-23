@@ -21,11 +21,12 @@ client.on('message', msg => {
 	
 	if (msg.channel.name.startsWith('_raid')) {
 		if(msg.content.startsWith("!vou")){
-	        msg.guild.channels.find("name",msg.channel.name).sendMessage("${client.user.tag}");	  
+	        msg.guild.channels.find("name",msg.channel.name).sendMessage(msg.author.toString());	
+			
 		}
 	    
 	
-	msg.channel.send("Hello " + msg.author.toString() + ", and welcome!");
+	
 	
 	}//msg.channel.name
 	

@@ -25,12 +25,11 @@ client.on('message', msg => {
 			
 			
 			
-		msg.channel.fetchMessages({around: "352292052538753025", limit: 1})
+		// THIS CHANGES IN DISCORD VERSION 12!!!!!
+msg.channel.messages.fetch({around: "352292052538753025", limit: 1})
   .then(messages => {
-    const fetchedMsg = messages.first(); // messages is a collection!)
-    // do something with it
-    fetchedMsg.edit("This fetched message was edited");
-  });	
+    messages.first().edit("This fetched message was edited");
+  });
 			
 			
 			

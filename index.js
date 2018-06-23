@@ -10,10 +10,7 @@ client.on('ready', () => {
 client.on('message', msg => {
   
 	
-	if (msg.channel.name.startsWith('_raid') {
-	    
-	    
-	    }
+	
 	
 	
 	

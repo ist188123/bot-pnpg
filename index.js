@@ -102,7 +102,7 @@ function criaRaid(ncanal,text,treinador){
 			
 			
 			
-		criaRaid(msg.channel.name,"!raid5 piscina !12h30".substring(1),msg.content)	
+		criaRaid(msg.channel.name,"!raid5 piscina !12h30".substring(1),msg.content.toString())	
 		
 			
 		}//fim if

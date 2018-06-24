@@ -99,10 +99,10 @@ function criaRaid(ncanal,text,treinador){
 	      //  msg.guild.channels.find("name",msg.channel.name).sendMessage("Inserido na RAID :"+msg.author.toString());	
 		
 			
+			//"!raid5 piscina !12h30".substring(1)
+			msg.channel.name
 			
-			
-			
-		criaRaid(msg.channel.name,"!raid5 piscina !12h30".substring(1),msg.content.toString())	
+		criaRaid(msg.channel.name,msg.channel.name,msg.content.toString())	
 		
 			
 		}//fim if

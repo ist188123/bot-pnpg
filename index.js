@@ -112,7 +112,7 @@ function criaRaid(ncanal,text,treinador){
 			
 		//}//fim if
 	    
-msg.guild.channels.find("name",msg.channel.name).sendMessage("**Trenadores registados na RAID**\n"+msg.content.toString());
+//msg.guild.channels.find("name",msg.channel.name).sendMessage("**Trenadores registados na RAID**\n"+msg.content.toString());
 	
 	}//msg.channel.name
 	

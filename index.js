@@ -95,7 +95,7 @@ function criaRaid(ncanal,text,treinador){
 		
 		
 		
-		if(msg.content.startsWith("@")){
+		if(msg.content.startsWith("-")){
 	      //  msg.guild.channels.find("name",msg.channel.name).sendMessage("Inserido na RAID :"+msg.author.toString());	
 		
 			

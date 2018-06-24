@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
  const config = require("./config.json");
-
+const filter = m => m.content.startsWith('!vote');
 
 
 client.on('ready', () => {
@@ -90,7 +90,7 @@ function criaRaid(ncanal,text,treinador){
 		
 		
 		
-		const filter = m => m.content.startsWith('!vote');
+		
 // Errors: ['time'] treats ending because of the time limit as an error
  channel.awaitMessages(filter, { max: 4, time: 60000, errors: ['time'] })
   .then(collected => console.log(collected.size))

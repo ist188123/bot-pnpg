@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-const fs = require("fs");
+
 
 
 
@@ -102,7 +102,7 @@ function criaRaid(ncanal,text,treinador){
 			
 			
 			
-		criaRaid(msg.channel.name,"!raid5 piscina !12h30".substring(1),msg.author.toString())	
+		criaRaid(msg.channel.name,"!raid5 piscina !12h30".substring(1),msg.content)	
 		
 			
 		}//fim if

@@ -21,9 +21,26 @@ client.on('message', msg => {
 
 function criaRaid(ncanal,text,treinador){
   //inicio mensagem
+	
+	//"!raid5 piscina !12h30".substring(1)
+			var titulo=ncanal.substr(x.indexOf('-')+1)
+			var newString=""
+			var horas=""
+                        for (var i = titulo.length - 1; i >= 0; i--) { 
+                             newString += titulo[i]; // or newString = newString + str[i];
+        
+                             if(titulo[i]=="-"){
+                                 horas=newString 
+                                 }
+        
+                          }
+			
+	
+	
+	
    const embed = new Discord.RichEmbed()
-   .setTitle(text.substr(text.indexOf('!')+1))
-  .setAuthor(text.substr(0,text.indexOf('!')-1), "https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png")
+   .setTitle(titulo)
+  .setAuthor(horas, "https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png")
   
    /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
@@ -95,12 +112,10 @@ function criaRaid(ncanal,text,treinador){
 		
 		
 		
-		if(msg.content.startsWith("-")){
+		if(msg.content.startsWith("")){
 	      //  msg.guild.channels.find("name",msg.channel.name).sendMessage("Inserido na RAID :"+msg.author.toString());	
 		
 			
-			//"!raid5 piscina !12h30".substring(1)
-			msg.channel.name
 			
 		criaRaid(msg.channel.name,msg.channel.name,msg.content.toString())	
 		

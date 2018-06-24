@@ -35,7 +35,7 @@ for (var i=0;i<y.length-1;i++){
 }
 
 	
-	
+	 msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage("Utilize o canal para registo "+msg.mentions.channels);	  
 	
 	
 	
@@ -47,7 +47,7 @@ for (var i=0;i<y.length-1;i++){
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
   .setColor(0x00AE86)
-  .setDescription("Registo utiliza o canal: "+ msg.channel.name.toString())
+  .setDescription("")
   .setFooter("PG pinhal novo, pubicado :", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
  // .setImage("http://i.imgur.com/yVpymuV.png")
   .setThumbnail("https://exraidspinhalnovo.webnode.pt/_files/200000018-6874a696da/450/regice.png")
@@ -125,7 +125,7 @@ for (var i=0;i<y.length-1;i++){
 		//}//fim if
 	    
     //msg.guild.channels.find("name",msg.channel.name).sendMessage("**Trenadores registados na RAID**\n"+msg.content.toString());
-	 msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(msg.channel.name.toString());	  
+	
 	}//msg.channel.name
 	
 	

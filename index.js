@@ -24,7 +24,7 @@ function criaRaid(ncanal,text,treinador){
 	
 	//"!raid5 piscina !12h30".substring(1)
 			var titulo="RAID 5 "+ncanal.substr(7)
-			var horas="17H45"
+			var horas=titulo.length
 	
 	
 	

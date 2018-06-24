@@ -37,7 +37,7 @@ for (var i=0;i<y.length-1;i++){
 	
    const embed = new Discord.RichEmbed()
    .setTitle(horas)
-  .setAuthor(titulo, "https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png")
+  .setAuthor(local.toUpperCase();, "https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png")
   
    /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.

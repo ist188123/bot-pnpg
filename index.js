@@ -19,7 +19,7 @@ client.on('message', msg => {
 //funcao
 
 
-function criaRaid(msg.channel.name,text,treinador){
+function criaRaid(text,treinador){
   //inicio mensagem
 	
 	//"!raid5 piscina !12h30".substring(1)
@@ -107,8 +107,8 @@ function criaRaid(msg.channel.name,text,treinador){
 		
 			//var mensagem=msg.author.toString()+msg.content.toString().substr(4)
 			
-		criaRaid(msg.channel.name,msg.channel.name,msg.content.toString())	
-		
+		//criaRaid(msg.channel.name,msg.channel.name,msg.content.toString())	
+		criaRaid(msg.channel.name,msg.content.toString())	
 			
 		//}//fim if
 	    

@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const sql = require("sqlite");
-sql.open("./score.sqlite");
+
 
 
 
@@ -98,10 +97,6 @@ function criaRaid(ncanal,text,treinador){
 		if(msg.content.startsWith("!vou")){
 	        msg.guild.channels.find("name",msg.channel.name).sendMessage("Inserido na RAID :"+msg.author.toString());	
 		
-			
-		sql.run("CREATE TABLE IF NOT EXISTS scores (userId TEXT, points INTEGER, level INTEGER)").then(() => {
-                sql.run("INSERT INTO scores (userId, points, level) VALUES (?, ?, ?)", [msg.author.id, 1, 0]);
-                 });	
 			
 			
 			

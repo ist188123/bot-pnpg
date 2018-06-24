@@ -26,7 +26,13 @@ function criaRaid(ncanal,text,treinador){
 			var titulo="RAID 5 "+ncanal.substr(7)
 			var thoras=titulo.split("-")
 			var horas=thoras[thoras.length-1]
-	
+	y=thoras
+var local=""
+for (var i=0;i<y.length-1;i++){
+   local=local+" "+y[i]
+
+}
+
 	
 	
    const embed = new Discord.RichEmbed()

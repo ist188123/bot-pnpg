@@ -23,13 +23,13 @@ function criaRaid(ncanal,text,treinador){
   //inicio mensagem
 	
 	//"!raid5 piscina !12h30".substring(1)
-			var titulo="RAID 5 PARQUE INFANTIL"
+			var titulo="RAID 5 "+ncanal
 			var horas="17H45"
 	
 	
 	
    const embed = new Discord.RichEmbed()
-   .setTitle(horas)
+   .setTitle()
   .setAuthor(titulo, "https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png")
   
    /*

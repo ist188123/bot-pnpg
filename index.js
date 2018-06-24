@@ -95,8 +95,8 @@ function criaRaid(ncanal,text,treinador){
 		
 		
 		
-		//if(msg.content.startsWith("!vou")){
-	        msg.guild.channels.find("name",msg.channel.name).sendMessage("Inserido na RAID :"+msg.author.toString());	
+		if(msg.content.startsWith("@")){
+	      //  msg.guild.channels.find("name",msg.channel.name).sendMessage("Inserido na RAID :"+msg.author.toString());	
 		
 			
 			
@@ -105,7 +105,7 @@ function criaRaid(ncanal,text,treinador){
 		criaRaid(msg.channel.name,"!raid5 piscina !12h30".substring(1),msg.content)	
 		
 			
-		//}//fim if
+		}//fim if
 	    
 	
 	

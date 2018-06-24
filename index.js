@@ -21,7 +21,7 @@ client.on('message', msg => {
 
 function criaRaid(ncanal,text,treinador){
   //inicio mensagem
-	var totaltreinadores=treinador.trim().split("@").trim()
+	var totaltreinadores=treinador.trim().split("@")
 	//"!raid5 piscina !12h30".substring(1)
 			var titulo="RAID 5 "+ncanal.substr(7)
 			var thoras=titulo.split("-")

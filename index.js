@@ -36,6 +36,13 @@ for (var i=0;i<y.length-1;i++){
 
 	
 	
+	var todos="";
+
+for(var h=1;h<totaltreinadores.length;h++){
+    
+    todos=todos+"\n"+msg.users.get(totaltreinadores[h]);
+    
+}
 	
 	
 	

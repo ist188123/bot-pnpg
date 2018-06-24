@@ -107,8 +107,8 @@ function criaRaid(ncanal,text,treinador){
 		
 			//var mensagem=msg.author.toString()+msg.content.toString().substr(4)
 			
-		//criaRaid(msg.channel.name,msg.channel.name,msg.content.toString())	
-		criaRaid(msg.channel.name,msg.content.toString())	
+		criaRaid(msg.channel.name,msg.channel.name,msg.content.toString())	
+		//criaRaid(msg.channel.name,msg.content.toString())	
 			
 		//}//fim if
 	    

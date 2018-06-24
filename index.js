@@ -29,7 +29,7 @@ function criaRaid(ncanal,text,treinador){
 	
 	
    const embed = new Discord.RichEmbed()
-   .setTitle()
+   .setTitle(horas)
   .setAuthor(titulo, "https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png")
   
    /*

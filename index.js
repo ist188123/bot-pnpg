@@ -19,7 +19,7 @@ client.on('message', msg => {
 //funcao
 
 
-function criaRaid(text,treinador){
+function criaRaid(ncanal,text,treinador){
   //inicio mensagem
 	
 	//"!raid5 piscina !12h30".substring(1)
@@ -36,7 +36,7 @@ function criaRaid(text,treinador){
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
   .setColor(0x00AE86)
-  .setDescription("Registo utiliza o canal: "+msg.channel.name )
+  .setDescription("Registo utiliza o canal: "+ msg.guild.channels.get("name",ncanal))
   .setFooter("PG pinhal novo, pubicado :", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
  // .setImage("http://i.imgur.com/yVpymuV.png")
   .setThumbnail("https://exraidspinhalnovo.webnode.pt/_files/200000018-6874a696da/450/regice.png")

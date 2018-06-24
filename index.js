@@ -57,10 +57,11 @@ for (var i=0;i<y.length-1;i++){
   /*
    * lista dos jogadores que vão RAID.
    */
-  .addField("Treinadores:["+totaltreinadores+"]",treinador , true)
+  .addField("Treinadores:["+totaltreinadores.length+"]",treinador , true)
   /*
    * Blank field, useful to create some space.
    */
+   .addBlankField(true)
   .addBlankField(true)
   .addField("\n\n\n\n\n\Fraco contra:", "Entei (Fire Spin/Overheat)\n" +
 "Moltres (Fire Spin/Overheat)\n" +

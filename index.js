@@ -61,7 +61,7 @@ for (var i=0;i<y.length-1;i++){
   /*
    * lista dos jogadores que vão RAID.
    */
-  .addField("Treinadores:["+totaltreinadores.length+"]",totaltreinadores , true)
+  .addField("Treinadores:["+totaltreinadores.length+"]",treinador , true)
   /*
    * Blank field, useful to create some space.
    */

@@ -29,8 +29,8 @@ function criaRaid(ncanal,text,treinador){
 	
 	
    const embed = new Discord.RichEmbed()
-   .setTitle(titulo)
-  .setAuthor(horas, "https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png")
+   .setTitle(horas)
+  .setAuthor(titulo, "https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png")
   
    /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
@@ -102,12 +102,12 @@ function criaRaid(ncanal,text,treinador){
 		
 		
 		
-		if(msg.content.startsWith("!")){
+		if(msg.content.startsWith("!vou")){
 	      //  msg.guild.channels.find("name",msg.channel.name).sendMessage("Inserido na RAID :"+msg.author.toString());	
 		
+			var mensagem=msg.author.toString()+name,msg.content.toString().substr(4)
 			
-			
-		criaRaid(msg.channel.name,msg.channel.name,msg.content.toString())	
+		criaRaid(msg.channel.name,msg.channel.name,mensagem)	
 		
 			
 		}//fim if

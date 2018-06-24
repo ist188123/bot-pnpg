@@ -35,7 +35,7 @@ for (var i=0;i<y.length-1;i++){
 }
 
 	
-	 msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage("Utilize o canal para registo "+msg.mentions.channels.toString());	  
+	 msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage("Utilize o canal para registo "+msg.guild.channels.find("name", msg.channel.name));	  
 	
 	
 	

@@ -23,18 +23,8 @@ function criaRaid(ncanal,text,treinador){
   //inicio mensagem
 	
 	//"!raid5 piscina !12h30".substring(1)
-			var titulo=ncanal.substr(x.indexOf('-')+1)
-			var newString=""
-			var horas=""
-                        for (var i = titulo.length - 1; i >= 0; i--) { 
-                             newString += titulo[i]; // or newString = newString + str[i];
-        
-                             if(titulo[i]=="-"){
-                                 horas=newString 
-                                 }
-        
-                          }
-			
+			var titulo="RAID 5 PISCINAS"
+			var horas="12h44"
 	
 	
 	
@@ -112,7 +102,7 @@ function criaRaid(ncanal,text,treinador){
 		
 		
 		
-		if(msg.content.startsWith("")){
+		if(msg.content.startsWith("!")){
 	      //  msg.guild.channels.find("name",msg.channel.name).sendMessage("Inserido na RAID :"+msg.author.toString());	
 		
 			

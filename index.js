@@ -105,7 +105,7 @@ function criaRaid(ncanal,text,treinador){
 		if(msg.content.startsWith("!vou")){
 	      //  msg.guild.channels.find("name",msg.channel.name).sendMessage("Inserido na RAID :"+msg.author.toString());	
 		
-			var mensagem=msg.author.toString()+name,msg.content.toString().substr(4)
+			var mensagem=msg.author.toString()+msg.content.toString().substr(4)
 			
 		criaRaid(msg.channel.name,msg.channel.name,mensagem)	
 		

@@ -1,6 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
- 
+ const config = require("./config.json");
+
+
+
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
@@ -84,6 +87,19 @@ function criaRaid(ncanal,text,treinador){
 	
 	
 	if (msg.channel.name.startsWith('_raid')) {
+		
+		
+		
+		const filter = m => m.content.startsWith('!vote');
+// Errors: ['time'] treats ending because of the time limit as an error
+ channel.awaitMessages(filter, { max: 4, time: 60000, errors: ['time'] })
+  .then(collected => console.log(collected.size))
+  .catch(collected => console.log(`After a minute, only ${collected.size} out of 4 voted.`));	
+			
+		
+		
+		
+		
 		if(msg.content.startsWith("!vou")){
 	        msg.guild.channels.find("name",msg.channel.name).sendMessage("Inserido na RAID :"+msg.author.toString());	
 			
@@ -91,10 +107,7 @@ function criaRaid(ncanal,text,treinador){
 		criaRaid(msg.channel.name,"!raid5 piscina !12h30".substring(1),msg.author.toString())	
 		
 			
-			
-			
-			
-		}
+		}//fim if
 	    
 	
 	

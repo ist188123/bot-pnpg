@@ -21,18 +21,30 @@ client.on('message', msg => {
 
 function criaRaid(ncanal,text,treinador){
   //inicio mensagem
-	var totaltreinadores=treinador.split("@").join(' :raid: ')
+	var totaltreinadores=treinador.split("@")
 	//"!raid5 piscina !12h30".substring(1)
 			var titulo="RAID 5 "+ncanal.substr(7)
 			var thoras=titulo.split("-")
 			var horas=thoras[thoras.length-1]
 	y=thoras
 var local=""
+
 for (var i=0;i<y.length-1;i++){
    local=local+" "+y[i]
-
+   
 }
 
+	
+	
+	var todos="";
+
+for(var h=1;h<totaltreinadores.length;h++){
+    
+    todos=todos+"\n"+totaltreinadores[h];
+    
+}
+	
+	
 	
 	
    const embed = new Discord.RichEmbed()
@@ -57,7 +69,7 @@ for (var i=0;i<y.length-1;i++){
   /*
    * lista dos jogadores que vão RAID.
    */
-  .addField("Treinadores:["+totaltreinadores.length+"]",totaltreinadores , true)
+  .addField("Treinadores:["+totaltreinadores.length+"]",todos , true)
   /*
    * Blank field, useful to create some space.
    */

@@ -21,7 +21,7 @@ client.on('message', msg => {
 
 function criaRaid(ncanal,text,treinador){
   //inicio mensagem
-	var totaltreinadores=treinador.split(" ")
+	var totaltreinadores=treinador.split("@")
 	//"!raid5 piscina !12h30".substring(1)
 			var titulo="RAID 5 "+ncanal.substr(7)
 			var thoras=titulo.split("-")
@@ -61,7 +61,7 @@ for (var i=0;i<y.length-1;i++){
   /*
    * Blank field, useful to create some space.
    */
-   .addBlankField(true)
+   
   .addBlankField(true)
   .addField("\n\n\n\n\n\Fraco contra:", "Entei (Fire Spin/Overheat)\n" +
 "Moltres (Fire Spin/Overheat)\n" +

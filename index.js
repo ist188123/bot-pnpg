@@ -21,7 +21,7 @@ client.on('message', msg => {
 
 function criaRaid(ncanal,text,treinador){
   //inicio mensagem
-	
+	var totaltreinadores=treinador.split(" ")
 	//"!raid5 piscina !12h30".substring(1)
 			var titulo="RAID 5 "+ncanal.substr(7)
 			var thoras=titulo.split("-")
@@ -57,7 +57,7 @@ for (var i=0;i<y.length-1;i++){
   /*
    * lista dos jogadores que vão RAID.
    */
-  .addField("Treinadores:",treinador , true)
+  .addField("Treinadores:["+totaltreinadores+"]",treinador , true)
   /*
    * Blank field, useful to create some space.
    */

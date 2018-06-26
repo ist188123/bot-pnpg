@@ -16,6 +16,22 @@ client.on('ready', () => {
 client.on('message', msg => {
 
 
+	
+	
+	
+	function criacanal(nome){
+		
+		msg.guild.createChannel(nome, "text")
+		
+		
+		
+	}
+	
+	
+	
+	
+	
+	
 //funcao
 
 
@@ -212,14 +228,14 @@ if (msg.channel.name == 'raids-marcacao') {
 		  if(msg.guild.channels.find("name", nomecanal  )){
 		  }else{
 			  
-	msg.guild.createChannel(canal, "text")
-		
+	
+		criacanal(nomecanal)
 		
 	
   
 	//msg.guild.channels.find("name", nomecanal).sendMessage("Vaga[1]");			
 	msg.channel.sendMessage("Vaga[1]"+canal.split(' ').join('-'))
-			  msg.channels.get(canal.split(' ').join('-')).send('My Message');
+			  //msg.channels.get(canal.split(' ').join('-')).send('My Message');
 		  }	  
 		  
 		//var refcanal=refcanal.concat("#",nomecanal) 

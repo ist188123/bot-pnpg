@@ -201,7 +201,7 @@ if (msg.channel.name == 'raids-marcacao') {
   .catch(/*Your Error handling if the Message isn't returned, sent, etc.*/);
 	
 		 
-		  
+	//message.channel.sendMessage	  
   //LE A MENSAGEM EXCLUINDO O !
      var text = msg.content.substring(1);
  
@@ -212,8 +212,11 @@ if (msg.channel.name == 'raids-marcacao') {
 		  if(msg.guild.channels.find("name", nomecanal  )){
 		  }else{
 			  
-	msg.guild.createChannel(canal, "text").then(temp_channel => {
-        temp_channel.delete(1000)
+	msg.guild.createChannel(canal, "text").then(tcanal => {
+    tcanal.delete(1000)
+  })
+  .catch(/*Your Error handling if the Message isn't returned, sent, etc.*/);
+
   })
 			
 	

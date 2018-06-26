@@ -19,13 +19,7 @@ client.on('message', msg => {
 	
 	
 	
-	function criacanal(nome){
-		
-		msg.guild.createChannel(nome, "text")
-		
-		
-		
-	}
+	
 	
 	
 	
@@ -155,7 +149,13 @@ if (msg.channel.name == 'adm-pg-pinhalnovo') {
 
  
 	  
-	
+	function criacanal(nome){
+		
+		msg.guild.createChannel(nome, "text")
+		criaRaid(nome,nome,msg.author.toString())
+		
+		
+	}
 	
 	
 	

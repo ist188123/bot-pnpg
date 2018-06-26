@@ -87,14 +87,14 @@ for (var i=0;i<y.length-1;i++){
 
 
 // fim funcao
-function info(informacao){
+function info(titulo){
 	
-	var vinformacao=informacao.split("!")
+	var vinformacao=titulo.split("!")
 	
 	
    const embed = new Discord.RichEmbed()
-  .setTitle(msg.guild.channels.find("name", msg.channel.name))
-  .setAuthor("dad", "https://exraidspinhalnovo.webnode.pt/_files/200000024-8e37d8f30a/450/Item_1403-2.png")
+  .setTitle(vinformacao[1])
+  .setAuthor(vinformacao[0], "https://exraidspinhalnovo.webnode.pt/_files/200000024-8e37d8f30a/450/Item_1403-2.png")
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */

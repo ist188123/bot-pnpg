@@ -139,17 +139,7 @@ if (msg.channel.name == 'adm-pg-pinhalnovo') {
 
   
 	
-	  if (msg.content === '$ping') {
-        msg.reply("Pong!")
-        
-            const collector = new Discord.MessageCollector(msg.channel, m => m.author.id === client.user.id, { time: 10000 });
-            collector.on('collect', message => {
-                console.log(message.content);
-                collector.stop("Got my message");
-            })
-        
-    }
-	
+	  
 	
 	
 	
@@ -178,7 +168,7 @@ if (msg.channel.name == 'adm-pg-pinhalnovo') {
 	      //  msg.guild.channels.find("name",msg.channel.name).sendMessage("Inserido na RAID :"+msg.author.toString());	
 		
 			//var mensagem=msg.author.toString()+msg.content.toString().substr(4)
-		if(msg.content.startsWith("@")){	
+		if(msg.content.startsWith("Vaga[1]")){	
 	
 			
 			
@@ -219,7 +209,7 @@ if (msg.channel.name == 'raids-marcacao') {
 		  }else{
 			  
 	msg.guild.createChannel(canal, "text");
-			
+	msg.guild.channels.find("name", canal).sendMessage("Vaga[1]\n"+msg.author.toString())		
 	
 		  }	  
 		  

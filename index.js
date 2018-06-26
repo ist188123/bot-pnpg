@@ -153,8 +153,8 @@ if (msg.channel.name == 'adm-pg-pinhalnovo') {
 		
 		msg.guild.createChannel(nome, "text")
 		criaRaid(nome,nome,"__VAGA[1]__\n"+msg.author.toString())
+		msg.guild.channels.find("name", nome).sendMessage("__VAGA[1]__\n"+msg.author.toString())
 		
-		msg.channels.get(nome).send("__VAGA[1]__\n"+msg.author.toString());
 		
 	}
 	

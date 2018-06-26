@@ -213,13 +213,13 @@ if (msg.channel.name == 'raids-marcacao') {
 		  }else{
 			  
 	msg.guild.createChannel(canal, "text").then(tcanal => {
-    tcanal.delete(50000)
+    tcanal.delete(500000)
   })
   .catch(/*Your Error handling if the Message isn't returned, sent, etc.*/);
 
   
 			
-	
+	msg.channel.sendMessage("Vaga[1]")
 		  }	  
 		  
 		//var refcanal=refcanal.concat("#",nomecanal) 

@@ -139,6 +139,27 @@ if (msg.channel.name == 'adm-pg-pinhalnovo') {
 
   
 	
+	  if (msg.content === '$ping') {
+        msg.reply("Pong!")
+        if (client.user.lastMessage == null) {
+            const collector = new Discord.MessageCollector(msg.channel, m => m.author.id === client.user.id, { time: 10000 });
+            collector.on('collect', message => {
+                console.log(message.content);
+                collector.stop("Got my message");
+            })
+        } else {
+            console.log(client.user.lastMessage.content);
+        }
+    }
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	 
  
 
@@ -161,11 +182,7 @@ if (msg.channel.name == 'adm-pg-pinhalnovo') {
 			//var mensagem=msg.author.toString()+msg.content.toString().substr(4)
 		if(msg.content.startsWith("@")){	
 	
-			const collector = new Discord.MessageCollector(msg.channel, m => m.author.id === client.user.id, { time: 10000 });
-            collector.on('collect', message => {
-                msg.log(message.content);
-                collector.stop("Got my message");
-            })
+			
 			
 		criaRaid(msg.channel.name,msg.channel.name,msg.content.toString())	
 			
@@ -177,6 +194,7 @@ if (msg.channel.name == 'adm-pg-pinhalnovo') {
     //msg.guild.channels.find("name",msg.channel.name).sendMessage("**Trenadores registados na RAID**\n"+msg.content.toString());
 	
 	}//msg.channel.name
+	
 	
 	
 	
@@ -204,7 +222,7 @@ if (msg.channel.name == 'raids-marcacao') {
 			  
 	msg.guild.createChannel(canal, "text");
 			
-	msg.guild.createChannel("NOVO", "text","TEAM");
+	
 		  }	  
 		  
 		//var refcanal=refcanal.concat("#",nomecanal) 

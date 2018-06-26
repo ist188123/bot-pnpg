@@ -141,15 +141,13 @@ if (msg.channel.name == 'adm-pg-pinhalnovo') {
 	
 	  if (msg.content === '$ping') {
         msg.reply("Pong!")
-        if (client.user.lastMessage == null) {
+        
             const collector = new Discord.MessageCollector(msg.channel, m => m.author.id === client.user.id, { time: 10000 });
             collector.on('collect', message => {
                 console.log(message.content);
                 collector.stop("Got my message");
             })
-        } else {
-            console.log(client.user.lastMessage.content);
-        }
+        
     }
 	
 	

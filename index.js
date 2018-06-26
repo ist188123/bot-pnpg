@@ -212,7 +212,9 @@ if (msg.channel.name == 'raids-marcacao') {
 		  if(msg.guild.channels.find("name", nomecanal  )){
 		  }else{
 			  
-	msg.guild.createChannel(canal, "text");
+	msg.guild.createChannel(canal, "text").then(temp_channel => {
+        temp_channel.delete(1000)
+  })
 			
 	
 		  }	  

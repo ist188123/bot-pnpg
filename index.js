@@ -209,7 +209,7 @@ if (msg.channel.name == 'raids-marcacao') {
 		  }else{
 			  
 	msg.guild.createChannel(canal, "text");
-	msg.guild.channels.find("name", canal).sendMessage("Vaga[1]\n"+msg.author.toString())		
+	//msg.guild.channels.find("name", canal).sendMessage("Vaga[1]\n"+msg.author.toString())		
 	
 		  }	  
 		  

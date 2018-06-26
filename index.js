@@ -133,7 +133,7 @@ function info(titulo){
 if (msg.channel.name == 'adm-pg-pinhalnovo') {
 	
 	 if(msg.content.startsWith("!")){
-	info()
+	info(msg.content.toString())
 	
 	 }
 	

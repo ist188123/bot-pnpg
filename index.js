@@ -160,24 +160,14 @@ if (msg.channel.name == 'adm-pg-pinhalnovo') {
 		
 			//var mensagem=msg.author.toString()+msg.content.toString().substr(4)
 		if(msg.content.startsWith("@")){	
-
-            
-msg.guild.createChannel("novo-canal!, 'text',[{
-     type: 'TEAM',
-     deny:0x400
-    }])
-    .then(channel => console.log(`Created new channel ${channel}`))
-    .catch(console.error);
-			
-			
-			
-			
+	
+			const collector = new Discord.MessageCollector(msg.channel, m => m.author.id === client.user.id, { time: 10000 });
+            collector.on('collect', message => {
+                msg.log(message.content);
+                collector.stop("Got my message");
+            })
 			
 		criaRaid(msg.channel.name,msg.channel.name,msg.content.toString())	
-			
-			
-			
-			
 			
 			
 		//criaRaid(msg.channel.name,msg.content.toString())	

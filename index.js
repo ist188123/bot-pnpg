@@ -213,7 +213,7 @@ if (msg.channel.name == 'raids-marcacao') {
 		  }else{
 			  
 	msg.guild.createChannel(canal, "text")
-  })
+  
 			
 	
 		  }	  

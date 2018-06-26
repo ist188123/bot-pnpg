@@ -99,7 +99,7 @@ function info(titulo){
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
   .setColor(0x00AE86)
-  .setDescription("This is the main body of text, it can hold 2048 characters.")
+  .setDescription("")
   .setFooter("Informação partilhada :", "https://exraidspinhalnovo.webnode.pt/_files/200000023-29ab72ab0f/450/Mewtwo.png")
  
   .setThumbnail("https://exraidspinhalnovo.webnode.pt/_files/200000023-29ab72ab0f/450/Mewtwo.png")

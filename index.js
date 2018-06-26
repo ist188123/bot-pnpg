@@ -152,8 +152,9 @@ if (msg.channel.name == 'adm-pg-pinhalnovo') {
 	function criacanal(nome){
 		
 		msg.guild.createChannel(nome, "text")
-		criaRaid(nome,nome,"**__INSCRITOS__**\n"+msg.author.toString())
+		criaRaid(nome,nome,"__VAGA[1]__\n"+msg.author.toString())
 		
+		msg.channels.get(nome).send("__VAGA[1]__\n"+msg.author.toString());
 		
 	}
 	
@@ -183,7 +184,7 @@ if (msg.channel.name == 'adm-pg-pinhalnovo') {
 	      //  msg.guild.channels.find("name",msg.channel.name).sendMessage("Inserido na RAID :"+msg.author.toString());	
 		
 			//var mensagem=msg.author.toString()+msg.content.toString().substr(4)
-		if(msg.content.startsWith("INSCRITOS")){	
+		if(msg.content.startsWith("VAGA[1]")){	
 	
 			
 			

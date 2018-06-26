@@ -107,7 +107,7 @@ function info(titulo){
    * Takes a Date object, defaults to current date.
    */
   .setTimestamp()
-  
+  .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
   
   /*
    * Blank field, useful to create some space.

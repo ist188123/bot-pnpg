@@ -50,7 +50,7 @@ for (var i=0;i<y.length-1;i++){
 	
 	
    const embed = new Discord.RichEmbed()
-   .setTitle(horas)
+   .setTitle(":clock1: "+horas)
   .setAuthor(local.toUpperCase(), "https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png")
   
    /*

@@ -212,14 +212,13 @@ if (msg.channel.name == 'raids-marcacao') {
 		  if(msg.guild.channels.find("name", nomecanal  )){
 		  }else{
 			  
-	msg.guild.createChannel(canal, "text").then(tcanal => {
-    tcanal.delete(500000)
-  })
-  .catch(/*Your Error handling if the Message isn't returned, sent, etc.*/);
-
+	msg.guild.createChannel(canal, "text")
+		
+		
+	
   
-			
-	msg.channel.sendMessage("Vaga[1]")
+	msg.guild.channels.find("name", nomecanal).sendMessage("Vaga[1]\n",+msg.author.toString());			
+	//msg.channel.sendMessage("Vaga[1]")
 		  }	  
 		  
 		//var refcanal=refcanal.concat("#",nomecanal) 

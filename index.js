@@ -218,7 +218,8 @@ if (msg.channel.name == 'raids-marcacao') {
 	
   
 	//msg.guild.channels.find("name", nomecanal).sendMessage("Vaga[1]");			
-	msg.channel.sendMessage("Vaga[1]"+canal)
+	msg.channel.sendMessage("Vaga[1]"+canal.split(' ').join('-'))
+			  msg.channels.get(canal.split(' ').join('-')).send('My Message');
 		  }	  
 		  
 		//var refcanal=refcanal.concat("#",nomecanal) 

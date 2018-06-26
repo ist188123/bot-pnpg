@@ -217,7 +217,7 @@ if (msg.channel.name == 'raids-marcacao') {
 		
 	
   
-	msg.guild.channels.find("name", nomecanal).sendMessage("Vaga[1]");			
+	//msg.guild.channels.find("name", nomecanal).sendMessage("Vaga[1]");			
 	//msg.channel.sendMessage("Vaga[1]")
 		  }	  
 		  

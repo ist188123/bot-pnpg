@@ -152,7 +152,7 @@ if (msg.channel.name == 'adm-pg-pinhalnovo') {
 	function criacanal(nome){
 		
 		msg.guild.createChannel(nome, "text")
-		criaRaid(nome,nome,"Vaga[1]"+msg.author.toString())
+		criaRaid(nome,nome,"Vaga[1]\n"+msg.author.toString())
 		
 		
 	}

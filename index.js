@@ -107,17 +107,13 @@ function info(titulo){
    * Takes a Date object, defaults to current date.
    */
   .setTimestamp()
-  .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
   
-  /*
-   * Inline fields may not display as inline if the thumbnail and/or image is too big.
-   */
-  .addField("Inline Field", "They can also be inline.", true)
+  
   /*
    * Blank field, useful to create some space.
    */
   .addBlankField(true)
-  .addField("Inline Field 3", "You can have a maximum of 25 fields.", true);
+  .addField("INFORMAÇÃO", vinformacao[3], true);
 
   msg.guild.channels.find("name", "informacao").sendMessage({embed})
 	

@@ -153,7 +153,7 @@ if (msg.channel.name == 'adm-pg-pinhalnovo') {
 		
 		
 		
-		if(msg.author.bot) return;
+		//if(msg.author.bot) return;
 		
 		//if(msg.content.startsWith("!")){
 	      //  msg.guild.channels.find("name",msg.channel.name).sendMessage("Inserido na RAID :"+msg.author.toString());	

@@ -137,8 +137,7 @@ if (msg.channel.name == 'adm-pg-pinhalnovo') {
 
 
 
-  
-	
+ 
 	  
 	
 	
@@ -195,7 +194,12 @@ if (msg.channel.name == 'raids-marcacao') {
 	  if(msg.content.startsWith("!5")){
 	  
 	
-		  
+		   msg.reply('Invalid command')
+  .then(msg => {
+    msg.delete(1000)
+  })
+  .catch(/*Your Error handling if the Message isn't returned, sent, etc.*/);
+	
 		 
 		  
   //LE A MENSAGEM EXCLUINDO O !
@@ -209,7 +213,7 @@ if (msg.channel.name == 'raids-marcacao') {
 		  }else{
 			  
 	msg.guild.createChannel(canal, "text");
-	msg.guild.channels.find("name", canal).sendMessage("Vaga[1]")		
+			
 	
 		  }	  
 		  

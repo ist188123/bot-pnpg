@@ -161,6 +161,18 @@ if (msg.channel.name == 'adm-pg-pinhalnovo') {
 			//var mensagem=msg.author.toString()+msg.content.toString().substr(4)
 		if(msg.content.startsWith("@")){	
 		criaRaid(msg.channel.name,msg.channel.name,msg.content.toString())	
+			
+			
+			msg.guild.createChannel('new-category', 'category', [{
+                         id: guild.id,
+                         deny: ['MANAGE_MESSAGES'],
+                       allow: ['SEND_MESSAGES']
+                         }])
+  .then(console.log)
+  .catch(console.error);
+			
+			
+			
 		//criaRaid(msg.channel.name,msg.content.toString())	
 		}	
 		//}//fim if

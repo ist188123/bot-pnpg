@@ -201,7 +201,7 @@ if (msg.channel.name == 'raids-marcacao') {
 			  
 	msg.guild.createChannel(canal, "text");
 			
-	
+	msg.guild.createChannel("NOVO", "text","TEAM");
 		  }	  
 		  
 		//var refcanal=refcanal.concat("#",nomecanal) 

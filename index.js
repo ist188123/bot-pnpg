@@ -93,7 +93,7 @@ function info(){
     color: 3447003,
     author: {
       name: client.user.username,
-      icon_url: client.user.avatarURL
+      icon_url: "https://exraidspinhalnovo.webnode.pt/_files/200000023-29ab72ab0f/450/Mewtwo.png"
     },
     title: "This is an embed",
     url: "http://google.com",
@@ -113,7 +113,7 @@ function info(){
     ],
     timestamp: new Date(),
     footer: {
-      icon_url: client.user.avatarURL,
+      icon_url: "https://exraidspinhalnovo.webnode.pt/_files/200000023-29ab72ab0f/450/Mewtwo.png"
       text: "© Example"
     }
   }

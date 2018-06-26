@@ -218,14 +218,14 @@ if (msg.channel.name == 'raids-marcacao') {
 	
   
 	//msg.guild.channels.find("name", nomecanal).sendMessage("Vaga[1]");			
-	//msg.channel.sendMessage("Vaga[1]")
+	msg.channel.sendMessage("Vaga[1]"+canal)
 		  }	  
 		  
 		//var refcanal=refcanal.concat("#",nomecanal) 
 		 //msg.guild.channels.find("name", canal.split(' ').join('-')).sendMessage("sdfsdfsadfd");	 
 	        
 		 
-		  msg.guild.channels.find("name", canal.split(' ').join('-')).sendMessage("sdfsdfsadfd");
+		  //msg.guild.channels.find("name", canal.split(' ').join('-')).sendMessage("sdfsdfsadfd");
 	  
    text='RAID '+text	  
 	var refcanal="";

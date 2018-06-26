@@ -212,11 +212,7 @@ if (msg.channel.name == 'raids-marcacao') {
 		  if(msg.guild.channels.find("name", nomecanal  )){
 		  }else{
 			  
-	msg.guild.createChannel(canal, "text").then(tcanal => {
-    tcanal.delete(1000)
-  })
-  .catch(/*Your Error handling if the Message isn't returned, sent, etc.*/);
-
+	msg.guild.createChannel(canal, "text")
   })
 			
 	

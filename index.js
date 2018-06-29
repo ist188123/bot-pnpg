@@ -32,18 +32,18 @@ bot.on('ready', () => {
         return;
       }
   
-      var autor=""
+     
       // Only delete messages if the channel type is TextChannel
       // DO NOT delete messages in DM Channel or Group DM Channel
       if (message.channel.type == 'text') {
         message.channel.fetchMessages()
           .then(messages => {
            // message.channel.bulkDelete(messages);
-         autor=autor+ messages.author.toString()
+        
             messagesDeleted = messages.array().length; // number of messages deleted
 
             // Logging the number of messages deleted on both the channel and console.
-            message.channel.sendMessage("Deletion of messages successful. Total messages deleted: "+autor);
+            message.channel.sendMessage("Deletion of messages successful. Total messages deleted: "+messages.author.toString());
             console.log('Deletion of messages successful. Total messages deleted: '+messagesDeleted)
           })
           .catch(err => {

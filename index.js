@@ -16,6 +16,24 @@ const bot = new Discord.Client();
 bot.on('ready', () => {
   console.log('ClearMessagesBot is Ready!');
   bot.on('message', message => {
+    
+    
+    
+    if (message.content === 'spec'){
+        message.author.send("See or Change?");
+        const collector = new Discord.MessageCollector(message.channel, m => m.author.id === message.author.id, { time: 10000 });
+        console.log(collector)
+        collector.on('collect', message => {
+            if (message.content == "See") {
+                message.channel.send("You Want To See Someones Spec OK!");
+            } else if (message.content == "Change") {
+                message.channel.send("You Want To Change Your Spec OK!");
+            }
+        })
+    
+    
+    
+    
     if (message.content == CLEAR_MESSAGES) {
 
       // Check the following permissions before deleting messages:
@@ -38,8 +56,8 @@ bot.on('ready', () => {
       if (message.channel.type == 'text') {
         message.channel.fetchMessages()
           .then(messages => {
-           // message.channel.bulkDelete(messages);
-        
+          message.channel.bulkDelete(messages);
+       
             messagesDeleted = messages.array().length; // number of messages deleted
 
             // Logging the number of messages deleted on both the channel and console.

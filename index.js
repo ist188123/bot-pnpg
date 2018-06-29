@@ -1,167 +1,57 @@
+
+/*
+  A bot to clear/delete messages of a channel
+  Usage: !clearMessages  ==> clears all messages of
+  that channel on which the command was run
+*/
+
+const CLEAR_MESSAGES = '!clearMessages';
+
 const Discord = require('discord.js');
-const client = new Discord.Client();
- 
+const bot = new Discord.Client();
+
+// Token of my bot
 
 
+bot.on('ready', () => {
+  console.log('ClearMessagesBot is Ready!');
+  bot.on('message', message => {
+    if (message.content == CLEAR_MESSAGES) {
 
+      // Check the following permissions before deleting messages:
+      //    1. Check if the user has enough permissions
+      //    2. Check if I have the permission to execute the command
 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
+      if (!message.channel.permissionsFor(message.author).hasPermission("MANAGE_MESSAGES")) {
+        message.channel.sendMessage("Sorry, you don't have the permission to execute the command \""+message.content+"\"");
+        console.log("Sorry, you don't have the permission to execute the command \""+message.content+"\"");
+        return;
+      } else if (!message.channel.permissionsFor(bot.user).hasPermission("MANAGE_MESSAGES")) {
+        message.channel.sendMessage("Sorry, I don't have the permission to execute the command \""+message.content+"\"");
+        console.log("Sorry, I don't have the permission to execute the command \""+message.content+"\"");
+        return;
+      }
+
+      // Only delete messages if the channel type is TextChannel
+      // DO NOT delete messages in DM Channel or Group DM Channel
+      if (message.channel.type == 'text') {
+        message.channel.fetchMessages()
+          .then(messages => {
+            message.channel.bulkDelete(messages);
+            messagesDeleted = messages.array().length; // number of messages deleted
+
+            // Logging the number of messages deleted on both the channel and console.
+            message.channel.sendMessage("Deletion of messages successful. Total messages deleted: "+messagesDeleted);
+            console.log('Deletion of messages successful. Total messages deleted: '+messagesDeleted)
+          })
+          .catch(err => {
+            console.log('Error while doing Bulk Delete');
+            console.log(err);
+          });
+      }
+    }
+  });
 });
-
-
-
-
-client.on('message', msg => {
-
-
-//funcao
-
-
-function criaRaid(ncanal,text,treinador){
-  //inicio mensagem
-   const embed = new Discord.RichEmbed()
-   .setTitle(text.substr(text.indexOf('!')+1))
-  .setAuthor(text.substr(0,text.indexOf('!')-1), "https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png")
-  
-   /*
-   * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
-   */
-  .setColor(0x00AE86)
-  .setDescription("Para se inscrever utilize o canal: #"+ncanal )
-  .setFooter("PG pinhal novo, pubicado :", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
- // .setImage("http://i.imgur.com/yVpymuV.png")
-  .setThumbnail("https://exraidspinhalnovo.webnode.pt/_files/200000018-6874a696da/450/regice.png")
-  /*
-   * Takes a Date object, defaults to current date.
-   */
-  .setTimestamp()
-  .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
-  .addField("Niveis CP",
-   "1682 - 1764 / 2103-2205 Nuvens(cloudy)\n\n")
-  /*
-   * lista dos jogadores que vão RAID.
-   */
-  .addField("Treinadores:",treinador , true)
-  /*
-   * Blank field, useful to create some space.
-   */
-  .addBlankField(true)
-  .addField("\n\n\n\n\n\Fraco contra:", "Entei (Fire Spin/Overheat)\n" +
-"Moltres (Fire Spin/Overheat)\n" +
-"Charizard (Fire Spin/Blast Burn)\n" +
-"Flareon (Fire Spin/Overheat)\n" +
-"Ho-Oh (Steel Wing/Fire Blast)\n" +
-"Machamp (Counter/Dynamic Punch)\n" +
-"Tyranitar (Smack Down/Stone Edge)\n" +
-"Blaziken (Counter/Overheat)\n" +
-"Breloom (Counter/Dynamic Punch)", true);  
-   msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage({embed});	  
-	
-
-
-
-
-}
-
-
-
-// fim funcao
-
-
-
-
-
-
-
-
-
-  
-	
-	 
- 
-
-	
-	
-	
-	
-	
-	
-	if (msg.channel.name.startsWith('_raid')) {
-		
-		
-		
-		
-		
-		
-		if(msg.content.startsWith("!vou")){
-	        msg.guild.channels.find("name",msg.channel.name).sendMessage("Inserido na RAID :"+msg.author.toString());	
-			
-			
-		criaRaid(msg.channel.name,"!raid5 piscina !12h30".substring(1),msg.author.toString())	
-		
-			
-		}//fim if
-	    
-	
-	
-	
-	}//msg.channel.name
-	
-	
-	
-if (msg.channel.name == 'raids-marcacao') {
-		
-
-	
- 
-	  
-	  if(msg.content.startsWith("!5")){
-	  
-	
-		  
-		 
-		  
-  //LE A MENSAGEM EXCLUINDO O !
-     var text = msg.content.substring(1);
- 
-		  var canal='_raid'+text
-		  canal=canal.split('!').join('').toLowerCase();
-		 var nomecanal=canal.split(' ').join('-').toLowerCase();
-	//cria canal
-		  if(msg.guild.channels.find("name", nomecanal  )){
-		  }else{
-			  
-	       msg.guild.createChannel(canal, "text");
-			
-	
-		  }	  
-		  
-		//var refcanal=refcanal.concat("#",nomecanal) 
-		 //msg.guild.channels.find("name", canal.split(' ').join('-')).sendMessage("sdfsdfsadfd");	 
-	        
-		 
-		  
-	  
-   text='RAID '+text	  
-	var refcanal="";
-		  
-    
-	  
-	  
-	  
-  }   // fim do inicio carater
- 
-	
-	
-		
-	}
-});//final
-
-
-
-
-
 
 
 

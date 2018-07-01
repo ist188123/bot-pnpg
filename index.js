@@ -46,7 +46,7 @@ bot.on('ready', () => {
 
       if (!message.channel.permissionsFor(message.author).hasPermission("MANAGE_MESSAGES")) {
         message.channel.sendMessage("Sorry, you don't have the permission to execute the command "+message.content);
-        console.log("Sorry, you don't have the permission to execute the command \"+message.content+"\");
+        console.log("Sorry, you don't have the permission to execute the command "+message.content);
         return;
       } else if (!message.channel.permissionsFor(bot.user).hasPermission("MANAGE_MESSAGES")) {
         message.channel.sendMessage("Sorry, I don't have the permission to execute the command "+message.content);

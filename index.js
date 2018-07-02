@@ -28,30 +28,18 @@ var bicho=thoras;
         //ovo 5
       var ovo="https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png";
        
-	
+	var braid=ovo;   
      
        
        
          message.guild.channels.find("name", "ddd").sendMessage(bicho[1]+" - "+bicho[2]);
-      
-         
+      //------
+	if(bicho[1].startsWith('5')){
+        ovo=ovo;
+       
+        braid=ovo;    
 	    
-	  //ovos  
-     if(bicho[1].startsWith('4')){
-        ovo="https://exraidspinhalnovo.webnode.pt/_files/200000027-959cf96a39/200/4.png";
-       }   
-	    
-        //bicho
-	    
-	var braid=ovo;   
-	    
-	if(bicho[1].startsWith('absol')){
-         braid="https://exraidspinhalnovo.webnode.pt/_files/200000028-3bf1a3ce89/450/apsol.png";
-       }      
-	      
-	    
-     
-       if(bicho[2].startsWith('ohoh')){
+	  if(bicho[2].startsWith('ohoh')){
          braid="https://exraidspinhalnovo.webnode.pt/_files/200000026-5ec255fb74/450/Ho-Oh.png";
        }
 	    
@@ -59,10 +47,53 @@ var bicho=thoras;
       if(bicho[2].startsWith('articune')){
          braid="https://exraidspinhalnovo.webnode.pt/_files/200000030-050b3060a3/450/articune.png";
        }   
-	   
+	     
+	}//----    
+	    
+	    
+	    
+         
+	    
+	  //----  
+     if(bicho[1].startsWith('4')){
+        ovo="https://exraidspinhalnovo.webnode.pt/_files/200000027-959cf96a39/200/4.png";
+       
+        braid=ovo;
+     
+     if(bicho[2].startsWith('absol')){
+         braid="https://exraidspinhalnovo.webnode.pt/_files/200000028-3bf1a3ce89/450/apsol.png";
+       }      
+	      
 	 if(bicho[2].startsWith('tyra')){
          braid="https://exraidspinhalnovo.webnode.pt/_files/200000029-e0378e12f0/450/tyra.png";
        } 
+     } //----  
+	    
+	  
+	    
+	    
+	    
+	    
+	 //-----   
+	if(bicho[1].startsWith('3')){
+        ovo="https://exraidspinhalnovo.webnode.pt/_files/200000027-959cf96a39/200/4.png";
+      
+		braid=ovo;   
+		
+		//bicho
+	if(bicho[2].startsWith('machamp')){
+         braid="https://exraidspinhalnovo.webnode.pt/_files/200000031-dcf97ddeea/450/pokemon_icon_068_00.png";
+       }     
+	}   
+	//----     
+	    
+      
+	
+	    
+	   
+     
+       
+	
 	
 	    
       

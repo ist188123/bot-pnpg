@@ -29,8 +29,14 @@ bot.on('ready', () => {
    
       var braid="https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png"
       var ovo="https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png"
-       var bicho=message.content.split("!")
        
+      var bicho=message.content.split("!")
+       
+         message.channel.send(braid)
+         message.channel.send(bicho)
+      
+      
+      
        if(bicho[0]=='hoho'){
          braid="https://exraidspinhalnovo.webnode.pt/_files/200000015-2acec2bcfd/200/ohoh.jpg"
        }
@@ -41,7 +47,7 @@ bot.on('ready', () => {
          
        }
        
-       
+      
        
        
     const embed = new Discord.RichEmbed()

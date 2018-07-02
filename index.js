@@ -30,7 +30,7 @@ bot.on('ready', () => {
      
        
        
-         message.guild.channels.find("name", "ddd").sendMessage(bicho[0]);
+         message.guild.channels.find("name", "ddd").sendMessage(bicho);
       
       
       

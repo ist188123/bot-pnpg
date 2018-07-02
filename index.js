@@ -40,7 +40,7 @@ bot.on('ready', () => {
       
       
        if(bicho[1].startsWith('hoho')){
-         braid="https://exraidspinhalnovo.webnode.pt/_files/200000015-2acec2bcfd/200/ohoh.jpg";
+         braid="https://exraidspinhalnovo.webnode.pt/_files/200000026-5ec255fb74/450/Ho-Oh.png";
        }
        
        if(bicho[2]==5){

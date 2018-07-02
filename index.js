@@ -62,7 +62,7 @@ bot.on('ready', () => {
   .setDescription("This is the main body of text, it can hold 2048 characters.")
   .setFooter("This is the footer text, it can hold 2048 characters", braid)
   .setImage(braid)
-  .setThumbnail("http://i.imgur.com/p2qNFag.png")
+  .setThumbnail(braid)
   /*
    * Takes a Date object, defaults to current date.
    */

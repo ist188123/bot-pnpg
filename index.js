@@ -35,11 +35,11 @@ bot.on('ready', () => {
      
        
        
-         message.guild.channels.find("name", "ddd").sendMessage(bicho);
+         message.guild.channels.find("name", "ddd").sendMessage(bicho[1]);
       
       
       
-       if(bicho[0]=='hoho'){
+       if(bicho[1]=='hoho'){
          braid="https://exraidspinhalnovo.webnode.pt/_files/200000015-2acec2bcfd/200/ohoh.jpg"
        }
        

@@ -21,7 +21,7 @@ bot.on('ready', () => {
     
     //----
     
-     if (message.content == CLEAR_MESSAGES) {
+     if (message.content == '%') {
     const embed = new Discord.RichEmbed()
   .setTitle("This is your title, it can hold 256 characters")
   .setAuthor("Author Name", "https://i.imgur.com/lm8s41J.png")

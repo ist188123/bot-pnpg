@@ -28,7 +28,7 @@ bot.on('ready', () => {
      if (message.content == '%') {
    
       var braid="https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png"
-       bicho=bicho.totaltreinadores.split("!")
+       var bicho=message.content.split("!")
        
        if(bicho[0]=='hoho'){
          braid="https://exraidspinhalnovo.webnode.pt/_files/200000015-2acec2bcfd/200/ohoh.jpg"

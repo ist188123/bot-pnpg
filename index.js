@@ -24,7 +24,7 @@ bot.on('ready', () => {
      if (message.content == '%') {
     const embed = new Discord.RichEmbed()
   .setTitle("This is your title, it can hold 256 characters")
-  .setAuthor("Author Name", "https://i.imgur.com/lm8s41J.png")
+  .setAuthor("Author Name", ":hockey: ")
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */

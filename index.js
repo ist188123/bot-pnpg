@@ -28,22 +28,31 @@ bot.on('ready', () => {
      if (message.content == '%') {
    
       var braid="https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png"
+      var ovo="https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png"
        var bicho=message.content.split("!")
        
        if(bicho[0]=='hoho'){
          braid="https://exraidspinhalnovo.webnode.pt/_files/200000015-2acec2bcfd/200/ohoh.jpg"
        }
        
+       if(bicho[1]==5){
+         ovo="https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png"
+         
+         
+       }
+       
+       
+       
        
     const embed = new Discord.RichEmbed()
   .setTitle("This is your title, it can hold 256 characters")
-  .setAuthor("Author Name", braid)
+  .setAuthor("Author Name", ovo)
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
   .setColor(0x00AE86)
   .setDescription("This is the main body of text, it can hold 2048 characters.")
-  .setFooter("This is the footer text, it can hold 2048 characters", "http://i.imgur.com/w1vhFSR.png")
+  .setFooter("This is the footer text, it can hold 2048 characters", braid)
   .setImage("https://drive.google.com/open?id=1pQB0L358QJ5cgF9bBJjby67t4Bpegebe")
   .setThumbnail("http://i.imgur.com/p2qNFag.png")
   /*

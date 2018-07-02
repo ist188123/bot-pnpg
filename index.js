@@ -24,31 +24,33 @@ bot.on('ready', () => {
       
       var thoras=msgnew.split("!")
 		
-	    var bicho=thoras;
-      
-      
-      
-   
-     //ovo 5
+var bicho=thoras;
+        //ovo 5
       var ovo="https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png";
-       var braid=ovo; 
+       
 	
      
        
        
          message.guild.channels.find("name", "ddd").sendMessage(bicho[1]+" - "+bicho[2]);
       
-       if(bicho[1].startsWith('absol')){
-         braid="https://exraidspinhalnovo.webnode.pt/_files/200000028-3bf1a3ce89/450/apsol.png";
-       }      
-	    
+         
 	    
 	  //ovos  
      if(bicho[1].startsWith('4')){
         ovo="https://exraidspinhalnovo.webnode.pt/_files/200000027-959cf96a39/200/4.png";
-       }    
-       
-      //bicho
+       }   
+	    
+        //bicho
+	    
+	var braid=ovo;   
+	    
+	if(bicho[1].startsWith('absol')){
+         braid="https://exraidspinhalnovo.webnode.pt/_files/200000028-3bf1a3ce89/450/apsol.png";
+       }      
+	      
+	    
+     
        if(bicho[2].startsWith('ohoh')){
          braid="https://exraidspinhalnovo.webnode.pt/_files/200000026-5ec255fb74/450/Ho-Oh.png";
        }

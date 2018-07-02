@@ -22,7 +22,7 @@ bot.on('ready', () => {
     //----
     function sendmsg(msgnew){
       
-      var thoras=msgnew.split("-")
+      var thoras=msgnew.split("!")
 		
 	    var bicho=thoras
       

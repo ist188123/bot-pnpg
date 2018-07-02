@@ -38,8 +38,17 @@ bot.on('ready', () => {
        
          message.guild.channels.find("name", "ddd").sendMessage(bicho[1]+" - "+bicho[2]);
       
-      
-      
+       if(bicho[1].startsWith('absol')){
+         braid="https://exraidspinhalnovo.webnode.pt/_files/200000028-3bf1a3ce89/450/apsol.png";
+       }      
+	    
+	    
+	  //ovos  
+     if(bicho[1].startsWith('4')){
+        ovo="https://exraidspinhalnovo.webnode.pt/_files/200000027-959cf96a39/200/4.png";
+       }    
+       
+      //bicho
        if(bicho[2].startsWith('ohoh')){
          braid="https://exraidspinhalnovo.webnode.pt/_files/200000026-5ec255fb74/450/Ho-Oh.png";
        }
@@ -54,16 +63,7 @@ bot.on('ready', () => {
        } 
 	
 	    
-       if(bicho[1].startsWith('absol')){
-         braid="https://exraidspinhalnovo.webnode.pt/_files/200000028-3bf1a3ce89/450/apsol.png";
-       }      
-	    
-	    
-	  //ovos  
-     if(bicho[1].startsWith('4')){
-        ovo="https://exraidspinhalnovo.webnode.pt/_files/200000027-959cf96a39/200/4.png";
-       }    
-       
+      
       
        
       

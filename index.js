@@ -24,13 +24,13 @@ bot.on('ready', () => {
       
       var thoras=msgnew.split("!")
 		
-	    var bicho=thoras
+	    var bicho=thoras;
       
       
       
    
-      var braid="https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png"
-      var ovo="https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png"
+      var braid="https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png";
+      var ovo="https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png";
        
      
        
@@ -40,11 +40,11 @@ bot.on('ready', () => {
       
       
        if(bicho[1]=='hoho'){
-         braid="https://exraidspinhalnovo.webnode.pt/_files/200000015-2acec2bcfd/200/ohoh.jpg"
+         braid="https://exraidspinhalnovo.webnode.pt/_files/200000015-2acec2bcfd/200/ohoh.jpg";
        }
        
-       if(bicho[1]==5){
-         ovo="https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png"
+       if(bicho[2]==5){
+         ovo="https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png";
          
          
        }
@@ -90,7 +90,7 @@ bot.on('ready', () => {
      if (message.content.startsWith('!')) {
        
        sendmsg(message.content)
-       
+      
      }
     
     //----

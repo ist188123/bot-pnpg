@@ -32,7 +32,7 @@ bot.on('ready', () => {
        
       var bicho=message.content.split("!")
        
-         message.channel.send(braid)
+         
          message.channel.send(bicho)
       
       

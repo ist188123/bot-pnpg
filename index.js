@@ -18,13 +18,26 @@ bot.on('ready', () => {
   bot.on('message', message => {
     
     
-    
+    var bicho="";
     //----
     
+    
+    
+   
+    
      if (message.content == '%') {
+   
+      var braid="https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png"
+       bicho=bicho.totaltreinadores.split("!")
+       
+       if(bicho[0]=='hoho'){
+         braid="https://exraidspinhalnovo.webnode.pt/_files/200000015-2acec2bcfd/200/ohoh.jpg"
+       }
+       
+       
     const embed = new Discord.RichEmbed()
   .setTitle("This is your title, it can hold 256 characters")
-  .setAuthor("Author Name", ":hockey: ")
+  .setAuthor("Author Name", braid)
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */

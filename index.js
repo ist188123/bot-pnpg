@@ -24,7 +24,7 @@ bot.on('ready', () => {
     
     
    
-  if( message.author.id) return
+  
      if (message.content.startsWith('!')) {
    
       var braid="https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png"

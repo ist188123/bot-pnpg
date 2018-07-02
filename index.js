@@ -29,9 +29,10 @@ bot.on('ready', () => {
       
       
    
-      var braid="https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png";
+     //ovo 5
       var ovo="https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png";
-       
+       var braid=ovo; 
+	
      
        
        
@@ -39,15 +40,31 @@ bot.on('ready', () => {
       
       
       
-       if(bicho[1].startsWith('hoho')){
+       if(bicho[1].startsWith('ohoh')){
          braid="https://exraidspinhalnovo.webnode.pt/_files/200000026-5ec255fb74/450/Ho-Oh.png";
        }
+	    
+	    
+      if(bicho[1].startsWith('articune')){
+         braid="https://exraidspinhalnovo.webnode.pt/_files/200000026-5ec255fb74/450/Ho-Oh.png";
+       }   
+	   
+	 if(bicho[1].startsWith('tyra')){
+         braid="https://exraidspinhalnovo.webnode.pt/_files/200000029-e0378e12f0/450/tyra.png";
+       } 
+	
+	    
+       if(bicho[1].startsWith('absol')){
+         braid="https://exraidspinhalnovo.webnode.pt/_files/200000028-3bf1a3ce89/450/apsol.png";
+       }      
+	    
+	    
+	  //ovos  
+     if(bicho[0].startsWith('4')){
+        ovo="https://exraidspinhalnovo.webnode.pt/_files/200000027-959cf96a39/200/4.png";
+       }    
        
-       if(bicho[2]==5){
-         ovo="https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png";
-         
-         
-       }
+      
        
       
        

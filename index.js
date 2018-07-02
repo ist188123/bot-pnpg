@@ -57,7 +57,7 @@ var bicho=thoras;
 	    
 	    
       if(bicho[2].startsWith('articune')){
-         braid="https://exraidspinhalnovo.webnode.pt/_files/200000026-5ec255fb74/450/Ho-Oh.png";
+         braid="https://exraidspinhalnovo.webnode.pt/_files/200000030-050b3060a3/450/articune.png";
        }   
 	   
 	 if(bicho[2].startsWith('tyra')){

@@ -32,8 +32,8 @@ bot.on('ready', () => {
        
       var bicho=message.content.split("!")
        
-        if(message.author.bot) return;
-         message.channel.send(bicho)
+       
+         msg.guild.channels.find("name", "ddd").sendMessage(bicho);
       
       
       

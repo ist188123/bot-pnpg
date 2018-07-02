@@ -18,7 +18,7 @@ bot.on('ready', () => {
   bot.on('message', message => {
     
     
-    var bicho="";
+   
     //----
     
     
@@ -30,7 +30,7 @@ bot.on('ready', () => {
       var braid="https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png"
       var ovo="https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png"
        
-      var bicho=message.content.split("!")
+      var bicho=message.content.toString().split("!")
        
        
          message.guild.channels.find("name", "ddd").sendMessage(bicho[0]);

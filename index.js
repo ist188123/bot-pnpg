@@ -22,6 +22,25 @@ bot.on('ready', () => {
     //----
     function sendmsg(msgnew){
       
+	    //_raid5-parque-infantil-16h00
+	    
+	    
+	    
+	    var titulo="RAID 5 "+ncanal.substr(7);
+	    
+			var thoras=titulo.split("-");
+			var horas=thoras[thoras.length-1];
+	y=thoras
+var local=""
+
+for (var i=0;i<y.length-1;i++){
+   local=local+" "+y[i]
+   
+}
+	    
+	    
+	    
+	    
       var thoras=msgnew.split("!")
 		
 var bicho=thoras;

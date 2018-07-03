@@ -51,9 +51,6 @@ var bicho=thoras;
 	}//----    
 	    
 	    
-	    
-         
-	    
 	  //----  
      if(bicho[1].startsWith('4')){
         ovo="https://exraidspinhalnovo.webnode.pt/_files/200000027-959cf96a39/200/4.png";
@@ -68,10 +65,6 @@ var bicho=thoras;
          braid="https://exraidspinhalnovo.webnode.pt/_files/200000029-e0378e12f0/450/tyra.png";
        } 
      } //----  
-	    
-	  
-	    
-	    
 	    
 	    
 	 //-----   
@@ -88,18 +81,7 @@ var bicho=thoras;
 	//----     
 	    
       
-	
-	    
-	   
-     
-       
-	
-	
-	    
-      
-      
-       
-      
+	 
        
        
     const embed = new Discord.RichEmbed()
@@ -139,7 +121,9 @@ var bicho=thoras;
   
      if (message.content.startsWith('!')) {
        
-       sendmsg(message.content)
+       //sendmsg(message.content)
+	     sendmsg("_raid5-parque-infantil-16h00")
+	    
       
      }
     

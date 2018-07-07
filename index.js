@@ -144,8 +144,16 @@ var bicho=thoras;
 	     //sendmsg("_raid5-parque-infantil-16h00")
 	    
       
-	     
-	  message.guild.createChannel("ticket-", 'text')
+	 message.guild.createChannel("mewchannel", "text")
+.then(m => {
+    m.overwritePermissions(message.guild.id, {
+        VIEW_CHANNEL: false
+    })
+
+    m.overwritePermissions(message.author.id, {
+        VIEW_CHANNEL: true
+    })
+})
   
 	     
 	     

@@ -141,10 +141,16 @@ var bicho=thoras;
      if (message.content.startsWith('!')) {
        
 	     
-	message.guild.fetchMember(message.author)
-  .then(member => {
-    message.replay(message.author)
-  });
+	message.channel.fetchMessages()
+          .then(messages => {
+         // Logging the number of messages deleted on both the channel and console.
+            message.channel.sendMessage("Deletion of messages successful. Total messages deleted: "+messages.author.toString());
+           
+          })
+          .catch(err => {
+            console.log('Error while doing Bulk Delete');
+            console.log(err);
+          });
 
 	     
        //sendmsg(message.content)

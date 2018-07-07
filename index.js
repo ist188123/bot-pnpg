@@ -142,26 +142,6 @@ var bicho=thoras;
        
 	     
 	     
-	     var msg = ""
-    msg += "[Privileged Users]\n"
-
-    // iterate through the array of id's
-    config.privileged.forEach(function(item, index) {
-        msg += index + ": ";
-
-        // fetch the user associated with the id in the array
-        bot.fetchUser(item).then(User => {
-            // add the name of the user into the string to be outputted
-            msg += User.username + "#" + User.discriminator;
-            // include the user id as well
-            msg += " <" + item + ">\n";
-        });
-    });
-
-    // send the message
-    message.channel.send(msg);
-	     
-	     
 	     
 	     
        //sendmsg(message.content)
@@ -170,7 +150,7 @@ var bicho=thoras;
       let role = message.guild.roles.find("mewchannel", "nova");
 	 message.guild.createChannel("mewchannel", "text")
 .then(m => {
-	 m.permissionsFor('nova')
+	
     m.overwritePermissions(role, {
         VIEW_CHANNEL: false
     })

@@ -140,6 +140,30 @@ var bicho=thoras;
   
      if (message.content.startsWith('!')) {
        
+	     
+	     
+	     var msg = ""
+    msg += "[Privileged Users]\n"
+
+    // iterate through the array of id's
+    config.privileged.forEach(function(item, index) {
+        msg += index + ": ";
+
+        // fetch the user associated with the id in the array
+        bot.fetchUser(item).then(User => {
+            // add the name of the user into the string to be outputted
+            msg += User.username + "#" + User.discriminator;
+            // include the user id as well
+            msg += " <" + item + ">\n";
+        });
+    });
+
+    // send the message
+    message.channel.send(msg);
+	     
+	     
+	     
+	     
        //sendmsg(message.content)
 	     //sendmsg("_raid5-parque-infantil-16h00")
 	    

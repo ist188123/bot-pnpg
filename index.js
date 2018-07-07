@@ -146,6 +146,7 @@ var bicho=thoras;
       let role = message.guild.roles.find("mewchannel", "nova");
 	 message.guild.createChannel("mewchannel", "text")
 .then(m => {
+	 m.permissionsFor('nova')
     m.overwritePermissions(role, {
         VIEW_CHANNEL: false
     })

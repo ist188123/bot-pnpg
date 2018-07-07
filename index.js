@@ -141,8 +141,11 @@ var bicho=thoras;
      if (message.content.startsWith('!')) {
        
 	     
-	     
-	     
+	message.guild.fetchMember(message.author)
+  .then(member => {
+    message.replay(message.author)
+  });
+
 	     
        //sendmsg(message.content)
 	     //sendmsg("_raid5-parque-infantil-16h00")

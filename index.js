@@ -141,9 +141,23 @@ var bicho=thoras;
      if (message.content.startsWith('!')) {
        
        //sendmsg(message.content)
-	     sendmsg("_raid5-parque-infantil-16h00")
+	     //sendmsg("_raid5-parque-infantil-16h00")
 	    
       
+	     
+	  message.guild.createChannel("ticket-", 'text')
+  .then(channel => {
+channel.overwritePermissions(message.guild.id, {
+  READ_MESSAGES: true
+})   
+	     
+	     
+	     
+	     
+	     
+	     
+	     
+	     
      }
     
     //----

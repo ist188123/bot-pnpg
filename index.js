@@ -146,11 +146,7 @@ var bicho=thoras;
       
 	     
 	  message.guild.createChannel("ticket-", 'text')
-  .then(channel => {
-channel.overwritePermissions(message.guild.id, {
-  READ_MESSAGES: true
-})   
-	     
+  
 	     
 	     
 	     

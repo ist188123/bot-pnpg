@@ -157,13 +157,19 @@ var bicho=thoras;
 	     //sendmsg("_raid5-parque-infantil-16h00")
 	    
       
-	   message.guild.createChannel("novocanal, 'voice', ('@everyone', {
-       VIEW_CHANNEL: false
-}),('nova',{
-		VIEW_CHANNEL: true   
-		   
-	   })
-	     )  
+	  let role = message.guild.roles.find("mewchannel", "nova");
+	 message.guild.createChannel("mewchannel", "text")
+.then(m => {
+	
+    m.overwritePermissions(role, {
+        VIEW_CHANNEL: false
+    })
+
+    m.overwritePermissions(role, {
+        VIEW_CHANNEL: false
+    })
+})
+  
 	     
 	
 	     

@@ -6,9 +6,16 @@ const client = new Discord.Client();
 client.on('message', msg => {
   
   if (msg.content.startsWith('!')) {
-  const guildMember = msg.member;
-  guildMember.addRole('bot-added-role');
+  
 
+    let role = msg.guild.roles.find("name", "bot-added-role");
+        msg.author.addRole(role);
+    
+    
+    
+    
+    
+    
 
   }
 

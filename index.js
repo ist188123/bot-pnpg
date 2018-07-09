@@ -20,12 +20,9 @@ client.on('message', msg => {
  if (msg.content.startsWith('!')) {
 
   
-
-  msg.guild.createChannel("tal-canal", "text")
-  .then(canal => {
-    canal.delete(40000)
-  })
-  
+channel.fetchMessages({ limit: 10 })
+  .then(messages => console.log(`Received ${messages.size} messages`))
+  .catch(console.error);
   
   
   

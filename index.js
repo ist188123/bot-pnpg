@@ -75,6 +75,52 @@ bot.on('ready', () => {
 	   if (message.content.startsWith('!')) {
          
 		   
+	//----------------	   
+		   
+		   
+	 const embed = new Discord.RichEmbed()
+  .setTitle("This is your title, it can hold 256 characters")
+  .setAuthor("Author Name", "https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png")
+  /*
+   * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
+   */
+  .setColor(0x00AE86)
+  .setDescription("This is the main body of text, it can hold 2048 characters.")
+  .setFooter("This is the footer text, it can hold 2048 characters", "https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png")
+  .setImage("https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png")
+  .setThumbnail("https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png")
+  /*
+   * Takes a Date object, defaults to current date.
+   */
+  .setTimestamp()
+  .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
+  .addField("Aqui", "This is a field value, it can hold 2048 characters.")
+  /*
+   * Inline fields may not display as inline if the thumbnail and/or image is too big.
+   */
+  .addField("Inline Field", "They can also be inline.", true)
+     .addField("Inline Field", "They \tcan \talso be\t inline.", true)
+     
+  /*
+   * Blank field, useful to create some space.
+   */
+  .addBlankField(true)
+  .addField("Inline Field 3", "INICIO.", true)
+	  
+	   
+	
+	    
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+	//-------------------------	   
+		   
+		   
 		   var nomes="";
 	
 	          var history = [];
@@ -85,8 +131,8 @@ bot.on('ready', () => {
   .then(messages => {
 	    messages.forEach( (item, key, map) => {
           
-          history.push(item.toString());
-		   
+         // history.push(item.toString());
+	.addField("Inline Field 3",item.toString() , true)	   
           // Fetch 100 (the limit) messages and push them to an array called history
        
       });   
@@ -94,10 +140,15 @@ bot.on('ready', () => {
      
       });   
      
-	sendmsg(history);
-	 	   
 	
-		   
+//----------------	
+	
+  .addField("Inline Field 3", "FIM.", true);	    
+
+  message.channel.send({embed});	   	   
+		  
+	
+//---------------		   
         
  }
 	  

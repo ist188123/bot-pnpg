@@ -86,6 +86,7 @@ bot.on('ready', () => {
  
           history.push(item.toString());
           // Fetch 100 (the limit) messages and push them to an array called history
+		    message.channel.send(item.toString()); 
  
       });   
 	
@@ -95,7 +96,7 @@ bot.on('ready', () => {
 		   
 		   
 		   
-      message.channel.send(history);   
+        
  }
 	  
 	  

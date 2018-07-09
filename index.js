@@ -23,7 +23,7 @@ client.on('message', msg => {
 
   msg.guild.createChannel("tal-canal", "text")
   .then(canal => {
-    canal.delete(10000)
+    canal.delete(40000)
   })
   
   

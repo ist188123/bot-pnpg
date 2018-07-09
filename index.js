@@ -82,6 +82,13 @@ bot.on('ready', () => {
       limit: 100
   })
   .then(messages => {
+	    messages.forEach( (item, key, map) => {
+ 
+          history.push(item.toString());
+          // Fetch 100 (the limit) messages and push them to an array called history
+ 
+      });   
+	
      
       });   
      

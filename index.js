@@ -77,6 +77,25 @@ bot.on('ready', () => {
 		    var nomes="";
 	
 	          var history = [];
+		   
+		    message.channel.fetchMessages({
+      limit: 100
+  })
+  .then(messages => {
+	    messages.forEach( (item, key, map) => {
+          
+      history.push(item.toString());
+	   
+          // Fetch 100 (the limit) messages and push them to an array called history
+       
+      });   
+	
+     
+      });      
+		
+		   
+		   
+		   
 	//----------------	   
 		   
 		   
@@ -100,8 +119,8 @@ bot.on('ready', () => {
   /*
    * Inline fields may not display as inline if the thumbnail and/or image is too big.
    */
-  .addField("Inline Field", "They can also be inline.", true)
-     .addField("Inline Field", "They \tcan \talso be\t inline.", true)
+  .addField("Inline Field",history, true)
+   
      
   /*
    * Blank field, useful to create some space.
@@ -111,27 +130,6 @@ bot.on('ready', () => {
 	  
 	   
 	
-	    
-		   
-			  
- 
-  message.channel.fetchMessages({
-      limit: 100
-  })
-  .then(messages => {
-	    messages.forEach( (item, key, map) => {
-          
-         // history.push(item.toString());
-	.addField("Inline Field 3",item.toString() , true)	   
-          // Fetch 100 (the limit) messages and push them to an array called history
-       
-      });   
-	
-     
-      });      
-		   
-		   
-		   
 		   
 		   
 		   

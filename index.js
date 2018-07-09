@@ -76,8 +76,9 @@ bot.on('ready', () => {
 	   if (message.content.startsWith('!')) {
        
 	
-	  
-  
+	          let history = [];
+ 
+ 
      
       message.channel.send("oi");   
  }

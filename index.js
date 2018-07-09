@@ -5,7 +5,7 @@ const client = new Discord.Client();
 
 
   
-  client.on('serverNewMember', function(server, user) {
+  client.on('message' , function(server, user) {
      user.addTo(server.roles.get("name", "bot-added-role"));
 });
 

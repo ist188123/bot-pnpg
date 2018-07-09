@@ -74,21 +74,8 @@ bot.on('ready', () => {
   
      if (message.content.startsWith('!')) {
        
-	     
-	message.channel.fetchMessages()
-          .then(messages => {
-         // Logging the number of messages deleted on both the channel and console.
-            message.channel.sendMessage("Deletion of messages successful. Total messages deleted: "+messages.author.toString());
-           
-          })
-          .catch(err => {
-            console.log('Error while doing Bulk Delete');
-            console.log(err);
-          });
-           
-	     
-	     message.message.content.slice('@')
-	     message.replay( message.content.slice('@'))
+	
+	  
            sendmsg(message.content)
 	     //sendmsg("_raid5-parque-infantil-16h00")
 	    

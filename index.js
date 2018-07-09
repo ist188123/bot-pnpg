@@ -41,7 +41,7 @@ bot.on('ready', () => {
    */
   .setTimestamp()
   .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
-  .addField("This is a field title, it can hold 256 characters",
+  .addField("Aqui"+msgnew,
     "This is a field value, it can hold 2048 characters.")
   /*
    * Inline fields may not display as inline if the thumbnail and/or image is too big.

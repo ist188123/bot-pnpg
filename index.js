@@ -20,10 +20,14 @@ client.on('message', msg => {
  if (msg.content.startsWith('!')) {
 
   
- msg.reply('Invalid command')
-  .then(msg => {
-    msg.delete(10000)
+
+  msg.guild.createChannel("tal-canal", "text")
+  .then(canal => {
+    canal.delete(10000)
   })
+  
+  
+  
   
  }
  

@@ -66,9 +66,14 @@ bot.on('ready', () => {
     }
     
     
-   
-  
-     if (message.content.startsWith('!')) {
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	   if (message.content.startsWith('!')) {
        
 	
 	  
@@ -86,9 +91,26 @@ bot.on('ready', () => {
       });   
 	
 	     
-	  message.channel.send("oi");   
+	 
 	     
      }
+     
+      message.channel.send("oi");   
+ }
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+   
+  
+    
     
     //----
     

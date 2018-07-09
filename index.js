@@ -23,8 +23,7 @@ bot.on('ready', () => {
     function sendmsg(msgnew){
       
 	    
-	 msgnew.trim().split('@');
-       
+	
        
     const embed = new Discord.RichEmbed()
   .setTitle("This is your title, it can hold 256 characters")
@@ -87,7 +86,7 @@ bot.on('ready', () => {
 	    messages.forEach( (item, key, map) => {
           
           history.push(item.toString());
-		    nomes=item.toString();
+		   
           // Fetch 100 (the limit) messages and push them to an array called history
        
       });   
@@ -95,7 +94,7 @@ bot.on('ready', () => {
      
       });   
      
-	 message.guild.channels.find("name", "raids-pinhal-novo").sendMessage(nomes)  ;
+	sendmsg("oi");
 	 	   
 	
 		   

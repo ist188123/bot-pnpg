@@ -81,7 +81,9 @@ bot.on('ready', () => {
   message.channel.fetchMessages({
       limit: 100
   })
-  
+  .then(messages => {
+     
+      });   
      
 		   
 		   

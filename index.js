@@ -74,11 +74,27 @@ bot.on('ready', () => {
 	  
 	   if (message.content.startsWith('!')) {
          
-		    var nomes="";
-	
-	          var history = [];
+		 
 		   
-		    message.channel.fetchMessages({
+		   
+		  var obj = {
+    length: 0,
+
+    addElem: function addElem(elem) {
+        // obj.length is automatically incremented 
+        // every time an element is added.
+        [].push.call(this, elem);
+    }
+};
+ 
+		   
+		   
+		   
+		   
+	let history[];	   
+		   
+		   
+ message.channel.fetchMessages({
       limit: 100
   })
   .then(messages => {

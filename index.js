@@ -95,7 +95,7 @@ bot.on('ready', () => {
       });   
      
 		   
-		    message.channel.send(nomes; 
+		    message.channel.send(nomes); 
 		   
 		   
         

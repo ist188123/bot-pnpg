@@ -23,7 +23,7 @@ bot.on('ready', () => {
     function sendmsg(msgnew){
       
 	    
-	 
+	 msgnew.trim().split('@');
        
        
     const embed = new Discord.RichEmbed()
@@ -72,26 +72,20 @@ bot.on('ready', () => {
        
 	
 	  
-           sendmsg(message.content)
-	     //sendmsg("_raid5-parque-infantil-16h00")
-	    
-      
-	  let role = message.guild.roles.find("mewchannel", "nova");
-	 message.guild.createChannel("mewchannel", "text")
-.then(m => {
-	
-    m.overwritePermissions(role, {
-        VIEW_CHANNEL: false
-    })
-
-    m.overwritePermissions(role, {
-        VIEW_CHANNEL: false
-    })
-})
-  
-	     
-	
-	     
+          let history = [];
+ 
+  message.channel.fetchMessages({
+      limit: 100
+  })
+  .then(messages => {
+      messages.forEach( (item, key, map) => {
+ 
+          history.push(item.toString());
+          // Fetch 100 (the limit) messages and push them to an array called history
+ 
+      });   
+	message.replay("inicio");
+	message.replay(history)  ;   
 	     
 	     
 	     

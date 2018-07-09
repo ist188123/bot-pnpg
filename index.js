@@ -16,9 +16,21 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   
-  msg.reply('Logged in as ${client.user.tag}!')
+ 
+ if (msg.content.startsWith('!')) {
+
   
+  msg.guild.members.fetch(msg.author)
+  .then(member => {
+   msg.repy(msg.author);
+  });
   
+ }
+ 
+ 
+ 
+ 
+ 
 });
 
 

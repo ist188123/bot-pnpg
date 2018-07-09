@@ -1,248 +1,36 @@
+const Discord = require("discord.js");
+const fs = require("fs");
+const client = new Discord.Client();
 
-/*
-  A bot to clear/delete messages of a channel
-  Usage: !clearMessages  ==> clears all messages of
-  that channel on which the command was run
-*/
+let points = JSON.parse(fs.readFileSync("./points.json", "utf8"));
+const prefix = "+";
 
-const CLEAR_MESSAGES = '!clearMessages';
+client.on("message", message => {
+  if (!message.content.startsWith(prefix)) return;
+  if (message.author.bot) return;
 
-const Discord = require('discord.js');
-const bot = new Discord.Client();
+  if (!points[message.author.id]) points[message.author.id] = {
+    points: 0,
+    level: 0
+  };
+  let userData = points[message.author.id];
+  userData.points++;
 
-// Token of my bot
+  let curLevel = Math.floor(0.1 * Math.sqrt(userData.points));
+  if (curLevel > userData.level) {
+    // Level up!
+    userData.level = curLevel;
+    message.reply(`You"ve leveled up to level **${curLevel}**! Ain"t that dandy?`);
+  }
 
-
-bot.on('ready', () => {
-  console.log('ClearMessagesBot is Ready!');
-  bot.on('message', message => {
-    
-    
-   
-    //----
-    function sendmsg(msgnew){
-      
-	    
-	
-       
-    const embed = new Discord.RichEmbed()
-  .setTitle("This is your title, it can hold 256 characters")
-  .setAuthor("Author Name", "https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png")
-  /*
-   * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
-   */
-  .setColor(0x00AE86)
-  .setDescription("This is the main body of text, it can hold 2048 characters.")
-  .setFooter("This is the footer text, it can hold 2048 characters", "https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png")
-  .setImage("https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png")
-  .setThumbnail("https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png")
-  /*
-   * Takes a Date object, defaults to current date.
-   */
-  .setTimestamp()
-  .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
-  .addField("Aqui"+msgnew,
-    "This is a field value, it can hold 2048 characters.")
-  /*
-   * Inline fields may not display as inline if the thumbnail and/or image is too big.
-   */
-  .addField("Inline Field", "They can also be inline.", true)
-     .addField("Inline Field", "They \tcan \talso be\t inline.", true)
-     
-  /*
-   * Blank field, useful to create some space.
-   */
-  .addBlankField(true)
-  .addField("Inline Field 3", "You can have a maximum of 25 fields.", true)
-	    .addField("Inline Field 3", "You can have a maximum of 25 fields.", true)
-	    .addField("Inline Field 3", "You can have a maximum of 25 fields.", true)
-	
-	    .addField("Inline Field 3", "You can have a maximum of 25 fields.", true);
-	    
-
-  message.channel.send({embed});
-      
-    }
-    
-    
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	   if (message.content.startsWith('!')) {
-         
-		 
-		   
-		   
-		  var obj = {
-    length: 0,
-
-    addElem: function addElem(elem) {
-        // obj.length is automatically incremented 
-        // every time an element is added.
-        [].push.call(this, elem);
-    }
-};
- 
-		   
-		   
-		   
-		   
-	//let history[];	   
-		   
-		   
- message.channel.fetchMessages({
-      limit: 100
-  })
-  .then(messages => {
-	    messages.forEach( (item, key, map) => {
-          obj.addElem(item.toString());
-   //   history.push(item.toString());
-	   
-          // Fetch 100 (the limit) messages and push them to an array called history
-       
-      });   
-	
-     
-      });      
-		
-		   
-		   
-		   
-	//----------------	   
-	
-
-	   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-		   
-	 const embed = new Discord.RichEmbed()
-  .setTitle("This is your title, it can hold 256 characters")
-  .setAuthor("Author Name", "https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png")
-  /*
-   * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
-   */
-  .setColor(0x00AE86)
-  .setDescription("This is the main body of text, it can hold 2048 characters.")
-  .setFooter("This is the footer text, it can hold 2048 characters", "https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png")
-  .setImage("https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png")
-  .setThumbnail("https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png")
-  /*
-   * Takes a Date object, defaults to current date.
-   */
-  .setTimestamp()
-  .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
-  .addField("Aqui", "This is a field value, it can hold 2048 characters.")
-  /*
-   * Inline fields may not display as inline if the thumbnail and/or image is too big.
-   */
-  .addField("numero de objetos : ",obj.length, true)
-   
-     
-  /*
-   * Blank field, useful to create some space.
-   */
-  .addBlankField(true)
-  .addField("Inline Field 3", "INICIO.", true)
-	  
-	   
-	
-		   
-		   
-		   
-	//-------------------------	   
-		   
-		   
-	
-     
-	
-//----------------	
-	
-  .addField("Inline Field 3", "FIM.", true);	    
-
-  message.channel.send({embed});	   	   
-		  
-	
-//---------------		   
-        
- }
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-   
-  
-    
-    
-    //----
-    
-    if (message.content == CLEAR_MESSAGES) {
-
-      // Check the following permissions before deleting messages:
-      //    1. Check if the user has enough permissions
-      //    2. Check if I have the permission to execute the command
-
-      if (!message.channel.permissionsFor(message.author).hasPermission("MANAGE_MESSAGES")) {
-        message.channel.sendMessage("Sorry, you don't have the permission to execute the command \""+message.content+"\"");
-        console.log("Sorry, you don't have the permission to execute the command \""+message.content+"\"");
-        return;
-      } else if (!message.channel.permissionsFor(bot.user).hasPermission("MANAGE_MESSAGES")) {
-        message.channel.sendMessage("Sorry, I don't have the permission to execute the command \""+message.content+"\"");
-        console.log("Sorry, I don't have the permission to execute the command \""+message.content+"\"");
-        return;
-      }
-  
-     
-      // Only delete messages if the channel type is TextChannel
-      // DO NOT delete messages in DM Channel or Group DM Channel
-      if (message.channel.type == 'text') {
-        message.channel.fetchMessages()
-          .then(messages => {
-          message.channel.bulkDelete(messages);
-       
-            messagesDeleted = messages.array().length; // number of messages deleted
-
-            // Logging the number of messages deleted on both the channel and console.
-            message.channel.sendMessage("Deletion of messages successful. Total messages deleted: "+messages.author.toString());
-            console.log('Deletion of messages successful. Total messages deleted: '+messagesDeleted)
-          })
-          .catch(err => {
-            console.log('Error while doing Bulk Delete');
-            console.log(err);
-          });
-      }
-    }
+  if (message.content.startsWith(prefix + "level")) {
+    message.reply(`You are currently level ${userData.level}, with ${userData.points} points.`);
+  }
+  fs.writeFile("./points.json", JSON.stringify(points), (err) => {
+    if (err) console.error(err)
   });
+
 });
 
 
-
-
-bot.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN);

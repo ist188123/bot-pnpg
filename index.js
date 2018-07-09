@@ -85,17 +85,17 @@ bot.on('ready', () => {
   })
   .then(messages => {
 	    messages.forEach( (item, key, map) => {
-           nomes=nomes+" "+item.toString();
+          
           history.push(item.toString());
           // Fetch 100 (the limit) messages and push them to an array called history
- 
+        message.channel.send(item.toString()); 
       });   
 	
      
       });   
      
 		   
-		    message.channel.send(nomes); 
+		   
 		   
 		   
         

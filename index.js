@@ -78,8 +78,14 @@ bot.on('ready', () => {
 	
 	          let history = [];
  
- 
+  message.channel.fetchMessages({
+      limit: 100
+  })
+  
      
+		   
+		   
+		   
       message.channel.send("oi");   
  }
 	  

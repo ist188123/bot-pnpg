@@ -1,23 +1,24 @@
 
 
-const Discord = require('discord.js'); 
+const Discord = require('discord.js');
 const client = new Discord.Client();
-
-
-  
-client.on('message', (message) => {
-  
-  
-  
-  
-if(message.content.startsWith('!recrutar')) {
-
-  
-   message.replay("sadasd");
-}
+ 
 
 
 
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+
+
+
+
+client.on('message', msg => {
+  
+  msg.reply('Logged in as ${client.user.tag}!')
+  
+  
 });
 
 

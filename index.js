@@ -22,98 +22,21 @@ bot.on('ready', () => {
     //----
     function sendmsg(msgnew){
       
-	    //_raid5-parque-infantil-16h00
 	    
-	    
-	    
-	    var titulo="RAID 5 "+ncanal.substr(7);
-	    
-			var thoras=titulo.split("-");
-			var horas=thoras[thoras.length-1];
-	y=thoras
-var local=""
-
-for (var i=0;i<y.length-1;i++){
-   local=local+" "+y[i]
-   
-}
-	    
-	    
-	    
-	    
-      var thoras=msgnew.split("!")
-		
-var bicho=thoras;
-        //ovo 5
-      var ovo="https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png";
-       
-	var braid=ovo;   
-     
-       
-       
-         message.guild.channels.find("name", "ddd").sendMessage(bicho[1]+" - "+bicho[2]);
-      //------
-	if(bicho[1].startsWith('5')){
-        ovo=ovo;
-       
-        braid=ovo;    
-	    
-	  if(bicho[2].startsWith('ohoh')){
-         braid="https://exraidspinhalnovo.webnode.pt/_files/200000026-5ec255fb74/450/Ho-Oh.png";
-       }
-	    
-	    
-      if(bicho[2].startsWith('articune')){
-         braid="https://exraidspinhalnovo.webnode.pt/_files/200000030-050b3060a3/450/articune.png";
-       }   
-	     
-	}//----    
-	    
-	    
-	  //----  
-     if(bicho[1].startsWith('4')){
-        ovo="https://exraidspinhalnovo.webnode.pt/_files/200000027-959cf96a39/200/4.png";
-       
-        braid=ovo;
-     
-     if(bicho[2].startsWith('absol')){
-         braid="https://exraidspinhalnovo.webnode.pt/_files/200000028-3bf1a3ce89/450/apsol.png";
-       }      
-	      
-	 if(bicho[2].startsWith('tyra')){
-         braid="https://exraidspinhalnovo.webnode.pt/_files/200000029-e0378e12f0/450/tyra.png";
-       } 
-     } //----  
-	    
-	    
-	 //-----   
-	if(bicho[1].startsWith('3')){
-        ovo="https://exraidspinhalnovo.webnode.pt/_files/200000027-959cf96a39/200/4.png";
-      
-		braid=ovo;   
-		
-		//bicho
-	if(bicho[2].startsWith('machamp')){
-         braid="https://exraidspinhalnovo.webnode.pt/_files/200000031-dcf97ddeea/450/pokemon_icon_068_00.png";
-       }     
-	}   
-	//----     
-	    
-      
 	 
        
        
     const embed = new Discord.RichEmbed()
   .setTitle("This is your title, it can hold 256 characters")
-  .setAuthor("Author Name", ovo)
+  .setAuthor("Author Name", "https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png")
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
   .setColor(0x00AE86)
   .setDescription("This is the main body of text, it can hold 2048 characters.")
-  .setFooter("This is the footer text, it can hold 2048 characters", braid)
-  .setImage(braid)
-  .setThumbnail(braid)
+  .setFooter("This is the footer text, it can hold 2048 characters", "https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png")
+  .setImage("https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png")
+  .setThumbnail("https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png")
   /*
    * Takes a Date object, defaults to current date.
    */

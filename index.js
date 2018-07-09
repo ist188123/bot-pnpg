@@ -121,24 +121,7 @@ bot.on('ready', () => {
 	//-------------------------	   
 		   
 		   
-		   var nomes="";
 	
-	          var history = [];
- 
-  message.channel.fetchMessages({
-      limit: 10
-  })
-  .then(messages => {
-	    messages.forEach( (item, key, map) => {
-          
-         // history.push(item.toString());
-	.addField("Inline Field 3",item.toString() , true)	   
-          // Fetch 100 (the limit) messages and push them to an array called history
-       
-      });   
-	
-     
-      });   
      
 	
 //----------------	

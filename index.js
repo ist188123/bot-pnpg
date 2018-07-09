@@ -125,11 +125,22 @@ var bicho=thoras;
    * Inline fields may not display as inline if the thumbnail and/or image is too big.
    */
   .addField("Inline Field", "They can also be inline.", true)
+     .addField("Inline Field", "They can also be inline.", true)
+     .addField("Inline Field", "They can also be inline.", true)
+     .addField("Inline Field", "They can also be inline.", true)
+     .addField("Inline Field", "They can also be inline.", true)
+     .addField("Inline Field", "They can also be inline.", true)
+     .addField("Inline Field", "They can also be inline.", true)
   /*
    * Blank field, useful to create some space.
    */
   .addBlankField(true)
-  .addField("Inline Field 3", "You can have a maximum of 25 fields.", true);
+  .addField("Inline Field 3", "You can have a maximum of 25 fields.", true)
+	    .addField("Inline Field 3", "You can have a maximum of 25 fields.", true)
+	    .addField("Inline Field 3", "You can have a maximum of 25 fields.", true)
+	
+	    .addField("Inline Field 3", "You can have a maximum of 25 fields.", true);
+	    
 
   message.channel.send({embed});
       
@@ -155,7 +166,7 @@ var bicho=thoras;
 	     
 	     message.message.content.slice('@')
 	     message.replay( message.message.content.slice('@'))
-           //sendmsg(message.content)
+           sendmsg(message.content)
 	     //sendmsg("_raid5-parque-infantil-16h00")
 	    
       

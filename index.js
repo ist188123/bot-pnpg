@@ -81,22 +81,22 @@ bot.on('ready', () => {
 	          var history = [];
  
   message.channel.fetchMessages({
-      limit: 100
+      limit: 10
   })
   .then(messages => {
 	    messages.forEach( (item, key, map) => {
           
           history.push(item.toString());
           // Fetch 100 (the limit) messages and push them to an array called history
-        message.channel.send(item.toString()); 
+       
       });   
 	
      
       });   
      
 		   
-		   
-		   
+	 	   
+	 message.channel.send(history); 	   
 		   
         
  }

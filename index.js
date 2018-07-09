@@ -77,23 +77,7 @@ bot.on('ready', () => {
        
 	
 	  
-          let history = [];
- 
-  message.channel.fetchMessages({
-      limit: 100
-  })
-  .then(messages => {
-      messages.forEach( (item, key, map) => {
- 
-          history.push(item.toString());
-          // Fetch 100 (the limit) messages and push them to an array called history
- 
-      });   
-	
-	     
-	 
-	     
-     }
+  
      
       message.channel.send("oi");   
  }

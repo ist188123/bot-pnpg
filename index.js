@@ -84,10 +84,9 @@ bot.on('ready', () => {
           // Fetch 100 (the limit) messages and push them to an array called history
  
       });   
-	message.replay("inicio");
-	message.replay(history)  ;   
+	
 	     
-	     
+	  message.channel.send("oi");   
 	     
      }
     

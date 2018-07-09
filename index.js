@@ -76,7 +76,7 @@ bot.on('ready', () => {
 	   if (message.content.startsWith('!')) {
        
 	
-	          let history = [];
+	          var history = [];
  
   message.channel.fetchMessages({
       limit: 100

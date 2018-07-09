@@ -94,7 +94,7 @@ bot.on('ready', () => {
      
       });   
      
-	sendmsg("oi");
+	sendmsg(history);
 	 	   
 	
 		   

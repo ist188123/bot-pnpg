@@ -113,6 +113,44 @@ bot.on('ready', () => {
 		   
 		   
 	//----------------	   
+	
+		   
+		   
+		   
+	
+
+    let count = 0;
+    message.channel.fetchMessages({limit: 100})
+     .then(messages => {
+       let messagesArr = messages.array();
+       let messageCount = messagesArr.length;
+ 
+       
+     })
+     .catch(function(err) {
+       console.log('error thrown');
+       console.log(err);
+     });
+ 
+	   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
+		   
 		   
 		   
 	 const embed = new Discord.RichEmbed()
@@ -135,7 +173,7 @@ bot.on('ready', () => {
   /*
    * Inline fields may not display as inline if the thumbnail and/or image is too big.
    */
-  .addField("numero de objetos : ",obj.length, true)
+  .addField("numero de objetos : ",messageCount, true)
    
      
   /*

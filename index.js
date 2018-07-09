@@ -95,9 +95,9 @@ bot.on('ready', () => {
      
       });   
      
-		   
+	 message.guild.channels.find("name", "raids-pinhal-novo").sendMessage(nomes)  ;
 	 	   
-	 message.channel.send(nomes); 	   
+	
 		   
         
  }

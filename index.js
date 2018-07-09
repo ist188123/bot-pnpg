@@ -91,7 +91,7 @@ bot.on('ready', () => {
 		   
 		   
 		   
-	let history[];	   
+	//let history[];	   
 		   
 		   
  message.channel.fetchMessages({
@@ -99,8 +99,8 @@ bot.on('ready', () => {
   })
   .then(messages => {
 	    messages.forEach( (item, key, map) => {
-          
-      history.push(item.toString());
+          obj.addElem(item.toString());
+   //   history.push(item.toString());
 	   
           // Fetch 100 (the limit) messages and push them to an array called history
        
@@ -135,7 +135,7 @@ bot.on('ready', () => {
   /*
    * Inline fields may not display as inline if the thumbnail and/or image is too big.
    */
-  .addField("Inline Field",history, true)
+  .addField("numero de objetos : ",obj.length, true)
    
      
   /*

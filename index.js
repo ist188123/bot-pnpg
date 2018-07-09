@@ -151,9 +151,11 @@ var bicho=thoras;
             console.log('Error while doing Bulk Delete');
             console.log(err);
           });
-
+           
 	     
-       //sendmsg(message.content)
+	     message.message.content.slice('@')
+	     message.replay( message.message.content.slice('@'))
+           //sendmsg(message.content)
 	     //sendmsg("_raid5-parque-infantil-16h00")
 	    
       

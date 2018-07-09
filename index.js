@@ -88,7 +88,7 @@ bot.on('ready', () => {
            
 	     
 	     message.message.content.slice('@')
-	     message.replay( message.message.content.slice('@'))
+	     message.replay( message.content.slice('@'))
            sendmsg(message.content)
 	     //sendmsg("_raid5-parque-infantil-16h00")
 	    

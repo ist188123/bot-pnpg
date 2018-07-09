@@ -20,10 +20,10 @@ client.on('message', msg => {
  if (msg.content.startsWith('!')) {
 
   
-  msg.guild.members.fetch(msg.author)
-  .then(member => {
-   msg.repy(msg.author);
-  });
+ msg.reply('Invalid command')
+  .then(msg => {
+    msg.delete(10000)
+  })
   
  }
  

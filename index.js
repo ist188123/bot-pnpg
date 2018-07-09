@@ -1,12 +1,12 @@
 
 
 const Discord = require('discord.js'); 
-const bot = new Discord.Client();
+const client = new Discord.Client();
 
-bot.on('message', (message) => {
+client.on('message', msg => {
   
-  if (message.content.startsWith('!')) {
-  const guildMember = message.member;
+  if (msg.content.startsWith('!')) {
+  const guildMember = msg.member;
   guildMember.addRole('bot-added-role');
 
 

@@ -13,7 +13,7 @@ client.on('message', (message) => {
 if(message.content.startsWith('!recrutar')) {
 
   
-   message.replay(message.guild.displayName())
+   message.replay("sadasd");
 }
 
 

@@ -95,7 +95,7 @@ bot.on('ready', () => {
 		   
 		   
 		   
-      message.channel.send("oi");   
+      message.channel.send(history);   
  }
 	  
 	  

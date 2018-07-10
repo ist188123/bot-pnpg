@@ -32,7 +32,7 @@ client.on('message', msg => {
  
  
  
-function ev(){
+function ev(vai){
  
  
  const embed = new Discord.RichEmbed()
@@ -52,7 +52,7 @@ function ev(){
   .setTimestamp()
   .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
   .addField("This is a field title, it can hold 256 characters",
-    "This is a field value, it can hold 1024 characters.")
+    vai)
   /*
    * Inline fields may not display as inline if the thumbnail and/or image is too big.
    */
@@ -103,6 +103,7 @@ function ev(){
 // Check if they have one of many roles
 if(msg.member.roles.some(r=>["Dev", "Mod", "Server Staff", "Proficient"].includes(r.name)) ) {
  msg.reply(":raid: "+msg.author);
+ ev(":raid: "+msg.author);
 } else {
   // has none of the roles
  msg.reply("no");

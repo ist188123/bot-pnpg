@@ -32,18 +32,6 @@ client.on('message', msg => {
  
  
  
-function ev(vai){
-	
-	
-	var local="";
-	var vai=titulo.split(" ")
-			var y=vai[vai.length-1]
-	
-	    
-for (var i=0;i<y.length-1;i++){
-   local=local+"\n"+y[i]
-   
-}
 
 	
 	

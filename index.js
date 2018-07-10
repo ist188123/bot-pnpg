@@ -106,7 +106,7 @@ function ev(vai){
 // Check if they have one of many roles
 if(msg.member.roles.some(r=>["Dev", "Mod", "Server Staff", "Proficient"].includes(r.name)) ) {
  msg.reply(":raid: "+msg.author);
- ev("${valor} @jcpjorge ${valor} @Damasc010");
+ ev("\:poop: @jcpjorge \:valor: @Damasc010");
 } else {
   // has none of the roles
  msg.reply("no");

@@ -100,8 +100,9 @@ function ev(vai){
  
  if (msg.content.startsWith('!')) {
 
+  var coisa=msg.content.slice("@").trim();
   
-  msg.reply(msg.content.slice("@").trim());
+  msg.reply(coisa[2]);
   
 // Check if they have one of many roles
 if(msg.member.roles.some(r=>["Dev", "Mod", "Server Staff", "Proficient"].includes(r.name)) ) {

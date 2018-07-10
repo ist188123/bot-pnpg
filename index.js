@@ -94,7 +94,16 @@ function ev(vai){
  
  
  
- 
+ 		   
+		  var obj = {
+    length: 0,
+
+    addElem: function addElem(elem) {
+        // obj.length is automatically incremented 
+        // every time an element is added.
+        [].push.call(this, elem);
+    }
+};
  
  
  
@@ -102,14 +111,11 @@ function ev(vai){
 
   var coisa="\:poop: @jcpjorge @Damasc010<:valor:460526619124039691>@sira SDamac022<:valor:460526619124039691> @Damasc010 <:valor:460526619124039691>"
   
-  msg.reply(coisa.split(' ');
+  
   
 // Check if they have one of many roles
 if(msg.member.roles.some(r=>["Dev", "Mod", "Server Staff", "Proficient"].includes(r.name)) ) {
 
- 
- 
- 
  
  ev("\:poop: @jcpjorge\n\<:valor:460526619124039691>@Damasc010\n\<:valor:460526619124039691>@sira SDamac022\:valor: @Damasc010");
 } else {

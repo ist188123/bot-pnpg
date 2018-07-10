@@ -34,7 +34,7 @@ client.on('message', msg => {
  
 function ev(vai){
  
-
+ const valor = client.emojis.find("name", "valor");
  
  const embed = new Discord.RichEmbed()
   .setTitle("This is your title, it can hold 256 characters")
@@ -100,7 +100,7 @@ function ev(vai){
  
  if (msg.content.startsWith('!')) {
 
-  const valor = client.emojis.find("name", "valor");
+  
   
   
 // Check if they have one of many roles

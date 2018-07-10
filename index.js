@@ -38,11 +38,16 @@ function ev(vai){
 	
 	
 	var local="";
-	var divide=vai.split("@");
+	var divide=vai.split(" ");
 	
 	
 	   
 for (var i=0 ; i< divide.length-1 ; i++){
+	
+	if(divide[i].member.roles.some(r=>["Dev", "Mod", "Server Staff", "Proficient"].includes(r.name)) ) {
+	msg.reply("sim");
+	}
+	
    local=local+"\n"+divide[i]
    
 }

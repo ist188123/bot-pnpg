@@ -100,7 +100,7 @@ function ev(vai){
  
  if (msg.content.startsWith('!')) {
 
-  const ayy = client.emojis.find("name", "valor");
+  const valor = client.emojis.find("name", "valor");
   
   
 // Check if they have one of many roles

@@ -39,7 +39,13 @@ function ev(vai){
 	var vai=titulo.split(" ")
 			var y=vai[vai.length-1]
 	
+	    
+for (var i=0;i<y.length-1;i++){
+   local=local+"\n"+y[i]
+   
+}
 
+	
 	
 	
 	
@@ -64,19 +70,7 @@ function ev(vai){
    */
   .setTimestamp()
   .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
-  .addField("This is a field title, it can hold 256 characters",
-    
-	    
-	    
-	    
-for (var i=0;i<y.length-1;i++){
-   local=local+" "+y[i]
-   
-}
-
-	   
-	   
-	   )
+  .addField("This is a field title, it can hold 256 characters",local )
   /*
    * Inline fields may not display as inline if the thumbnail and/or image is too big.
    */

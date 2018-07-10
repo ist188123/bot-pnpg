@@ -126,7 +126,7 @@ for (var i=0;i<y.length-1;i++){
  
  if (msg.content.startsWith('!')) {
 
-  var coisa="\:poop: @jcpjorge @Damasc010<:valor:460526619124039691>@sira SDamac022<:valor:460526619124039691> @Damasc010 <:valor:460526619124039691>"
+  var coisa="\:poop: @jcpjorge @Damasc010 <:valor:460526619124039691>@sira SDamac022<:valor:460526619124039691> @Damasc010 <:valor:460526619124039691>"
   
   
   
@@ -134,7 +134,7 @@ for (var i=0;i<y.length-1;i++){
 if(msg.member.roles.some(r=>["Dev", "Mod", "Server Staff", "Proficient"].includes(r.name)) ) {
 
  
- ev("\:poop: @jcpjorge\n\<:valor:460526619124039691>@Damasc010\n\<:valor:460526619124039691>@sira SDamac022\:valor: @Damasc010");
+ ev("@manuel @Damasc010 @sira SDamac022 @Damasc010");
 } else {
   // has none of the roles
  msg.reply("no");

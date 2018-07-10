@@ -33,7 +33,7 @@ client.on('message', msg => {
  
  
 function ev(){
- <:emoji_name:emoji_id>
+ 
  var vai="<:emoji_name:mystic> @jcpjorge <:emoji_name:valor> @Damasc010"
  
  const embed = new Discord.RichEmbed()

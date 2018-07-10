@@ -34,11 +34,19 @@ client.on('message', msg => {
  
 
 	
+function ev(vai){
 	
 	
+	var local="";
+	var divide=vai.split(" ")
+	var y=divide[divide.length-1]
 	
-	
-	
+	    
+for (var i=0;i<y.length-1;i++){
+   local=local+"\n"+y[i]
+   
+}
+		
  
  const valor = client.emojis.find("name", "valor");
  

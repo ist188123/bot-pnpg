@@ -38,7 +38,7 @@ function ev(vai){
 	
 	
 	var local="";
-	var divide=vai.split(" @");
+	var divide=vai.split("@");
 	
 	
 	   

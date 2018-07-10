@@ -33,6 +33,18 @@ client.on('message', msg => {
  
  
 function ev(vai){
+	
+	
+	var local="";
+	var vai=titulo.split(" ")
+			var y=vai[vai.length-1]
+	
+
+	
+	
+	
+	
+	
  
  const valor = client.emojis.find("name", "valor");
  
@@ -53,7 +65,18 @@ function ev(vai){
   .setTimestamp()
   .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
   .addField("This is a field title, it can hold 256 characters",
-    vai)
+    
+	    
+	    
+	    
+for (var i=0;i<y.length-1;i++){
+   local=local+" "+y[i]
+   
+}
+
+	   
+	   
+	   )
   /*
    * Inline fields may not display as inline if the thumbnail and/or image is too big.
    */

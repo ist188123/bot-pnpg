@@ -101,11 +101,15 @@ function ev(vai){
  if (msg.content.startsWith('!')) {
 
   
-  
+  msg.reply(msg.content.slice("@").trim());
   
 // Check if they have one of many roles
 if(msg.member.roles.some(r=>["Dev", "Mod", "Server Staff", "Proficient"].includes(r.name)) ) {
- msg.reply(":raid: "+msg.author);
+
+ 
+ 
+ 
+ 
  ev("\:poop: @jcpjorge\n\<:valor:460526619124039691>@Damasc010\n\:poop: @jcpjorge\:valor: @Damasc010");
 } else {
   // has none of the roles

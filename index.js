@@ -32,9 +32,9 @@ client.on('message', msg => {
  
  
  
-function ev(){
+function ev(vai){
  
- var vai="<:emoji_name:mystic> @jcpjorge <:emoji_name:valor> @Damasc010"
+
  
  const embed = new Discord.RichEmbed()
   .setTitle("This is your title, it can hold 256 characters")
@@ -100,11 +100,13 @@ function ev(){
  
  if (msg.content.startsWith('!')) {
 
+  const ayy = client.emojis.find("name", "valor");
+  
   
 // Check if they have one of many roles
 if(msg.member.roles.some(r=>["Dev", "Mod", "Server Staff", "Proficient"].includes(r.name)) ) {
  msg.reply(":raid: "+msg.author);
- ev();
+ ev("${valor} @jcpjorge ${valor} @Damasc010");
 } else {
   // has none of the roles
  msg.reply("no");

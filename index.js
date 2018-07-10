@@ -33,7 +33,8 @@ client.on('message', msg => {
  
  
 function ev(){
- var vai=":mystic: @jcpjorge :valor: @Damasc010"
+ <:emoji_name:emoji_id>
+ var vai="<:emoji_name:mystic> @jcpjorge <:emoji_name:valor> @Damasc010"
  
  const embed = new Discord.RichEmbed()
   .setTitle("This is your title, it can hold 256 characters")

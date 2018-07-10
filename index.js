@@ -38,12 +38,12 @@ function ev(vai){
 	
 	
 	var local="";
-	var divide=vai.split(" ")
-	var y=divide[divide.length-1]
+	var divide=vai.split(" ");
 	
-	    
-for (var i=0;i<y.length-1;i++){
-   local=local+"\n"+y[i]
+	
+	   
+for (var i=0 ; i< divide.length-1 ; i++){
+   local=local+"\n"+divide[i]
    
 }
 		

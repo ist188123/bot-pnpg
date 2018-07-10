@@ -100,9 +100,9 @@ function ev(vai){
  
  if (msg.content.startsWith('!')) {
 
-  var coisa=msg.content.slice("@").trim();
+  var coisa="\:poop: @jcpjorge @Damasc010<:valor:460526619124039691>@sira SDamac022<:valor:460526619124039691> @Damasc010 <:valor:460526619124039691>"
   
-  msg.reply(coisa[2]);
+  msg.reply(coisa.split(' ');
   
 // Check if they have one of many roles
 if(msg.member.roles.some(r=>["Dev", "Mod", "Server Staff", "Proficient"].includes(r.name)) ) {
@@ -111,7 +111,7 @@ if(msg.member.roles.some(r=>["Dev", "Mod", "Server Staff", "Proficient"].include
  
  
  
- ev("\:poop: @jcpjorge\n\<:valor:460526619124039691>@Damasc010\n\:poop: @jcpjorge\:valor: @Damasc010");
+ ev("\:poop: @jcpjorge\n\<:valor:460526619124039691>@Damasc010\n\<:valor:460526619124039691>@sira SDamac022\:valor: @Damasc010");
 } else {
   // has none of the roles
  msg.reply("no");

@@ -20,10 +20,13 @@ client.on('message', msg => {
  if (msg.content.startsWith('!')) {
 
   
-channel.fetchMessages({ limit: 10 })
-  .then(messages => console.log(`Received ${messages.size} messages`))
-  .catch(console.error);
-  
+// Check if they have one of many roles
+if(msg.member.roles.some(r=>["Dev", "Mod", "Server Staff", "Proficient"].includes(r.name)) ) {
+ msg.reply("oi");
+} else {
+  // has none of the roles
+ msg.reply("no");
+}
   
   
  }

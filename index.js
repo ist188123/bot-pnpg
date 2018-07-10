@@ -32,8 +32,8 @@ client.on('message', msg => {
  
  
  
-function ev(vai){
- 
+function ev(){
+ var vai=":mystic: @jcpjorge :valor: @Damasc010"
  
  const embed = new Discord.RichEmbed()
   .setTitle("This is your title, it can hold 256 characters")
@@ -103,7 +103,7 @@ function ev(vai){
 // Check if they have one of many roles
 if(msg.member.roles.some(r=>["Dev", "Mod", "Server Staff", "Proficient"].includes(r.name)) ) {
  msg.reply(":raid: "+msg.author);
- ev(":raid: "+msg.author);
+ ev();
 } else {
   // has none of the roles
  msg.reply("no");

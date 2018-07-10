@@ -22,7 +22,7 @@ client.on('message', msg => {
   
 // Check if they have one of many roles
 if(msg.member.roles.some(r=>["Dev", "Mod", "Server Staff", "Proficient"].includes(r.name)) ) {
- msg.reply("oi");
+ msg.reply(":raid: "+msg.author);
 } else {
   // has none of the roles
  msg.reply("no");

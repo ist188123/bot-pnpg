@@ -46,14 +46,14 @@ for (var i=0 ; i< divide.length-1 ; i++){
 	metecor="";
 	
 	
-	if(divide[i].roles.some(r=>["Dev", "Mod", "Server Staff", "Proficient"].includes(r.name)) ) {
-	metecor="ccccc";
-	}
+	//if(divide[i].roles.some(r=>["Dev", "Mod", "Server Staff", "Proficient"].includes(r.name)) ) {
+	//metecor="ccccc";
+	//}
+	
+	var member = message.mentions.members.first();
 	
 	
-	
-	
-   local=local+"\n"+divide[i]+metecor;
+   local=local+"\n"+divide[i]+member;
    
 }
 		

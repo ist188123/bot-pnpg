@@ -39,16 +39,16 @@ function ev(vai){
 	
 	var local="";
 	var divide=vai.split(" ");
-	
+	var metecor="";
 	
 	   
 for (var i=0 ; i< divide.length-1 ; i++){
-	
+	metecor="";
 	if(divide[i].roles.some(r=>["Dev", "Mod", "Server Staff", "Proficient"].includes(r.name)) ) {
-	msg.reply("sim");
+	metecor="ddd";
 	}
 	
-   local=local+"\n"+divide[i]
+   local=local+"\n"+divide[i]+metecor;
    
 }
 		

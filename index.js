@@ -51,14 +51,13 @@ for (var i=0 ; i< divide.length-1 ; i++){
 	//}
 	
 	
-     
-      var member = msg.guild.member(msg.mentions.users.first());
+    
 	
  
 	
 	
 	
-   local=local+"\n"+divide[i]+member;
+   local=local+"\n"+divide[i]+msg.mentions.users.first();
    
 }
 		

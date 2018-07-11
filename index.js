@@ -48,8 +48,8 @@ for (var i=0 ; i< divide.length-1 ; i++){
 	client.fetchUser(divide[i]);
 	//if(divide[i].roles.some(r=>["Dev", "Mod", "Server Staff", "Proficient"].includes(r.name)) ) {
 	//metecor="ddd";
-	}
-	//
+	//}
+	
    local=local+"\n"+divide[i]+metecor;
    
 }

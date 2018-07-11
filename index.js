@@ -41,7 +41,7 @@ function ev(vai){
 	var divide=vai.split(" ");
 	var metecor="";
 	
-	   
+	     var member= "";
 for (var i=0 ; i< divide.length-1 ; i++){
 	metecor="";
 	
@@ -50,7 +50,10 @@ for (var i=0 ; i< divide.length-1 ; i++){
 	//metecor="ddd";
 	//}
 	
-   local=local+"\n"+divide[i]+msg.mentions.members.first();
+	member= msg.mentions.members.first();
+	
+	
+   local=local+"\n"+divide[i]+member.displayName;
    
 }
 		

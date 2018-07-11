@@ -56,7 +56,7 @@ for (var i=0 ; i< divide.length-1 ; i++){
 	
 	
 	
-   local=local+"\n"+divide[i]+msg.mentions.users.first();
+   local=local+"\n"+divide[i];
    
 }
 		

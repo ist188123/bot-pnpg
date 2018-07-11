@@ -53,7 +53,7 @@ for (var i=0 ; i< divide.length-1 ; i++){
 	var member = msg.mentions.members.first();
 	
 	
-   local=local+"\n"+divide[i]+member;
+   local=local+"\n"+divide[i]+member.id;
    
 }
 		

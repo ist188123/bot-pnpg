@@ -50,7 +50,7 @@ for (var i=0 ; i< divide.length-1 ; i++){
 	//metecor="ddd";
 	//}
 	
-   local=local+"\n"+divide[i]+client.fetchUser(divide[i]);
+   local=local+"\n"+divide[i]+guild.fetchmember(divide[i]);
    
 }
 		

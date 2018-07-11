@@ -53,7 +53,6 @@ for (var i=0 ; i< divide.length-1 ; i++){
 	
     
 	
- 
 	
 	
 	
@@ -65,7 +64,7 @@ for (var i=0 ; i< divide.length-1 ; i++){
  const valor = client.emojis.find("name", "valor");
  
  const embed = new Discord.RichEmbed()
-  .setTitle("This is your title, it can hold 256 characters")
+  .setTitle("Utilize o canal para registo "+msg.guild.channels.find("name", msg.channel.name))
   .setAuthor("Author Name", "https://i.imgur.com/lm8s41J.png")
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.

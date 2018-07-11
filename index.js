@@ -45,15 +45,15 @@ function ev(vai){
 for (var i=0 ; i< divide.length-1 ; i++){
 	metecor="";
 	
-	client.fetchUser(divide[i]);
-	//if(divide[i].roles.some(r=>["Dev", "Mod", "Server Staff", "Proficient"].includes(r.name)) ) {
-	//metecor="ddd";
-	//}
+	
+	if(divide[i].roles.some(r=>["Dev", "Mod", "Server Staff", "Proficient"].includes(r.name)) ) {
+	metecor="ccccc";
+	}
 	
 	
 	
 	
-   local=local+"\n"+divide[i];
+   local=local+"\n"+divide[i]+metecor;
    
 }
 		

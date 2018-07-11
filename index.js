@@ -61,7 +61,7 @@ for (var i=0 ; i< divide.length-1 ; i++){
 }
 		
  
- const valor = client.emojis.find("name", "valor");
+ 
  
  const embed = new Discord.RichEmbed()
   .setTitle("Utilize o canal para registo ")

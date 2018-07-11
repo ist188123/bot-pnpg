@@ -45,15 +45,20 @@ function ev(vai){
 for (var i=0 ; i< divide.length-1 ; i++){
 	metecor="";
 	
-	let member = msg.mentions.members.first();
-	if(member.roles.some(r=>["Dev", "Mod", "Server Staff", "Proficient"].includes(r.name)) ) {
-	metecor="ccccc";
-	}
+	//let member = msg.mentions.members.first();
+	//if(member.roles.some(r=>["Dev", "Mod", "Server Staff", "Proficient"].includes(r.name)) ) {
+	//metecor="ccccc";
+	//}
+	
+	
+     
+      var member = msg.guild.member(msg.mentions.users.first());
+	
+ 
 	
 	
 	
-	
-   local=local+"\n"+divide[i];
+   local=local+"\n"+divide[i]+member;
    
 }
 		

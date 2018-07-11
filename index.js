@@ -50,7 +50,7 @@ for (var i=0 ; i< divide.length-1 ; i++){
 	//metecor="ddd";
 	//}
 	
-   local=local+"\n"+divide[i]+metecor;
+   local=local+"\n\"+divide[i]+metecor;
    
 }
 		

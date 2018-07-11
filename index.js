@@ -50,10 +50,10 @@ for (var i=0 ; i< divide.length-1 ; i++){
 	//metecor="ddd";
 	//}
 	
-	member= msg.mentions.members.first();
 	
 	
-   local=local+"\n"+divide[i]+member.displayName;
+	
+   local=local+"\n"+divide[i]+msg.author.id];
    
 }
 		

@@ -9,7 +9,7 @@ client.on("message", msg => {
   
    let role = msg.guild.roles.find("name", "Mod");
   
-  if (msg.content.startsWith('@')) {
+  if (msg.content.startsWith('!in')) {
  
     
     
@@ -29,7 +29,7 @@ member.addRole(role);
   }
     
   
-  if (msg.content.startsWith('!n')) { 
+  if (msg.content.startsWith('!out')) { 
   
     let member = msg.mentions.members.first();
     member.removeRole(role)

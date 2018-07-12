@@ -8,7 +8,37 @@ const prefix = "+";
 client.on("message", msg => {
   
   if (msg.content.startsWith('!')) {
-  msg.reply("oi")
+ 
+    
+    
+    
+    
+    
+    
+    let role = message.guild.roles.find("name", "Mod");
+
+// Let's pretend you mentioned the user you want to add a role to (!addrole @user Role Name):
+let member = message.mentions.members.first();
+
+// or the person who made the command: let member = message.member;
+
+// Add the role!
+member.addRole(role);
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
   }
 
 });

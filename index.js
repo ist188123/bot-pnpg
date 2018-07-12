@@ -7,7 +7,9 @@ const prefix = "+";
 
 client.on("message", msg => {
   
-  if (msg.content.startsWith('!')) {
+   let role = msg.guild.roles.find("name", "Mod");
+  
+  if (msg.content.startsWith('!in')) {
  
     
     
@@ -15,7 +17,7 @@ client.on("message", msg => {
     
     
     
-    let role = msg.guild.roles.find("name", "Mod");
+
 
 // Let's pretend you mentioned the user you want to add a role to (!addrole @user Role Name):
 let member = msg.mentions.members.first();
@@ -24,13 +26,15 @@ let member = msg.mentions.members.first();
 
 // Add the role!
 member.addRole(role);
-
+  }
+    
+  
+  if (msg.content.startsWith('!out')) {  
+    member.removeRole(role)
     
     
     
-    
-    
-    
+  }
     
     
     

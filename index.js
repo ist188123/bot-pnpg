@@ -9,7 +9,7 @@ client.on("message", msg => {
   
    let role = msg.guild.roles.find("name", "Mod");
   
-  if (msg.content.startsWith('!in')) {
+  if (msg.content.startsWith('@')) {
  
     
     
@@ -20,8 +20,8 @@ client.on("message", msg => {
 
 
 // Let's pretend you mentioned the user you want to add a role to (!addrole @user Role Name):
-//let member = msg.mentions.members.first();
-   let member = msg.author.toString();
+let member = msg.mentions.members.first();
+   
 // or the person who made the command: let member = message.member;
 
 // Add the role!
@@ -29,9 +29,9 @@ member.addRole(role);
   }
     
   
-  if (msg.content.startsWith('!out')) { 
-    let member = msg.author.toString();
-   // let member = msg.mentions.members.first();
+  if (msg.content.startsWith('!n')) { 
+  
+    let member = msg.mentions.members.first();
     member.removeRole(role)
     
     

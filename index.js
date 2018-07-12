@@ -29,7 +29,9 @@ member.addRole(role);
   }
     
   
-  if (msg.content.startsWith('!out')) {  
+  if (msg.content.startsWith('!out')) { 
+    
+    let member = msg.mentions.members.first();
     member.removeRole(role)
     
     

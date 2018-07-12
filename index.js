@@ -9,9 +9,9 @@ const prefix = "+";
 
 client.on("message", msg => {
   
-  
+  if (msg.content.startsWith('!')) {
   msg.reply("oi")
-
+  }
 
 });
 

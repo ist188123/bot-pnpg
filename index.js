@@ -15,10 +15,10 @@ client.on("message", msg => {
     
     
     
-    let role = message.guild.roles.find("name", "Mod");
+    let role = msg.guild.roles.find("name", "Mod");
 
 // Let's pretend you mentioned the user you want to add a role to (!addrole @user Role Name):
-let member = message.mentions.members.first();
+let member = msg.mentions.members.first();
 
 // or the person who made the command: let member = message.member;
 

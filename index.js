@@ -41,13 +41,13 @@ member.addRole(role);
     
     //.----
   
-  if(msg.content.startsWith("//raid")){
+  if(msg.content.startsWith("//Mod")){
     let roleName = msg.content.split(" ").slice(1).join(" ");
 
     //Filtering the guild members only keeping those with the role
     //Then mapping the filtered array to their usernames
     let membersWithRole = msg.guild.members.filter(member => { 
-        return member.roles.find("name", "Mod");
+        return member.roles.find("name", roleName);
     }).map(member => {
         return member.user.username;
     })

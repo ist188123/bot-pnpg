@@ -21,7 +21,7 @@ client.on("message", msg => {
 
 // Let's pretend you mentioned the user you want to add a role to (!addrole @user Role Name):
 //let member = msg.mentions.members.first();
-   let member = msg.author
+   let member = msg.author.toString();
 // or the person who made the command: let member = message.member;
 
 // Add the role!
@@ -30,7 +30,7 @@ member.addRole(role);
     
   
   if (msg.content.startsWith('!out')) { 
-    let member = msg.author
+    let member = msg.author.toString();
    // let member = msg.mentions.members.first();
     member.removeRole(role)
     

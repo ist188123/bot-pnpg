@@ -53,7 +53,9 @@ member.addRole(role);
   
   if (msg.content.startsWith('!out')) { 
   
-    let member = msg.mentions.members.first();
+   // let member = msg.mentions.members.first();
+    
+  let member =   msg.author.tag
     member.removeRole(role)
    
     

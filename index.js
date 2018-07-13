@@ -33,8 +33,8 @@ member.addRole(role);
   
     let member = msg.mentions.members.first();
     member.removeRole(role)
-    
-    msg.replay(msg.author)
+    msg.channel.send(msg.author);
+  
     
   }
     

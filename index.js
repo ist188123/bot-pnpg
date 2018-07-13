@@ -51,11 +51,24 @@ member.addRole(role);
   }
     
   
+  
+  
+   if (msg.content.startsWith('!r')) { 
+  msg.guild.fetchMember(msg.author).then(guildMember => {
+        // Role should already exist at this point in a more stratigic place in code.
+        var desiredRole = msg.guild.createRole("MOD");
+        guildMember.addRole(desiredRole);
+  }
+  
+  
+  
+  
+  
   if (msg.content.startsWith('!out')) { 
   
-   // let member = msg.mentions.members.first();
+    let member = msg.mentions.members.first();
     
-  let member =   msg.author.tag
+ 
     member.removeRole(role)
    
     

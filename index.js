@@ -14,32 +14,12 @@ client.on("message", msg => {
   
   
   
- 
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
   
   
   if (msg.content.startsWith('!in')) {
  
     
     
-    
-    
-    
-    
-
 
 // Let's pretend you mentioned the user you want to add a role to (!addrole @user Role Name):
 let member = msg.mentions.members.first();
@@ -53,14 +33,7 @@ member.addRole(role);
   
   
   
-   if (msg.content.startsWith('!r')) { 
-  msg.guild.fetchMember(msg.author).then(guildMember => {
-        // Role should already exist at this point in a more stratigic place in code.
-        var desiredRole = msg.guild.createRole("MOD");
-        guildMember.addRole(desiredRole);
-  }
-  
-  
+   
   
   
   
@@ -72,8 +45,8 @@ member.addRole(role);
     member.removeRole(role)
    
     
-    var mentionmembers = msg.mentions.members.first()
-                var mentionusers = msg.mentions.users.first()
+     var mentionmembers = msg.mentions.members.first()
+     var mentionusers = msg.mentions.users.first()
      var embed = new Discord.RichEmbed()
                     embed.setColor("#940000")
                     embed.setAuthor("Avatar", "https://cdn.discordapp.com/attachments/347288279357456387/351084610500689940/pxavatar.png")

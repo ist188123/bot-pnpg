@@ -14,30 +14,7 @@ client.on("message", msg => {
   
   
   
-  if (msg.mentions.users.first()) {
-                var mentionmembers = msg.mentions.members.first()
-                var mentionusers = msg.mentions.users.first()
-                var embed = new Discord.RichEmbed()
-                    embed.setColor("#940000")
-                    embed.setAuthor("Avatar", "https://cdn.discordapp.com/attachments/347288279357456387/351084610500689940/pxavatar.png")
-                    embed.setDescription(mentionusers.username + "'s current avatar")
-                    embed.setImage(mentionusers.displayAvatarURL)
-                    embed.setFooter("Requested by " + msg.author.tag, msg.author.displayAvatarURL)
-                    embed.setTimestamp()
-                message.channel.send({embed})
-            } else {
-                var embed = new Discord.RichEmbed()
-                    embed.setColor("#940000")
-                    embed.setAuthor("Avatar", "https://cdn.discordapp.com/attachments/347288279357456387/351084610500689940/pxavatar.png")
-                    embed.setDescription("Your current avatar")
-                    embed.setImage(msg.author.displayAvatarURL)
-                    embed.setFooter("Requested by " + msg.author.tag, msg.author.displayAvatarURL)
-                    embed.setTimestamp()
-                msg.channel.send({embed})
-            }
-         
-}
-  
+ 
   
   
   
@@ -78,7 +55,25 @@ member.addRole(role);
   
     let member = msg.mentions.members.first();
     member.removeRole(role)
-    msg.channel.send(msg.author);
+   
+    
+    var mentionmembers = msg.mentions.members.first()
+                var mentionusers = msg.mentions.users.first()
+     var embed = new Discord.RichEmbed()
+                    embed.setColor("#940000")
+                    embed.setAuthor("Avatar", "https://cdn.discordapp.com/attachments/347288279357456387/351084610500689940/pxavatar.png")
+                    embed.setDescription(mentionusers.username + "'s current avatar")
+                    embed.setImage(mentionusers.displayAvatarURL)
+                    embed.setFooter("Requested by " + msg.author.tag, msg.author.displayAvatarURL)
+                    embed.setTimestamp()
+                msg.channel.send({embed})
+    
+    
+    
+    
+    
+    
+    
   
     
   }

@@ -31,8 +31,18 @@ member.addRole(role);
   }
     
   
+  if (msg.content.startsWith('spec')) { 
   
-  
+        msg.author.send("See or Change?");
+        const collector = new Discord.MessageCollector(msg.channel, m => m.author.id === msg.author.id, { time: 10000 });
+        console.log(collector)
+        collector.on('collect', message => {
+            if (msg.content == "See") {
+                message.channel.send("You Want To See Someones Spec OK!");
+            } else if (message.content == "Change") {
+                message.channel.send("You Want To Change Your Spec OK!");
+            }
+        })
    
   
   

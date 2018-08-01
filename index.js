@@ -44,7 +44,7 @@ member.addRole(role);
             }
         })
    
-  
+  }
   
   
   if (msg.content.startsWith('!out')) { 

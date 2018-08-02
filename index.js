@@ -11,10 +11,12 @@ client.on("message", msg => {
   
   
   
-  
+  msg.react('➕');
+    let collector = msg.createReactionCollector(() => true, {dispose: true});
+    collector.on('collect', () => console.log('collected'));
+    collector.on('remove', () => console.log('removed'));
+    collector.on('dispose', () => console.log('disposed'));
 
-  
-  
   
   
   
@@ -78,12 +80,6 @@ member.addRole(role);
 
 
 
-
-
-
-client.on('messageReactionAdd', (reaction, user) => {
-	console.log('Reaction added; current count:', reaction.count);
-});
 
 
 

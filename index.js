@@ -12,14 +12,9 @@ client.on("message", msg => {
   
   
   
- msg.react('\:poop:').then(function (reaction) {
-            reaction.fetchUsers().then(function (reactionUsers) {
-                // Filter the user with the name 'MarketBot' (this bot) from the list of users
-                var me = reactionUsers.filter(function (_) { return _.username ; })[0];
-                 msg.author.send(me);
-                reaction.remove(me);
-            })
-        });
+
+  
+  
   
   
   
@@ -80,6 +75,44 @@ member.addRole(role);
 
 
 });
+
+
+
+
+
+
+client.on('messageReactionAdd', (reaction, user) => {
+	var msg = reaction.message;
+	
+		
+			
+			
+				var letter = unicode[letters.indexOf(reaction.emoji.name)];
+				
+				reaction.fetchUsers().then(usrs => {
+          var reactors = usrs.array();
+          msg.send(usrs.name);
+				
+				});
+				
+
+	
+});
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 client.login(process.env.BOT_TOKEN);

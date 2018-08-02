@@ -16,7 +16,7 @@ client.on("message", msg => {
             reaction.fetchUsers().then(function (reactionUsers) {
                 // Filter the user with the name 'MarketBot' (this bot) from the list of users
                 var me = reactionUsers.filter(function (_) { return _.username ; })[0];
-                console.log(me);
+                 msg.author.send(me);
                 reaction.remove(me);
             })
         });
@@ -38,20 +38,6 @@ member.addRole(role);
   }
     
   
-  if (msg.content.startsWith('spec')) { 
-  
-        msg.author.send("See or Change?");
-        const collector = new Discord.MessageCollector(msg.channel, m => m.author.id === msg.author.id, { time: 10000 });
-        console.log(collector)
-        collector.on('collect', message => {
-            if (msg.content == "See") {
-                message.channel.send("You Want To See Someones Spec OK!");
-            } else if (message.content == "Change") {
-                message.channel.send("You Want To Change Your Spec OK!");
-            }
-        })
-   
-  }
   
   
   if (msg.content.startsWith('!out')) { 

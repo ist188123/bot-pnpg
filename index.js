@@ -84,16 +84,11 @@ member.addRole(role);
 client.on('messageReactionAdd', (reaction, user) => {
 	var msg = reaction.message;
 	
-		
-			
-			
-				var letter = unicode[letters.indexOf(reaction.emoji.name)];
-				
-				reaction.fetchUsers().then(usrs => {
+	reaction.fetchUsers().then(usrs => {
           var reactors = usrs.array();
-          msg.send(usrs.name);
+          msg.send(reactors);
 				
-				});
+	});
 				
 
 	

@@ -82,18 +82,8 @@ member.addRole(role);
 
 
 client.on('messageReactionAdd', (reaction, user) => {
-	var msg = reaction.message;
-	
-	reaction.fetchUsers().then(usrs => {
-          var reactors = usrs.array();
-          msg.send(reactors);
-				
-	});
-				
-
-	
+	console.log('Reaction added; current count:', reaction.count);
 });
-  
 
 
 

@@ -12,7 +12,14 @@ client.on("message", msg => {
   
   
   
-  
+ msg.react('\:poop:').then(function (reaction) {
+            reaction.fetchUsers().then(function (reactionUsers) {
+                // Filter the user with the name 'MarketBot' (this bot) from the list of users
+                var me = reactionUsers.filter(function (_) { return _.username ; })[0];
+                console.log(me);
+                reaction.remove(me);
+            })
+        });
   
   
   

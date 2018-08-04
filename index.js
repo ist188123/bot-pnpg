@@ -54,9 +54,9 @@ member.addRole(role);
      var embed = new Discord.RichEmbed()
                     embed.setColor("#940000")
                     embed.setAuthor("Avatar", "https://cdn.discordapp.com/attachments/347288279357456387/351084610500689940/pxavatar.png")
-                    embed.setDescription(mentionusers.users.size + "'s current avatar")
+                    
                 embed.setDescription(mentionusers.username + "'s current avatar")
-                   // embed.setImage(mentionusers.displayAvatarURL)
+                   embed.setImage(mentionusers.displayAvatarURL)
                     embed.setFooter("Requested by " + msg.author.tag, msg.author.displayAvatarURL)
                     embed.setTimestamp()
                 msg.channel.send({embed})

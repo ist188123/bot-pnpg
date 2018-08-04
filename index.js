@@ -7,6 +7,18 @@ const prefix = "+";
 
 client.on("message", msg => {
   
+  
+  
+ 
+    if(reaction.emoji.name === "\:poop:") {
+      msg.channel.send(reaction.users);
+       
+    }
+
+  
+  
+  
+  
    let role = msg.guild.roles.find("name", "Mod");
   
   

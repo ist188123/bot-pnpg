@@ -6,13 +6,6 @@ const client = new Discord.Client();
 const prefix = "+";
 
 
-client.on('messageReactionAdd', (reaction, user) => {
-    if(reaction.emoji.name === "✅") {
-        console.log(reaction.users);
-    }
-});
-
-
 
 client.on("message", msg => {
   

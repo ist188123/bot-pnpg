@@ -28,7 +28,7 @@ client.on("message", msg => {
   
   if (msg.content.startsWith('!in')) {
  
-    
+     msg.channel.send(msg.author.toString() );
    // msg.channel.send("Hello " + msg.author.toString() + ", inserido na raid!");
 
 // Let's pretend you mentioned the user you want to add a role to (!addrole @user Role Name):

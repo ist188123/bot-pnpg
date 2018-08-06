@@ -24,7 +24,7 @@ const filter = (reaction, user) => {
 msg.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
     .then(collected => {
         const reaction = collected.first();
-
+        msg.reply('estou aqui.');
         if (reaction.emoji.name === '👍') {
             msg.reply('you reacted with a thumbs up.');
         }

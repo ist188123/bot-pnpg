@@ -3,23 +3,73 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 
 
-const prefix = "+";
 
 
 
+
+client.on('ready', () => console.log('Ready.'));
+
+const events = {
+	MESSAGE_REACTION_ADD: 'messageReactionAdd',
+	MESSAGE_REACTION_REMOVE: 'messageReactionRemove',
+};
+
+client.on('raw', async ({ t: eventName, d: data }) => {
+	if (!events.hasOwnProperty(eventName)) return;
+
+	const channel = client.channels.get(data.channel_id);
+
+	if (channel.messages.has(data.message_id)) return;
+
+	const user = client.users.get(data.user_id);
+	const message = await channel.messages.fetch(data.message_id);
+	const reaction = message.reactions.get(data.emoji.id || data.emoji.name);
+
+	client.emit(events[eventName], reaction, user);
+});
 
 client.on('messageReactionAdd', (reaction, user) => {
 	console.log('Reaction added; current count:', reaction.count);
 });
 
-
-
 client.on('messageReactionRemove', (reaction, user) => {
 	console.log('Reaction removed; current count:', reaction.count);
 });
 
+client.on('message', message => {
+	if (message.content === '!react') {
+		console.log('First reaction incoming.');
+		message.react('🤔');
+	}
+});
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const prefix = "+";
 
 client.on("message", msg => {
   

@@ -15,28 +15,9 @@ client.on("message", msg => {
     
     
     
-   // msg.react('👍').then(() => msg.react('👎'));
+  msg.react('👍').then(() => msg.react('👎'));
 
-const filter = (reaction, user) => {
-    return ['👍', '👎'].includes(reaction.emoji.name) && user.id === msg.author.id;
-};
 
-msg.awaitReactions(filter, { max: 1, time: 60000, errors: ['time'] })
-    .then(collected => {
-        const reaction = collected.first();
-        msg.reply('estou aqui.');
-        if (reaction.emoji.name === '👍') {
-            msg.reply('you reacted with a thumbs up.');
-        }
-        else {
-            msg.reply('you reacted with a thumbs down.');
-        }
-    })
-    .catch(collected => {
-        console.log(`After a minute, only ${collected.size} out of 4 reacted.`);
-        msg.reply('you didn\'t react with neither a thumbs up, nor a thumbs down.');
-    });
-    
     
     
     

@@ -22,14 +22,6 @@ client.on("message", msg => {
     
     
     
-    if(msg.react('👍')){
-    
-     msg.reply('you reacted with a thumbs up.');
-    
-    }
-    
-    
-    
     
     
     

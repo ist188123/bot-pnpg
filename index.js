@@ -5,11 +5,6 @@ const client = new Discord.Client();
 
 
 
-client.on("messageReactionAdd", (messageReaction, user) => {
-    msg.reply("sss");
-});
-
-
 
 
 
@@ -56,7 +51,11 @@ client.on("message", function(msg){
    let role = msg.guild.roles.find("name", "Mod");
   
   
-  
+  if (msg.content.startsWith('!vou')) {
+      
+      msg.reply(msg.author);
+      
+  }   
   
   
   
@@ -118,9 +117,6 @@ member.addRole(role);
 
 
 });
-
-
-
 
 
 

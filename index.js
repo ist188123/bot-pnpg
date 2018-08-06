@@ -6,7 +6,7 @@ const client = new Discord.Client();
 
 
 client.on("messageReactionAdd", (messageReaction, user) => {
-    message.reply("sss");
+    msg.reply("sss");
 });
 
 
@@ -23,7 +23,7 @@ client.on("messageReactionAdd", (messageReaction, user) => {
 
 const prefix = "+";
 
-client.on("message", function(msg)  => {
+client.on("message", function(msg){
   
   
   

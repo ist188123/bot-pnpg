@@ -18,7 +18,7 @@ const client = new Discord.Client();
 
 const prefix = "+";
 
-client.on("message", function(msg){
+client.on("message", msg => {
   
   
   

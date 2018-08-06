@@ -45,7 +45,7 @@ client.on("message", msg => {
 
 
         msg.forEach(msg=>{
-            msg.reply("ola mundo");
+           // msg.reply("ola mundo");
         })
        
 

@@ -7,6 +7,20 @@ const prefix = "+";
 
 
 
+
+client.on('messageReactionAdd', (reaction, user) => {
+	console.log('Reaction added; current count:', reaction.count);
+});
+
+
+
+client.on('messageReactionRemove', (reaction, user) => {
+	console.log('Reaction removed; current count:', reaction.count);
+});
+
+
+
+
 client.on("message", msg => {
   
   
@@ -19,6 +33,14 @@ client.on("message", msg => {
 
 
     
+    
+    
+    
+  //  if(msg.react('👍')){
+    
+  //   msg.reply('you reacted with a thumbs up.');
+    
+  //  }
     
     
     

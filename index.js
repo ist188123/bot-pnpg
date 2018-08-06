@@ -41,9 +41,13 @@ client.on("message", msg => {
     
     
     
-  msg.channel.fetchMessages({limit :100 }).then(msg=> {
+   msg.channel.fetchMessages({limit :100 }).then(msg=> {
 
-msg.reply("ola mundo")
+
+        msg.forEach(msg=>{
+            msg.reply("ola mundo");
+        })
+       
 
     })
     

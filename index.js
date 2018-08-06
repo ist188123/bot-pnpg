@@ -6,7 +6,7 @@ const client = new Discord.Client();
 const prefix = "+";
 
 client.on('messageReactionAdd', (reaction, user) => {
-    if(reaction.emoji.name === "✅") {
+    if(reaction.emoji.name === "\:poop:") {
         console.log(reaction.users);
     }
 });

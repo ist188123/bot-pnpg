@@ -15,19 +15,18 @@ client.on("message", msg => {
     
     
     
-  msg.react('👍').then(() => msg.react('👎'));
+ // msg.react('👍').then(() => msg.react('👎'));
 
 
     
     
     
     
+    if(msg.react('👍')){
     
+     msg.reply('you reacted with a thumbs up.');
     
-    
-    
-    
-    
+    }
     
     
     

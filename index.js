@@ -41,10 +41,10 @@ client.on("message", msg => {
     
     
     
+    channel.fetchMessages({ limit: 100 }).then(msg => {
+       msg.reply(msg.author);
     
-    
-    
-  
+    }
   
   
   

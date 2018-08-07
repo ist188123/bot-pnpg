@@ -20,7 +20,7 @@ client.on("message", msg => {
   //   msg.reply('you reacted with a thumbs up.');
     
   //  }
-     msg.guild.createRole({name:'xpto-file'})
+   //  msg.guild.createRole({name:'xpto-file'})
     
   msg.channel.fetchMessages({limit :100 }).then(msg=> {
 

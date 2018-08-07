@@ -40,20 +40,19 @@ client.on("message", msg => {
    let role = msg.guild.roles.find("name", "Mod");
   
   
- if (msg.content.startsWith('!vou')) {
-      let member=msg.author;
+if (msg.content.startsWith('!vou')) {
+      let member=msg.author.id;
       member.addRole(role)
-      msg.reply(msg.author);
+      msg.reply(msg.author.id);
       
   }     
   
   if (msg.content.startsWith('!n')) {
-    let member=msg.author;
+    let member=msg.author.id;
     member.removeRole(role)
-    msg.reply(msg.author);
+    msg.reply(msg.author.id);
     
-}   
-     
+}       
   
   
   

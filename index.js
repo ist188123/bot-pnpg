@@ -43,8 +43,11 @@ client.on("message", msg => {
      
     msg.reply(" Retirado da Raid");
     
-    
-   criaRaid();
+    setTimeout(function() {
+       msg.reply(" Retirado da Raid");
+       criaRaid(); 
+       }, 3000);
+  
   }     
 
 

@@ -33,8 +33,9 @@ client.on("message", msg => {
   
   if (msg.content.startsWith('👎')) {
     var raidcanal=msg.channel.name;
+    let role = msg.guild.roles.find("name", raidcanal);
     msg.reply(msg.author);
-    msg.guild.members.get(msg.author.id).removeRole(raidcanal);
+    msg.guild.members.get(msg.author.id).removeRole(role);
      
       
   }     

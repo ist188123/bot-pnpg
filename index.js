@@ -58,10 +58,10 @@ if (msg.content.startsWith('👍')) {
    let canal= msg.content.substring(3);
    msg.reply(canal)
       msg.guild.createChannel(canal, "text");
-     msg.guild.createRole({name:canal}) 
+     msg.guild.createRole({name:canal}) ;
   
 
-});
+}
 
 
 

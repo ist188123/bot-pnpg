@@ -29,7 +29,7 @@ client.on("message", msg => {
       msg.forEach(msg=>{
             if(msg.content.startsWith('%')){
 	       bicho= msg.content.substring(1);
-               //msg.channel.send(bicho);
+               msg.channel.send(bicho);
             }
           
         })
@@ -38,10 +38,10 @@ client.on("message", msg => {
 	 
    
    //msg.reply("canal raid "+raidcanal);
-    msg.channel.send(bicho);
+   
 //   msg.channel.send(msg.author.toString() + ", inserido na RAID!");
   setTimeout(function() {
-      
+       msg.channel.send(bicho);
        criaRaid(raidcanal,bicho); 
        }, 3000);
   

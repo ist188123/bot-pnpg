@@ -39,7 +39,7 @@ if (msg.content.startsWith('👍')) {
 
   
   
-  if(msg.content.startsWith("//inrole")){
+ if(msg.content.startsWith('//inrole')){
     let roleName = msg.content.split(" ").slice(1).join(" ");
 
     //Filtering the guild members only keeping those with the role

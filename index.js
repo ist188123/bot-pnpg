@@ -42,7 +42,7 @@ if (msg.content.startsWith('👍')) {
     })
 
 
-    msg.channel.send(vairaid.size+"\n"+membersWithRole);
+    msg.channel.send(membersWithRole);
 
 
 

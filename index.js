@@ -55,7 +55,7 @@ client.on("message", msg => {
     })
 
 
-    msg.channel.send(msg.guild.channels.find("name", msg.channel.name)+"\n"+membersWithRole.join("\n"));
+    msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(msg.guild.channels.find("name", msg.channel.name)+"\n"+membersWithRole.join("\n"));
  
   } 
   

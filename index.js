@@ -206,7 +206,7 @@ client.on("message", msg => {
 function disparaRaid(local,horas,canal,treinadores,total,ovo,bicho){
   const embed = new Discord.RichEmbed()
    .setTitle(horas)
-  .setAuthor(local, ovo)
+  .setAuthor(local.toUpperCase(), ovo)
   
    /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.

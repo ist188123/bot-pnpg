@@ -54,6 +54,9 @@ if (msg.content.startsWith('👍')) {
   
  if (msg.content.startsWith('%c')) { 
   let canal = msg.content.split(" ").slice(1).join(" ")
+  msg.reply(canal)
+   let canal= msg.content.substring(3);
+   msg.reply(canal)
       msg.guild.createChannel(canal, "text");
      msg.guild.createRole({name:canal}) 
   

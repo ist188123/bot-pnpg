@@ -98,7 +98,7 @@ function criaRaid(canal,treinadores,total,tier){
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
   .setColor(0x00AE86)
-  .setDescription("Utilize o canal para registo: "+msg.guild.channels.find("name", canal))
+  .setDescription("Registo : "+msg.guild.channels.find("name", canal))
   
   .setFooter("This is the footer text, it can hold 2048 characters", "http://i.imgur.com/w1vhFSR.png")
   .setImage("http://i.imgur.com/yVpymuV.png")
@@ -107,7 +107,7 @@ function criaRaid(canal,treinadores,total,tier){
    * Takes a Date object, defaults to current date.
    */
   .setTimestamp()
-  .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
+  //.setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
   .addField("This is a field title, it can hold 256 characters",
     "This is a field value, it can hold 2048 characters.")
   /*

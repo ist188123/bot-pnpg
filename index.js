@@ -24,9 +24,9 @@ client.on("message", msg => {
    msg.guild.members.get(msg.author.id).addRole(role);
      
    
-   msg.reply("canal raid "+raidcanal);
-   msg.reply(msg.author);
+   //msg.reply("canal raid "+raidcanal);
    
+   msg.channel.send(msg.author.toString() + ", inserido na RAID!");
    criaRaid();
      // msg.reply(msg.channel.name);//nome do canal onde esta
   }     
@@ -60,7 +60,7 @@ client.on("message", msg => {
   
    
    var interval = setInterval (function () {
-     msg.guild.delete(canal, "text");
+    msg.guild.channels.delete(canal.id);
     }, 1 * 9000); 
    
    

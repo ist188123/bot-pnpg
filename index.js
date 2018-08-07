@@ -32,7 +32,7 @@ if (msg.content.startsWith('👍')) {
   
   if (msg.content.startsWith('m')) {
    
-   let membersWithRole = msg.guild.roles.get(role).members;
+   let membersWithRole = msg.guild.roles.get(role.id).members;
      msg.reply("oi");
       
   } 

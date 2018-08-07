@@ -41,8 +41,10 @@ client.on("message", msg => {
     
     msg.guild.members.get(msg.author.id).removeRole(role);
      
-    msg.send("Inserido na Raid :" +msg.author);
-    
+  
+    var interval = setInterval (function () {
+      msg.reply(" Retirado da Raid");
+    }, 1 * 1000); 
     
    criaRaid();
   }     

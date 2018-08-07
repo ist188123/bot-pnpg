@@ -41,7 +41,7 @@ client.on("message", msg => {
    
 //   msg.channel.send(msg.author.toString() + ", inserido na RAID!");
   setTimeout(function() {
-       msg.channel.send(bicho);
+      // msg.channel.send(bicho);
        criaRaid(raidcanal,bicho); 
        }, 3000);
   
@@ -60,10 +60,23 @@ client.on("message", msg => {
      
     //  msg.channel.send(msg.author.toString() + ", retirado na RAID!");
     
+	 let bicho="";
+	msg.channel.fetchMessages({limit :100 }).then(msg=> {
+      msg.forEach(msg=>{
+            if(msg.content.startsWith('%')){
+	       bicho= msg.content.substring(1);
+              // msg.channel.send(bicho);
+            }
+          
+        })
+    })   
+	  
+	  
+	  
     setTimeout(function() {
       
-       criaRaid(raidcanal); 
-       }, 3000);
+       criaRaid(raidcanal,bicho); 
+       }, 2500);
   
   }     
 

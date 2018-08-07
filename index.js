@@ -52,68 +52,11 @@ if (msg.content.startsWith('👍')) {
 
   
   
+ if (msg.content.startsWith('%c')) { 
+  let canal = msg.content.split(" ").slice(1).join(" ")
+      msg.guild.createChannel(canal, "text");
+     msg.guild.createRole({name:canal}) 
   
-  
-  
-  
-  
-  
-  if (msg.content.startsWith('!in')) {
- 
-   
-   // msg.channel.send("Hello " + msg.author.toString() + ", inserido na raid!");
-
-// Let's pretend you mentioned the user you want to add a role to (!addrole @user Role Name):
-let member = msg.mentions.members.first();
-   
-// or the person who made the command: let member = message.member;
-
-// Add the role!
-member.addRole(role);
-  }
-    
-  
-  
-  
-  if (msg.content.startsWith('!out')) { 
-  
-    let member = msg.mentions.members.first();
-    
- 
-    member.removeRole(role)
-  
-    
-     var mentionmembers = msg.mentions.members.first()
-     var mentionusers = msg.mentions.users.first()
-     var embed = new Discord.RichEmbed()
-                    embed.setColor("#940000")
-                    embed.setAuthor("Avatar", "https://cdn.discordapp.com/attachments/347288279357456387/351084610500689940/pxavatar.png")
-                    
-                embed.setDescription(mentionusers.username + "'s current avatar")
-                   embed.setImage(mentionusers.displayAvatarURL)
-                    embed.setFooter("Requested by " + msg.author.tag, msg.author.displayAvatarURL)
-                    embed.setTimestamp()
-                msg.channel.send({embed})
-    
-    
-    
-    
-    
-    
-    
-  
-    
-  }
-    
-    
-    //.----
-  
-  
-  
-  //-----
-    
-    
-
 
 });
 

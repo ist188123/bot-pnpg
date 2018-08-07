@@ -92,8 +92,31 @@ client.on("message", msg => {
     let  bicho="https://exraidspinhalnovo.webnode.pt/_files/200000030-050b3060a3/450/articune.png";
     let ovo="https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png";
     
+   
+     var tiporaid=raidcanal.substring(5,6);
+			var titulo="RAID "+raidcanal.substr(5)
+			var thoras=titulo.split("-")
+			var horas=thoras[thoras.length-1]
+	    y=thoras
+      var local=""
+
+     for (var i=0;i<y.length-1;i++){
+         local=local+" "+y[i]
+   
+        }
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
     
-   disparaRaid(msg.channel.name,membersWithRole.join("\n"),vairaid.size,ovo,bicho);
+   disparaRaid(raidcanal,membersWithRole.join("\n"),vairaid.size,ovo,bicho);
   //  msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(msg.guild.channels.find("name", msg.channel.name)+"\n"+membersWithRole.join("\n"));
  
   } 

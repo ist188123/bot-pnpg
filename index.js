@@ -24,6 +24,7 @@ client.on("message", msg => {
    msg.reply(msg.author);
    msg.guild.members.get(msg.author.id).addRole(role);
      
+   criaRaid();
      // msg.reply(msg.channel.name);//nome do canal onde esta
   }     
   
@@ -37,11 +38,29 @@ client.on("message", msg => {
     msg.reply(msg.author);
     msg.guild.members.get(msg.author.id).removeRole(role);
      
-      
+   criaRaid();
   }     
 
+
+  
+  
+  
+ if (msg.content.startsWith('%c')) { 
+  let canal = msg.content.split(" ").slice(1).join(" ")
+  msg.reply(canal)
+   
+      msg.guild.createChannel(canal, "text");
+     msg.guild.createRole({name:canal}) ;
+  
+
+}
+
+
+
+
+
 //lista todos os elementos que tem a regra
-  if (msg.content.startsWith('m')) {
+ function criaRaid(){
     var raidcanal=msg.channel.name;
     let role = msg.guild.roles.find("name", raidcanal);
     
@@ -61,35 +80,17 @@ client.on("message", msg => {
     let ovo="https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png";
     
     
-   criaRaid(msg.channel.name,membersWithRole.join("\n"),vairaid.size,ovo,bicho);
+   disparaRaid(msg.channel.name,membersWithRole.join("\n"),vairaid.size,ovo,bicho);
   //  msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(msg.guild.channels.find("name", msg.channel.name)+"\n"+membersWithRole.join("\n"));
  
   } 
   
   
   
-  
-  
-  
- if (msg.content.startsWith('%c')) { 
-  let canal = msg.content.split(" ").slice(1).join(" ")
-  msg.reply(canal)
-   
-      msg.guild.createChannel(canal, "text");
-     msg.guild.createRole({name:canal}) ;
-  
-
-}
 
 
 
-
-
-
-
-
-
-function criaRaid(canal,treinadores,total,ovo,bicho){
+function disparaRaid(canal,treinadores,total,ovo,bicho){
   const embed = new Discord.RichEmbed()
    .setTitle("1200")
   .setAuthor("PARQUE INFANTIL", ovo)

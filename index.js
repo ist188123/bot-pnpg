@@ -41,11 +41,13 @@ client.on("message", msg => {
   
   
 if (msg.content.startsWith('!vou')) {
-      let member=msg.author.id;
-      member.addRole(role)
-      msg.reply(msg.author.id);
+    msg.reply(msg.author.id);
       
-  }     
+      
+      let member = msg.mentions.members.first();
+      member.addRole(role)
+      
+  }       
   
   if (msg.content.startsWith('!n')) {
     let member=msg.author.id;

@@ -30,26 +30,31 @@ if (msg.content.startsWith('👍')) {
   
   
   
-  if (msg.content.startsWith('m')) {
+ if (msg.content.startsWith('m')) {
    
     let vairaid = msg.guild.roles.get(role.id).members; //quantidade de users
 
     
     let membersWithRole = msg.guild.members.filter(member => { 
-         return member.roles.find("name", regra);
+        return member.roles.find("name", regra);
     }).map(member => {
         return member.user.username;
     })
 
 
-    msg.channel.send("Total Treinadores : "+vairaid+"\n"+membersWithRole);
+    
 
+    let embed = new discord.RichEmbed({
+        "title": vairaid.size,
+        "description": membersWithRole.join("\n"),
+        "color": 0xFFFF
+    });
 
+    msg.channel.send({embed});
 
      
       
   } 
-  
 
   
   

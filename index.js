@@ -36,7 +36,7 @@ if (msg.content.startsWith('👍')) {
 
     
     let membersWithRole = msg.guild.members.filter(member => { 
-        return member.roles.find("name", role);
+        return role
     }).map(member => {
         return member.user.username;
     })

@@ -55,7 +55,7 @@ client.on("message", msg => {
     })
 
 
-    msg.channel.send(raidcanal+"\n"+membersWithRole.join("\n"));
+    msg.channel.send("Utilize o canal para registo "+msg.guild.channels.find("name", msg.channel.name)+"\n"+membersWithRole.join("\n"));
  
   } 
   

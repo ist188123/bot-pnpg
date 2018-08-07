@@ -54,7 +54,7 @@ client.on("message", msg => {
         return member.user;
     })
 
-   criaRaid(msg.guild.channels.find("name", msg.channel.name),membersWithRole.join("\n"),vairaid.size);
+   criaRaid(msg.channel.name,membersWithRole.join("\n"),vairaid.size);
   //  msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(msg.guild.channels.find("name", msg.channel.name)+"\n"+membersWithRole.join("\n"));
  
   } 

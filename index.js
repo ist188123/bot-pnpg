@@ -51,7 +51,7 @@ if (msg.content.startsWith('👍')) {
     })
 
     let embed = new discord.RichEmbed({
-        "title": `Users with the ${roleName} role`,
+       "title": 'Users with the ${roleName} role',
         "description": membersWithRole.join("\n"),
         "color": 0xFFFF
     });

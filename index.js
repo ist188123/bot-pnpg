@@ -26,7 +26,7 @@ client.on("message", msg => {
 
 
         msg.forEach(msg=>{
-            if(msg.content.startsWith('!vou')){
+            if(msg.content.startsWith('!fou')){
                 msg.reply(msg.author);
             }
           
@@ -40,11 +40,20 @@ client.on("message", msg => {
    let role = msg.guild.roles.find("name", "Mod");
   
   
-  if (msg.content.startsWith('!vou')) {
-      
+ if (msg.content.startsWith('!vou')) {
+      let member=msg.author;
+      member.addRole(role)
       msg.reply(msg.author);
       
-  }   
+  }     
+  
+  if (msg.content.startsWith('!n')) {
+    let member=msg.author;
+    member.removeRole(role)
+    msg.reply(msg.author);
+    
+}   
+     
   
   
   

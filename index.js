@@ -55,6 +55,26 @@ client.on("message", msg => {
   }     
 
 
+	//--teste ---
+	 if (msg.content.startsWith('%f')) { 
+	
+    
+		 
+		 
+      msg.channel.fetchMessages({limit :100 }).then(msg=> {
+
+
+        msg.forEach(msg=>{
+            if(msg.content.startsWith('%a')){
+                msg.reply(msg.author);
+            }
+          
+        })
+       
+
+    })
+	 }
+	//--fim teste --
   
   
   

@@ -92,7 +92,7 @@ client.on("message", msg => {
 function criaRaid(canal,treinadores,total,tier){
   
   const embed = new Discord.RichEmbed()
-  .setTitle("Utilize o canal para registo "+canal)
+  .setTitle("Utilize o canal para registo: "+msg.guild.channels.find("name", canal))
   .setAuthor("Author Name", tier)
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.

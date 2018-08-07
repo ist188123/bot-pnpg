@@ -92,13 +92,14 @@ client.on("message", msg => {
 function criaRaid(canal,treinadores,total,tier){
   
   const embed = new Discord.RichEmbed()
-  .setTitle("Utilize o canal para registo: "+msg.guild.channels.find("name", canal))
-  .setAuthor("Author Name", tier)
+  .setTitle("horas")
+  .setAuthor("RAID 5 PARQUE INFANTIL", tier)
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
   .setColor(0x00AE86)
-  .setDescription("This is the main body of text, it can hold 2048 characters.")
+  .setDescription("Utilize o canal para registo: "+msg.guild.channels.find("name", canal))
+  
   .setFooter("This is the footer text, it can hold 2048 characters", "http://i.imgur.com/w1vhFSR.png")
   .setImage("http://i.imgur.com/yVpymuV.png")
   .setThumbnail("http://i.imgur.com/p2qNFag.png")

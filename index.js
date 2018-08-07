@@ -46,7 +46,16 @@ let membersWithRole = msg.guild.members.filter(member => {
     }).map(member => {
         return member.user.username;
     })
-   msg.reply("sim");
+  
+
+
+let embed = new discord.RichEmbed({
+        "title": 'Users with the ${roleName} role',
+        "description": membersWithRole.join("\n"),
+        "color": 0xFFFF
+    });
+
+    return msg.channel.send({embed});
 }
   
   

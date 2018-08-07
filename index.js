@@ -55,7 +55,7 @@ client.on("message", msg => {
     })
 
 
-    msg.channel.send(role+"\n"+membersWithRole.join("\n"));
+    msg.channel.send(raidcanal+"\n"+membersWithRole.join("\n"));
  
   } 
   

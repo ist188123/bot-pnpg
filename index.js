@@ -193,7 +193,7 @@ client.on("message", msg => {
    //----  FIM TIPO RAID ---
    
     
-   disparaRaid(local,horas,raidcanal,membersWithRole.join("\n"),vairaid.size,ovo,bicho);
+   disparaRaid(local,horas,raidcanal,membersWithRole.join("\n"),vairaid.size,ovo,braid);
   //  msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(msg.guild.channels.find("name", msg.channel.name)+"\n"+membersWithRole.join("\n"));
  
   } 

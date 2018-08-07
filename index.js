@@ -56,7 +56,7 @@ client.on("message", msg => {
 
 
 	//--teste ---
-	 if (msg.content.startsWith('%f')) { 
+	 if (msg.content.startsWith('-f')) { 
 	
     
 		 
@@ -66,8 +66,8 @@ client.on("message", msg => {
 
         msg.forEach(msg=>{
             if(msg.content.startsWith('%')){
-		   
-                msg.reply(msg.content);
+	      let bicho= msg.content.substring(1);
+               msg.channel.send(bicho);
             }
           
         })

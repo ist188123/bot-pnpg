@@ -57,7 +57,7 @@ client.on("message", msg => {
     
     
     
-    
+    let  braid="https://exraidspinhalnovo.webnode.pt/_files/200000030-050b3060a3/450/articune.png";
     let ovo="https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png";
     
     
@@ -89,37 +89,36 @@ client.on("message", msg => {
 
 
 
-function criaRaid(canal,treinadores,total,tier){
-  
+function criaRaid(canal,treinadores,total,tier,braid){
   const embed = new Discord.RichEmbed()
-  .setTitle("17h00")
-  .setAuthor("Author Name", ovo)
-  /*
+   .setTitle("1200")
+  .setAuthor("PARQUE INFANTIL", ovo)
+  
+   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
   .setColor(0x00AE86)
-  .setDescription("Registo : "+msg.guild.channels.find("name", canal))
-  
- 
+  .setDescription("")
   .setFooter("Equipa: PKG Pinhal Novo, pubicado :", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
-  //.setImage("http://i.imgur.com/yVpymuV.png")
-  .setThumbnail("http://i.imgur.com/p2qNFag.png")
+ // .setImage("http://i.imgur.com/yVpymuV.png")
+  .setThumbnail(braid)
   /*
    * Takes a Date object, defaults to current date.
    */
   .setTimestamp()
   .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
-  
-  .addField("Niveis CP", " ")
+  .addField("Niveis CP", "ss")
   /*
-   * Inline fields may not display as inline if the thumbnail and/or image is too big.
+   * lista dos jogadores que vão RAID.
    */
-  addField("Treinadores : "+total, treinadores, true)
+  .addField("Treinadores : "+total, treinadores, true)
   /*
    * Blank field, useful to create some space.
    */
+   
   .addBlankField(true)
-  .addField("Fraco contra:","", true);  
+  .addField("\n\n\n\n\n\Fraco contra:","ok", true);  
+  
   
   
   msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage({embed});

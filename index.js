@@ -13,6 +13,7 @@ client.on("message", msg => {
   
  //  let role = msg.guild.roles.find("name", regra);
   
+   
   
  if (msg.content.startsWith('👍')) {
    let raidcanal=msg.channel.name;
@@ -47,7 +48,7 @@ client.on("message", msg => {
 
     
     let membersWithRole = msg.guild.members.filter(member => { 
-        return member.roles.find("name", regra);
+        return member.roles.find("name", raidcanal);
     }).map(member => {
         return member.user;
     })
@@ -56,7 +57,10 @@ client.on("message", msg => {
     msg.channel.send(membersWithRole.join("\n"));
  
   } 
-
+  
+  
+  
+  
   
   
  if (msg.content.startsWith('%c')) { 

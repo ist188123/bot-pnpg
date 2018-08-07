@@ -41,7 +41,7 @@ client.on("message", msg => {
   
   
 if (msg.content.startsWith('!vou')) {
-    msg.reply(msg.author.id);
+    msg.reply(msg.author);
       
       
       let member = msg.mentions.members.first();

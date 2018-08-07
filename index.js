@@ -55,7 +55,7 @@ client.on("message", msg => {
     })
 
 
-    msg.channel.send(membersWithRole.join("\n"));
+    msg.channel.send(role+"\n"+membersWithRole.join("\n"));
  
   } 
   

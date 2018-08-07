@@ -8,10 +8,10 @@ client.on("message", msg => {
   
    
 
-    
+   var regra="Mod"
   
   
-   let role = msg.guild.roles.find("name", "Mod");
+   let role = msg.guild.roles.find("name", regra);
   
   
 if (msg.content.startsWith('👍')) {
@@ -36,7 +36,7 @@ if (msg.content.startsWith('👍')) {
 
     
     let membersWithRole = msg.guild.members.filter(member => { 
-        return role
+         return member.roles.find("name", regra);
     }).map(member => {
         return member.user.username;
     })

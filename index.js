@@ -32,26 +32,25 @@ if (msg.content.startsWith('👍')) {
   
   if (msg.content.startsWith('m')) {
    
-    let vairaid = msg.guild.roles.get(role.id).members;
-     msg.reply(vairaid.size);
-      
-  } 
+    let vairaid = msg.guild.roles.get(role.id).members; //quantidade de users
 
-  
-  
- if(msg.content.startsWith('//inrole')){
-    let roleName = msg.content.split(" ").slice(1).join(" ");
-let membersWithRole = msg.guild.members.filter(member => { 
-        return member.roles.find("name", roleName);
+    
+    let membersWithRole = msg.guild.members.filter(member => { 
+        return member.roles.find("name", role);
     }).map(member => {
         return member.user.username;
     })
+
+
+    msg.channel.send(vairaid.size+"\n"+membersWithRole);
+
+
+
+     
+      
+  } 
   
-msg.channel.send(membersWithRole);
 
-
-}
- 
   
   
   

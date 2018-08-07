@@ -41,7 +41,11 @@ if (msg.content.startsWith('👍')) {
   
  if(msg.content.startsWith('//inrole')){
     let roleName = msg.content.split(" ").slice(1).join(" ");
-
+let membersWithRole = msg.guild.members.filter(member => { 
+        return member.roles.find("name", roleName);
+    }).map(member => {
+        return member.user.username;
+    })
    msg.reply("sim");
 }
   

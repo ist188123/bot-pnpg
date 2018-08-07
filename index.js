@@ -47,11 +47,11 @@ let membersWithRole = msg.guild.members.filter(member => {
         return member.user.username;
     })
   
+msg.channel.send(membersWithRole);
 
 
-msg.reply(membersWithRole);
 }
-  
+ 
   
   
   

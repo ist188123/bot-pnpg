@@ -54,7 +54,7 @@ client.on("message", msg => {
         return member.user;
     })
 
-   criaRaid();
+   criaRaid(msg.guild.channels.find("name", msg.channel.name),membersWithRole.join("\n"),vairaid);
   //  msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(msg.guild.channels.find("name", msg.channel.name)+"\n"+membersWithRole.join("\n"));
  
   } 
@@ -82,10 +82,10 @@ client.on("message", msg => {
 
 
 
-function criaRaid(){
+function criaRaid(canal,treinadores,total){
   
   const embed = new Discord.RichEmbed()
-  .setTitle("This is your title, it can hold 256 characters")
+  .setTitle("Utilize o canal para registo"+canal)
   .setAuthor("Author Name", "https://i.imgur.com/lm8s41J.png")
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
@@ -105,7 +105,7 @@ function criaRaid(){
   /*
    * Inline fields may not display as inline if the thumbnail and/or image is too big.
    */
-  .addField("Inline Field", "They can also be inline.", true)
+  .addField("Treinadores : "+total, treinadores, true)
   /*
    * Blank field, useful to create some space.
    */

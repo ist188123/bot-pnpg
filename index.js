@@ -2,29 +2,11 @@ const Discord = require("discord.js");
 
 const client = new Discord.Client();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const prefix = "+";
 
 client.on("message", msg => {
   
-  
-  
- 
-    
-    
+   
     
  // msg.react('👍').then(() => msg.react('👎'));
 
@@ -40,18 +22,19 @@ client.on("message", msg => {
   //  }
     
     
-    
-   msg.channel.fetchMessages({limit :100 }).then(msg=> {
+  msg.channel.fetchMessages({limit :100 }).then(msg=> {
 
 
         msg.forEach(msg=>{
-           // msg.reply("ola mundo");
+            if(msg.content.startsWith('!vou')){
+                msg.reply(msg.author);
+            }
+          
         })
        
 
     })
     
-  
   
   
    let role = msg.guild.roles.find("name", "Mod");

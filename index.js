@@ -14,40 +14,40 @@ client.on("message", msg => {
    let role = msg.guild.roles.find("name", regra);
   
   
-if (msg.content.startsWith('👍')) {
-    msg.reply(msg.author);
-   msg.guild.members.get(msg.author.id).addRole(role);
+ if (msg.content.startsWith('👍')) {
+   var raidcanal=msg.channel.name;
+   
+   msg.reply(msg.author);
+   msg.guild.members.get(msg.author.id).addRole(raidcanal);
      
-    msg.reply(msg.channel.name);
+     // msg.reply(msg.channel.name);//nome do canal onde esta
   }     
   
   if (msg.content.startsWith('👎')) {
+    var raidcanal=msg.channel.name;
     msg.reply(msg.author);
-    msg.guild.members.get(msg.author.id).removeRole(role);
+    msg.guild.members.get(msg.author.id).removeRole(raidcanal);
      
       
   }     
-  
-  
-  
- if (msg.content.startsWith('m')) {
-   
+
+//lista todos os elementos que tem a regra
+  if (msg.content.startsWith('m')) {
+    var raidcanal=msg.channel.name;
+    let role = msg.guild.roles.find("name", raidcanal);
+    
     let vairaid = msg.guild.roles.get(role.id).members; //quantidade de users
 
     
     let membersWithRole = msg.guild.members.filter(member => { 
         return member.roles.find("name", regra);
     }).map(member => {
-         return member.user;
+        return member.user;
     })
 
 
-    
-
-    msg.channel.send(vairaid.size+"\n"+membersWithRole.join("\n"));
-
-     
-      
+    msg.channel.send(membersWithRole.join("\n"));
+ 
   } 
 
   

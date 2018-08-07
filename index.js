@@ -29,7 +29,7 @@ client.on("message", msg => {
    msg.channel.send(msg.author.toString() + ", inserido na RAID!");
   setTimeout(function() {
       
-       criaRaid(); 
+       criaRaid(raidcanal); 
        }, 3000);
   
      // msg.reply(msg.channel.name);//nome do canal onde esta
@@ -49,7 +49,7 @@ client.on("message", msg => {
     
     setTimeout(function() {
       
-       criaRaid(); 
+       criaRaid(raidcanal); 
        }, 3000);
   
   }     
@@ -73,8 +73,8 @@ client.on("message", msg => {
 
 
 //lista todos os elementos que tem a regra
- function criaRaid(){
-    var raidcanal=msg.channel.name;
+ function criaRaid(canalRaid){
+    var raidcanal=canalRaid;
     let role = msg.guild.roles.find("name", raidcanal);
     
     let vairaid = msg.guild.roles.get(role.id).members; //quantidade de users

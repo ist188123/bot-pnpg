@@ -57,11 +57,11 @@ client.on("message", msg => {
     
     
     
-    let  braid="https://exraidspinhalnovo.webnode.pt/_files/200000030-050b3060a3/450/articune.png";
+    let  bicho="https://exraidspinhalnovo.webnode.pt/_files/200000030-050b3060a3/450/articune.png";
     let ovo="https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png";
     
     
-   criaRaid(msg.channel.name,membersWithRole.join("\n"),vairaid.size,ovo);
+   criaRaid(msg.channel.name,membersWithRole.join("\n"),vairaid.size,ovo,bicho);
   //  msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(msg.guild.channels.find("name", msg.channel.name)+"\n"+membersWithRole.join("\n"));
  
   } 
@@ -89,10 +89,10 @@ client.on("message", msg => {
 
 
 
-function criaRaid(canal,treinadores,total,tier,braid){
+function criaRaid(canal,treinadores,total,ovo,bicho){
   const embed = new Discord.RichEmbed()
    .setTitle("1200")
-  .setAuthor("PARQUE INFANTIL", tier)
+  .setAuthor("PARQUE INFANTIL", ovo)
   
    /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
@@ -101,7 +101,7 @@ function criaRaid(canal,treinadores,total,tier,braid){
   .setDescription("")
   .setFooter("Equipa: PKG Pinhal Novo, pubicado :", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
  // .setImage("http://i.imgur.com/yVpymuV.png")
-  .setThumbnail(braid)
+  .setThumbnail(bicho)
   /*
    * Takes a Date object, defaults to current date.
    */

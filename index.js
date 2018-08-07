@@ -87,18 +87,22 @@ client.on("message", msg => {
     })
 
     
+        var status="?";
+	var cpiv="?"
+	
+	var ovo="";
+	var braid=ovo;
+	var bicho="";
     
     
-    let  bicho="https://exraidspinhalnovo.webnode.pt/_files/200000030-050b3060a3/450/articune.png";
-    let ovo="https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png";
     
    
      var tiporaid=raidcanal.substring(5,6);
-			var titulo="RAID "+raidcanal.substr(5)
-			var thoras=titulo.split("-")
-			var horas=thoras[thoras.length-1]
-	    y=thoras
-      var local=""
+     var titulo="RAID "+raidcanal.substr(5)
+     var thoras=titulo.split("-")
+     var horas=thoras[thoras.length-1]
+     y=thoras
+     var local=""
 
      for (var i=0;i<y.length-1;i++){
          local=local+" "+y[i]
@@ -107,13 +111,86 @@ client.on("message", msg => {
    
    
    
+   //---- TIPO RAID ----
+   
+   if(tiporaid.startsWith('3')){
+        ovo="https://exraidspinhalnovo.webnode.pt/_files/200000027-959cf96a39/200/4.png";
+      
+		braid=ovo;   
+		
+		//bicho
+	if(bicho.startsWith('machamp')){
+         braid="https://exraidspinhalnovo.webnode.pt/_files/200000031-dcf97ddeea/450/pokemon_icon_068_00.png";
+		cpiv="1574-1967 1650-2063"	
+       }     
+	}   
+	//----     
+	    
+	
+	
+	
+	
+     if(tiporaid.startsWith('4')){
+        ovo="https://exraidspinhalnovo.webnode.pt/_files/200000027-959cf96a39/200/4.png";
+       
+        braid=ovo;
+    
+	     
+	if(bicho.startsWith('golem')){
+         braid=" https://exraidspinhalnovo.webnode.pt/_files/200000037-85af786acf/450/golem.png";
+	     cpiv="Nivel 20 CP 1666";
+	    status="Duplo fraco contra WATER e GRASS\nKyogre Waterfall - Hydro Pump\nGyarados Waterfall - Hydro Pump\nGroudon Mud Shot - Solar Beam"
+       }     
+	     
+	     
+     if(bicho.startsWith('absol')){
+         braid="https://exraidspinhalnovo.webnode.pt/_files/200000028-3bf1a3ce89/450/apsol.png";
+	     cpiv="1232-1303/1540-1629";
+       }      
+	      
+	 if(bicho.startsWith('tyra')){
+         braid="https://exraidspinhalnovo.webnode.pt/_files/200000029-e0378e12f0/450/tyra.png";
+       } 
+     } //----  
+	
+	
+	 //------
+	if(tiporaid.startsWith('5')){
+        ovo="https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png";
+       
+        braid=ovo;    
+		
+		
+	
+	
+	if(bicho.startsWith('regis')){
+         braid="https://exraidspinhalnovo.webnode.pt/_files/200000035-0751e084bd/450/registeel.png";
+	cpiv="1222-1292 / 1528-1615";
+	status="Charizard with Overheat\nBlaziken FIRE\nTyphlosion - Overheat\nArcanine - Flamethrower\nSalamance - Fire Fang - Fire Blast\nHeracross - Combat\n";
+       }	
+		
+		
+		
+	if(bicho.startsWith('regice')){
+         braid="https://exraidspinhalnovo.webnode.pt/_files/200000018-6874a696da/450/regice.png";
+	cpiv="1682-1764 / 2103-2205";
+		status="ENTEI\nMOLTRES\nCHARIZARD\nFLAREON\nHO-oh";
+       }	
+	    
+	  if(bicho.startsWith('ohoh')){
+         braid="https://exraidspinhalnovo.webnode.pt/_files/200000026-5ec255fb74/450/Ho-Oh.png";
+       }
+	    
+	    
+      if(bicho.startsWith('articune')){
+         braid="https://exraidspinhalnovo.webnode.pt/_files/200000030-050b3060a3/450/articune.png";
+       }   
+	     
+	}//----    
    
    
    
-   
-   
-   
-   
+   //----  FIM TIPO RAID ---
    
     
    disparaRaid(local,horas,raidcanal,membersWithRole.join("\n"),vairaid.size,ovo,bicho);

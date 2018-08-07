@@ -116,7 +116,7 @@ client.on("message", msg => {
    
    
     
-   disparaRaid(raidcanal,membersWithRole.join("\n"),vairaid.size,ovo,bicho);
+   disparaRaid(local,horas,raidcanal,membersWithRole.join("\n"),vairaid.size,ovo,bicho);
   //  msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(msg.guild.channels.find("name", msg.channel.name)+"\n"+membersWithRole.join("\n"));
  
   } 
@@ -126,10 +126,10 @@ client.on("message", msg => {
 
 
 
-function disparaRaid(canal,treinadores,total,ovo,bicho){
+function disparaRaid(local,horas,canal,treinadores,total,ovo,bicho){
   const embed = new Discord.RichEmbed()
-   .setTitle("1200")
-  .setAuthor("PARQUE INFANTIL", ovo)
+   .setTitle(horas)
+  .setAuthor(local, ovo)
   
    /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.

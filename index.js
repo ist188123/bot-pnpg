@@ -13,6 +13,28 @@ client.on("message", msg => {
   
  //  let role = msg.guild.roles.find("name", regra);
   
+    if (msg.content.startsWith('%')) {
+   let raidcanal=msg.channel.name;
+   
+    let role = msg.guild.roles.find("name", raidcanal);
+   
+    let bicho=msg.content.substring(1);
+	
+   setTimeout(function() {
+      // msg.channel.send(bicho);
+       criaRaid(raidcanal,bicho); 
+       }, 2500);
+  
+     // msg.reply(msg.channel.name);//nome do canal onde esta
+  }     
+  
+   
+   
+   
+   
+   
+   
+   
    
   
  if (msg.content.startsWith('👍')) {

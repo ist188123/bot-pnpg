@@ -63,7 +63,7 @@ if (msg.content.startsWith('👍')) {
 }
 
 
-
+});
 
 
 

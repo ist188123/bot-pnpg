@@ -23,13 +23,26 @@ client.on("message", msg => {
    
    msg.guild.members.get(msg.author.id).addRole(role);
      
+	 
+	 let bicho="";
+	msg.channel.fetchMessages({limit :100 }).then(msg=> {
+      msg.forEach(msg=>{
+            if(msg.content.startsWith('%')){
+	       bicho= msg.content.substring(1);
+               //msg.channel.send(bicho);
+            }
+          
+        })
+    }) 
+	 
+	 
    
    //msg.reply("canal raid "+raidcanal);
   //  msg.channel.send(raidcanal);
 //   msg.channel.send(msg.author.toString() + ", inserido na RAID!");
   setTimeout(function() {
       
-       criaRaid(raidcanal); 
+       criaRaid(raidcanal,bicho); 
        }, 3000);
   
      // msg.reply(msg.channel.name);//nome do canal onde esta
@@ -62,17 +75,13 @@ client.on("message", msg => {
 		 
 		 
       msg.channel.fetchMessages({limit :100 }).then(msg=> {
-
-
-        msg.forEach(msg=>{
+      msg.forEach(msg=>{
             if(msg.content.startsWith('%')){
 	      let bicho= msg.content.substring(1);
-               msg.channel.send(bicho);
+               //msg.channel.send(bicho);
             }
           
         })
-       
-
     })
 	 }
 	//--fim teste --
@@ -94,7 +103,7 @@ client.on("message", msg => {
 
 
 //lista todos os elementos que tem a regra
- function criaRaid(canalRaid){
+ function criaRaid(canalRaid,bicho){
     var raidcanal=canalRaid;
     let role = msg.guild.roles.find("name", raidcanal);
     
@@ -113,7 +122,7 @@ client.on("message", msg => {
 	
 	var ovo="";
 	var braid=ovo;
-	var bicho="";
+	//var bicho="";
     
     
     

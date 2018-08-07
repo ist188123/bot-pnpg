@@ -15,8 +15,8 @@ client.on("message", msg => {
   
   
  if (msg.content.startsWith('👍')) {
-   var raidcanal=msg.channel.name;
-   
+   let raidcanal=msg.channel.name;
+   msg.reply("canal raid "+raidcanal);
    msg.reply(msg.author);
    msg.guild.members.get(msg.author.id).addRole(raidcanal);
      

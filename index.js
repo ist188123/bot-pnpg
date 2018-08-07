@@ -42,7 +42,7 @@ if (msg.content.startsWith('👍')) {
     })
 
 
-    msg.channel.send(membersWithRole);
+    msg.channel.send("Total Treinadores : "+vairaid+"\n"+membersWithRole);
 
 
 

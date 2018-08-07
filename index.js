@@ -27,7 +27,11 @@ client.on("message", msg => {
    //msg.reply("canal raid "+raidcanal);
    
    msg.channel.send(msg.author.toString() + ", inserido na RAID!");
-   criaRaid();
+  setTimeout(function() {
+      
+       criaRaid(); 
+       }, 3000);
+  
      // msg.reply(msg.channel.name);//nome do canal onde esta
   }     
   
@@ -41,10 +45,10 @@ client.on("message", msg => {
     
     msg.guild.members.get(msg.author.id).removeRole(role);
      
-    msg.reply(" Retirado da Raid");
+      msg.channel.send(msg.author.toString() + ", retirado na RAID!");
     
     setTimeout(function() {
-       msg.reply(" Retirado da Raid");
+      
        criaRaid(); 
        }, 3000);
   

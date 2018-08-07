@@ -11,17 +11,24 @@ client.on("message", msg => {
    var regra="Mod"
   
   
-   let role = msg.guild.roles.find("name", regra);
+ //  let role = msg.guild.roles.find("name", regra);
   
   
  if (msg.content.startsWith('👍')) {
    let raidcanal=msg.channel.name;
+   
+    let role = msg.guild.roles.find("name", raidcanal);
+   
    msg.reply("canal raid "+raidcanal);
    msg.reply(msg.author);
-   msg.guild.members.get(msg.author.id).addRole(raidcanal);
+   msg.guild.members.get(msg.author.id).addRole(role);
      
      // msg.reply(msg.channel.name);//nome do canal onde esta
   }     
+  
+  
+  
+  
   
   if (msg.content.startsWith('👎')) {
     var raidcanal=msg.channel.name;

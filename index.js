@@ -41,10 +41,8 @@ client.on("message", msg => {
     
     msg.guild.members.get(msg.author.id).removeRole(role);
      
-  
-    var interval = setInterval (function () {
-      msg.reply(" Retirado da Raid");
-    }, 1 * 1000); 
+    msg.reply(" Retirado da Raid");
+    
     
    criaRaid();
   }     
@@ -60,6 +58,13 @@ client.on("message", msg => {
       msg.guild.createChannel(canal, "text");
      msg.guild.createRole({name:canal}) ;
   
+   
+   var interval = setInterval (function () {
+     msg.guild.delete(canal, "text");
+    }, 1 * 9000); 
+   
+   
+   
 
 }
 

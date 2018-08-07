@@ -58,13 +58,6 @@ client.on("message", msg => {
       msg.guild.createChannel(canal, "text");
      msg.guild.createRole({name:canal}) ;
   
-   
-   var interval = setInterval (function () {
-    msg.guild.channels.delete(canal.id);
-    }, 1 * 9000); 
-   
-   
-   
 
 }
 

@@ -7,33 +7,7 @@ const prefix = "+";
 client.on("message", msg => {
   
    
-    
- // msg.react('👍').then(() => msg.react('👎'));
 
-
-    
-    
-    
-    
-  //  if(msg.react('👍')){
-    
-  //   msg.reply('you reacted with a thumbs up.');
-    
-  //  }
-   //  msg.guild.createRole({name:'xpto-file'})
-    
-  msg.channel.fetchMessages({limit :100 }).then(msg=> {
-
-
-        msg.forEach(msg=>{
-            if(msg.content.startsWith('!fou')){
-                msg.reply(msg.author);
-            }
-          
-        })
-       
-
-    })
     
   
   
@@ -45,15 +19,14 @@ if (msg.content.startsWith('👍')) {
    msg.guild.members.get(msg.author.id).addRole(role);
      
       
-  }       
+  }     
   
-  if (msg.content.startsWith('!n')) {
-    let member=msg.author.id;
-    member.removeRole(role)
-    msg.reply(msg.author.id);
-    
-}       
-  
+  if (msg.content.startsWith('👎')) {
+    msg.reply(msg.author);
+    msg.guild.members.get(msg.author.id).removeRole(role);
+     
+      
+  }     
   
   
   if (msg.content.startsWith('!in')) {

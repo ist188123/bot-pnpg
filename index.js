@@ -42,8 +42,7 @@ client.on("message", msg => {
   
 if (msg.content.startsWith('!vou')) {
     msg.reply(msg.author);
-    msg.author.addRole(role) 
-      
+   msg.guild.members.get(msg.author.id).addRole(role);
      
       
   }       

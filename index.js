@@ -40,7 +40,7 @@ client.on("message", msg => {
    let role = msg.guild.roles.find("name", "Mod");
   
   
-if (msg.content.startsWith('!vou')) {
+if (msg.content.startsWith('👍')) {
     msg.reply(msg.author);
    msg.guild.members.get(msg.author.id).addRole(role);
      

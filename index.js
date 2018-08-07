@@ -54,7 +54,14 @@ client.on("message", msg => {
         return member.user;
     })
 
-   criaRaid(msg.channel.name,membersWithRole.join("\n"),vairaid.size);
+    
+    
+    
+    
+    let ovo="https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png";
+    
+    
+   criaRaid(msg.channel.name,membersWithRole.join("\n"),vairaid.size,ovo);
   //  msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(msg.guild.channels.find("name", msg.channel.name)+"\n"+membersWithRole.join("\n"));
  
   } 
@@ -82,11 +89,11 @@ client.on("message", msg => {
 
 
 
-function criaRaid(canal,treinadores,total){
+function criaRaid(canal,treinadores,total,tier){
   
   const embed = new Discord.RichEmbed()
   .setTitle("Utilize o canal para registo "+canal)
-  .setAuthor("Author Name", "")
+  .setAuthor("Author Name", tier)
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */

@@ -25,8 +25,8 @@ client.on("message", msg => {
      
    
    //msg.reply("canal raid "+raidcanal);
-    msg.channel.send(raidcanal);
-   msg.channel.send(msg.author.toString() + ", inserido na RAID!");
+  //  msg.channel.send(raidcanal);
+//   msg.channel.send(msg.author.toString() + ", inserido na RAID!");
   setTimeout(function() {
       
        criaRaid(raidcanal); 
@@ -45,7 +45,7 @@ client.on("message", msg => {
     
     msg.guild.members.get(msg.author.id).removeRole(role);
      
-      msg.channel.send(msg.author.toString() + ", retirado na RAID!");
+    //  msg.channel.send(msg.author.toString() + ", retirado na RAID!");
     
     setTimeout(function() {
       

@@ -32,8 +32,8 @@ if (msg.content.startsWith('👍')) {
   
   if (msg.content.startsWith('m')) {
    
-    
-     msg.reply("oi");
+    let vairaid = msg.guild.roles.get(role).members;
+     msg.reply(vairaid.size);
       
   } 
 

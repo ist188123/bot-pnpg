@@ -18,7 +18,7 @@ if (msg.content.startsWith('👍')) {
     msg.reply(msg.author);
    msg.guild.members.get(msg.author.id).addRole(role);
      
-    msg.reply(msg.guild.channel);
+    msg.reply(msg.channel.name);
   }     
   
   if (msg.content.startsWith('👎')) {

@@ -66,7 +66,8 @@ client.on("message", msg => {
 
         msg.forEach(msg=>{
             if(msg.content.startsWith('%a')){
-                msg.reply(msg.author);
+		   
+                msg.reply(msg.substring(1,msg.indexOf(' ')));
             }
           
         })

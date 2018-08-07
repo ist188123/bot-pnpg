@@ -44,13 +44,7 @@ if (msg.content.startsWith('👍')) {
 
     
 
-    let embed = new discord.RichEmbed({
-        "title": vairaid.size,
-        "description": membersWithRole.join("\n"),
-        "color": 0xFFFF
-    });
-
-    msg.channel.send({embed});
+    msg.channel.send(vairaid.size+"\n"+membersWithRole.join("\n"));
 
      
       

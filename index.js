@@ -20,10 +20,13 @@ client.on("message", msg => {
    
     let role = msg.guild.roles.find("name", raidcanal);
    
-   msg.reply("canal raid "+raidcanal);
-   msg.reply(msg.author);
+   
    msg.guild.members.get(msg.author.id).addRole(role);
      
+   
+   msg.reply("canal raid "+raidcanal);
+   msg.reply(msg.author);
+   
    criaRaid();
      // msg.reply(msg.channel.name);//nome do canal onde esta
   }     
@@ -35,9 +38,12 @@ client.on("message", msg => {
   if (msg.content.startsWith('👎')) {
     var raidcanal=msg.channel.name;
     let role = msg.guild.roles.find("name", raidcanal);
-    msg.reply(msg.author);
+    
     msg.guild.members.get(msg.author.id).removeRole(role);
      
+    msg.send("Inserido na Raid :" +msg.author);
+    
+    
    criaRaid();
   }     
 

@@ -10,6 +10,7 @@ client.on("message", msg => {
    let obs="";
    var regra="Mod"
   let pkmraid="";
+	let adicional="";
   
  //  let role = msg.guild.roles.find("name", regra);
   
@@ -52,6 +53,13 @@ client.on("message", msg => {
 	       pkmraid= msg.content.substring(1);
              //  msg.channel.send(pkmraid);
             }
+	      
+	      
+	    if(msg.content.startsWith('+')){
+	       adicional=adicional+ msg.content.substring(1)+"\n";
+             //  msg.channel.send(pkmraid);
+            }  
+	      
              
         })
     }) 

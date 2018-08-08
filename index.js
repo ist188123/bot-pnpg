@@ -55,7 +55,7 @@ client.on("message", msg => {
             }
           
 	      if(msg.content.startsWith('+')){
-	       obs= msg.content.substring(2);
+	       obs= msg.content.substring(1);
              //  msg.channel.send(pkmraid);
             }
 	      

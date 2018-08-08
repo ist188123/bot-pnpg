@@ -189,7 +189,7 @@ client.on("message", msg => {
 	     
 	if(bicho.startsWith('golem')){
          braid=" https://exraidspinhalnovo.webnode.pt/_files/200000037-85af786acf/450/golem.png";
-	     cpiv="Nivel 20 CP 1666";
+	     cpiv="20 CP 1666";
 	    status="Duplo fraco contra WATER e GRASS\nKyogre Waterfall - Hydro Pump\nGyarados Waterfall - Hydro Pump\nGroudon Mud Shot - Solar Beam"
        }     
 	     
@@ -244,7 +244,7 @@ client.on("message", msg => {
    //----  FIM TIPO RAID ---
    
     
-   disparaRaid(local,horas,raidcanal,membersWithRole.join("\n"),vairaid.size,ovo,braid,cpiv);
+   disparaRaid(local,horas,raidcanal,membersWithRole.join("\n"),vairaid.size,ovo,braid,cpiv,status);
   //  msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(msg.guild.channels.find("name", msg.channel.name)+"\n"+membersWithRole.join("\n"));
  
 		 
@@ -261,7 +261,7 @@ client.on("message", msg => {
 
 
 
-function disparaRaid(local,horas,canal,treinadores,total,ovo,bicho,cpiv){
+function disparaRaid(local,horas,canal,treinadores,total,ovo,bicho,cpiv,status){
   const embed = new Discord.RichEmbed()
    .setTitle(horas)
   .setAuthor(local.toUpperCase(), ovo)
@@ -279,7 +279,7 @@ function disparaRaid(local,horas,canal,treinadores,total,ovo,bicho,cpiv){
    */
   .setTimestamp()
   .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
-  .addField("Niveis CP", "ss")
+  .addField("MIN/MAX CP ", status)
   /*
    * lista dos jogadores que vão RAID.
    */

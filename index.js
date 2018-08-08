@@ -135,7 +135,7 @@ client.on("message", msg => {
 		 
     let vairaid = msg.guild.roles.get(role.id).members; //quantidade de users
 
-    let simbolo="\:valor: ";		 
+   	 
     
     let membersWithRole = msg.guild.members.filter(member => { 
         return member.roles.find("name", raidcanal);
@@ -143,7 +143,7 @@ client.on("message", msg => {
 	    
 	    
 		
-		return simbolo+member.user;
+		return "\:valor:"+member.user;
     })
 
     

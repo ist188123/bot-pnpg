@@ -134,9 +134,15 @@ client.on("message", msg => {
     let membersWithRole = msg.guild.members.filter(member => { 
         return member.roles.find("name", raidcanal);
     }).map(member => {
-        return member.user;
+        return "\:poop: "+member.user;
     })
 
+    
+    
+    
+    
+    
+    
     
         var status="Desconhecido";
 	var cpiv="Desconhecido"

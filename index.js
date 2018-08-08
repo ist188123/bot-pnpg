@@ -9,7 +9,7 @@ client.on("message", msg => {
    
 
    var regra="Mod"
-  
+  let pkmraid="";
   
  //  let role = msg.guild.roles.find("name", regra);
   
@@ -18,11 +18,11 @@ client.on("message", msg => {
    
     let role = msg.guild.roles.find("name", raidcanal);
    
-    let bicho=msg.content.substring(1);
+ pkmraid=msg.content.substring(1);
 	
    setTimeout(function() {
       // msg.channel.send(bicho);
-       criaRaid(raidcanal,bicho); 
+       criaRaid(raidcanal,pkmraid); 
        }, 2500);
   
      // msg.reply(msg.channel.name);//nome do canal onde esta
@@ -46,11 +46,11 @@ client.on("message", msg => {
    msg.guild.members.get(msg.author.id).addRole(role);
      
 	 
-	 let bicho="";
+	
 	msg.channel.fetchMessages({limit :100 }).then(msg=> {
       msg.forEach(msg=>{
             if(msg.content.startsWith('%')){
-	       bicho= msg.content.substring(1);
+	       pkmraid= msg.content.substring(1);
               // msg.channel.send(bicho);
             }
           
@@ -64,7 +64,7 @@ client.on("message", msg => {
 //   msg.channel.send(msg.author.toString() + ", inserido na RAID!");
   setTimeout(function() {
       // msg.channel.send(bicho);
-       criaRaid(raidcanal,bicho); 
+       criaRaid(raidcanal,pkmraid); 
        }, 3000);
   
      // msg.reply(msg.channel.name);//nome do canal onde esta
@@ -82,11 +82,11 @@ client.on("message", msg => {
      
     //  msg.channel.send(msg.author.toString() + ", retirado na RAID!");
     
-	 let bicho="";
+	 
 	msg.channel.fetchMessages({limit :100 }).then(msg=> {
       msg.forEach(msg=>{
             if(msg.content.startsWith('%')){
-	       bicho= msg.content.substring(1);
+	       pkmraid= msg.content.substring(1);
               // msg.channel.send(bicho);
             }
           
@@ -97,7 +97,7 @@ client.on("message", msg => {
 	  
     setTimeout(function() {
       
-       criaRaid(raidcanal,bicho); 
+       criaRaid(raidcanal,pkmraid); 
        }, 2500);
   
   }     
@@ -112,7 +112,7 @@ client.on("message", msg => {
       msg.channel.fetchMessages({limit :100 }).then(msg=> {
       msg.forEach(msg=>{
             if(msg.content.startsWith('%')){
-	      let bicho= msg.content.substring(1);
+	      let pkmraid= msg.content.substring(1);
                //msg.channel.send(bicho);
             }
           

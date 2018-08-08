@@ -129,7 +129,7 @@ client.on("message", msg => {
     
 		 
 	//imagens euipas
-	const ayy = client.emojis.find("name", "valor");
+	const valor = client.emojis.find("name", "valor");
 	let team="";	
       
 		 
@@ -147,10 +147,10 @@ client.on("message", msg => {
     }).map(member => {
 	     team="<:mystic:476780371757891584>";
 	if(msg.member.roles.has(mystic.id)) {
-		team="<:valor:476780100340154368>";
+		team=valor.toString();
 	}
 	    
-        return ayy.toString()+member.user;
+        return team+member.user;
 
        
     })

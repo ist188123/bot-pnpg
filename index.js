@@ -128,34 +128,17 @@ client.on("message", msg => {
     var raidcanal=canalRaid;
     let role = msg.guild.roles.find("name", raidcanal);
     
-    let valor = msg.guild.roles.find("name", "VALOR");
-    let mystic = msg.guild.roles.find("name", "MYSTIC");
-    let instinct = msg.guild.roles.find("name", "INSTINCT");	 
-		 
-		 
     let vairaid = msg.guild.roles.get(role.id).members; //quantidade de users
 
-   	 
     
     let membersWithRole = msg.guild.members.filter(member => { 
         return member.roles.find("name", raidcanal);
     }).map(member => {
-	    
-	    
-		
-		return "\:valor:"+member.user;
+        return member.user;
+
+       
     })
 
-    
-    
-    
-    	 
-		 
-    
-       
-    } 
-    
-    
     
         var status="Desconhecido";
 	var cpiv="Desconhecido"

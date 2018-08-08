@@ -122,6 +122,9 @@ client.on("message", msg => {
 
 //lista todos os elementos que tem a regra
  function criaRaid(canalRaid,bicho){
+	 
+	 try{
+		 
     var raidcanal=canalRaid;
     let role = msg.guild.roles.find("name", raidcanal);
     
@@ -244,6 +247,13 @@ client.on("message", msg => {
    disparaRaid(local,horas,raidcanal,membersWithRole.join("\n"),vairaid.size,ovo,braid);
   //  msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(msg.guild.channels.find("name", msg.channel.name)+"\n"+membersWithRole.join("\n"));
  
+		 
+	} catch (err){
+    console.log(err);
+}	 
+		 
+		 
+		 
   } 
   
   

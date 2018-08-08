@@ -279,7 +279,8 @@ function disparaRaid(local,horas,canal,treinadores,total,ovo,bicho,cpiv,status){
    */
   .setTimestamp()
   .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
-  .addField("MIN/MAX CP ", status)
+  .addField("NÍVEL CP ",cpiv )
+  .addBlankField(true)
   /*
    * lista dos jogadores que vão RAID.
    */
@@ -289,7 +290,7 @@ function disparaRaid(local,horas,canal,treinadores,total,ovo,bicho,cpiv,status){
    */
    
   .addBlankField(true)
-  .addField("\n\n\n\n\n\Fraco contra:",cpiv, true);  
+  .addField("\n\n\n\n\n\Fraco contra:",status, true);  
   
   msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage({embed});
  

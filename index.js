@@ -124,14 +124,17 @@ client.on("message", msg => {
 	 
 	 try{
 		 
-	//equipas	 
-    let mystic = msg.guild.roles.find("name", "MYSTIC");
-    
+	//equipas
+
+    let team_mystic = msg.guild.roles.find("name", "MYSTIC");
+    let team_valor = msg.guild.roles.find("name", "VALOR");
+    let team_instinct = msg.guild.roles.find("name", "INSTINCT");
 		 
-	//imagens euipas
+	//imagens equipas
+	let team_imagem="";	 
 	const valor = client.emojis.find("name", "valor");
-	let team="";	
-      
+	const mystic = client.emojis.find("name", "mystic");	
+        const instinct = client.emojis.find("name", "instinct");
 		 
 		 
 		 
@@ -145,12 +148,20 @@ client.on("message", msg => {
     let membersWithRole = msg.guild.members.filter(member => { 
         return member.roles.find("name", raidcanal);
     }).map(member => {
-	     team="<:mystic:476780371757891584>";
-	if(msg.member.roles.has(mystic.id)) {
-		team=valor.toString();
-	}
 	    
-        return team+member.user;
+	if(msg.member.roles.has(team_mystic.id)) {
+		team_imagem=mystic.toString();
+	}
+	   
+	 if(msg.member.roles.has(team_valor.id)) {
+		team_imagem=valor.toString();
+	}   
+	    
+	  if(msg.member.roles.has(team_instinct.id)) {
+		team_imagem=instinct.toString();
+	}      
+	    
+        return team_imagem+member.user;
 
        
     })

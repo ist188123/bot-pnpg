@@ -155,7 +155,7 @@ client.on("message", msg => {
 	   
 	
 	    
-	return member.user;
+	return team_imagem+member.user;
 
        
     })

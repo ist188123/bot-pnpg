@@ -135,10 +135,7 @@ client.on("message", msg => {
         return member.roles.find("name", raidcanal);
     }).map(member => {
 	    
-	if(member.user.roles.has(mystic.id)){
-
-         }
-	    
+	
 	    
         return member.user;
 

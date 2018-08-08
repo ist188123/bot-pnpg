@@ -136,7 +136,7 @@ client.on("message", msg => {
 	const mystic = client.emojis.find("name", "mystic");	
         const instinct = client.emojis.find("name", "instinct");
 	
-		 
+	//raid	 
 		 
     var raidcanal=canalRaid;
     let role = msg.guild.roles.find("name", raidcanal);
@@ -157,7 +157,9 @@ client.on("message", msg => {
 		team_imagem=valor.toString();
 	}   
 	    
-	 
+	if(member.roles.has(team_instinct.id)) {
+		team_imagem=instinct.toString();
+	}   
 	
 	
 	    

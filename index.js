@@ -124,8 +124,18 @@ client.on("message", msg => {
  function criaRaid(canalRaid,bicho){
 	 
 	 try{
+		 
+	//equipas	 
     let mystic = msg.guild.roles.find("name", "MYSTIC");
-     let team="\:valor: ";		 
+    
+		 
+	//imagens euipas
+	let team="";	
+       
+		 
+		 
+		 
+		 
     var raidcanal=canalRaid;
     let role = msg.guild.roles.find("name", raidcanal);
     
@@ -140,7 +150,7 @@ client.on("message", msg => {
 		team="\:mystic:";
 	}
 	    
-        return team+member.user;
+        return team+" "+member.user;
 
        
     })

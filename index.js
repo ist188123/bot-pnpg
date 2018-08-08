@@ -125,7 +125,7 @@ client.on("message", msg => {
 	 
 	 try{
     let mystic = msg.guild.roles.find("name", "MYSTIC");
-		 
+     let team="\:valor: ";		 
     var raidcanal=canalRaid;
     let role = msg.guild.roles.find("name", raidcanal);
     
@@ -137,9 +137,10 @@ client.on("message", msg => {
     }).map(member => {
 	    
 	if(msg.member.roles.has(mystic.id)) {
+		team="\:mystic: ";
 	}
 	    
-        return member.user;
+        return team+member.user;
 
        
     })

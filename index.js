@@ -124,6 +124,18 @@ client.on("message", msg => {
 	 
 	 try{
 		 
+		//equipas
+
+    let team_mystic = msg.guild.roles.find("name", "MYSTIC");
+    let team_valor = msg.guild.roles.find("name", "VALOR");
+    let team_instinct = msg.guild.roles.find("name", "INSTINCT");
+		 
+	//imagens equipas
+	let team_imagem="";	 
+	const valor = client.emojis.find("name", "valor");
+	const mystic = client.emojis.find("name", "mystic");	
+        const instinct = client.emojis.find("name", "instinct");
+	
 		 
 		 
     var raidcanal=canalRaid;
@@ -135,6 +147,23 @@ client.on("message", msg => {
     let membersWithRole = msg.guild.members.filter(member => { 
         return member.roles.find("name", raidcanal);
     }).map(member => {
+	    
+	    
+        if(msg.member.roles.has(team_mystic.id)) {
+		team_imagem=mystic.toString();
+	}
+	   
+	 if(msg.member.roles.has(team_valor.id)) {
+		team_imagem=valor.toString();
+	}   
+	    
+	  if(msg.member.roles.has(team_instinct.id)) {
+		team_imagem=instinct.toString();
+	}      
+	
+	
+	
+	    
 	return member.user;
 
        
@@ -265,29 +294,6 @@ client.on("message", msg => {
 
 
 function disparaRaid(local,horas,canal,treinadores,total,ovo,bicho,cpiv,status){
-	
-	
-	
-	//equipas
-
-    let team_mystic = msg.guild.roles.find("name", "MYSTIC");
-    let team_valor = msg.guild.roles.find("name", "VALOR");
-    let team_instinct = msg.guild.roles.find("name", "INSTINCT");
-		 
-	//imagens equipas
-	let team_imagem="";	 
-	const valor = client.emojis.find("name", "valor");
-	const mystic = client.emojis.find("name", "mystic");	
-        const instinct = client.emojis.find("name", "instinct");
-		 
-		 
-	let x=treinadores.split("\n")
-	for(var y=0;y<x.length;y++){
-
-          }
-	
-	
-	
 	
 	
   const embed = new Discord.RichEmbed()

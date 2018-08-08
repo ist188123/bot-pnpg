@@ -131,7 +131,7 @@ client.on("message", msg => {
 		 
 	//imagens euipas
 	let team="";	
-       
+       const valor = client.emojis.get("305818615712579584");
 		 
 		 
 		 
@@ -145,7 +145,7 @@ client.on("message", msg => {
     let membersWithRole = msg.guild.members.filter(member => { 
         return member.roles.find("name", raidcanal);
     }).map(member => {
-	     team="<:valor:305818615712579584>";
+	     team=valor;
 	if(msg.member.roles.has(mystic.id)) {
 		team="<:mystic:476775606273703957>";
 	}

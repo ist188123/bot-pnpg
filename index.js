@@ -47,7 +47,7 @@ client.on("message", msg => {
      
 	 
 	
-	msg.channel.fetchMessages({limit :100 }).then(msg=> {
+	msg.channel.fetchMessages({limit :1 }).then(msg=> {
       msg.forEach(msg=>{
             if(msg.content.startsWith('%')){
 	       pkmraid= msg.content.substring(1);
@@ -65,7 +65,7 @@ client.on("message", msg => {
   setTimeout(function() {
       // msg.channel.send(bicho);
        criaRaid(raidcanal,pkmraid); 
-       }, 3000);
+       }, 2500);
   
      // msg.reply(msg.channel.name);//nome do canal onde esta
   }     

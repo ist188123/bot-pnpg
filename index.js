@@ -18,7 +18,7 @@ client.on("message", msg => {
    
     let role = msg.guild.roles.find("name", raidcanal);
    
- pkmraid=msg.content.substring(1);
+    pkmraid=msg.content.substring(1);
 	
    setTimeout(function() {
       // msg.channel.send(bicho);

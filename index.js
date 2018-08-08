@@ -280,7 +280,7 @@ function disparaRaid(local,horas,canal,treinadores,total,ovo,bicho,cpiv,status){
   .setTimestamp()
   .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
   .addField("NÍVEL CP ",cpiv )
- .addField(" ","" )
+ 
   /*
    * lista dos jogadores que vão RAID.
    */

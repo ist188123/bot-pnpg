@@ -149,11 +149,11 @@ client.on("message", msg => {
     }).map(member => {
 	    
 	    
-        if(msg.member.roles.has(team_mystic.id)) {
+        if(member.user.roles.has(team_mystic.id)) {
 		team_imagem=mystic.toString();
 	}
 	   
-	 if(msg.member.roles.has(team_valor.id)) {
+	 if(member.user.roles.has(team_valor.id)) {
 		team_imagem=valor.toString();
 	}   
 	    

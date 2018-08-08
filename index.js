@@ -7,7 +7,7 @@ const prefix = "+";
 client.on("message", msg => {
   
    
-
+   let obs="";
    var regra="Mod"
   let pkmraid="";
   
@@ -41,7 +41,7 @@ client.on("message", msg => {
    let raidcanal=msg.channel.name;
    
     let role = msg.guild.roles.find("name", raidcanal);
-   let obs="";
+  
    
    msg.guild.members.get(msg.author.id).addRole(role);
      

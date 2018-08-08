@@ -47,11 +47,11 @@ client.on("message", msg => {
      
 	 
 	
-	msg.channel.fetchMessages({limit :1 }).then(msg=> {
+	msg.channel.fetchMessages({limit :100 }).then(msg=> {
       msg.forEach(msg=>{
             if(msg.content.startsWith('%')){
 	       pkmraid= msg.content.substring(1);
-               msg.channel.send(pkmraid);
+             //  msg.channel.send(pkmraid);
             }
           
         })

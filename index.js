@@ -31,8 +31,7 @@ client.on("message", msg => {
    
    
    
-   
-   
+ 
    
    
    
@@ -130,6 +129,7 @@ client.on("message", msg => {
     
 		 
 	//imagens euipas
+	const ayy = client.emojis.find("name", "valor");
 	let team="";	
       
 		 
@@ -150,7 +150,7 @@ client.on("message", msg => {
 		team="<:valor:476780100340154368>";
 	}
 	    
-        return "<:valor:476780100340154368>"+member.user;
+        return ayy.toString()+member.user;
 
        
     })

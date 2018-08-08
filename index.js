@@ -51,7 +51,7 @@ client.on("message", msg => {
       msg.forEach(msg=>{
             if(msg.content.startsWith('%')){
 	       pkmraid= msg.content.substring(1);
-              // msg.channel.send(bicho);
+               msg.channel.send(pkmraid);
             }
           
         })

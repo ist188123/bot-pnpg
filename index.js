@@ -141,9 +141,7 @@ client.on("message", msg => {
         return member.roles.find("name", raidcanal);
     }).map(member => {
 	    
-	    if (msg.member.roles.has(mystic.id) {
-                simbolo="\:mystic:";
-		}
+	    
 		
 		return simbolo+member.user;
     })

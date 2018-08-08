@@ -23,7 +23,7 @@ client.on("message", msg => {
 	
    setTimeout(function() {
       // msg.channel.send(bicho);
-       criaRaid(raidcanal,pkmraid); 
+       criaRaid(raidcanal,pkmraid,adicional); 
        }, 2500);
   
      // msg.reply(msg.channel.name);//nome do canal onde esta
@@ -128,7 +128,7 @@ client.on("message", msg => {
 
 
 //lista todos os elementos que tem a regra
- function criaRaid(canalRaid,bicho){
+ function criaRaid(canalRaid,bicho,adicional){
 	 
 	 try{
 		 
@@ -283,7 +283,7 @@ client.on("message", msg => {
    //----  FIM TIPO RAID ---
    
     
-   disparaRaid(local,horas,raidcanal,membersWithRole.join("\n"),vairaid.size,ovo,braid,cpiv,status);
+   disparaRaid(local,horas,raidcanal,membersWithRole.join("\n"),vairaid.size,ovo,braid,cpiv,status,adicional);
   //  msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(msg.guild.channels.find("name", msg.channel.name)+"\n"+membersWithRole.join("\n"));
  
 		 
@@ -300,7 +300,7 @@ client.on("message", msg => {
 
 
 
-function disparaRaid(local,horas,canal,treinadores,total,ovo,bicho,cpiv,status){
+function disparaRaid(local,horas,canal,treinadores,total,ovo,bicho,cpiv,status,adicional){
 	
 	
   const embed = new Discord.RichEmbed()

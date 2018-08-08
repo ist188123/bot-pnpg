@@ -41,7 +41,7 @@ client.on("message", msg => {
    let raidcanal=msg.channel.name;
    
     let role = msg.guild.roles.find("name", raidcanal);
-   
+   let obs="";
    
    msg.guild.members.get(msg.author.id).addRole(role);
      
@@ -54,6 +54,12 @@ client.on("message", msg => {
              //  msg.channel.send(pkmraid);
             }
           
+	      if(msg.content.startsWith('+')){
+	       obs= msg.content.substring(2);
+             //  msg.channel.send(pkmraid);
+            }
+	      
+	      
         })
     }) 
 	 
@@ -64,7 +70,7 @@ client.on("message", msg => {
 //   msg.channel.send(msg.author.toString() + ", inserido na RAID!");
   setTimeout(function() {
       // msg.channel.send(bicho);
-       criaRaid(raidcanal,pkmraid); 
+       criaRaid(raidcanal,pkmraid,obs); 
        }, 2500);
   
      // msg.reply(msg.channel.name);//nome do canal onde esta
@@ -97,7 +103,7 @@ client.on("message", msg => {
 	  
     setTimeout(function() {
       
-       criaRaid(raidcanal,pkmraid); 
+       criaRaid(raidcanal,pkmraid,obs); 
        }, 2500);
   
   }     
@@ -121,7 +127,7 @@ client.on("message", msg => {
 
 
 //lista todos os elementos que tem a regra
- function criaRaid(canalRaid,bicho){
+ function criaRaid(canalRaid,bicho,obs){
 	 
 	 try{
 		 
@@ -244,7 +250,7 @@ client.on("message", msg => {
    //----  FIM TIPO RAID ---
    
     
-   disparaRaid(local,horas,raidcanal,membersWithRole.join("\n"),vairaid.size,ovo,braid);
+   disparaRaid(local,horas,raidcanal,membersWithRole.join("\n"),vairaid.size,ovo,braid,obs);
   //  msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(msg.guild.channels.find("name", msg.channel.name)+"\n"+membersWithRole.join("\n"));
  
 		 
@@ -261,7 +267,7 @@ client.on("message", msg => {
 
 
 
-function disparaRaid(local,horas,canal,treinadores,total,ovo,bicho){
+function disparaRaid(local,horas,canal,treinadores,total,ovo,bicho,obs){
   const embed = new Discord.RichEmbed()
    .setTitle(horas)
   .setAuthor(local.toUpperCase(), ovo)
@@ -289,7 +295,7 @@ function disparaRaid(local,horas,canal,treinadores,total,ovo,bicho){
    */
    
   .addBlankField(true)
-  .addField("\n\n\n\n\n\Fraco contra:","ok", true);  
+  .addField("\n\n\n\n\n\Fraco contra:",obs, true);  
   
   msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage({embed});
  

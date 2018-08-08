@@ -103,28 +103,11 @@ client.on("message", msg => {
   }     
 
 
-	//--teste ---
-	 if (msg.content.startsWith('-f')) { 
 	
-    
-		 
-		 
-      msg.channel.fetchMessages({limit :100 }).then(msg=> {
-      msg.forEach(msg=>{
-            if(msg.content.startsWith('%')){
-	      let pkmraid= msg.content.substring(1);
-               //msg.channel.send(bicho);
-            }
-          
-        })
-    })
-	 }
-	//--fim teste --
-  
   
   
  if (msg.content.startsWith('%c')) { 
-  let canal = msg.content.split(" ").slice(1).join(" ")
+  let canal = msg.content.substring(3);
   msg.reply(canal)
    
       msg.guild.createChannel(canal, "text");

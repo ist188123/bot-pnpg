@@ -150,7 +150,7 @@ client.on("message", msg => {
 		team="<:mystic:476775606273703957>";
 	}
 	    
-        return team+" "+member.user;
+        return "\:valor: "+member.user;
 
        
     })

@@ -124,7 +124,8 @@ client.on("message", msg => {
  function criaRaid(canalRaid,bicho){
 	 
 	 try{
-	let mystic = msg.guild.roles.find("name", "MYSTIC");	 
+    let mystic = msg.guild.roles.find("name", "MYSTIC");
+		 
     var raidcanal=canalRaid;
     let role = msg.guild.roles.find("name", raidcanal);
     
@@ -135,7 +136,8 @@ client.on("message", msg => {
         return member.roles.find("name", raidcanal);
     }).map(member => {
 	    
-	
+	if(msg.member.roles.has(mystic.id)) {
+	}
 	    
         return member.user;
 

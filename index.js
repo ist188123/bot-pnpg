@@ -90,10 +90,10 @@ client.on("message", msg => {
   
    
 //   msg.channel.send(msg.author.toString() + ", inserido na RAID!");
- // setTimeout(function() {
+  setTimeout(function() {
       // msg.channel.send(bicho);
        criaRaid(raidcanal,pkmraid,adicional); 
-  //     }, 2500);
+       }, 2500);
   
      // msg.reply(msg.channel.name);//nome do canal onde esta
   }     
@@ -149,7 +149,8 @@ client.on("message", msg => {
         }
    
    
-  
+   msg.reply("tiporaid " +tiporaid+"-ovo-"+ovo+"-braid-"+braid);
+	
    //---- TIPO RAID ----
    
    if(tiporaid.startsWith('3')){
@@ -166,7 +167,6 @@ client.on("message", msg => {
 	//----     
 	    
 	
-	 msg.reply("tiporaid " +tiporaid+"-ovo-"+ovo+"-braid-"+braid);
 	
 	
      if(tiporaid.startsWith('4')){

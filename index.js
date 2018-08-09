@@ -6,7 +6,7 @@ const prefix = "+";
 
 client.on("message", msg => {
   
-   
+   let quantidade=0;
    let obs="";
    var regra="Mod"
   let pkmraid="";
@@ -228,7 +228,7 @@ client.on("message", msg => {
    //----  FIM TIPO RAID ---
    
     
-   disparaRaid(local,horas,raidcanal,adicional,vairaid.size,ovo,braid,cpiv,status,adicional);
+   disparaRaid(local,horas,raidcanal,adicional,quantidade,ovo,braid,cpiv,status,adicional);
   //  msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(msg.guild.channels.find("name", msg.channel.name)+"\n"+membersWithRole.join("\n"));
  
 		 

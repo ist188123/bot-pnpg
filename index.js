@@ -55,7 +55,7 @@ client.on("message", msg => {
 	      
 	    if(msg.content.startsWith('👍')){
 		     
-	       adicional=adicional+ msg.content.substring(1)+"\n";
+	       adicional=adicional+ msg.content.substring(1)+msg.author+"\n";
              // 
             }  
 	      

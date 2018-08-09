@@ -12,10 +12,10 @@ client.on("message", msg => {
   let pkmraid="";
   let adicional="Treinadores:\n";
   
-
+  let team_valor = msg.guild.roles.find("name", "VALOR");
+   const valor = client.emojis.find("name", "valor");
    
-   
- 
+let team_imagem="";
    
    
    
@@ -55,7 +55,13 @@ client.on("message", msg => {
 	      
 	    if(msg.content.startsWith('👍')){
 		     
-	       adicional=adicional+ msg.content.substring(1)+msg.author+"\n";
+		     if(msg.roles.has(team_valor.id)) {
+		      team_imagem=valor.toString();
+	             }  
+		    
+		    
+		    
+	       adicional=adicional+ msg.content.substring(1)+team_imagem+" "+msg.author+"\n";
              // 
             }  
 	      

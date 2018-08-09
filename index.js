@@ -136,14 +136,14 @@ client.on("message", msg => {
     
    
    
-     var tiporaid=raidcanal.substring(5,6);
+     var tiporaid=canalRaid.substring(5,6);
 		 
-	 msg.reply("--------1----------"+tiporaid);	 
+	
      var titulo="RAID "+raidcanal.substr(5);
 		 
      var thoras=titulo.split("-");
      var horas=thoras[thoras.length-1];
-	msg.reply("--------2----------");	 
+		 
      y=thoras;
      var local="";
  

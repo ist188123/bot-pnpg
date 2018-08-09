@@ -123,8 +123,7 @@ client.on("message", msg => {
 	 
 	 try{
 		 
-	msg.reply("criaraid " +canalRaid+"--"+bicho+"--"+adicional);
-
+	
     
         var status="Desconhecido";
 	var cpiv="Desconhecido"
@@ -152,9 +151,7 @@ client.on("message", msg => {
    
         }
    
-    msg.reply("--------3----------");
-   msg.reply("tiporaid " +tiporaid+"-ovo-"+ovo+"-braid-"+braid);
-	
+   	
    //---- TIPO RAID ----
    
    if(tiporaid.startsWith('3')){
@@ -238,8 +235,7 @@ client.on("message", msg => {
    
    disparaRaid(local,horas,canalRaid,adicional,quantidade,ovo,braid,cpiv,status,adicional);
   //  msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(msg.guild.channels.find("name", msg.channel.name)+"\n"+membersWithRole.join("\n"));
-  msg.reply(local+" "+horas+" "+raidcanal+" "+adicional+" "+quantidade+" "+ovo+" "+braid+" "+cpiv+" "+status+" "+adicional);
-		 
+ 		 
 	} catch (err){
     console.log(err);
 		
@@ -257,7 +253,7 @@ client.on("message", msg => {
 
 function disparaRaid(local,horas,canal,treinadores,total,ovo,bicho,cpiv,status,adicional){
 	
-	msg.reply("estou aqui - 2");
+	
   const embed = new Discord.RichEmbed()
    .setTitle(horas)
   .setAuthor(local.toUpperCase(), ovo)
@@ -285,12 +281,7 @@ function disparaRaid(local,horas,canal,treinadores,total,ovo,bicho,cpiv,status,a
    * Blank field, useful to create some space.
    */
    
-  
-  
-  .addBlankField(true)
-  .addField("Observações:", adicional, true)
-  
-  
+ 
   .addBlankField(true)
   .addField("\n\n\n\n\n\Fraco contra:",status, true);  
   

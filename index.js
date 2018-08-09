@@ -27,7 +27,7 @@ client.on("message", msg => {
    
 
    
-   
+if (msg.channel.name.startsWith('_raid')) {
    
   
  if (msg.content.startsWith('👍')  || msg.content.startsWith('%')) {
@@ -99,7 +99,7 @@ client.on("message", msg => {
   }     
   
   
-  
+}
   
   
   
@@ -109,7 +109,7 @@ client.on("message", msg => {
   msg.reply(canal)
    
       msg.guild.createChannel(canal, "text");
-     msg.guild.createRole({name:canal}) ;
+   //  msg.guild.createRole({name:canal}) ;
   
 
 }

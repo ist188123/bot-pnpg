@@ -38,6 +38,7 @@ client.on("message", msg => {
    
   
  if (msg.content.startsWith('👍')) {
+	 adicional=" ";
    let raidcanal=msg.channel.name;
    
     let role = msg.guild.roles.find("name", raidcanal);
@@ -56,7 +57,7 @@ client.on("message", msg => {
 	      
 	      
 	    if(msg.content.startsWith('+')){
-		     msg.channel.send("adicional:"+adicional);
+		     
 	       adicional=adicional+ msg.content.substring(1)+"\n";
              // 
             }  
@@ -290,7 +291,7 @@ client.on("message", msg => {
 		 
 	} catch (err){
     console.log(err);
-		msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(err);
+		
  
 }	 
 		 

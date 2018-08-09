@@ -55,7 +55,7 @@ let team_imagem="";
 	      
 	    if(msg.content.startsWith('👍')){
 		     
-		     if(msg.member.roles.has(team_valor.id)) {
+		     if(msg.author.roles.has(team_valor.id)) {
 		      team_imagem=valor.toString();
 	             }  
 		    

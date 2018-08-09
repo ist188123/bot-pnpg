@@ -10,26 +10,9 @@ client.on("message", msg => {
    let obs="";
    var regra="Mod"
   let pkmraid="";
-	let adicional="Treinadores:\n";
+  let adicional="Treinadores:\n";
   
- //  let role = msg.guild.roles.find("name", regra);
-  
-    if (msg.content.startsWith('%')) {
-   let raidcanal=msg.channel.name;
-   
-    let role = msg.guild.roles.find("name", raidcanal);
-   
-    pkmraid=msg.content.substring(1);
-	
-   setTimeout(function() {
-      // msg.channel.send(bicho);
-       criaRaid(raidcanal,pkmraid,adicional); 
-       }, 2500);
-  
-     // msg.reply(msg.channel.name);//nome do canal onde esta
-  }     
-  
-   
+
    
    
  
@@ -37,17 +20,31 @@ client.on("message", msg => {
    
    
   
- if (msg.content.startsWith('👍')) {
+ if (msg.content.startsWith('👍') || msg.content.startsWith('👎') || msg.content.startsWith('%')) {
 	 
    let raidcanal=msg.channel.name;
    
     let role = msg.guild.roles.find("name", raidcanal);
   
-   //adiciona a regra
-   msg.guild.members.get(msg.author.id).addRole(role);
-     
+         //adiciona a regra
+	 if (msg.content.startsWith('👍')){
+             msg.guild.members.get(msg.author.id).addRole(role);
+         }
 	 
-	
+	 
+	  //remove a regra
+	 if (msg.content.startsWith('👎')){
+             msg.guild.members.get(msg.author.id).removeRole(role);
+         }
+	 
+	//adiciona pokemon 
+       if (msg.content.startsWith('%')) {
+	  pkmraid=msg.content.substring(1);
+       } 
+	 
+	 
+	 
+	//le mensagens
 	msg.channel.fetchMessages({limit :100 }).then(msg=> {
       msg.forEach(msg=>{
             if(msg.content.startsWith('%')){
@@ -56,7 +53,7 @@ client.on("message", msg => {
             }
 	      
 	      
-	    if(msg.content.startsWith('+')){
+	    if(msg.content.startsWith('👍')){
 		     
 	       adicional=adicional+ msg.content.substring(1)+"\n";
              // 
@@ -83,36 +80,6 @@ client.on("message", msg => {
   
   
   
-  if (msg.content.startsWith('👎')) {
-    var raidcanal=msg.channel.name;
-    let role = msg.guild.roles.find("name", raidcanal);
-    
-    msg.guild.members.get(msg.author.id).removeRole(role);
-     
-    //  msg.channel.send(msg.author.toString() + ", retirado na RAID!");
-    
-	 
-	msg.channel.fetchMessages({limit :100 }).then(msg=> {
-      msg.forEach(msg=>{
-            if(msg.content.startsWith('%')){
-	       pkmraid= msg.content.substring(1);
-              // msg.channel.send(bicho);
-            }
-          
-        })
-    })   
-	  
-	  
-	  
-    setTimeout(function() {
-      
-       criaRaid(raidcanal,pkmraid); 
-       }, 2500);
-  
-  }     
-
-
-	
   
   
  if (msg.content.startsWith('%c')) { 

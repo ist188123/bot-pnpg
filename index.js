@@ -119,7 +119,7 @@ client.on("message", msg => {
 	 
 	 try{
 		 
-	msg.reply("estou aqui");
+	
 
     
         var status="Desconhecido";
@@ -249,7 +249,7 @@ client.on("message", msg => {
 
 function disparaRaid(local,horas,canal,treinadores,total,ovo,bicho,cpiv,status,adicional){
 	
-	
+	msg.reply("estou aqui");
   const embed = new Discord.RichEmbed()
    .setTitle(horas)
   .setAuthor(local.toUpperCase(), ovo)

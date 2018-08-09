@@ -134,7 +134,7 @@ client.on("message", msg => {
 	//var bicho="";
     
     
-    
+    msg.reply("--------1----------");
    
      var tiporaid=raidcanal.substring(5,6);
      var titulo="RAID "+raidcanal.substr(5)
@@ -142,13 +142,13 @@ client.on("message", msg => {
      var horas=thoras[thoras.length-1]
      y=thoras
      var local=""
-
+ msg.reply("--------2----------");
      for (var i=0;i<y.length-1;i++){
          local=local+" "+y[i]
    
         }
    
-   
+    msg.reply("--------3----------");
    msg.reply("tiporaid " +tiporaid+"-ovo-"+ovo+"-braid-"+braid);
 	
    //---- TIPO RAID ----

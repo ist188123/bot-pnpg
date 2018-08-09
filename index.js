@@ -62,7 +62,7 @@ let team_imagem="";
 		    
 		    
 		    
-	       adicional=adicional+ msg.content.substring(1)+team_imagem+" "+msg.author+"\n";
+	       adicional=adicional+ team_imagem+" "+msg.author+"\n";
              // 
             }  
 	      

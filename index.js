@@ -90,10 +90,10 @@ client.on("message", msg => {
   
    
 //   msg.channel.send(msg.author.toString() + ", inserido na RAID!");
-  setTimeout(function() {
+ // setTimeout(function() {
       // msg.channel.send(bicho);
        criaRaid(raidcanal,pkmraid,adicional); 
-       }, 2500);
+  //     }, 2500);
   
      // msg.reply(msg.channel.name);//nome do canal onde esta
   }     
@@ -166,7 +166,7 @@ client.on("message", msg => {
 	//----     
 	    
 	
-	
+	 msg.reply("tiporaid " +tiporaid+"-ovo-"+ovo+"-braid-"+braid);
 	
 	
      if(tiporaid.startsWith('4')){
@@ -231,7 +231,7 @@ client.on("message", msg => {
    
    //----  FIM TIPO RAID ---
    
-    msg.reply("tiporaid " +tiporaid+"-ovo-"+ovo+"-braid-"+braid);
+   
    disparaRaid(local,horas,raidcanal,adicional,quantidade,ovo,braid,cpiv,status,adicional);
   //  msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(msg.guild.channels.find("name", msg.channel.name)+"\n"+membersWithRole.join("\n"));
   msg.reply(local+" "+horas+" "+raidcanal+" "+adicional+" "+quantidade+" "+ovo+" "+braid+" "+cpiv+" "+status+" "+adicional);

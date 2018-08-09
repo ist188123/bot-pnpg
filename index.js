@@ -10,7 +10,7 @@ client.on("message", msg => {
    let obs="";
    var regra="Mod"
   let pkmraid=" ";
-	let adicional="Adicionais: ";
+	let adicional="nada";
   
  //  let role = msg.guild.roles.find("name", regra);
   
@@ -337,7 +337,7 @@ function disparaRaid(local,horas,canal,treinadores,total,ovo,bicho,cpiv,status,a
   
   
   .addBlankField(true)
-  .addField("Observações:", adicional, true)
+  .addField("Observações:", adicional.substring(4), true)
   
   
   .addBlankField(true)

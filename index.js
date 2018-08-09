@@ -43,7 +43,7 @@ let team_imagem="";
        } 
 	 
 	 
-	 
+	 //--------------------------------
 	//le mensagens
 	msg.channel.fetchMessages({limit :100 }).then(msg=> {
       msg.forEach(msg=>{
@@ -55,7 +55,7 @@ let team_imagem="";
 	      
 	    if(msg.content.startsWith('👍')){
 		     
-		     if(msg.roles.has(team_valor.id)) {
+		     if(msg.member.roles.has(team_valor.id)) {
 		      team_imagem=valor.toString();
 	             }  
 		    

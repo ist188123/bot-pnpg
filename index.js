@@ -57,6 +57,7 @@ let team_imagem="";
 		     
 		     if(msg.author.member.roles.has(team_valor.id)) {
 		      team_imagem=valor.toString();
+			     msg.reply(team_imagem);
 	             }  
 		    
 		    

@@ -71,7 +71,7 @@ client.on("message", msg => {
 //   msg.channel.send(msg.author.toString() + ", inserido na RAID!");
   setTimeout(function() {
       // msg.channel.send(bicho);
-       criaRaid(raidcanal,pkmraid); 
+       criaRaid(raidcanal,pkmraid,adicional); 
        }, 2500);
   
      // msg.reply(msg.channel.name);//nome do canal onde esta

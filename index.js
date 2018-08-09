@@ -55,9 +55,10 @@ client.on("message", msg => {
             }
 	      
 	      
-	    if(msg.content.startsWith('\\')){
+	    if(msg.content.startsWith('+')){
+		     msg.channel.send("adicional:"+adicional);
 	       adicional=adicional+ msg.content.substring(1)+"\n";
-             //  msg.channel.send(pkmraid);
+             // 
             }  
 	      
              

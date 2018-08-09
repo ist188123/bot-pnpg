@@ -12,10 +12,20 @@ client.on("message", msg => {
   let pkmraid="";
   let adicional="Treinadores:\n";
   
-  let team_valor = msg.guild.roles.find("name", "VALOR");
-   const valor = client.emojis.find("name", "valor");
+  
+   let team_mystic = msg.guild.roles.find("name", "MYSTIC");
+    let team_valor = msg.guild.roles.find("name", "VALOR");
+    let team_instinct = msg.guild.roles.find("name", "INSTINCT");
+		 
+	//imagens equipas
+	let team_imagem="";	 
+	const valor = client.emojis.find("name", "valor");
+	const mystic = client.emojis.find("name", "mystic");	
+        const instinct = client.emojis.find("name", "instinct");	
+    
    
-let team_imagem="";
+   
+
    
    
    
@@ -57,13 +67,22 @@ let team_imagem="";
 		     
 		     if(msg.member.roles.has(team_valor.id)) {
 		      team_imagem=valor.toString();
-			     msg.reply(team_imagem);
+		     // msg.reply(team_imagem);
+		      adicional=adicional+ team_imagem+" "+msg.author+"\n";
 	             }  
 		    
+		     if(msg.member.roles.has(team_mystic.id)) {
+		      team_imagem=mystic.toString();
+		     // msg.reply(team_imagem);
+		      adicional=adicional+ team_imagem+" "+msg.author+"\n";
+	             }  
 		    
-		    
-	       adicional=adicional+ team_imagem+" "+msg.author+"\n";
-		     msg.reply(adicional);
+	          if(msg.member.roles.has(team_instinct.id)) {
+		      team_imagem=instinct.toString();
+		     // msg.reply(team_imagem);
+		      adicional=adicional+ team_imagem+" "+msg.author+"\n";
+	             }  
+		     
              // 
             }  
 	      

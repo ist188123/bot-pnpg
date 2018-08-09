@@ -37,14 +37,20 @@ client.on("message", msg => {
    
    
   
- if (msg.content.startsWith('👍')) {
+ if (msg.content.startsWith('👍') || msg.content.startsWith('👎')) {
    let raidcanal=msg.channel.name;
    
     let role = msg.guild.roles.find("name", raidcanal);
   
    //adiciona a regra
+	 if (msg.content.startsWith('👍') ){
    msg.guild.members.get(msg.author.id).addRole(role);
-     
+     }
+	 
+	//remove regra 
+      if (msg.content.startsWith('👎')) {
+	      msg.guild.members.get(msg.author.id).removeRole(role); 
+      }
 	 
 	
 	msg.channel.fetchMessages({limit :100 }).then(msg=> {
@@ -81,34 +87,6 @@ client.on("message", msg => {
   
   
   
-  if (msg.content.startsWith('👎')) {
-    var raidcanal=msg.channel.name;
-    let role = msg.guild.roles.find("name", raidcanal);
-    
-    msg.guild.members.get(msg.author.id).removeRole(role);
-     
-    //  msg.channel.send(msg.author.toString() + ", retirado na RAID!");
-    
-	 
-	msg.channel.fetchMessages({limit :100 }).then(msg=> {
-      msg.forEach(msg=>{
-            if(msg.content.startsWith('%')){
-	       pkmraid= msg.content.substring(1);
-              // msg.channel.send(bicho);
-            }
-          
-        })
-    })   
-	  
-	  
-	  
-    setTimeout(function() {
-      
-       criaRaid(raidcanal,pkmraid); 
-       }, 2500);
-  
-  }     
-
 
 	
   

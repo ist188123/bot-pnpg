@@ -337,7 +337,7 @@ function disparaRaid(local,horas,canal,treinadores,total,ovo,bicho,cpiv,status,a
   
   
   .addBlankField(true)
-  .addField("Observações:", adicional.substring(4), true)
+  .addField("Observações:", adicional.substring(3), true)
   
   
   .addBlankField(true)

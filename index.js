@@ -10,7 +10,7 @@ client.on("message", msg => {
    let obs="";
    var regra="Mod"
   let pkmraid="";
-	let adicional="";
+	let adicional="+Não";
   
  //  let role = msg.guild.roles.find("name", regra);
   

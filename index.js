@@ -231,10 +231,10 @@ client.on("message", msg => {
    
    //----  FIM TIPO RAID ---
    
-    
+    msg.reply("tiporaid " +tiporaid+"-ovo-"+ovo+"-braid-"+braid);
    disparaRaid(local,horas,raidcanal,adicional,quantidade,ovo,braid,cpiv,status,adicional);
   //  msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(msg.guild.channels.find("name", msg.channel.name)+"\n"+membersWithRole.join("\n"));
-  msg.reply("tiporaid " +tiporaid+"-ovo-"+ovo+"-braid-"+braid);
+  msg.reply(local+" "+horas+" "+raidcanal+" "+adicional+" "+quantidade+" "+ovo+" "+braid+" "+cpiv+" "+status+" "+adicional);
 		 
 	} catch (err){
     console.log(err);

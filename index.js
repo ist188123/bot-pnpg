@@ -83,7 +83,7 @@ client.on("message", msg => {
 	 
 	 
    
-   //msg.reply("canal raid "+raidcanal);
+   msg.reply("-----"+adicional);
    
 //   msg.channel.send(msg.author.toString() + ", inserido na RAID!");
   setTimeout(function() {

@@ -139,7 +139,7 @@ client.on("message", msg => {
      var tiporaid=canalRaid.substring(5,6);
 		 
 	
-     var titulo="RAID "+raidcanal.substr(5);
+     var titulo="RAID "+canalRaid.substr(5);
 		 
      var thoras=titulo.split("-");
      var horas=thoras[thoras.length-1];
@@ -236,7 +236,7 @@ client.on("message", msg => {
    //----  FIM TIPO RAID ---
    
    
-   disparaRaid(local,horas,raidcanal,adicional,quantidade,ovo,braid,cpiv,status,adicional);
+   disparaRaid(local,horas,canalRaid,adicional,quantidade,ovo,braid,cpiv,status,adicional);
   //  msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(msg.guild.channels.find("name", msg.channel.name)+"\n"+membersWithRole.join("\n"));
   msg.reply(local+" "+horas+" "+raidcanal+" "+adicional+" "+quantidade+" "+ovo+" "+braid+" "+cpiv+" "+status+" "+adicional);
 		 

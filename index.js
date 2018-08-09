@@ -9,7 +9,7 @@ client.on("message", msg => {
    let quantidade=0;
    let obs="";
    var regra="Mod"
-  let pkmraid="";
+  let pkmraid="Desconhecido";
   let adicional="Treinadores:\n";
   
   

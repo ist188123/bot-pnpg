@@ -38,7 +38,7 @@ client.on("message", msg => {
    
   
  if (msg.content.startsWith('👍')) {
-	 adicional=" ";
+	 
    let raidcanal=msg.channel.name;
    
     let role = msg.guild.roles.find("name", raidcanal);

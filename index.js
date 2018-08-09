@@ -30,11 +30,11 @@ client.on("message", msg => {
    
    
   
- if (msg.content.startsWith('👍') || msg.content.startsWith('👎') || msg.content.startsWith('%')) {
+ if (msg.content.startsWith('👍')  || msg.content.startsWith('%')) {
 	 
    let raidcanal=msg.channel.name;
    
-    let role = msg.guild.roles.find("name", raidcanal);
+  //  let role = msg.guild.roles.find("name", raidcanal);
   
         
 	 

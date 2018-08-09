@@ -119,7 +119,7 @@ client.on("message", msg => {
 	 
 	 try{
 		 
-	
+	msg.reply("estou aqui");
 
     
         var status="Desconhecido";

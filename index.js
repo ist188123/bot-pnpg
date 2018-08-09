@@ -311,7 +311,7 @@ function disparaRaid(local,horas,canal,treinadores,total,ovo,bicho,cpiv,status,a
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
   .setColor(0x00AE86)
-  .setDescription(adicional)
+  .setDescription("Use o canal " + msg.guild.channels.find("name", canal))
   .setFooter("Equipa: PKG Pinhal Novo, pubicado :", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
  // .setImage("http://i.imgur.com/yVpymuV.png")
   .setThumbnail(bicho)
@@ -330,8 +330,10 @@ function disparaRaid(local,horas,canal,treinadores,total,ovo,bicho,cpiv,status,a
    * Blank field, useful to create some space.
    */
    
+  
+  
   .addBlankField(true)
-  .addField("Inline Field 3", "You can have a maximum of 25 fields.", true)
+  .addField("Observações:", adicional, true)
   
   
   .addBlankField(true)

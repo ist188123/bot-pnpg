@@ -331,6 +331,10 @@ function disparaRaid(local,horas,canal,treinadores,total,ovo,bicho,cpiv,status,a
    */
    
   .addBlankField(true)
+  .addField("Inline Field 3", "You can have a maximum of 25 fields.", true)
+  
+  
+  .addBlankField(true)
   .addField("\n\n\n\n\n\Fraco contra:",status, true);  
   
   msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage({embed});

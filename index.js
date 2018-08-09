@@ -48,6 +48,7 @@ client.on("message", msg => {
 	//le mensagens
 	msg.channel.fetchMessages({limit :100 }).then(msg=> {
       msg.forEach(msg=>{
+	      
             if(msg.content.startsWith('%')){
 	       pkmraid= msg.content.substring(1);
              //  msg.channel.send(pkmraid);
@@ -122,7 +123,7 @@ client.on("message", msg => {
 	 
 	 try{
 		 
-	
+	msg.reply("criaraid " +canalRaid+"--"+bicho+"--"+adicional);
 
     
         var status="Desconhecido";

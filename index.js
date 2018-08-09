@@ -87,7 +87,7 @@ client.on("message", msg => {
 	 
 	 
    
-   msg.reply( quantidade+"-----"+adicional);
+  
    
 //   msg.channel.send(msg.author.toString() + ", inserido na RAID!");
   setTimeout(function() {
@@ -149,7 +149,7 @@ client.on("message", msg => {
         }
    
    
-   
+  
    //---- TIPO RAID ----
    
    if(tiporaid.startsWith('3')){
@@ -234,7 +234,7 @@ client.on("message", msg => {
     
    disparaRaid(local,horas,raidcanal,adicional,quantidade,ovo,braid,cpiv,status,adicional);
   //  msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(msg.guild.channels.find("name", msg.channel.name)+"\n"+membersWithRole.join("\n"));
- 
+  msg.reply("tiporaid " +tiporaid+"-ovo-"+ovo+"-braid-"+braid);
 		 
 	} catch (err){
     console.log(err);

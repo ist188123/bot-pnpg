@@ -63,6 +63,7 @@ let team_imagem="";
 		    
 		    
 	       adicional=adicional+ team_imagem+" "+msg.author+"\n";
+		     msg.reply(adicional);
              // 
             }  
 	      

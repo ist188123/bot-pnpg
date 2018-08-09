@@ -42,7 +42,7 @@ client.on("message", msg => {
    
     let role = msg.guild.roles.find("name", raidcanal);
   
-   
+   //adiciona a regra
    msg.guild.members.get(msg.author.id).addRole(role);
      
 	 
@@ -311,7 +311,7 @@ function disparaRaid(local,horas,canal,treinadores,total,ovo,bicho,cpiv,status,a
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
   .setColor(0x00AE86)
-  .setDescription("")
+  .setDescription(adicional)
   .setFooter("Equipa: PKG Pinhal Novo, pubicado :", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
  // .setImage("http://i.imgur.com/yVpymuV.png")
   .setThumbnail(bicho)

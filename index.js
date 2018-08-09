@@ -36,16 +36,7 @@ client.on("message", msg => {
    
     let role = msg.guild.roles.find("name", raidcanal);
   
-         //adiciona a regra
-	 if (msg.content.startsWith('👍')){
-             msg.guild.members.get(msg.author.id).addRole(role);
-         }
-	 
-	 
-	  //remove a regra
-	 if (msg.content.startsWith('👎')){
-             msg.guild.members.get(msg.author.id).removeRole(role);
-         }
+        
 	 
 	//adiciona pokemon 
        if (msg.content.startsWith('%')) {
@@ -128,49 +119,7 @@ client.on("message", msg => {
 	 
 	 try{
 		 
-		//equipas
-
-    let team_mystic = msg.guild.roles.find("name", "MYSTIC");
-    let team_valor = msg.guild.roles.find("name", "VALOR");
-    let team_instinct = msg.guild.roles.find("name", "INSTINCT");
-		 
-	//imagens equipas
-	let team_imagem="";	 
-	const valor = client.emojis.find("name", "valor");
-	const mystic = client.emojis.find("name", "mystic");	
-        const instinct = client.emojis.find("name", "instinct");
 	
-	//raid	 
-		 
-    var raidcanal=canalRaid;
-    let role = msg.guild.roles.find("name", raidcanal);
-    
-    let vairaid = msg.guild.roles.get(role.id).members; //quantidade de users
-
-    
-    let membersWithRole = msg.guild.members.filter(member => { 
-        return member.roles.find("name", raidcanal);
-    }).map(member => {
-	    
-	    
-        if(member.roles.has(team_mystic.id)) {
-		team_imagem=mystic.toString();
-	}
-	   
-	 if(member.roles.has(team_valor.id)) {
-		team_imagem=valor.toString();
-	}   
-	    
-	if(member.roles.has(team_instinct.id)) {
-		team_imagem=instinct.toString();
-	}   
-	
-	
-	    
-	return team_imagem+member.user;
-
-       
-    })
 
     
         var status="Desconhecido";
@@ -279,7 +228,7 @@ client.on("message", msg => {
    //----  FIM TIPO RAID ---
    
     
-   disparaRaid(local,horas,raidcanal,membersWithRole.join("\n"),vairaid.size,ovo,braid,cpiv,status,adicional);
+   disparaRaid(local,horas,raidcanal,adicional,vairaid.size,ovo,braid,cpiv,status,adicional);
   //  msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(msg.guild.channels.find("name", msg.channel.name)+"\n"+membersWithRole.join("\n"));
  
 		 

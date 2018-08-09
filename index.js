@@ -289,6 +289,8 @@ client.on("message", msg => {
 		 
 	} catch (err){
     console.log(err);
+		msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(err);
+ 
 }	 
 		 
 		 

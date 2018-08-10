@@ -11,12 +11,12 @@ const prefix = "+";
 client.on("message", msg => {
 	
 	
-  
+  let autor=""
    let quantidade=0;
    let obs="";
    var regra="Mod"
   let pkmraid="Desconhecido";
-  let adicional="Treinadores:\n";
+  let adicional="";
   
   
    let team_mystic = msg.guild.roles.find("name", "MYSTIC");
@@ -42,15 +42,13 @@ if (msg.channel.name.startsWith('_raid')) {
    
   //  let role = msg.guild.roles.find("name", raidcanal);
   
-        msg.guild.channels.find("name", "ddd").sendMessage(client.user);
+       
 	
 	 
 	if (msg.content.startsWith('👎')) { 
-	 msg.channel.fetchMessages()
-.then(msg => msg.array().forEach(
-    msg => msg.author.equals(msg.author) && msg.delete()
+	    autor=msg.msg.author;
 		
-));
+		
 	 
 	}	 
 	 
@@ -76,6 +74,13 @@ if (msg.channel.name.startsWith('_raid')) {
 	       pkmraid= msg.content.substring(1);
              //  msg.channel.send(pkmraid);
             }
+	      
+	      
+	      if(msg.author==autor){
+		msg.reply("achou : ->"+msg.author);      
+	      }
+	      
+	      
 	      
 	      //msg inicia com    
 	    if(msg.content.startsWith('👍')){

@@ -54,6 +54,7 @@ if (msg.channel.name.startsWith('_raid')) {
 setTimeout(function() {
       // msg.channel.send(bicho);
        msg.channel.send("->"+autor+" ,Saiu da RAID.");	
+	quemvai(msg.content);
        }, 1500);		
 		
 	
@@ -66,9 +67,11 @@ setTimeout(function() {
 	
 	
 	
-   
+   async function quemvai(mensagem){
   
- if (msg.content.startsWith('👍') || msg.content.startsWith('->') || msg.content.startsWith('%')) {
+if (mensagem.startsWith('👍') ||mensagem.startsWith('->') || mensagem.startsWith('%')) {	   
+	   
+// if (msg.content.startsWith('👍') || msg.content.startsWith('->') || msg.content.startsWith('%')) {
 	 
    let raidcanal=msg.channel.name;
    
@@ -156,9 +159,15 @@ setTimeout(function() {
   
 }
   
+} 
   
   
-  
+	
+	
+	
+	
+	
+	
  if (msg.content.startsWith('%c')) { 
   let canal = msg.content.substring(3);
   msg.reply(canal)

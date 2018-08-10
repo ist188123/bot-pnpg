@@ -104,7 +104,7 @@ if (msg.channel.name.startsWith('_raid')) {
 	 
 	
 	 
-	 
+	 adicional="";
 	 
 	 //--------------------------------
 	//le mensagens

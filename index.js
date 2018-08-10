@@ -51,11 +51,10 @@ if (msg.channel.name.startsWith('_raid')) {
 			
 		
 ));
-setTimeout(function() {
-      // msg.channel.send(bicho);
+
        msg.channel.send("->"+autor+" ,Saiu da RAID.");	
-	quemvai(msg.content);
-       }, 1500);		
+	
+       	
 		
 	
 }	
@@ -66,12 +65,11 @@ setTimeout(function() {
 	
 	
 	
-	
-   async function quemvai(mensagem){
+
   
-if (mensagem.startsWith('👍') ||mensagem.startsWith('->') || mensagem.startsWith('%')) {	   
+
 	   
-// if (msg.content.startsWith('👍') || msg.content.startsWith('->') || msg.content.startsWith('%')) {
+ if (msg.content.startsWith('👍') || msg.content.startsWith('->') || msg.content.startsWith('%')) {
 	 
    let raidcanal=msg.channel.name;
    
@@ -97,8 +95,14 @@ if (mensagem.startsWith('👍') ||mensagem.startsWith('->') || mensagem.startsWi
 	 //--------------------------------
 	//le mensagens
 	 //------------------------
-	msg.channel.fetchMessages({limit :100 }).then(msg=> {
-      msg.forEach(msg=>{
+	//msg.channel.fetchMessages({limit :100 }).then(msg=> {
+     // msg.forEach(msg=>{
+	
+	
+	msg.channel.fetchMessages()
+.then(msg => msg.array().forEach(
+    msg => {
+	      
 	      //msg inicia com %
             if(msg.content.startsWith('%')){
 	       pkmraid= msg.content.substring(1);
@@ -159,7 +163,7 @@ if (mensagem.startsWith('👍') ||mensagem.startsWith('->') || mensagem.startsWi
   
 }
   
-} 
+
   
   
 	

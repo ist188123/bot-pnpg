@@ -106,11 +106,7 @@ msg.reply(autor+" ,Saiu da RAID.")
 	    if(msg.content.startsWith('👍')){
 		    
 		    
-		    mais=" ";
-		   if(msg.content.length>1){
-                      mais= msg.content.substring(1)
-                   } 
-		    
+		   msg.reply(msg.content.length);
 		    
 		    
 		     if(msg.member.roles.has(team_valor.id)) {

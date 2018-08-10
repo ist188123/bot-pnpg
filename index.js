@@ -53,17 +53,14 @@ if (msg.channel.name.startsWith('_raid')) {
 	 
 	if (msg.content.startsWith('👎')) { 
 	    autor=msg.author;
-		msg.channel.fetchMessages({limit :100 }).then(msg=> {
-      msg.forEach(msg=>{
 		
-	   if(msg.author==autor){
-		msg.reply("achou : ->"+msg.author); 
-		      msg.delete();
-	      }
-      
-       }) 
-      })
-	}	 
+		
+		msg.channel.fetchMessages()
+.then(messages => messages.array().forEach(
+    message => message.author.equals(autor) && message.delete()
+));
+		
+}	 
 	 
 	 
 	 

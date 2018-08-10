@@ -47,7 +47,7 @@ if (msg.channel.name.startsWith('_raid')) {
 	 
 	if (msg.content.startsWith('👎')) { 
 	 msg.channel.fetchMessages()
-.then(messages => messages.array().forEach(
+.then(messages => messages.forEach(
     message => message.author.equals(client.user) && message.delete()
 ));
 	 

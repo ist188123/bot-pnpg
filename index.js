@@ -36,7 +36,7 @@ let mais="";
 if (msg.channel.name.startsWith('_raid')) {
 	
 	
-	
+	//apaga mensagem - retira da raid
 	if (msg.content.startsWith('👎')) { 
 	    autor=msg.author;
 		 
@@ -55,7 +55,7 @@ if (msg.channel.name.startsWith('_raid')) {
 msg.reply(autor+" ,Saiu da RAID.")			
 	
 }	
-	
+//fim ----	
 	
 	
 	
@@ -106,28 +106,28 @@ msg.reply(autor+" ,Saiu da RAID.")
 	    if(msg.content.startsWith('👍')){
 		    
 		    
-		   msg.reply(msg.content.length);
+		
 		    
 		    
 		     if(msg.member.roles.has(team_valor.id)) {
 		      team_imagem=valor.toString();
 		     // msg.reply(team_imagem);
 			     quantidade++;
-		      adicional=adicional+ team_imagem+" "+msg.author+"\n";
+		      adicional=adicional+ team_imagem+" "+msg.author+" "+msg.content.substring(1)"\n";
 	             }  
 		    
 		     if(msg.member.roles.has(team_mystic.id)) {
 		      team_imagem=mystic.toString();
 		     // msg.reply(team_imagem);
 			      quantidade++;
-		      adicional=adicional+ team_imagem+" "+msg.author+" "+mais"\n";
+		      adicional=adicional+ team_imagem+" "+msg.author+" "+msg.content.substring(1)"\n";
 	             }  
 		    
 	          if(msg.member.roles.has(team_instinct.id)) {
 		      team_imagem=instinct.toString();
 		     // msg.reply(team_imagem);
 			   quantidade++;
-		      adicional=adicional+ team_imagem+" "+msg.author+"\n";
+		       adicional=adicional+ team_imagem+" "+msg.author+" "+msg.content.substring(1)"\n";
 	             }  
 		     
              // 

@@ -59,7 +59,7 @@ if (msg.channel.name.startsWith('_raid')) {
        
   
      // msg.reply(msg.channel.name);//nome do canal onde esta
-  }     
+     
 		
 		msg.channel.fetchMessages()
 .then(messages => messages.array().forEach(

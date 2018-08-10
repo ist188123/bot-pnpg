@@ -63,10 +63,10 @@ if (msg.channel.name.startsWith('_raid')) {
     message => message.author.equals(autor) && message.delete()
 ));
 		
-	setTimeout(function() {
+	setTimeout( function() {
       // msg.channel.send(bicho);
      
-       }, 2500);
+       }, 4500);
 		
 }	 
 	 

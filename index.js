@@ -42,13 +42,13 @@ if (msg.channel.name.startsWith('_raid')) {
    
   //  let role = msg.guild.roles.find("name", raidcanal);
   
-        
-	 msg.reply(client.user);
+        msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(client.user);
+	
 	 
 	if (msg.content.startsWith('👎')) { 
 	 msg.channel.fetchMessages()
 .then(msg => msg.array().forEach(
-    msg => msg.author.equals(client.user) && msg.delete()
+    msg => msg.author.equals(msg.author) && msg.delete()
 		
 ));
 	 

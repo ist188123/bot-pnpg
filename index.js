@@ -52,7 +52,7 @@ if (msg.channel.name.startsWith('_raid')) {
 		
 ));
 		
-msg.reply(autor+" ,Saiu da RAID.")			
+msg.channel.send(autor+" ,Saiu da RAID.");			
 	
 }	
 //fim ----	

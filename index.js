@@ -34,6 +34,12 @@ client.on("message", msg => {
 
    
 if (msg.channel.name.startsWith('_raid')) {
+	
+	
+	
+	
+	
+	
    
   
  if (msg.content.startsWith('👍') || msg.content.startsWith('👎') || msg.content.startsWith('%')) {
@@ -47,9 +53,16 @@ if (msg.channel.name.startsWith('_raid')) {
 	 
 	if (msg.content.startsWith('👎')) { 
 	    autor=msg.author;
+		msg.channel.fetchMessages({limit :100 }).then(msg=> {
+      msg.forEach(msg=>{
 		
-		
-	 
+	   if(msg.author==autor){
+		msg.reply("achou : ->"+msg.author); 
+		      msg.delete();
+	      }
+      
+       }) 
+      })
 	}	 
 	 
 	 
@@ -75,12 +88,7 @@ if (msg.channel.name.startsWith('_raid')) {
              //  msg.channel.send(pkmraid);
             }
 	      
-	   if (msg.content.startsWith('👎')) {   
-	      if(msg.author==autor){
-		msg.reply("achou : ->"+msg.author); 
-		      msg.delete();
-	      }
-	   }
+	  
 	      
 	      
 	      //msg inicia com    

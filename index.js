@@ -115,7 +115,7 @@ if (msg.channel.name.startsWith('_raid')) {
   setTimeout(function() {
       // msg.channel.send(bicho);
        criaRaid(raidcanal,pkmraid,adicional); 
-       }, 2500);
+       }, 1500);
   
      // msg.reply(msg.channel.name);//nome do canal onde esta
   }     

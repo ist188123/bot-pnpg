@@ -116,7 +116,7 @@ setTimeout(function() {
 		      team_imagem=valor.toString();
 		     // msg.reply(team_imagem);
 			     quantidade++;
-		      adicional=adicional+ team_imagem+" "+msg.author+" "+msg.content.substring(1)+"\n";
+		      adicional=adicional+ team_imagem+" "+msg.author+"\n";
 	             }  
 		    
 		     if(msg.member.roles.has(team_mystic.id)) {

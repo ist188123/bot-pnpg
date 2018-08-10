@@ -5,10 +5,6 @@ const client = new Discord.Client();
 const prefix = "+";
 
 
-Client.on('messageDeleted', function(message, channel){
-    message.reply("oi");
-});
-
 
 
 

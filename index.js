@@ -8,7 +8,7 @@ const prefix = "+";
 
 
 
-client.on("message", msg => {
+client.on("message", async (msg) => {
 	
 let mais="";	
   let autor=""
@@ -37,10 +37,7 @@ if (msg.channel.name.startsWith('_raid')) {
 	
 	
 	
-	setTimeout(function() {
-       msg.channel.send("bicho");
-      
-       }, 10500);
+	
   
     
 	

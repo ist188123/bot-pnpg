@@ -10,7 +10,7 @@ const prefix = "+";
 
 client.on("message", msg => {
 	
-	
+let mais="";	
   let autor=""
    let quantidade=0;
    let obs="";
@@ -100,11 +100,19 @@ msg.reply(autor+" ,Saiu da RAID.")
             }
 	      
 	  
-	      
+	     
 	      
 	      //msg inicia com    
 	    if(msg.content.startsWith('👍')){
-		     
+		    
+		    
+		    mais=" ";
+		   if(msg.content.length>1){
+                      mais= msg.content.substring(1)
+                   } 
+		    
+		    
+		    
 		     if(msg.member.roles.has(team_valor.id)) {
 		      team_imagem=valor.toString();
 		     // msg.reply(team_imagem);
@@ -116,7 +124,7 @@ msg.reply(autor+" ,Saiu da RAID.")
 		      team_imagem=mystic.toString();
 		     // msg.reply(team_imagem);
 			      quantidade++;
-		      adicional=adicional+ team_imagem+" "+msg.author+"\n";
+		      adicional=adicional+ team_imagem+" "+msg.author+" "+mais"\n";
 	             }  
 		    
 	          if(msg.member.roles.has(team_instinct.id)) {

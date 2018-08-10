@@ -113,21 +113,21 @@ msg.reply(autor+" ,Saiu da RAID.")
 		      team_imagem=valor.toString();
 		     // msg.reply(team_imagem);
 			     quantidade++;
-		      adicional=adicional+ team_imagem+" "+msg.author+" "+msg.content.substring(1)"\n";
+		      adicional=adicional+ team_imagem+" "+msg.author+" "+msg.content.substring(1)+"\n";
 	             }  
 		    
 		     if(msg.member.roles.has(team_mystic.id)) {
 		      team_imagem=mystic.toString();
 		     // msg.reply(team_imagem);
 			      quantidade++;
-		      adicional=adicional+ team_imagem+" "+msg.author+" "+msg.content.substring(1)"\n";
+		      adicional=adicional+ team_imagem+" "+msg.author+" "+msg.content.substring(1)+"\n";
 	             }  
 		    
 	          if(msg.member.roles.has(team_instinct.id)) {
 		      team_imagem=instinct.toString();
 		     // msg.reply(team_imagem);
 			   quantidade++;
-		       adicional=adicional+ team_imagem+" "+msg.author+" "+msg.content.substring(1)"\n";
+		       adicional=adicional+ team_imagem+" "+msg.author+" "+msg.content.substring(1)+"\n";
 	             }  
 		     
              // 

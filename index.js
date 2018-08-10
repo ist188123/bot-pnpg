@@ -65,7 +65,7 @@ if (msg.channel.name.startsWith('_raid')) {
 .then(messages => messages.array().forEach(
     message => message.author.equals(autor) && message.delete()
 ));
-}, 1500);		
+}, 2500);		
 }	 
 	 
 	 

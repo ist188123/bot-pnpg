@@ -52,7 +52,7 @@ if (msg.channel.name.startsWith('_raid')) {
 		
 ));
 		
-msg.reply(xpto+" ,Deve sempre confirmar a saida da RAID.")			
+msg.reply(autor+" ,Saiu da RAID.")			
 	
 }	
 	

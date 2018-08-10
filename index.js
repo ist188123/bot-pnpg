@@ -36,6 +36,25 @@ let mais="";
 if (msg.channel.name.startsWith('_raid')) {
 	
 	
+	
+	setTimeout(function() {
+       msg.channel.send("bicho");
+      
+       }, 10500);
+  
+     // msg.reply(msg.channel.name);//nome do canal onde esta
+  }     
+  
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	//apaga mensagem - retira da raid
 	if (msg.content.startsWith('👎')) { 
 	    autor=msg.author;
@@ -52,7 +71,7 @@ if (msg.channel.name.startsWith('_raid')) {
 		
 ));
 
-       msg.channel.send("->"+autor+" ,Saiu da RAID.");	
+       msg.channel.send("->"+autor+" ,saiu da RAID.");	
 	
        	
 		

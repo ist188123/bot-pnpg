@@ -5,6 +5,11 @@ const client = new Discord.Client();
 const prefix = "+";
 
 client.on("message", msg => {
+	
+	client.on("messageDelete", msgdel => {
+		msg.reply("foi");
+		
+	})
   
    let quantidade=0;
    let obs="";

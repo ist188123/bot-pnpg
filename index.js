@@ -46,7 +46,7 @@ if (msg.channel.name.startsWith('_raid')) {
 	
 	 
 	if (msg.content.startsWith('👎')) { 
-	    autor=msg.msg.author;
+	    autor=msg.author;
 		
 		
 	 

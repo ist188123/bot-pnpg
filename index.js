@@ -42,9 +42,7 @@ if (msg.channel.name.startsWith('_raid')) {
       
        }, 10500);
   
-     // msg.reply(msg.channel.name);//nome do canal onde esta
-  }     
-  
+    
 	
 	
 	

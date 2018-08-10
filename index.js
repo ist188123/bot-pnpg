@@ -53,12 +53,7 @@ if (msg.channel.name.startsWith('_raid')) {
 	  pkmraid=msg.content.substring(1);
        } 
 	 
-	if (msg.content.startsWith('👎')) { 
-	msg.channel.fetchMessages()
-.then(messages => messages.array().forEach(
-    message => message.author.equals(client.user) && message.delete()
-));
-	} 
+	
 	 
 	 
 	 

@@ -95,13 +95,10 @@ if (msg.channel.name.startsWith('_raid')) {
 	 //--------------------------------
 	//le mensagens
 	 //------------------------
-	//msg.channel.fetchMessages({limit :100 }).then(msg=> {
-     // msg.forEach(msg=>{
+	msg.channel.fetchMessages({limit :100 }).then(msg=> {
+     msg.forEach(msg=>{
 	
-	
-	msg.channel.fetchMessages()
-.then(msg => msg.array().forEach(
-    msg => {
+
 	      
 	      //msg inicia com %
             if(msg.content.startsWith('%')){

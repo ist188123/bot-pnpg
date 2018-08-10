@@ -203,6 +203,85 @@ if (msg.channel.name.startsWith('_raid')) {
 	 try{
 		 
 	
+	 
+	 adicional="";
+	 
+	 //--------------------------------
+	//le mensagens
+	 //------------------------
+	msg.channel.fetchMessages({limit :100 }).then(msg=> {
+     msg.forEach(msg=>{
+	
+
+	      
+	      //msg inicia com %
+            if(msg.content.startsWith('%')){
+	       pkmraid= msg.content.substring(1);
+             //  msg.channel.send(pkmraid);
+            }
+	      
+	  
+	     
+	      
+	      //msg inicia com    
+	    if(msg.content.startsWith('👍')){
+		    
+		    
+		
+		    
+		    
+		     if(msg.member.roles.has(team_valor.id)) {
+		      team_imagem=valor.toString();
+		     // msg.reply(team_imagem);
+			     quantidade++;
+		      adicional=adicional+ team_imagem+" "+msg.author+" "+msg.content.substring(2)+"\n";
+	             }  
+		    
+		     if(msg.member.roles.has(team_mystic.id)) {
+		      team_imagem=mystic.toString();
+		     // msg.reply(team_imagem);
+			      quantidade++;
+		     adicional=adicional+ team_imagem+" "+msg.author+" "+msg.content.substring(2)+"\n";
+	             }  
+		    
+	          if(msg.member.roles.has(team_instinct.id)) {
+		      team_imagem=instinct.toString();
+		     // msg.reply(team_imagem);
+			   quantidade++;
+		        adicional=adicional+ team_imagem+" "+msg.author+" "+msg.content.substring(2)+"\n";
+	             }  
+		     
+             // 
+            }  
+	      
+             
+        })
+    }) 
+	 
+	//---- fim ler mensagens 	 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
+		 
     
         var status="Desconhecido";
 	var cpiv="Desconhecido"

@@ -43,12 +43,13 @@ if (msg.channel.name.startsWith('_raid')) {
   //  let role = msg.guild.roles.find("name", raidcanal);
   
         
-	 
+	 msg.reply(client.user);
 	 
 	if (msg.content.startsWith('👎')) { 
 	 msg.channel.fetchMessages()
-.then(messages => messages.array().forEach(
-    message => message.author.equals(client.user) && message.delete()
+.then(msg => msg.array().forEach(
+    msg => msg.author.equals(client.user) && msg.delete()
+		
 ));
 	 
 	}	 

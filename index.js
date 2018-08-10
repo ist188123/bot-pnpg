@@ -53,10 +53,7 @@ if (msg.channel.name.startsWith('_raid')) {
 	 
 	if (msg.content.startsWith('👎')) { 
 	    autor=msg.author;
-		 setTimeout(function() {
-      // msg.channel.send(bicho);
-     
-       
+		 
   
      // msg.reply(msg.channel.name);//nome do canal onde esta
      
@@ -65,7 +62,12 @@ if (msg.channel.name.startsWith('_raid')) {
 .then(messages => messages.array().forEach(
     message => message.author.equals(autor) && message.delete()
 ));
-}, 2500);		
+		
+	setTimeout(function() {
+      // msg.channel.send(bicho);
+     
+       }, 2500);
+		
 }	 
 	 
 	 

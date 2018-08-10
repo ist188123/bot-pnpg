@@ -51,8 +51,11 @@ if (msg.channel.name.startsWith('_raid')) {
 			
 		
 ));
+setTimeout(function() {
+      // msg.channel.send(bicho);
+       msg.channel.send("->"+autor+" ,Saiu da RAID.");	
+       }, 1500);		
 		
-msg.channel.send(autor+" ,Saiu da RAID.");			
 	
 }	
 //fim ----	

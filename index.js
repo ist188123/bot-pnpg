@@ -42,7 +42,7 @@ if (msg.channel.name.startsWith('_raid')) {
    
   //  let role = msg.guild.roles.find("name", raidcanal);
   
-        msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(client.user);
+        msg.guild.channels.find("name", "ddd").sendMessage(client.user);
 	
 	 
 	if (msg.content.startsWith('👎')) { 

@@ -60,11 +60,14 @@ if (msg.channel.name.startsWith('_raid')) {
 		
 		msg.channel.fetchMessages()
 .then(messages => messages.array().forEach(
-    message => message.author.equals(autor) && message.delete() && msg.content.startsWith('👍')
+    message => message.author.equals(autor) && message.delete() 
+			
+			
+	msg.reply( messages.array())			
 ));
 		
 	
-		
+	
 }	 
 	 
 	 

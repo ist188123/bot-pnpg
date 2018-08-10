@@ -4,12 +4,17 @@ const client = new Discord.Client();
 
 const prefix = "+";
 
+
+Client.on('messageDeleted', function(message, channel){
+    message.reply("oi");
+});
+
+
+
+
 client.on("message", msg => {
 	
-	client.on("messageDelete", msgdel => {
-		msg.reply("foi");
-		
-	})
+	
   
    let quantidade=0;
    let obs="";
@@ -48,18 +53,27 @@ if (msg.channel.name.startsWith('_raid')) {
 	  pkmraid=msg.content.substring(1);
        } 
 	 
+	if (msg.content.startsWith('👎')) { 
+	msg.channel.fetchMessages()
+.then(messages => messages.array().forEach(
+    message => message.author.equals(client.user) && message.delete()
+));
+	} 
+	 
+	 
 	 
 	 //--------------------------------
 	//le mensagens
+	 //------------------------
 	msg.channel.fetchMessages({limit :100 }).then(msg=> {
       msg.forEach(msg=>{
-	      
+	      //msg inicia com %
             if(msg.content.startsWith('%')){
 	       pkmraid= msg.content.substring(1);
              //  msg.channel.send(pkmraid);
             }
 	      
-	      
+	      //msg inicia com    
 	    if(msg.content.startsWith('👍')){
 		     
 		     if(msg.member.roles.has(team_valor.id)) {
@@ -90,7 +104,7 @@ if (msg.channel.name.startsWith('_raid')) {
         })
     }) 
 	 
-	 
+	//---- fim ler mensagens 
    
   
    

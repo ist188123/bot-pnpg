@@ -75,11 +75,12 @@ if (msg.channel.name.startsWith('_raid')) {
              //  msg.channel.send(pkmraid);
             }
 	      
-	      
+	   if (msg.content.startsWith('👎')) {   
 	      if(msg.author==autor){
-		msg.reply("achou : ->"+msg.author);      
+		msg.reply("achou : ->"+msg.author); 
+		      msg.delete();
 	      }
-	      
+	   }
 	      
 	      
 	      //msg inicia com    

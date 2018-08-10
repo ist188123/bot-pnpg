@@ -37,20 +37,6 @@ if (msg.channel.name.startsWith('_raid')) {
 	
 	
 	
-	
-	
-	
-   
-  
- if (msg.content.startsWith('👍') || msg.content.startsWith('👎') || msg.content.startsWith('%')) {
-	 
-   let raidcanal=msg.channel.name;
-   
-  //  let role = msg.guild.roles.find("name", raidcanal);
-  
-       
-	
-	 
 	if (msg.content.startsWith('👎')) { 
 	    autor=msg.author;
 		 
@@ -66,9 +52,29 @@ if (msg.channel.name.startsWith('_raid')) {
 		
 ));
 		
-msg.reply(xpto)			
+msg.reply(xpto+" ,Deve sempre confirmar a saida da RAID.")			
 	
-}	 
+}	
+	
+	
+	
+	
+	
+	
+	
+	
+   
+  
+ if (msg.content.startsWith('👍') || msg.content.startsWith('👎') || msg.content.startsWith('%')) {
+	 
+   let raidcanal=msg.channel.name;
+   
+  //  let role = msg.guild.roles.find("name", raidcanal);
+  
+       
+	
+	 
+	 
 	 
 	 
 	 

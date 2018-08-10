@@ -68,7 +68,7 @@ setTimeout(function() {
 	
    
   
- if (msg.content.startsWith('👍') || msg.content.startsWith('👎') || msg.content.startsWith('%')) {
+ if (msg.content.startsWith('👍') || msg.content.startsWith('->') || msg.content.startsWith('%')) {
 	 
    let raidcanal=msg.channel.name;
    

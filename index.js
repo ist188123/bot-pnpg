@@ -41,13 +41,13 @@ if (msg.channel.name.startsWith('_raid')) {
 	
 	
 	
-	if (msg.content.startsWith('!fim')) { 
+	
              if(responseObject[msg.content]) {
              msg.channel.send(responseObject[msg.content]);
            }
     
 	
-	}
+	
 	
 	
 	

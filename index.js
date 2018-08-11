@@ -208,7 +208,7 @@ client.on("message", async (msg) => {
 
 
 
-            criaRaid(raidcanal, pkmraid, result,result.length);
+            criaRaid(raidcanal, pkmraid, result,quantidade);
 
 
 

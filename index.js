@@ -58,7 +58,7 @@ if (msg.channel.name.startsWith('_raid')) {
      // msg.reply(msg.channel.name);//nome do canal onde esta
      
 		
-		let xpto = msg.channel.fetchMessages()
+let xpto = msg.channel.fetchMessages()
 .then(messages => messages.array().forEach(
     message => message.author.equals(autor) && message.delete() 
 			
@@ -66,9 +66,12 @@ if (msg.channel.name.startsWith('_raid')) {
 		
 ));
 
-       msg.channel.send("->"+autor+" ,saiu da RAID.");	
+      
 	
-       	
+     setTimeout(function() {
+      // msg.channel.send(bicho);
+       msg.channel.send("->"+autor+" ,saiu da RAID.");	
+       }, 1500);  	
 		
 	
 }	

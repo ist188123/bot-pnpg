@@ -231,16 +231,16 @@ client.on("message", async (msg) => {
 
 
 
-    if (msg.content.startsWith('%c')) {
-        let canal = msg.content.substring(3);
+  //  if (msg.content.startsWith('%c')) {
+      //  let canal = msg.content.substring(3);
 
-        setTimeout(myFunc, 5500, canal);
+     //   setTimeout(myFunc, 5500, canal);
 
-        msg.guild.createChannel(canal, "text");
+     //   msg.guild.createChannel(canal, "text");
         //  msg.guild.createRole({name:canal}) ;
 
 
-    }
+ //   }
 
 
 
@@ -465,13 +465,13 @@ client.on("message", async (msg) => {
     
     
     //---teste ----
-    
+     if (msg.channel.name.startsWith('adm-pg-')) {
         if (msg.content.startsWith('!')) {
          
          var texto=   msg.content.substring(1)
         const embed = new Discord.RichEmbed()
   .setTitle("INFORMAÇÃO")
-  .setAuthor("Olá treinadores", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
+  .setAuthor("Olá treinadores.", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
@@ -491,7 +491,7 @@ client.on("message", async (msg) => {
             
 
         }
-        
+     }  
 
     
     

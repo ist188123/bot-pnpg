@@ -85,7 +85,7 @@ client.on("message", async (msg) => {
             
                 // msg.channel.send(bicho);
                 msg.channel.send("->" + autor + " ,saiu da RAID.");
-           }, 1000);    
+           }, 1500);    
 
 
         }
@@ -213,7 +213,7 @@ result = result.filter(item => item !== autor);
            
 
 
-                criaRaid(raidcanal, pkmraid, result,qtatr;
+                criaRaid(raidcanal, pkmraid, result,qtatr);
           
 
        }, 1500);    

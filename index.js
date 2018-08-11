@@ -41,7 +41,7 @@ let mais="";
 
  if(responseObject[msg.content]) {
              msg.channel.send(responseObject[msg.content]);
-	 setTimeout(myFunc, 5500, 'funky');
+	
            }	
 //---------------------------------------------------		
 //fim informacao
@@ -50,7 +50,7 @@ let mais="";
 
 	
 function myFunc(arg) {
- msg.channel.send(arg);
+ msg.guild.channels.find("name",arg).sendMessage("oi");
 }	
 	
 	
@@ -211,7 +211,7 @@ let xpto = msg.channel.fetchMessages()
 	
  if (msg.content.startsWith('%c')) { 
   let canal = msg.content.substring(3);
-  msg.reply(canal)
+   setTimeout(myFunc, 5500, canal);
    
       msg.guild.createChannel(canal, "text");
    //  msg.guild.createRole({name:canal}) ;

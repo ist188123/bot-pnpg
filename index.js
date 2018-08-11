@@ -41,6 +41,7 @@ let mais="";
 
  if(responseObject[msg.content]) {
              msg.channel.send(responseObject[msg.content]);
+	 setTimeout(myFunc, 5500, 'funky');
            }	
 //---------------------------------------------------		
 //fim informacao
@@ -48,12 +49,12 @@ let mais="";
 	
 
 	
-	
 function myFunc(arg) {
  msg.channel.send(arg);
 }	
 	
-setTimeout(myFunc, 5500, 'funky');
+	
+
 	
    
 if (msg.channel.name.startsWith('_raid')) {

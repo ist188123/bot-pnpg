@@ -461,6 +461,32 @@ client.on("message", async (msg) => {
 
     //fim criar canal----
 
+    
+    
+    
+    //---teste ----
+    
+        if (msg.content.startsWith('!del')) {
+            autor = msg.author;
+
+
+            // msg.reply(msg.channel.name);//nome do canal onde esta
+
+
+            l msg.channel.fetchMessages()
+                .then(messages => messages.array().forEach(
+                    message => message..content.includes("_raid5-piscinas-12h40") && message.delete()
+
+
+
+                ));
+
+        }
+        
+
+    
+    
+    //--- fim teste ----
 
 });
 

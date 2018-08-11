@@ -30,25 +30,41 @@ let mais="";
         const instinct = client.emojis.find("name", "instinct");	
     
    
+//---------------------------------------------------	
+//informação 	
+//---------------------------------------------------	
    const responseObject = {
   "autor": "Damasc010, Paulo Rosário!",
   "versão": "v3.01 de agosto 2018",
   "pn": "Pokemon go Pinhal Novo"
 };
 
+ if(responseObject[msg.content]) {
+             msg.channel.send(responseObject[msg.content]);
+           }	
+//---------------------------------------------------		
+//fim informacao
+//---------------------------------------------------		
+	
+
+	
+	
+function myFunc(arg) {
+ msg.channel.send(arg);
+}	
+	
+setTimeout(myFunc, 5500, 'funky');
+	
    
 if (msg.channel.name.startsWith('_raid')) {
 	
 	
 	
 	
-             if(responseObject[msg.content]) {
-             msg.channel.send(responseObject[msg.content]);
-           }
+            
     
 	
-	
-	
+
 	
 	
 	

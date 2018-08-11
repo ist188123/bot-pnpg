@@ -192,12 +192,13 @@ let xpto = msg.channel.fetchMessages()
  
 });
 	
- msg.channel.send("array "+array);
-   
+
 	
 //   msg.channel.send(msg.author.toString() + ", inserido na RAID!");
   setTimeout(function() {
-       
+        msg.channel.send("array "+array);
+   
+   
        criaRaid(raidcanal,pkmraid,adicional); 
        }, 1500);
   
@@ -218,6 +219,7 @@ let xpto = msg.channel.fetchMessages()
 	
  if (msg.content.startsWith('%c')) { 
   let canal = msg.content.substring(3);
+	
    setTimeout(myFunc, 5500, canal);
    
       msg.guild.createChannel(canal, "text");

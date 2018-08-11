@@ -188,9 +188,12 @@ client.on("message", async (msg) => {
             //   msg.channel.send(msg.author.toString() + ", inserido na RAID!");
            
    //------------------------     
-       setTimeout(function () {         
+       setTimeout(function () {   
+           
+           
    msg.channel.send("array 0"+array);                 
 var result = [];
+ var tr=[];          
 array.forEach(function(item) {
      if(result.indexOf(item) < 0) {
          result.push(item);
@@ -199,17 +202,17 @@ array.forEach(function(item) {
         
    msg.channel.send("result 1"+result);              
 
-result = result.filter(item => item !== autor);
+tr = result.filter(item => item !== autor);
               
-    var treinadores=result.filter(item => item !== autor).length;
+  
             
-     msg.channel.send("result 2"+result);            
+     msg.channel.send("result 2"+tr);            
                 
  //--------------------------------------               
            
 
 
-                criaRaid(raidcanal, pkmraid, result,treinadores);
+                criaRaid(raidcanal, pkmraid, tr,tr.length);
           
 
        }, 1500);    

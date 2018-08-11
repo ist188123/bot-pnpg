@@ -473,9 +473,9 @@ client.on("message", async (msg) => {
             // msg.reply(msg.channel.name);//nome do canal onde esta
 
 
-            l msg.channel.fetchMessages()
+             msg.channel.fetchMessages()
                 .then(messages => messages.array().forEach(
-                    message => message..content.includes("_raid5-piscinas-12h40") && message.delete()
+                    message => message.content.includes("_raid5-piscinas-12h40") && message.delete()
 
 
 

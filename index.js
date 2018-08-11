@@ -81,11 +81,11 @@ client.on("message", async (msg) => {
                 ));
 
 
-
+             setTimeout(function () {    
             
                 // msg.channel.send(bicho);
                 msg.channel.send("->" + autor + " ,saiu da RAID.");
-          
+           }, 1000);    
 
 
         }
@@ -199,16 +199,17 @@ array.forEach(function(item) {
         
    msg.channel.send("result 1"+result);              
 
-result = result.filter(item => item !== autor)
+result = result.filter(item => item !== autor);
               
-                
+    var treinadores=result.filter(item => item !== autor).length;
+            
      msg.channel.send("result 2"+result);            
                 
  //--------------------------------------               
            
 
 
-                criaRaid(raidcanal, pkmraid, result);
+                criaRaid(raidcanal, pkmraid, result,treinadores;
           
 
        }, 1500);    
@@ -242,7 +243,7 @@ result = result.filter(item => item !== autor)
 
 
     //lista todos os elementos que tem a regra
-    function criaRaid(canalRaid, bicho, adicional) {
+    function criaRaid(canalRaid, bicho, adicional,participantesRaid)) {
 
         try {
 
@@ -359,7 +360,7 @@ result = result.filter(item => item !== autor)
             //----  FIM TIPO RAID ---
 
 
-            disparaRaid(local, horas, canalRaid, adicional, quantidade, ovo, braid, cpiv, status, adicional);
+            disparaRaid(local, horas, canalRaid, adicional, participantesRaid, ovo, braid, cpiv, status, adicional);
             //  msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(msg.guild.channels.find("name", msg.channel.name)+"\n"+membersWithRole.join("\n"));
 
         } catch (err) {

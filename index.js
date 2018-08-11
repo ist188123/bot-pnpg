@@ -486,8 +486,8 @@ client.on("message", async (msg) => {
 
 
 
-            msg.channel.send({ embed });
-
+             msg.guild.channels.find("name", "informacao").sendMessage({ embed });
+             msg.guild.channels.find("name", "chat").sendMessage({ embed });
 
 
         }

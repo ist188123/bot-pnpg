@@ -187,8 +187,13 @@ client.on("message", async (msg) => {
 
             //   msg.channel.send(msg.author.toString() + ", inserido na RAID!");
             setTimeout(function () {
-            msg.channel.send("array "+array.sort);
-
+            msg.channel.send("array "+array.sort());
+array.sort(function (a, b) {
+         var a1 = a.toLowerCase(), b1 = b.toLowerCase();
+         if (a1 < b1) return 1;
+         if (a1 > b1) return -1;
+         return 0;
+});
 
                 criaRaid(raidcanal, pkmraid, adicional);
             }, 1500);

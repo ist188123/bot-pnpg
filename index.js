@@ -116,7 +116,7 @@ let xpto = msg.channel.fetchMessages()
   //  let role = msg.guild.roles.find("name", raidcanal);
   
        
-	
+	var array = [];
 	 
 	 
 	 
@@ -160,6 +160,7 @@ let xpto = msg.channel.fetchMessages()
 		      team_imagem=valor.toString();
 		     // msg.reply(team_imagem);
 			     quantidade++;
+			     array.push(team_imagem+" "+msg.author+" "+msg.content.substring(2));
 		      adicional=adicional+ team_imagem+" "+msg.author+" "+msg.content.substring(2)+"\n";
 	             }  
 		    
@@ -167,6 +168,7 @@ let xpto = msg.channel.fetchMessages()
 		      team_imagem=mystic.toString();
 		     // msg.reply(team_imagem);
 			      quantidade++;
+			     array.push(team_imagem+" "+msg.author+" "+msg.content.substring(2));
 		     adicional=adicional+ team_imagem+" "+msg.author+" "+msg.content.substring(2)+"\n";
 	             }  
 		    
@@ -174,6 +176,7 @@ let xpto = msg.channel.fetchMessages()
 		      team_imagem=instinct.toString();
 		     // msg.reply(team_imagem);
 			   quantidade++;
+			  array.push(team_imagem+" "+msg.author+" "+msg.content.substring(2));
 		        adicional=adicional+ team_imagem+" "+msg.author+" "+msg.content.substring(2)+"\n";
 	             }  
 		     
@@ -190,7 +193,7 @@ let xpto = msg.channel.fetchMessages()
    
 //   msg.channel.send(msg.author.toString() + ", inserido na RAID!");
   setTimeout(function() {
-      // msg.channel.send(bicho);
+       msg.channel.send(array);
        criaRaid(raidcanal,pkmraid,adicional); 
        }, 1500);
   

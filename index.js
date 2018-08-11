@@ -81,11 +81,11 @@ client.on("message", async (msg) => {
                 ));
 
 
-             setTimeout(function () {    
-            
+            setTimeout(function () {
+
                 // msg.channel.send(bicho);
                 msg.channel.send("->" + autor + " ,saiu da RAID.");
-           }, 1500);    
+            }, 1500);
 
 
         }
@@ -186,37 +186,37 @@ client.on("message", async (msg) => {
 
 
             //   msg.channel.send(msg.author.toString() + ", inserido na RAID!");
-           
-   //------------------------     
-       setTimeout(function () {   
-           
-           
-  // msg.channel.send("array 0"+array);                 
-var result = [];
-       
-        
-array.forEach(function(item) {
-     if(result.indexOf(item) < 0) {
-         result.push(item);
-     }
-});
-        
-  // msg.channel.send("result 1"+result);              
 
-result = result.filter(item => item !== autor);
-      var qtatr= result.filter(item => item !== autor).length   
-  
-            
-     //msg.channel.send("result 2"+result);            
-                
- //--------------------------------------               
-           
+            //------------------------     
+            setTimeout(function () {
 
 
-                criaRaid(raidcanal, pkmraid, result,qtatr);
-          
+                // msg.channel.send("array 0"+array);                 
+                var result = [];
 
-       }, 1500);    
+
+                array.forEach(function (item) {
+                    if (result.indexOf(item) < 0) {
+                        result.push(item);
+                    }
+                });
+
+                // msg.channel.send("result 1"+result);              
+
+                result = result.filter(item => item !== autor);
+                var qtatr = result.filter(item => item !== autor).length
+
+
+                //msg.channel.send("result 2"+result);            
+
+                //--------------------------------------               
+
+
+
+                criaRaid(raidcanal, pkmraid, result, qtatr);
+
+
+            }, 1500);
         }
 
 
@@ -247,7 +247,7 @@ result = result.filter(item => item !== autor);
 
 
     //lista todos os elementos que tem a regra
-    function criaRaid(canalRaid, bicho, adicional,participantesRaid) {
+    function criaRaid(canalRaid, bicho, adicional, participantesRaid) {
 
         try {
 
@@ -422,6 +422,44 @@ result = result.filter(item => item !== autor);
     }
 
 
+
+
+
+
+
+
+    //----criar canal ---
+
+    if (msg.channel.name == 'lab-prof-willow') {
+
+        if (msg.content.startsWith("!5") || msg.content.startsWith("!4") || msg.content.startsWith("!3")) {
+
+
+
+
+
+            //LE A MENSAGEM EXCLUINDO O !
+            var text = msg.content.substring(1);
+
+            var canal = '_raid' + text
+            canal = canal.split('!').join('').toLowerCase();
+            var nomecanal = canal.split(' ').join('-').toLowerCase();
+            //cria canal
+            if (msg.guild.channels.find("name", nomecanal)) {
+            } else {
+
+                msg.guild.createChannel(canal, "text");
+
+
+            }
+
+
+
+        }   // fim do inicio carater
+
+    }
+
+    //fim criar canal----
 
 
 });

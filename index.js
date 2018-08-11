@@ -394,7 +394,7 @@ client.on("message", async (msg) => {
             */
             .setColor(0x00AE86)
             .setDescription("Use o canal " + msg.guild.channels.find("name", canal))
-            .setFooter("Equipa: PKG Pinhal Novo, pubicado :", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
+            .setFooter("Equipa - PKG Pinhal Novo, pubicado a, ", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
             // .setImage("http://i.imgur.com/yVpymuV.png")
             .setThumbnail(bicho)
             /*
@@ -466,18 +466,18 @@ client.on("message", async (msg) => {
     
     //---teste ----
     
-        if (msg.content.startsWith('!oi')) {
+        if (msg.content.startsWith('!')) {
          
-            
+         var texto=   msg.content.substring(1)
         const embed = new Discord.RichEmbed()
   .setTitle("INFORMAÇÃO")
-  .setAuthor("Olá treinadores", "https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png")
+  .setAuthor("Olá treinadores", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
   /*
    * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
    */
   .setColor(0x00AE86)
-  .setDescription("This is the main body of text, it can hold 2048 characters.")
-  .setFooter("This is the footer text, it can hold 2048 characters", "http://i.imgur.com/w1vhFSR.png")
+  .setDescription(texto)
+  .setFooter("Equipa - PKG Pinhal Novo, pubicado a, ", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
   
   
   .setThumbnail("https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png")

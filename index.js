@@ -231,16 +231,16 @@ client.on("message", async (msg) => {
 
 
 
-  //  if (msg.content.startsWith('%c')) {
-      //  let canal = msg.content.substring(3);
+    //  if (msg.content.startsWith('%c')) {
+    //  let canal = msg.content.substring(3);
 
-     //   setTimeout(myFunc, 5500, canal);
+    //   setTimeout(myFunc, 5500, canal);
 
-     //   msg.guild.createChannel(canal, "text");
-        //  msg.guild.createRole({name:canal}) ;
+    //   msg.guild.createChannel(canal, "text");
+    //  msg.guild.createRole({name:canal}) ;
 
 
- //   }
+    //   }
 
 
 
@@ -461,40 +461,40 @@ client.on("message", async (msg) => {
 
     //fim criar canal----
 
-    
-    
-    
+
+
+
     //---teste ----
-     if (msg.channel.name.startsWith('adm-pg-')) {
+    if (msg.channel.name.startsWith('adm-pg-')) {
         if (msg.content.startsWith('!')) {
-         
-         var texto=   msg.content.substring(1)
-        const embed = new Discord.RichEmbed()
-  .setTitle("INFORMAÇÃO")
-  .setAuthor("Olá treinadores.", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
-  /*
-   * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
-   */
-  .setColor(0x00AE86)
-  .setDescription(texto)
-  .setFooter("Equipa - PKG Pinhal Novo, pubicado a, ", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
-  
-  
-  .setThumbnail("https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png")
- 
-  .setTimestamp();
- 
+
+            var texto = msg.content.substring(1)
+            const embed = new Discord.RichEmbed()
+                .setTitle("INFORMAÇÃO")
+                .setAuthor("Olá treinadores.", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
+                /*
+                 * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
+                 */
+                .setColor(0x00AE86)
+                .setDescription(texto)
+                .setFooter("Equipa - PKG Pinhal Novo, pubicado a, ", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
 
 
-  msg.channel.send({embed}); 
-            
-            
+                .setThumbnail("https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png")
+
+                .setTimestamp();
+
+
+
+            msg.channel.send({ embed });
+
+
 
         }
-     }  
+    }
 
-    
-    
+
+
     //--- fim teste ----
 
 });

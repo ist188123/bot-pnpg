@@ -189,8 +189,12 @@ let xpto = msg.channel.fetchMessages()
 	 
 	//---- fim ler mensagens 
    
-  msg.channel.send("array "+array.sort);
+ 
+});
+	
+ msg.channel.send("array "+array.sort);
    
+	
 //   msg.channel.send(msg.author.toString() + ", inserido na RAID!");
   setTimeout(function() {
        

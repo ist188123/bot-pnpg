@@ -466,20 +466,33 @@ client.on("message", async (msg) => {
     
     //---teste ----
     
-        if (msg.content.startsWith('!del')) {
-            autor = msg.author;
-
-
-            // msg.reply(msg.channel.name);//nome do canal onde esta
-
-
-             msg.channel.fetchMessages()
-                .then(messages => messages.array().forEach(
-                    message => message.content.includes("_raid5-piscinas-12h40") && message.delete()
-
-
-
-                ));
+        if (msg.content.startsWith('!oi')) {
+         
+            
+          msg.channel.send({embed: {
+    color: 3447003,
+    author: {
+      name: client.user.username,
+      icon_url: client.user.avatarURL
+    },
+    title: "INFORMAÇÃO",
+    
+    description: "This is a test embed to showcase what they look like and what they can do.",
+    fields: [{
+        name: "Fields",
+        value: "They can have different fields with small headlines."
+      }
+    ],
+    timestamp: new Date(),
+    footer: {
+      icon_url: client.user.avatarURL,
+      text: "© Example"
+    }
+  }
+});
+            
+            
+            
 
         }
         

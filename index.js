@@ -37,11 +37,11 @@ if (msg.channel.name.startsWith('_raid')) {
 	
 	
 	
-	
-  
+	if (msg.content.startsWith('!fim')) { 
+              msg.guild.channels.delete("_raid5-estacao-nova-10h40");
     
 	
-	
+	}
 	
 	
 	

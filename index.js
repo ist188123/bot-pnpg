@@ -191,7 +191,7 @@ client.on("message", async (msg) => {
        setTimeout(function () {   
            
            
-   msg.channel.send("array 0"+array);                 
+  // msg.channel.send("array 0"+array);                 
 var result = [];
        
         
@@ -201,13 +201,13 @@ array.forEach(function(item) {
      }
 });
         
-   msg.channel.send("result 1"+result);              
+  // msg.channel.send("result 1"+result);              
 
 result = result.filter(item => item !== autor);
       var qtatr= result.filter(item => item !== autor).length   
   
             
-     msg.channel.send("result 2"+result);            
+     //msg.channel.send("result 2"+result);            
                 
  //--------------------------------------               
            

@@ -200,7 +200,7 @@ array.forEach(function(item) {
             msg.channel.send("array "+result);
 
 
-                criaRaid(raidcanal, pkmraid, adicional);
+                criaRaid(raidcanal, pkmraid, result);
             }, 1500);
 
             // msg.reply(msg.channel.name);//nome do canal onde esta

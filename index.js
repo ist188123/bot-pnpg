@@ -30,7 +30,11 @@ let mais="";
         const instinct = client.emojis.find("name", "instinct");	
     
    
-   
+   const responseObject = {
+  "ayy": "Ayy, lmao!",
+  "wat": "Say what?",
+  "lol": "roflmaotntpmp"
+};
 
    
 if (msg.channel.name.startsWith('_raid')) {
@@ -38,7 +42,9 @@ if (msg.channel.name.startsWith('_raid')) {
 	
 	
 	if (msg.content.startsWith('!fim')) { 
-              msg.guild.channels.delete("_raid5-estacao-nova-10h40");
+             if(responseObject[msg.content]) {
+             msg.channel.send(responseObject[msg.content]);
+           }
     
 	
 	}

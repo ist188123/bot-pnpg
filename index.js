@@ -82,10 +82,10 @@ client.on("message", async (msg) => {
 
 
 
-
-            // msg.channel.send(bicho);
-            msg.channel.send("->" + autor + " ,saiu da RAID.");
-
+            
+                // msg.channel.send(bicho);
+                msg.channel.send("->" + autor + " ,saiu da RAID.");
+          
 
 
         }
@@ -186,32 +186,32 @@ client.on("message", async (msg) => {
 
 
             //   msg.channel.send(msg.author.toString() + ", inserido na RAID!");
+           
+   //------------------------     
+                
+   msg.channel.send("array 0"+array);                 
+var result = [];
+array.forEach(function(item) {
+     if(result.indexOf(item) < 0) {
+         result.push(item);
+     }
+});
+        
+   msg.channel.send("result 1"+result);              
 
-            //------------------------     
-
-            msg.channel.send("array 0" + array);
-            var result = [];
-            array.forEach(function (item) {
-                if (result.indexOf(item) < 0) {
-                    result.push(item);
-                }
-            });
-
-            msg.channel.send("result 1" + result);
-
-            result = result.filter(item => item !== autor)
-
-
-            msg.channel.send("result 2" + result);
-
-            //--------------------------------------               
-
-
-
-            criaRaid(raidcanal, pkmraid, result,quantidade);
+result = result.filter(item => item !== autor)
+              
+                
+     msg.channel.send("result 2"+result);            
+                
+ //--------------------------------------               
+           
 
 
+                criaRaid(raidcanal, pkmraid, result);
+          
 
+           
         }
 
 
@@ -242,7 +242,7 @@ client.on("message", async (msg) => {
 
 
     //lista todos os elementos que tem a regra
-    function criaRaid(canalRaid, bicho, adicional,participantesRaid) {
+    function criaRaid(canalRaid, bicho, adicional) {
 
         try {
 
@@ -359,7 +359,7 @@ client.on("message", async (msg) => {
             //----  FIM TIPO RAID ---
 
 
-            disparaRaid(local, horas, canalRaid, adicional, participantesRaid, ovo, braid, cpiv, status, adicional);
+            disparaRaid(local, horas, canalRaid, adicional, quantidade, ovo, braid, cpiv, status, adicional);
             //  msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(msg.guild.channels.find("name", msg.channel.name)+"\n"+membersWithRole.join("\n"));
 
         } catch (err) {

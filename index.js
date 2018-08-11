@@ -82,10 +82,10 @@ client.on("message", async (msg) => {
 
 
 
-            setTimeout(function () {
-                // msg.channel.send(bicho);
-                msg.channel.send("->" + autor + " ,saiu da RAID.");
-            }, 1500);
+
+            // msg.channel.send(bicho);
+            msg.channel.send("->" + autor + " ,saiu da RAID.");
+
 
 
         }
@@ -186,32 +186,32 @@ client.on("message", async (msg) => {
 
 
             //   msg.channel.send(msg.author.toString() + ", inserido na RAID!");
-            setTimeout(function () {
-   //------------------------     
-                
-   msg.channel.send("array 0"+array);                 
-var result = [];
-array.forEach(function(item) {
-     if(result.indexOf(item) < 0) {
-         result.push(item);
-     }
-});
-        
-   msg.channel.send("result 1"+result);              
 
-result = result.filter(item => item !== autor)
-              
-                
-     msg.channel.send("result 2"+result);            
-                
- //--------------------------------------               
-           
+            //------------------------     
+
+            msg.channel.send("array 0" + array);
+            var result = [];
+            array.forEach(function (item) {
+                if (result.indexOf(item) < 0) {
+                    result.push(item);
+                }
+            });
+
+            msg.channel.send("result 1" + result);
+
+            result = result.filter(item => item !== autor)
 
 
-                criaRaid(raidcanal, pkmraid, result);
-            }, 1500);
+            msg.channel.send("result 2" + result);
 
-            // msg.reply(msg.channel.name);//nome do canal onde esta
+            //--------------------------------------               
+
+
+
+            criaRaid(raidcanal, pkmraid, result,result.length);
+
+
+
         }
 
 
@@ -242,7 +242,7 @@ result = result.filter(item => item !== autor)
 
 
     //lista todos os elementos que tem a regra
-    function criaRaid(canalRaid, bicho, adicional) {
+    function criaRaid(canalRaid, bicho, adicional,participantesRaid) {
 
         try {
 
@@ -359,7 +359,7 @@ result = result.filter(item => item !== autor)
             //----  FIM TIPO RAID ---
 
 
-            disparaRaid(local, horas, canalRaid, adicional, quantidade, ovo, braid, cpiv, status, adicional);
+            disparaRaid(local, horas, canalRaid, adicional, participantesRaid, ovo, braid, cpiv, status, adicional);
             //  msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(msg.guild.channels.find("name", msg.channel.name)+"\n"+membersWithRole.join("\n"));
 
         } catch (err) {

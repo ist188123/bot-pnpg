@@ -209,7 +209,7 @@ result = result.filter(item => item !== autor);
            
 
 
-                criaRaid(raidcanal, pkmraid, result,treinadores;
+                criaRaid(raidcanal, pkmraid, result,treinadores);
           
 
        }, 1500);    

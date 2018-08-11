@@ -193,7 +193,7 @@ client.on("message", async (msg) => {
            
    msg.channel.send("array 0"+array);                 
 var result = [];
- var tr=[];          
+        
 array.forEach(function(item) {
      if(result.indexOf(item) < 0) {
          result.push(item);
@@ -202,17 +202,17 @@ array.forEach(function(item) {
         
    msg.channel.send("result 1"+result);              
 
-tr = result.filter(item => item !== autor);
+result = result.filter(item => item !== autor);
               
   
             
-     msg.channel.send("result 2"+tr);            
+     msg.channel.send("result 2"+result);            
                 
  //--------------------------------------               
            
 
 
-                criaRaid(raidcanal, pkmraid, tr,tr.length);
+                criaRaid(raidcanal, pkmraid, result,result.length);
           
 
        }, 1500);    

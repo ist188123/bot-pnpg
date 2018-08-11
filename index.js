@@ -193,6 +193,7 @@ client.on("message", async (msg) => {
            
    msg.channel.send("array 0"+array);                 
 var result = [];
+           var tr=[];
         
 array.forEach(function(item) {
      if(result.indexOf(item) < 0) {
@@ -202,17 +203,17 @@ array.forEach(function(item) {
         
    msg.channel.send("result 1"+result);              
 
-result = result.filter(item => item !== autor);
+tr = result.filter(item => item !== autor);
               
   
             
-     msg.channel.send("result 2"+result);            
+     msg.channel.send("result 2"+tr);            
                 
  //--------------------------------------               
            
 
 
-                criaRaid(raidcanal, pkmraid, result,result.length);
+                criaRaid(raidcanal, pkmraid, tr,tr.length);
           
 
        }, 1500);    
@@ -246,7 +247,7 @@ result = result.filter(item => item !== autor);
 
 
     //lista todos os elementos que tem a regra
-    function criaRaid(canalRaid, bicho, adicional,participantesRaid)) {
+    function criaRaid(canalRaid, bicho, adicional,participantesRaid) {
 
         try {
 

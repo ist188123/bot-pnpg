@@ -196,7 +196,7 @@ let xpto = msg.channel.fetchMessages()
 	
 //   msg.channel.send(msg.author.toString() + ", inserido na RAID!");
   setTimeout(function() {
-        msg.channel.send("array "+array);
+      //  msg.channel.send("array "+array);
    
    
        criaRaid(raidcanal,pkmraid,adicional); 

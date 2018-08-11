@@ -31,9 +31,9 @@ let mais="";
     
    
    const responseObject = {
-  "ayy": "Ayy, lmao!",
-  "wat": "Say what?",
-  "lol": "roflmaotntpmp"
+  "autor": "Damasc010, Paulo Rosário!",
+  "versão": "v3.01 de agosto 2018",
+  "pn": "Pokemon go Pinhal Novo"
 };
 
    

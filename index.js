@@ -4,7 +4,7 @@ const client = new Discord.Client();
   const fs = require('fs');
 const prefix = "+";
 
-
+let jsonData = require('./student.json');
 
 
 
@@ -55,7 +55,7 @@ fs.readFile('student.json', (err, data) => {
             
             
             
-            
+   msg.reply(jsonData);         
             
             
             

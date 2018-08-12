@@ -59,7 +59,7 @@ client.on("message", async (msg) => {
     if(msg.content.startsWith('!oi')){
     
    
-   msg.guild.channels.delete("k");
+   msg.guild.channels.find("name","k").delete();
       
                     
     }

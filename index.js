@@ -59,7 +59,7 @@ client.on("message", async (msg) => {
     
     msg.channel.fetchMessages({ limit: 100 }).then(msg => {
                 msg.forEach(msg => {
-      if (msg.content.search('RAID 5 PISCINAS')) {
+      if (msg.content.has("RAID 5 PISCINAS")) {
                 msg.reply('achou');
             }
     

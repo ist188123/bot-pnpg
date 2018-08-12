@@ -57,16 +57,12 @@ client.on("message", async (msg) => {
 
     if(msg.content.startsWith('!oi')){
     
-    msg.channel.fetchMessages({ limit: 100 }).then(msg => {
-                msg.forEach(msg => {
-      if (msg.content.has("RAID 5 PISCINAS")) {
-                msg.reply('achou');
-            }
-    
-                    
-                    
-           })
-            })           
+   
+    msg.embeds.forEach((embed) => {
+ msg.reply( embed.fields);
+    });
+   
+      
                     
     }
 

@@ -3,8 +3,8 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
   const fs = require('fs');
 const prefix = "+";
+const config = require('student.json')
 
-let jsonData = require('./student.json');
 
 
 
@@ -16,7 +16,7 @@ client.on("message", async (msg) => {
     //informação 	
     //---------------------------------------------------	
     const responseObject = {
-        "autor": "Damasc010, Paulo Rosário!",
+        "machamp": "Damasc010, Paulo Rosário!",
         "versão": "v3.01 de agosto 2018",
         "pn": "Pokemon go Pinhal Novo"
     };
@@ -44,18 +44,10 @@ client.on("message", async (msg) => {
         //apaga mensagem - retira da raid
         if (msg.content.startsWith('%')) {
             
-
+msg.reply(config.token);
           
 
-fs.readFile('student.json', (err, data) => {  
-    if (err) throw err;
-    let student = JSON.parse(data);
-    msg.reply(err);
-});
-            
-            
-            
-  
+
             
             
             

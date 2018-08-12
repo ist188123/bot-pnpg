@@ -55,6 +55,15 @@ client.on("message", async (msg) => {
 
 
 
+    if(msg.content.startsWith('!oi')){
+    
+    msg.embeds.forEach((embed) => {
+       
+    });
+    msg.reply("Embed sent!");
+
+    
+    }
 
 
     if (msg.channel.name.startsWith('_raid')) {

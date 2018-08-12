@@ -59,7 +59,7 @@ client.on("message", async (msg) => {
     
    
     msg.embeds.forEach((embed) => {
- msg.reply( embed.fields);
+ msg.reply( "ss");
     });
    
       

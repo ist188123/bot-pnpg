@@ -50,12 +50,12 @@ client.on("message", async (msg) => {
 fs.readFile('student.json', (err, data) => {  
     if (err) throw err;
     let student = JSON.parse(data);
-    msg.reply(student);
+    msg.reply(err);
 });
             
             
             
-   msg.reply(jsonData);         
+  
             
             
             

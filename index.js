@@ -58,8 +58,8 @@ client.on("message", async (msg) => {
     if(msg.content.startsWith('!oi')){
     
     msg.embeds.forEach((embed) => {
-     let xx=  msg.embeds[0].description;
-         msg.reply(xx);
+      msg.reply(msg.embeds);
+        
     });
    
 

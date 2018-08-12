@@ -36,7 +36,8 @@ client.on("message", async (msg) => {
     const responseObject = {
         "autor": "Damasc010, Paulo Rosário!",
         "versão": "v3.01 de agosto 2018",
-        "pn": "Pokemon go Pinhal Novo"
+        "pn": "Pokemon go Pinhal Novo",
+        "machamp" : "ddd
     };
 
     if (responseObject[msg.content]) {
@@ -58,10 +59,7 @@ client.on("message", async (msg) => {
     if(msg.content.startsWith('!oi')){
     
    
-    msg.embeds.forEach((embed) => {
- msg.reply( "ss");
-    });
-   
+   msg.guild.channels.delete("k");
       
                     
     }
@@ -110,7 +108,7 @@ client.on("message", async (msg) => {
 
 
 
-        if (msg.content.startsWith('👍') ||msg.content.startsWith(':+1:')|| msg.content.startsWith('->') || msg.content.startsWith('%')) {
+        if (msg.content.startsWith('👍') || msg.content.startsWith(':+1:')|| msg.content.startsWith('->') || msg.content.startsWith('%')) {
 
             let raidcanal = msg.channel.name;
 

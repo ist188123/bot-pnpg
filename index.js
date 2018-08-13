@@ -130,7 +130,7 @@ function apagacanal(arg){
             adicional = "";
 
           if (msg.content.startsWith('!exraid')) {
-                mewtwo = msg.content.substring(1);
+                mewtwo ="__Possível saida EX-RAID__";
               
             }
 
@@ -405,11 +405,9 @@ function apagacanal(arg){
 
 
             if(sponser!="nao"){
-                if(braid==ovo){
-                    
-                }
+               
                 ovo="https://exraidspinhalnovo.webnode.pt/_files/200000024-8e37d8f30a/450/Item_1403-2.png";
-                
+                horas=horas+sponser;
             }   
             
             
@@ -463,7 +461,7 @@ function apagacanal(arg){
 
 
             .addBlankField(true)
-           .addField("NÍVEL CP ")
+           
             .addField("\n\n\n\n\n\Fraco contra:", status, true);
 
         msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage({ embed });

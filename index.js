@@ -119,7 +119,7 @@ function apagacanal(arg){
 
 
 
-        if (msg.content.startsWith('👍') || msg.content.startsWith(':+1:')|| msg.content.startsWith('->') || msg.content.startsWith('%')) {
+        if (msg.content.startsWith('👍') || msg.content.startsWith(':+1:')|| msg.content.startsWith('->') || msg.content.startsWith('%') || msg.content.startsWith('!exraid')) {
 
             let raidcanal = msg.channel.name;
 
@@ -129,11 +129,7 @@ function apagacanal(arg){
             var array = [];
             adicional = "";
 
-          if (msg.content.startsWith('!exraid')) {
-                mewtwo ="__Possível saida EX-RAID__";
-              
-            }
-
+          
 
 
             //adiciona pokemon 
@@ -152,7 +148,7 @@ function apagacanal(arg){
                 msg.forEach(msg => {
 
            if (msg.content.startsWith('!exraid')) {
-                 mewtwo =" __Possível saida EX-RAID__";
+                 mewtwo =msg.content.substring(1);
               
             }
 
@@ -406,8 +402,8 @@ function apagacanal(arg){
 
             if(sponser!="nao"){
                
-                ovo="https://exraidspinhalnovo.webnode.pt/_files/200000024-8e37d8f30a/450/Item_1403-2.png";
-                horas=horas+sponser;
+                ovo="https://exraidspinhalnovo.webnode.pt/_files/200000023-29ab72ab0f/450/Mewtwo.png";
+               
             }   
             
             
@@ -440,7 +436,7 @@ function apagacanal(arg){
             * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
             */
             .setColor(0x00AE86)
-            .setDescription("Use o canal " + msg.guild.channels.find("name", canal))
+            .setDescription("Use " + msg.guild.channels.find("name", canal))
             .setFooter("Equipa - PKG Pinhal Novo, pubicado a, ", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
             // .setImage("http://i.imgur.com/yVpymuV.png")
             .setThumbnail(bicho)

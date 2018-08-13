@@ -60,7 +60,7 @@ function apagacanal(arg){
     setTimeout(function () {
                 msg.guild.channels.find("name",arg).delete();
                 
-          }, 10000);
+          }, 20000);
   
 }
     

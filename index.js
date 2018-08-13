@@ -461,9 +461,10 @@ function apagacanal(arg){
 
 
             }
-            
+            setTimeout(function () {
              msg.guild.channels.find("name",canal).sendMessage("Olá Treinadores.\nEste canal é temporário se será apagado dentro de 60 minutos.");
-           setTimeout(apagacanal, 60000, nomecanal);
+           }, 15000);
+                setTimeout(apagacanal, 60000, nomecanal);
               //  apagacanal(nomecanal);
                 
         

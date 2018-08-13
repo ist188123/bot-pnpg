@@ -129,7 +129,7 @@ function apagacanal(arg){
             var array = [];
             adicional = "";
 
-          if (msg.content.startsWith('%exraid')) {
+          if (msg.content.startsWith('exraid')) {
                 mewtwo = msg.content.substring(1);
             }
 

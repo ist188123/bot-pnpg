@@ -51,7 +51,7 @@ client.on("message", async (msg) => {
 
 
     function myFunc(arg) {
-        msg.guild.channels.find("name", arg).sendMessage("oi");
+        msg.guild.channels.find("name", arg).sendMessage("Olá Treinadores.\nEste canal é temporário se será apagado dentro de 60 minutos.");
     }
 
     
@@ -461,10 +461,9 @@ function apagacanal(arg){
 
 
             }
-            setTimeout(function () {
-             msg.guild.channels.find("name",canal).sendMessage("Olá Treinadores.\nEste canal é temporário se será apagado dentro de 60 minutos.");
-           }, 15000);
+           
                 setTimeout(apagacanal, 60000, nomecanal);
+                setTimeout(myFunc, 1500, nomecanal);
               //  apagacanal(nomecanal);
                 
         

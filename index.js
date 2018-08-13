@@ -353,7 +353,11 @@ function apagacanal(arg){
                 braid = ovo;
 
 
-
+                if (bicho.startsWith('regirock')) {
+                    braid = "https://exraidspinhalnovo.webnode.pt/_files/200000039-889a38996c/450/regirock-2.png";
+                    cpiv = "1222-1292 / 1528-1615";
+                    status = "Charizard with Overheat\nBlaziken FIRE\nTyphlosion - Overheat\nArcanine - Flamethrower\nSalamance - Fire Fang - Fire Blast\nHeracross - Combat\n";
+                }
 
                 if (bicho.startsWith('regis')) {
                     braid = "https://exraidspinhalnovo.webnode.pt/_files/200000035-0751e084bd/450/registeel.png";

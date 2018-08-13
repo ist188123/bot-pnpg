@@ -129,8 +129,9 @@ function apagacanal(arg){
             var array = [];
             adicional = "";
 
-          if (msg.content.startsWith('exraid')) {
-                mewtwo = msg.content;
+          if (msg.content.startsWith('!exraid')) {
+                mewtwo = msg.content.substring(1);
+              msg.reply(mewtwo);
             }
 
 
@@ -402,7 +403,7 @@ function apagacanal(arg){
 
             if(sponser!="nao"){
                 ovo="https://exraidspinhalnovo.webnode.pt/_files/200000024-8e37d8f30a/450/Item_1403-2.png";
-                
+                 msg.reply(sponser);
             }   
             
             

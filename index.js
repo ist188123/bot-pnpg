@@ -41,7 +41,7 @@ client.on("message", async (msg) => {
          "<:luta:478587139756392448><:ground:478587230168809477><:agua:478587230730846210><:steel:478587109725306880>\n"+
                     "Kyogre Waterfall-Hydro Pump\n"+ 
                      "Groudon Mud Shot - Solar Beam \n"+ 
-                     "Machamp Counter - Dynamic Punch" 
+                     "Machamp Counter - Dynamic Punch" ,
         
         
         

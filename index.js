@@ -328,9 +328,17 @@ function apagacanal(arg){
 
 
                 if (bicho.startsWith('absol')) {
-                    braid = "https://exraidspinhalnovo.webnode.pt/_files/200000028-3bf1a3ce89/450/apsol.png";
-                    cpiv = "1232-1303/1540-1629";
-                }
+  braid = "https://exraidspinhalnovo.webnode.pt/_files/200000028-3bf1a3ce89/450/apsol.png";
+  cpiv = "BOSS CP: 26262\nCP 1232-1303/1540-1629";
+  status = "<:inseto:478587230479188003><:fada:478587230814863372><:luta:478587139756392448>" +
+    "Machamp Dynamic Punch\n" +
+    "HariyamaDynamic Punch\n" +
+    "Heracross Close Combat\n" +
+    "Breloom Dynamic Punch\n" +
+    "Pinsir Bite\n" +
+    "Blaziken Overheat\n" +
+    "Scizor Fury Cutter";
+}
 
                 if (bicho.startsWith('tyra')) {
                     braid = "https://exraidspinhalnovo.webnode.pt/_files/200000029-e0378e12f0/450/tyra.png";

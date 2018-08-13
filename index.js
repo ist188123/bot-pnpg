@@ -35,8 +35,19 @@ client.on("message", async (msg) => {
     //---------------------------------------------------	
     const responseObject = {
         "autor": "Damasc010, Paulo Rosário!",
-        "versão": "v3.01 de agosto 2018",
-        "pn": "Pokemon go Pinhal Novo",
+        "versão": "v3.01 de agosto 2018 - Pokemon go Pinhal Novo",
+        "regirock": "**REGIROCK**\n"+
+        "**BOSS CP** : 41777\n**CP** N20 1764 N25 2205\n";
+         "<:luta:478587139756392448><:ground:478587230168809477><:agua:478587230730846210><:steel:478587109725306880>\n"+
+                    "Kyogre Waterfall-Hydro Pump\n"+ 
+                     "Groudon Mud Shot - Solar Beam \n"+ 
+                     "Machamp Counter - Dynamic Punch" 
+        
+        
+        
+        
+        
+        
         "machamp" : "RAID BOSS CP 18144\nCaptura 100% IV : 1574-1967 1650-2063\n"+
                     "**Fraco contra:**\n<:psiquico:478587230483513346><:voador:478587231259590676><:fada:478587230814863372>\n"+
         "Alakazam: Futuresight(33.00)\nEspeon: Futuresight(35.60)\nExeggutor: Confusion(30.10)\nCharizard: Overheat(32.20)\nDragonite: Dragon Hurricane(33.95)"
@@ -355,8 +366,11 @@ function apagacanal(arg){
 
                 if (bicho.startsWith('regirock')) {
                     braid = "https://exraidspinhalnovo.webnode.pt/_files/200000039-889a38996c/450/regirock-2.png";
-                    cpiv = "1222-1292 / 1528-1615";
-                    status = "Charizard with Overheat\nBlaziken FIRE\nTyphlosion - Overheat\nArcanine - Flamethrower\nSalamance - Fire Fang - Fire Blast\nHeracross - Combat\n";
+                    cpiv = "**BOSS CP** : 41777\n**CP** N20 1764 N25 2205\n";
+                    status = "<:luta:478587139756392448><:ground:478587230168809477><:agua:478587230730846210><:steel:478587109725306880>\n"+
+                    "Kyogre Waterfall-Hydro Pump\n"+ 
+                     "Groudon Mud Shot - Solar Beam \n"+ 
+                     "Machamp Counter - Dynamic Punch" ;
                 }
 
                 if (bicho.startsWith('regis')) {

@@ -461,12 +461,8 @@ function apagacanal(arg){
 
 
             }
-            var now = new Date();
-
-         var novo=new Date(now.setMinutes(now.getMinutes() + 60));
-     
-         var horasapagar=  novo.getHours()+":"+novo.getMinutes();
-             msg.guild.channels.find("name",canal).sendMessage(horasapagar);
+            
+             msg.guild.channels.find("name",canal).sendMessage(new Date());
            setTimeout(apagacanal, 60000, nomecanal);
               //  apagacanal(nomecanal);
                 

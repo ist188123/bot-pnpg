@@ -130,7 +130,7 @@ function apagacanal(arg){
             adicional = "";
 
           if (msg.content.startsWith('exraid')) {
-                mewtwo = msg.content.substring(1);
+                mewtwo = msg.content;
             }
 
 

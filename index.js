@@ -461,7 +461,9 @@ function apagacanal(arg){
 
 
             }
-
+            
+            var timestamp=new Date().getTime();
+             msg.reply(new Date(timestamp + (30 * 1000)));
            
                 apagacanal(nomecanal);
                 

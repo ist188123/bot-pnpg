@@ -17,7 +17,7 @@ client.on("message", async (msg) => {
     var regra = "Mod"
     let pkmraid = "Desconhecido";
     let adicional = "";
-
+    let mewtwo="nao";
 
     let team_mystic = msg.guild.roles.find("name", "MYSTIC");
     let team_valor = msg.guild.roles.find("name", "VALOR");
@@ -129,7 +129,9 @@ function apagacanal(arg){
             var array = [];
             adicional = "";
 
-
+          if (msg.content.startsWith('%exraid')) {
+                mewtwo = msg.content.substring(1);
+            }
 
 
 
@@ -232,7 +234,7 @@ function apagacanal(arg){
 
 
 
-                criaRaid(raidcanal, pkmraid, result, qtatr);
+                criaRaid(raidcanal, pkmraid, result, qtatr,mewtwo);
 
 
             }, 1500);
@@ -265,7 +267,7 @@ function apagacanal(arg){
 
 
     //lista todos os elementos que tem a regra
-    function criaRaid(canalRaid, bicho, adicional, participantesRaid) {
+    function criaRaid(canalRaid, bicho, adicional, participantesRaid,sponser) {
 
         try {
 
@@ -398,6 +400,12 @@ function apagacanal(arg){
             //----  FIM TIPO RAID ---
 
 
+            if(sponser!="nao"){
+                ovo="https://exraidspinhalnovo.webnode.pt/_files/200000024-8e37d8f30a/450/Item_1403-2.png";
+                
+            }   
+            
+            
             disparaRaid(local, horas, canalRaid, adicional, participantesRaid, ovo, braid, cpiv, status, adicional);
             //  msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(msg.guild.channels.find("name", msg.channel.name)+"\n"+membersWithRole.join("\n"));
 

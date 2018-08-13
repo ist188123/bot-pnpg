@@ -405,8 +405,11 @@ function apagacanal(arg){
 
 
             if(sponser!="nao"){
+                if(braid==ovo){
+                    
+                }
                 ovo="https://exraidspinhalnovo.webnode.pt/_files/200000024-8e37d8f30a/450/Item_1403-2.png";
-                 msg.reply(sponser);
+                
             }   
             
             

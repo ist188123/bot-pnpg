@@ -148,7 +148,7 @@ function apagacanal(arg){
                 msg.forEach(msg => {
 
            if (msg.content.startsWith('!exraid')) {
-                 mewtwo =msg.content.substring(1);
+                 mewtwo =" Possível saida de EX-RAID";
               
             }
 
@@ -402,7 +402,7 @@ function apagacanal(arg){
 
             if(sponser!="nao"){
                
-                ovo="https://exraidspinhalnovo.webnode.pt/_files/200000023-29ab72ab0f/450/Mewtwo.png";
+                ovo=sponser;
                
             }   
             

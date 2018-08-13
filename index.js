@@ -329,7 +329,7 @@ function apagacanal(arg){
 
                 if (bicho.startsWith('absol')) {
   braid = "https://exraidspinhalnovo.webnode.pt/_files/200000028-3bf1a3ce89/450/apsol.png";
-  cpiv = "BOSS CP: 26262\nCP 1232-1303/1540-1629";
+  cpiv = "BOSS CP: 26262\nCP 1232-1303/1540-1629\n";
   status = "<:inseto:478587230479188003><:fada:478587230814863372><:luta:478587139756392448>" +
     "Machamp Dynamic Punch\n" +
     "HariyamaDynamic Punch\n" +

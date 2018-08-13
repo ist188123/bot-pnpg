@@ -303,6 +303,7 @@ function apagacanal(arg){
                 if (bicho.startsWith('machamp')) {
                     braid = "https://exraidspinhalnovo.webnode.pt/_files/200000031-dcf97ddeea/450/pokemon_icon_068_00.png";
                     cpiv = "1574-1967 1650-2063"
+                    status="\:bug: \:fairy: \nadfsladkfak aldkfjhadf ladksjfha";
                 }
             }
             //----     
@@ -462,7 +463,7 @@ function apagacanal(arg){
 
             }
            
-                setTimeout(apagacanal, 60000, nomecanal);
+                setTimeout(apagacanal, 5400000, nomecanal);
                 setTimeout(myFunc, 1500, nomecanal);
               //  apagacanal(nomecanal);
                 

@@ -39,7 +39,7 @@ client.on("message", async (msg) => {
         "pn": "Pokemon go Pinhal Novo",
         "machamp" : "RAID BOSS CP 18,144\nCaptura 100% IV : 1574-1967 1650-2063\n"+
                     "**Fraco contra:**\n<:psiquico:478587230483513346><:voador:478587231259590676><:fada:478587230814863372>\n"+
-        "Alakazam: Futuresight(33.00)\nEspeon: Futuresight(35.60)\nExeggutor: Confusion(30.10)\nCharizard: Overheat(32.20)\nDragonite: Dragon Hurricane(33.95)";
+        "Alakazam: Futuresight(33.00)\nEspeon: Futuresight(35.60)\nExeggutor: Confusion(30.10)\nCharizard: Overheat(32.20)\nDragonite: Dragon Hurricane(33.95)"
               
     };
 

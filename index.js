@@ -463,7 +463,7 @@ function apagacanal(arg){
             }
             
            
-           setTimeout(apagacanal, 5500, nomecanal);
+           setTimeout(apagacanal, 60000, nomecanal);
               //  apagacanal(nomecanal);
                 
         

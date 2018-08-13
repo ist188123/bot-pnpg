@@ -54,16 +54,18 @@ client.on("message", async (msg) => {
         msg.guild.channels.find("name", arg).sendMessage("oi");
     }
 
-
-
-    if(msg.content.startsWith('!oi')){
     
-   
-   msg.guild.channels.find("name","k").delete();
-      
-                    
-    }
-
+    
+function apagacanal(arg){
+    setTimeout(function () {
+                msg.guild.channels.find("name",arg).delete();
+                
+          }, 5500);
+  
+}
+    
+    
+ 
 
     if (msg.channel.name.startsWith('_raid')) {
 
@@ -229,7 +231,6 @@ client.on("message", async (msg) => {
 
 
     }
-
 
 
 
@@ -461,7 +462,10 @@ client.on("message", async (msg) => {
 
             }
 
-
+           
+                apagacanal(nomecanal);
+                
+        
 
         }   // fim do inicio carater
 

@@ -36,12 +36,8 @@ client.on("message", async (msg) => {
     const responseObject = {
         "autor": "Damasc010, Paulo Rosário!",
         "versão": "v3.01 de agosto 2018 - Pokemon go Pinhal Novo",
-        "regirock": "**REGIROCK**\n"+
-        "**BOSS CP** : 41777\n**CP** N20 1764 N25 2205\n";
-         "<:luta:478587139756392448><:ground:478587230168809477><:agua:478587230730846210><:steel:478587109725306880>\n"+
-                    "Kyogre Waterfall-Hydro Pump\n"+ 
-                     "Groudon Mud Shot - Solar Beam \n"+ 
-                     "Machamp Counter - Dynamic Punch" ,
+        "regirock": "**REGIROCK**\n",
+        
         
         
         

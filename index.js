@@ -37,7 +37,7 @@ client.on("message", async (msg) => {
         "autor": "Damasc010, Paulo Rosário!",
         "versão": "v3.01 de agosto 2018",
         "pn": "Pokemon go Pinhal Novo",
-        "machamp" : "ddd
+        "machamp" : "ddd"
     };
 
     if (responseObject[msg.content]) {

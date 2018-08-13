@@ -57,10 +57,10 @@ client.on("message", async (msg) => {
     
     
 function apagacanal(arg){
-    setTimeout(function () {
+   // setTimeout(function () {
                 msg.guild.channels.find("name",arg).delete();
                 
-          }, 20000);
+     //     }, 20000);
   
 }
     
@@ -462,10 +462,9 @@ function apagacanal(arg){
 
             }
             
-            var timestamp=new Date().getTime();
-             msg.reply(new Date(timestamp + (30 * 1000)));
            
-                apagacanal(nomecanal);
+           setTimeout(apagacanal, 5500, nomecanal);
+              //  apagacanal(nomecanal);
                 
         
 

@@ -131,7 +131,7 @@ function apagacanal(arg){
 
           if (msg.content.startsWith('!exraid')) {
                 mewtwo = msg.content.substring(1);
-              msg.reply(mewtwo);
+              
             }
 
 
@@ -151,7 +151,10 @@ function apagacanal(arg){
             msg.channel.fetchMessages({ limit: 100 }).then(msg => {
                 msg.forEach(msg => {
 
-
+           if (msg.content.startsWith('!exraid')) {
+                mewtwo = msg.content.substring(1);
+              
+            }
 
                     //msg inicia com %
                     if (msg.content.startsWith('%')) {

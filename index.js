@@ -37,7 +37,7 @@ client.on("message", async (msg) => {
         "autor": "Damasc010, Paulo Rosário!",
         "versão": "v3.01 de agosto 2018 - Pokemon go Pinhal Novo",
         "regirock": "**REGIROCK**\n"+
-        "**BOSS CP** : 41777\n**CP** Nível 20 - 1764 Nível 25 - 2205\n"+
+        "**BOSS CP** : 41777\nNível 20 CP 1764 Nível 25 CP 2205\n"+
          "<:luta:478587139756392448><:ground:478587230168809477><:agua:478587230730846210><:steel:478587109725306880>\n"+
                     "Kyogre Waterfall-Hydro Pump\n"+ 
                      "Groudon Mud Shot - Solar Beam \n"+ 

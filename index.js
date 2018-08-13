@@ -152,7 +152,7 @@ function apagacanal(arg){
                 msg.forEach(msg => {
 
            if (msg.content.startsWith('!exraid')) {
-                mewtwo = msg.content.substring(1);
+                 mewtwo =" __Possível saida EX-RAID__";
               
             }
 

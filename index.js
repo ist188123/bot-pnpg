@@ -36,8 +36,12 @@ client.on("message", async (msg) => {
     const responseObject = {
         "autor": "Damasc010, Paulo Rosário!",
         "versão": "v3.01 de agosto 2018 - Pokemon go Pinhal Novo",
-        "regirock": "**REGIROCK**\n",
-        
+        "regirock": "**REGIROCK**\n"+
+        "**BOSS CP** : 41777\n**CP** Nível 20 - 1764 Nível 25 - 2205\n"+
+         "<:luta:478587139756392448><:ground:478587230168809477><:agua:478587230730846210><:steel:478587109725306880>\n"+
+                    "Kyogre Waterfall-Hydro Pump\n"+ 
+                     "Groudon Mud Shot - Solar Beam \n"+ 
+                     "Machamp Counter - Dynamic Punch" ,
         
         "machamp" : "RAID BOSS CP 18144\nCaptura 100% IV : 1574-1967 1650-2063\n"+
                     "**Fraco contra:**\n<:psiquico:478587230483513346><:voador:478587231259590676><:fada:478587230814863372>\n"+

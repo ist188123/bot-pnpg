@@ -439,9 +439,9 @@ msg.reply("5");
       .setAuthor(local.toUpperCase(), ovo)
 
       /*
-      * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
-      */
-      .setColor(0x00AE86)
+      * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.0x00AE86
+      */FEAFEA
+      .setColor(0XFEAFEA)
       .setDescription("Use o canal " + msg.guild.channels.find("name", canal))
       .setFooter("Equipa - PKG Pinhal Novo, pubicado a, ", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
       // .setImage("http://i.imgur.com/yVpymuV.png")

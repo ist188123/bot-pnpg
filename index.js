@@ -125,7 +125,7 @@ client.on("message", async (msg) => {
       let raidcanal = msg.channel.name;
 
       //  let role = msg.guild.roles.find("name", raidcanal);
-
+msg.reply("1");
 
       var array = [];
       adicional = "";
@@ -277,7 +277,7 @@ client.on("message", async (msg) => {
 
     try {
 
-
+msg.reply("2");
 
 
 

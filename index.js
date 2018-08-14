@@ -363,7 +363,7 @@ let cor="0x00AE86";
           status = "<:luta:478587139756392448><:ground:478587230168809477><:agua:478587230730846210><:steel:478587109725306880>\n" +
             "Kyogre Waterfall-Hydro Pump\n" +
             "Groudon Mud Shot - Solar Beam \n" +
-            "<:machamp:478905327291465728> Counter - Dynamic Punch";
+            "Machamp Counter - Dynamic Punch";
         }
 
         if (bicho.startsWith('regis')) {

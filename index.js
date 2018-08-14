@@ -133,12 +133,7 @@ let cor="0x00AE86";
       
 
 
-      //adiciona pokemon 
-      if (msg.content.startsWith('%')) {
-        pkmraid = msg.content.substring(1);
-      }
-
-
+      
 
 
 
@@ -153,7 +148,7 @@ let cor="0x00AE86";
           //msg inicia com %
           if (msg.content.startsWith('%')) {
             pkmraid = msg.content.substring(1);
-            //  msg.channel.send(pkmraid);
+              msg.channel.send(pkmraid);
           }
 
           if (msg.content.startsWith('!')) {

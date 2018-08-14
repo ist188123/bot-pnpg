@@ -120,78 +120,88 @@ let cor="0x00AE86";
 
 
 
-    if (msg.content.startsWith('👍') || msg.content.startsWith(':+1:') || msg.content.startsWith('->') || msg.content.startsWith('%') || msg.content.startsWith('!exraid')) {
+      if (msg.content.startsWith('👍') || msg.content.startsWith(':+1:')|| msg.content.startsWith('->') || msg.content.startsWith('%') || msg.content.startsWith('!exraid')) {
 
-      let raidcanal = msg.channel.name;
+            let raidcanal = msg.channel.name;
 
-      //  let role = msg.guild.roles.find("name", raidcanal);
-
-
-      var array = [];
-      adicional = "";
-
-      
+            //  let role = msg.guild.roles.find("name", raidcanal);
 
 
-      
+            var array = [];
+            adicional = "";
 
-
-
-      //--------------------------------
-      //le todas as mensagens do canal
-      //------------------------
-      msg.channel.fetchMessages({ limit: 100 }).then(msg => {
-        msg.forEach(msg => {
-
-
-
-          //msg inicia com %
-          if (msg.content.startsWith('%')) {
-            pkmraid = msg.content.substring(1);
-              msg.channel.send(pkmraid);
-          }
-
-         
-
-          //msg inicia com    
-          if (msg.content.startsWith('👍')) {
-
-
-msg.reply("x");
-
-
-            if (msg.member.roles.has(team_valor.id)) {
-              team_imagem = valor.toString();
-              // msg.reply(team_imagem);
-              quantidade++;
-              array.push(team_imagem + " " + msg.author + " " + msg.content.substring(2));
-              adicional = adicional + team_imagem + " " + msg.author + " " + msg.content.substring(2) + "\n";
+        if (msg.content.startsWith('!exraid')) {
+                 mewtwo =" Possível saida de EX-RAID";
+              
             }
 
-            if (msg.member.roles.has(team_mystic.id)) {
-              team_imagem = mystic.toString();
-              // msg.reply(team_imagem);
-              quantidade++;
-              array.push(team_imagem + " " + msg.author + " " + msg.content.substring(2));
-              adicional = adicional + team_imagem + " " + msg.author + " " + msg.content.substring(2) + "\n";
+
+
+            //adiciona pokemon 
+            if (msg.content.startsWith('%')) {
+                pkmraid = msg.content.substring(1);
             }
 
-            if (msg.member.roles.has(team_instinct.id)) {
-              team_imagem = instinct.toString();
-              // msg.reply(team_imagem);
-              quantidade++;
-              array.push(team_imagem + " " + msg.author + " " + msg.content.substring(2));
-              adicional = adicional + team_imagem + " " + msg.author + " " + msg.content.substring(2) + "\n";
-            }
-
-            // 
-          }
 
 
-        })
-      })
 
-      //---- fim ler mensagens 
+
+            //--------------------------------
+            //le todas as mensagens do canal
+            //------------------------
+            msg.channel.fetchMessages({ limit: 100 }).then(msg => {
+                msg.forEach(msg => {
+
+
+
+                    //msg inicia com %
+                    if (msg.content.startsWith('%')) {
+                        pkmraid = msg.content.substring(1);
+                        //  msg.channel.send(pkmraid);
+                    }
+
+
+
+
+                    //msg inicia com    
+                    if (msg.content.startsWith('👍')) {
+
+
+
+
+
+                        if (msg.member.roles.has(team_valor.id)) {
+                            team_imagem = valor.toString();
+                            // msg.reply(team_imagem);
+                            quantidade++;
+                            array.push(team_imagem + " " + msg.author + " " + msg.content.substring(2));
+                            adicional = adicional + team_imagem + " " + msg.author + " " + msg.content.substring(2) + "\n";
+                        }
+
+                        if (msg.member.roles.has(team_mystic.id)) {
+                            team_imagem = mystic.toString();
+                            // msg.reply(team_imagem);
+                            quantidade++;
+                            array.push(team_imagem + " " + msg.author + " " + msg.content.substring(2));
+                            adicional = adicional + team_imagem + " " + msg.author + " " + msg.content.substring(2) + "\n";
+                        }
+
+                        if (msg.member.roles.has(team_instinct.id)) {
+                            team_imagem = instinct.toString();
+                            // msg.reply(team_imagem);
+                            quantidade++;
+                            array.push(team_imagem + " " + msg.author + " " + msg.content.substring(2));
+                            adicional = adicional + team_imagem + " " + msg.author + " " + msg.content.substring(2) + "\n";
+                        }
+
+                        // 
+                    }
+
+
+                })
+            })
+
+            //---- fim ler mensagens 
 
 
 

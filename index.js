@@ -151,11 +151,7 @@ msg.reply("x");
               msg.channel.send(pkmraid);
           }
 
-          if (msg.content.startsWith('!')) {
-            mewtwo = msg.content.substring(1);
-    msg.reply(mewtwo);
-          }
-
+         
 
           //msg inicia com    
           if (msg.content.startsWith('👍')) {

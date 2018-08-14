@@ -83,9 +83,9 @@ let cor="0x00AE86";
      
      
      msg.channel.fetchMessages({ limit: 100 }).then(msg => {
-                msg.forEach(msg => {
+                msg.embeds.forEach(msg => {
 
-      msg.reply(msg.content);
+      msg.reply("leu");
     })
             })
      

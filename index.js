@@ -130,11 +130,7 @@ let cor="0x00AE86";
       var array = [];
       adicional = "";
 
-      if (msg.content.startsWith('!exraid')) {
-        mewtwo = msg.content.substring(1);
-
-      }
-
+      
 
 
       //adiciona pokemon 

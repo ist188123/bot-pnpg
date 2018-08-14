@@ -9,6 +9,7 @@ const prefix = "+";
 
 
 client.on("message", async (msg) => {
+    let mewtwo="";
 
     let mais = "";
     let autor = ""
@@ -17,11 +18,11 @@ client.on("message", async (msg) => {
     var regra = "Mod"
     let pkmraid = "Desconhecido";
     let adicional = "";
-    let mewtwo="nao";
 
-    let team_mystic = msg.guild.roles.find("name", "MYSTIC");
-    let team_valor = msg.guild.roles.find("name", "VALOR");
-    let team_instinct = msg.guild.roles.find("name", "INSTINCT");
+
+    let team_mystic = msg.guild.roles.find("name", "TEAM MYSTIC");
+    let team_valor = msg.guild.roles.find("name", "TEAM VALOR");
+    let team_instinct = msg.guild.roles.find("name", "TEAM INSTINCT");
 
     //imagens equipas
     let team_imagem = "";
@@ -59,8 +60,8 @@ client.on("message", async (msg) => {
 
 
 
-    function myFunc(arg) {
-        msg.guild.channels.find("name", arg).sendMessage("Olá Treinadores.\nEste canal é temporário se será apagado dentro de 60 minutos.");
+function myFunc(arg) {
+        msg.guild.channels.find("name", arg).sendMessage("Olá Treinadores.\nEste canal é temporário se será apagado dentro em 1 Hora e 30 minutos.");
     }
 
     
@@ -72,9 +73,9 @@ function apagacanal(arg){
      //     }, 20000);
   
 }
-    
-    
- 
+
+
+
 
     if (msg.channel.name.startsWith('_raid')) {
 
@@ -129,7 +130,11 @@ function apagacanal(arg){
             var array = [];
             adicional = "";
 
-          
+        if (msg.content.startsWith('!exraid')) {
+                 mewtwo =" Possível saida de EX-RAID";
+              
+            }
+
 
 
             //adiciona pokemon 
@@ -147,10 +152,7 @@ function apagacanal(arg){
             msg.channel.fetchMessages({ limit: 100 }).then(msg => {
                 msg.forEach(msg => {
 
-           if (msg.content.startsWith('!exraid')) {
-                 mewtwo =" Possível saida de EX-RAID";
-              
-            }
+
 
                     //msg inicia com %
                     if (msg.content.startsWith('%')) {
@@ -234,7 +236,7 @@ function apagacanal(arg){
 
 
 
-                criaRaid(raidcanal, pkmraid, result, qtatr,mewtwo);
+                 criaRaid(raidcanal, pkmraid, result, qtatr,mewtwo);
 
 
             }, 1500);
@@ -242,6 +244,7 @@ function apagacanal(arg){
 
 
     }
+
 
 
 
@@ -397,16 +400,16 @@ function apagacanal(arg){
 
 
 
-            //----  FIM TIPO RAID ---
-
+          
 
             if(sponser!="nao"){
                
                 ovo=sponser;
-               
-            }   
-            
-            
+               horas=horas+sponser
+            }  
+            //----  FIM TIPO RAID ---
+
+
             disparaRaid(local, horas, canalRaid, adicional, participantesRaid, ovo, braid, cpiv, status, adicional);
             //  msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage(msg.guild.channels.find("name", msg.channel.name)+"\n"+membersWithRole.join("\n"));
 
@@ -436,7 +439,7 @@ function apagacanal(arg){
             * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
             */
             .setColor(0x00AE86)
-            .setDescription("Use " + msg.guild.channels.find("name", canal))
+            .setDescription("Use o canal " + msg.guild.channels.find("name", canal))
             .setFooter("Equipa - PKG Pinhal Novo, pubicado a, ", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
             // .setImage("http://i.imgur.com/yVpymuV.png")
             .setThumbnail(bicho)
@@ -457,7 +460,6 @@ function apagacanal(arg){
 
 
             .addBlankField(true)
-           
             .addField("\n\n\n\n\n\Fraco contra:", status, true);
 
         msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage({ embed });
@@ -496,12 +498,9 @@ function apagacanal(arg){
 
 
             }
-           
-                setTimeout(apagacanal, 5400000, nomecanal);
+
+                setTimeout(apagacanal, 4680000, nomecanal);
                 setTimeout(myFunc, 1500, nomecanal);
-              //  apagacanal(nomecanal);
-                
-        
 
         }   // fim do inicio carater
 

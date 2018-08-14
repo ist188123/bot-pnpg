@@ -408,7 +408,7 @@ let cor="0x00AE86";
       if (sponser == "exraid") {
         cor="0XFEAFEA";
         ovo="https://exraidspinhalnovo.webnode.pt/_files/200000023-29ab72ab0f/450/Mewtwo.png"
-        horas = horas + sponser;
+        horas = horas + "\nGinásio em pontuação para o Mewtwo";
       }
       //----  FIM TIPO RAID ---
 

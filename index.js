@@ -82,9 +82,12 @@ let cor="0x00AE86";
    if (msg.content.startsWith('-')) {
      
      
-     msg.embeds.forEach((embed) => {
+     msg.channel.fetchMessages({ limit: 100 }).then(msg => {
+                msg.forEach(msg => {
+
       msg.reply("sss");
-    });
+    })
+            })
      
   }
   

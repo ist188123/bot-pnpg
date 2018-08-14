@@ -9,7 +9,7 @@ const prefix = "+";
 
 
 client.on("message", async (msg) => {
-    let mewtwo="";
+    let mewtwo="kk";
 
     let mais = "";
     let autor = ""

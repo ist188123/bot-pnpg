@@ -131,7 +131,7 @@ let cor="0x00AE86";
       adicional = "";
 
       if (msg.content.startsWith('!exraid')) {
-        mewtwo = " Possível saida de EX-RAID PASS";
+        mewtwo = msg.content.substring(1);
 
       }
 
@@ -161,7 +161,7 @@ let cor="0x00AE86";
           }
 
           if (msg.content.startsWith('!exraid')) {
-            mewtwo = " Possível saida de EX-RAID PASS";
+            mewtwo = msg.content.substring(1);
     
           }
 
@@ -405,7 +405,7 @@ let cor="0x00AE86";
 
 
 
-      if (sponser != "nao") {
+      if (sponser == "exraid") {
         cor="0XFEAFEA";
         ovo="https://exraidspinhalnovo.webnode.pt/_files/200000023-29ab72ab0f/450/Mewtwo.png"
         horas = horas + sponser;

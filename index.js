@@ -407,7 +407,7 @@ msg.reply("3");
 
       if (sponser != "nao") {
 msg.reply("4");
-        ovo = sponser;
+       
         horas = horas + sponser;
       }
       //----  FIM TIPO RAID ---
@@ -466,7 +466,7 @@ msg.reply("5");
       .addField("\n\n\n\n\n\Fraco contra:", status, true);
 
     msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage({ embed });
-
+msg.reply("6");
 
   }
 

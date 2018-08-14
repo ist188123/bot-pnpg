@@ -9,7 +9,7 @@ const prefix = "+";
 
 
 client.on("message", async (msg) => {
-  let mewtwo = "kk";
+  let mewtwo = "";
 
   let mais = "";
   let autor = ""
@@ -125,7 +125,7 @@ client.on("message", async (msg) => {
       let raidcanal = msg.channel.name;
 
       //  let role = msg.guild.roles.find("name", raidcanal);
-msg.reply("1");
+
 
       var array = [];
       adicional = "";
@@ -277,7 +277,7 @@ msg.reply("1");
 
     try {
 
-msg.reply("2");
+
 
 
 
@@ -402,11 +402,11 @@ msg.reply("2");
       }//----    
 
 
-msg.reply("3");
+
 
 
       if (sponser != "nao") {
-msg.reply("4");
+
        
         horas = horas + sponser;
       }
@@ -466,7 +466,7 @@ msg.reply("5");
       .addField("\n\n\n\n\n\Fraco contra:", status, true);
 
     msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage({ embed });
-msg.reply("6");
+
 
   }
 

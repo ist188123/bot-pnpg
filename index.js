@@ -130,21 +130,9 @@ let cor="0x00AE86";
             var array = [];
             adicional = "";
 
-        if (msg.content.startsWith('!exraid')) {
-                 mewtwo =" Possível saida de EX-RAID";
-              
-            }
+        
 
-
-
-            //adiciona pokemon 
-            if (msg.content.startsWith('%')) {
-                pkmraid = msg.content.substring(1);
-            }
-
-
-
-
+           
 
             //--------------------------------
             //le todas as mensagens do canal
@@ -159,6 +147,11 @@ let cor="0x00AE86";
                         pkmraid = msg.content.substring(1);
                         //  msg.channel.send(pkmraid);
                     }
+
+                    if (msg.content.startsWith('!exraid')) {
+                 mewtwo =msg.content.substring(1);
+              
+                  }
 
 
 

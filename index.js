@@ -407,7 +407,7 @@ client.on("message", async (msg) => {
 
       if (sponser != "nao") {
 
-       
+        ovo="https://exraidspinhalnovo.webnode.pt/_files/200000023-29ab72ab0f/450/Mewtwo.png"
         horas = horas + sponser;
       }
       //----  FIM TIPO RAID ---
@@ -445,6 +445,7 @@ msg.reply("5");
       .setDescription("Use o canal " + msg.guild.channels.find("name", canal))
       .setFooter("Equipa - PKG Pinhal Novo, pubicado a, ", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
       // .setImage("http://i.imgur.com/yVpymuV.png")
+ 
       .setThumbnail(bicho)
       /*
        * Takes a Date object, defaults to current date.

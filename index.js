@@ -75,7 +75,23 @@ let cor="0x00AE86";
   }
 
 
-
+  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+  
+  if (msg.channel.name.startsWith('_raid')) {
+  
+   if (msg.content.startsWith('-')) {
+   msg.embeds.forEach((embed) => {
+       msg.reply("ddd");
+    });
+    msg.reply("Embed sent!");
+  
+  }
+  
+  }
+  
+  
+  
+  //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
   if (msg.channel.name.startsWith('_raid')) {
 

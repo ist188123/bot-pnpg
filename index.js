@@ -156,7 +156,7 @@ let cor="0x00AE86";
             //  msg.channel.send(pkmraid);
           }
 
-          if (msg.content.startsWith('!exraid')) {
+          if (msg.content.startsWith('!')) {
             mewtwo = msg.content.substring(1);
     msg.reply(mewtwo);
           }

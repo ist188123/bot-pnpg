@@ -77,7 +77,7 @@ let cor="0x00AE86";
 
   //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   
-  if (msg.channel.name.startsWith('_raid')) {
+  if (msg.channel.name.startsWith('raids-p')) {
   
    if (msg.content.startsWith('-')) {
    msg.embeds.forEach((embed) => {

@@ -82,12 +82,12 @@ let cor="0x00AE86";
    if (msg.content.startsWith('-')) {
      
      
-     msg.channel.fetchMessages({ limit: 100 }).then(msg => {
+    
                 msg.embeds.forEach(msg => {
 
       msg.reply("leu");
     })
-            })
+            
      
   }
   

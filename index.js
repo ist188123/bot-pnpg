@@ -344,7 +344,7 @@ msg.reply("2");
         if (bicho.startsWith('absol')) {
           braid = "https://exraidspinhalnovo.webnode.pt/_files/200000028-3bf1a3ce89/450/apsol.png";
           cpiv = "**BOSS CP** : 26262\n**CP**1232-1303/1540-1629\n";
-          status = "<:inseto:478587230479188003><:fada:478587230814863372><:luta:478587139756392448>" +
+          status = "<:inseto:478587230479188003><:fada:478587230814863372><:luta:478587139756392448>\n" +
             "Machamp Dynamic Punch\n" +
             "HariyamaDynamic Punch\n" +
             "Heracross Close Combat\n" +
@@ -402,11 +402,11 @@ msg.reply("2");
       }//----    
 
 
-
+msg.reply("3");
 
 
       if (sponser != "nao") {
-
+msg.reply("4");
         ovo = sponser;
         horas = horas + sponser;
       }
@@ -432,7 +432,7 @@ msg.reply("2");
 
 
   function disparaRaid(local, horas, canal, treinadores, total, ovo, bicho, cpiv, status, adicional) {
-
+msg.reply("5");
 
     const embed = new Discord.RichEmbed()
       .setTitle(horas)

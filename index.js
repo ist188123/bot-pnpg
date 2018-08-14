@@ -10,7 +10,7 @@ const prefix = "+";
 
 client.on("message", async (msg) => {
   let mewtwo = "";
-
+let cor="0x00AE86";
   let mais = "";
   let autor = ""
   let quantidade = 0;
@@ -406,7 +406,7 @@ client.on("message", async (msg) => {
 
 
       if (sponser != "nao") {
-
+        cor="0XFEAFEA";
         ovo="https://exraidspinhalnovo.webnode.pt/_files/200000023-29ab72ab0f/450/Mewtwo.png"
         horas = horas + sponser;
       }
@@ -439,9 +439,9 @@ client.on("message", async (msg) => {
       .setAuthor(local.toUpperCase(), ovo)
 
       /*
-      * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.0x00AE86
+      * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
       */
-      .setColor(0XFEAFEA)
+      .setColor(cor)
       .setDescription("Use o canal " + msg.guild.channels.find("name", canal))
       .setFooter("Equipa - PKG Pinhal Novo, pubicado a, ", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
       // .setImage("http://i.imgur.com/yVpymuV.png")

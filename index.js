@@ -158,7 +158,7 @@ let cor="0x00AE86";
 
           if (msg.content.startsWith('!exraid')) {
             mewtwo = msg.content.substring(1);
-    
+    msg.reply(mewtwo);
           }
 
 

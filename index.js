@@ -80,9 +80,12 @@ let cor="0x00AE86";
   if (msg.channel.name.startsWith('raids-p')) {
   
    if (msg.content.startsWith('-')) {
-   msg.embeds.forEach((embed) => {
-       msg.reply("ddd");
-    });
+      msg.channel.fetchMessages({ limit: 100 }).then(msg => {
+                msg.embeds.forEach(msg => {
+     
+   msg.reply("ddd");
+     })
+            })
     msg.reply("Embed sent!");
   
   }

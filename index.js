@@ -129,7 +129,12 @@ client.on("message", async (msg) => {
 
 
         //++++
-var array = [];
+
+     
+        
+        
+        
+        
 
         //-------------------------------------------
         if (msg.content.startsWith('👍') || msg.content.startsWith(':+1:') || msg.content.startsWith('->') || msg.content.startsWith('%') || msg.content.startsWith('!exraid')) {
@@ -138,7 +143,7 @@ var array = [];
             //paga todas as mensagens do canal
             delmsgdocanal("raids-pinhal-novo");
 
-           
+           var array = [];
 
             //-----
             //le os canais que das raids _raids
@@ -185,6 +190,7 @@ var array = [];
                         //msg inicia com %
                         if (msg.content.startsWith('%')) {
                             pkmraid = msg.content.substring(1);
+                            
                             //  msg.channel.send(pkmraid);
                         }
 
@@ -235,7 +241,7 @@ var array = [];
                 })
 
                 //---- fim ler mensagens 
-                 criaRaid(channel.name, pkmraid, array, array.length, mewtwo);
+               
 
 
 

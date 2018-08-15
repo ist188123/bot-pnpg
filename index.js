@@ -138,10 +138,11 @@ client.on("message", async (msg) => {
             //paga todas as mensagens do canal
             delmsgdocanal("raids-pinhal-novo");
 
-
+           
 
             //-----
             //le os canais que das raids _raids
+            let raidcanal="";
             const listedChannels = [];
             msg.guild.channels.forEach(channel => {
 

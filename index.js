@@ -160,7 +160,7 @@ client.on("message", async (msg) => {
 
 
 
-                msg.reply("aqui 2"+listedChannels[a].toString()));
+                msg.reply("aqui 2"+listedChannels[a].toString());
 
 
                 raidcanal = msg.guild.channels.find("name", listedChannels[a].toString());

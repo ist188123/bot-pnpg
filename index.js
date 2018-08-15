@@ -82,11 +82,15 @@ let cor="0x00AE86";
    if (msg.content.startsWith('-')) {
      
      
+    const listedChannels = []; 
+msg.guild.channels.forEach(channel => { 
     
-                msg.embeds.forEach(msg => {
-
-      msg.reply("leu");
-    })
+  if (msg.channel.name.startsWith('_raid')) {
+  msg.reply(channel.name);
+  }
+  
+});
+               
             
      
   }

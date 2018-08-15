@@ -272,7 +272,7 @@ client.on("message", async (msg) => {
                     criaRaid(channel.name, pokemom, result, qtatr, mewtwo);
 
 
-                }, 1500);
+                }, 500);
             
             }
         });

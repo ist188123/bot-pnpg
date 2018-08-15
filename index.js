@@ -151,6 +151,8 @@ if (msg.content.startsWith('👍') || msg.content.startsWith(':+1:') || msg.cont
 
         //}
     });
+  
+  msg.reply("aqui 1");
     let raidcanal =""
     //tira o nome dos canais
     for (a = 0; a < listedChannels.length; a++) {
@@ -158,7 +160,7 @@ if (msg.content.startsWith('👍') || msg.content.startsWith(':+1:') || msg.cont
 
 
 
-
+ msg.reply("aqui 2");
 
 
          raidcanal = msg.guild.channels.find("name", listedChannels[a].toString());
@@ -178,7 +180,7 @@ if (msg.content.startsWith('👍') || msg.content.startsWith(':+1:') || msg.cont
 
 
 
-msg.reply("aqui");
+
 
         //--------------------------------
         //le todas as mensagens do canal

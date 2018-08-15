@@ -301,7 +301,7 @@ client.on("message", async (msg) => {
 
     //lista todos os elementos que tem a regra
     function criaRaid(canalRaid, bicho, adicional, participantesRaid, sponser) {
-         msg.reply("criaRaid");
+         msg.reply("criaRaid"+canalRaid);
         try {
 
 

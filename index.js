@@ -146,15 +146,15 @@ client.on("message", async (msg) => {
             msg.guild.channels.forEach(channel => {
 
                 if (channel.name.startsWith('_raid')) {
-                    listedChannels.push(channel.name);
+                    //listedChannels.push(channel.name);
                  
 
            
 
-                msg.reply("aqui 2"+listedChannels[a].toString());
+                msg.reply("aqui 2"+channel.name);
 
 
-                raidcanal = msg.guild.channels.find("name", listedChannels[a].toString());
+                raidcanal = msg.guild.channels.find("name", channel.name);
 
 
 

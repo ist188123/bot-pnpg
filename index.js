@@ -152,7 +152,7 @@ client.on("message", async (msg) => {
             msg.guild.channels.forEach(channel => {
 
                 if (channel.name.startsWith('_raid')) {
-                    //listedChannels.push(channel.name);
+                    listedChannels.push(channel.name);
                  
 
            

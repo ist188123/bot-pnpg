@@ -230,7 +230,7 @@ client.on("message", async (msg) => {
                             // 
                         }
 
-
+                msg.reply("aqui 3"+pkmraid);
                     })
                 })
 
@@ -247,6 +247,7 @@ client.on("message", async (msg) => {
                setTimeout(function () {
 
                 var pokemom=pkmraid;
+                    msg.reply("aqui 4 "+pokemom);
                     // msg.channel.send("array 0"+array);                 
                     var result = [];
 
@@ -272,7 +273,7 @@ client.on("message", async (msg) => {
                     criaRaid(channel.name, pokemom, result, qtatr, mewtwo);
 
 
-                }, 500);
+                }, 1500);
             
             }
         });

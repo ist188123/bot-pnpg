@@ -129,7 +129,7 @@ client.on("message", async (msg) => {
 
 
         //++++
-
+var array = [];
 
         //-------------------------------------------
         if (msg.content.startsWith('👍') || msg.content.startsWith(':+1:') || msg.content.startsWith('->') || msg.content.startsWith('%') || msg.content.startsWith('!exraid')) {
@@ -167,7 +167,7 @@ client.on("message", async (msg) => {
 
 
 
-                var array = [];
+                
                 adicional = "";
                 mewtwo="";
                pkmraid="";
@@ -230,12 +230,12 @@ client.on("message", async (msg) => {
                             // 
                         }
 
-                msg.reply("aqui 3"+pkmraid);
+               
                     })
                 })
 
                 //---- fim ler mensagens 
-
+                 criaRaid(channel.name, pkmraid, array, array.length, mewtwo);
 
 
 
@@ -247,7 +247,7 @@ client.on("message", async (msg) => {
                setTimeout(function () {
 
                 var pokemom=pkmraid;
-                    msg.reply("aqui 4 "+pokemom);
+                    
                     // msg.channel.send("array 0"+array);                 
                     var result = [];
 
@@ -270,7 +270,7 @@ client.on("message", async (msg) => {
 
 
 
-                    criaRaid(channel.name, pokemom, result, qtatr, mewtwo);
+                    //criaRaid(channel.name, pokemom, result, qtatr, mewtwo);
 
 
                 }, 1500);
@@ -302,7 +302,7 @@ client.on("message", async (msg) => {
 
     //lista todos os elementos que tem a regra
     function criaRaid(canalRaid, bicho, adicional, participantesRaid, sponser) {
-        msg.reply("criaRaid"+bicho);
+        
         try {
 
 

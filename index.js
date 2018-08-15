@@ -186,17 +186,7 @@ msg.guild.channels.forEach(channel => {
 
       if (msg.content.startsWith('👍') || msg.content.startsWith(':+1:')|| msg.content.startsWith('->') || msg.content.startsWith('%') || msg.content.startsWith('!exraid')) {
 
-            metenome();
-
-  }
-
-
-
-
-
-///------
-    function metenome(){
-let raidcanal = msg.channel.name;
+           let raidcanal = msg.channel.name;
 
             //  let role = msg.guild.roles.find("name", raidcanal);
 
@@ -308,6 +298,16 @@ let raidcanal = msg.channel.name;
 
       }, 1500);
     }
+
+
+  }
+
+
+
+
+
+///------
+    function metenome(){
 
   }
 

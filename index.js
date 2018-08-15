@@ -132,11 +132,9 @@ function delmsgdocanal(nomecanal) {
 
       if (msg.content.startsWith('👍') || msg.content.startsWith(':+1:')|| msg.content.startsWith('->') || msg.content.startsWith('%') || msg.content.startsWith('!exraid')) {
 
-        msg.channel.find("name", "raids-pinhal-novo").bulkDelete(100).then(() => {
-          msg.delete(3000)
-});
         
-       // delmsgdocanal("raids-pinhal-novo");
+        
+           delmsgdocanal("raids-pinhal-novo");
         
         
             let raidcanal = msg.channel.name;

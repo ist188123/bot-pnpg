@@ -269,7 +269,7 @@ client.on("message", async (msg) => {
 
 
 
-                    criaRaid(raidcanal, pkmraid, result, qtatr, mewtwo);
+                    criaRaid(channel.name, pkmraid, result, qtatr, mewtwo);
 
 
                 }, 1500);

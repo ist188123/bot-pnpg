@@ -169,8 +169,8 @@ client.on("message", async (msg) => {
 
                 var array = [];
                 adicional = "";
-
-
+                mewtwo="";
+               pkmraid="";
 
 
 

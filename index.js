@@ -119,7 +119,7 @@ function delmsgdocanal(nomecanal) {
     
     let xpto = msg.guild.channels.find("name", nomecanal).fetchMessages()
         .then(messages => messages.array().forEach(
-            message => message.author.equals(autor) && message.delete()
+            message =>  message.delete()
 
 
 

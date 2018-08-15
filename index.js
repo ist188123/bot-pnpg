@@ -101,12 +101,13 @@ msg.guild.channels.forEach(channel => {
      }
    
   }
-  
-  }
-  
-  
-  
-  function delmsgdocanal(nomecanal){
+    
+    
+    
+    
+    
+    
+    function delmsgdocanal(nomecanal){
    let xpto = msg.guild.channels.find("name",nomecanal ).fetchMessages()
         .then(messages => messages.array().forEach(
           message => message.author.equals(autor) && message.delete()
@@ -123,6 +124,16 @@ msg.guild.channels.forEach(channel => {
       }, 1500);
 
   }
+  
+    
+    
+    
+    
+  
+  }
+  
+  
+  
   
   
   

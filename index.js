@@ -188,7 +188,7 @@ client.on("message", async (msg) => {
                 msg.guild.channels.find("name", listedChannels[a].toString()).fetchMessages({ limit: 100 }).then(msg => {
                     msg.forEach(msg => {
 
-
+               msg.reply("aqui 3"+listedChannels[a].toString());
 
                         //msg inicia com %
                         if (msg.content.startsWith('%')) {

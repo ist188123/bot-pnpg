@@ -91,16 +91,52 @@ msg.guild.channels.forEach(channel => {
   
 //}
 });
-msg.channel.send(`You have access to: ${listedChannels.join('\n')}`);    
-     
+
+     //le os canais e apaga as mensagens
+     for(a=0;a<listedChannels.length;a++)
+            delmsgdocanal(listedChannels[a].toString())
+
+   
   }
   
+  }
+  
+  
+  
+  function delmsgdocanal(nomecanal){
+   let xpto = nomecanal.fetchMessages()
+        .then(messages => messages.array().forEach(
+          message => message.author.equals(autor) && message.delete()
+
+
+
+        ));
+
+
+      setTimeout(function () {
+
+        // msg.channel.send(bicho);
+        msg.channel.send("->" + autor + " ,saiu da RAID.");
+      }, 1500);
+
   }
   
   
   
   //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   if (msg.channel.name.startsWith('_raid')) {
 
 

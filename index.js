@@ -244,9 +244,9 @@ client.on("message", async (msg) => {
                 //   msg.channel.send(msg.author.toString() + ", inserido na RAID!");
 
                 //------------------------     
-               // setTimeout(function () {
+               setTimeout(function () {
 
-
+                var pokemom=pkmraid;
                     // msg.channel.send("array 0"+array);                 
                     var result = [];
 
@@ -257,7 +257,7 @@ client.on("message", async (msg) => {
                         }
                     });
 
-                    // msg.channel.send("result 1"+result);              
+                    //msg.channel.send("result 1"+result);              
 
                     result = result.filter(item => item !== autor);
                     var qtatr = result.filter(item => item !== autor).length
@@ -269,10 +269,10 @@ client.on("message", async (msg) => {
 
 
 
-                    criaRaid(channel.name, pkmraid, result, qtatr, mewtwo);
+                    criaRaid(channel.name, pokemom, result, qtatr, mewtwo);
 
 
-               // }, 1500);
+                }, 1500);
             
             }
         });

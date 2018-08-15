@@ -113,15 +113,30 @@ let cor="0x00AE86";
 
 
 
+//+++++
+
+function delmsgdocanal(nomecanal) {
+    msg.channel.send("->" + autor + " ,saiu da RAID. " + nomecanal);
+    let xpto = msg.guild.channels.find("name", nomecanal).fetchMessages()
+        .then(messages => messages.array().forEach(
+            message => message.author.equals(autor) && message.delete()
 
 
 
+        ));
+}
 
 
 
+//++++
 
       if (msg.content.startsWith('👍') || msg.content.startsWith(':+1:')|| msg.content.startsWith('->') || msg.content.startsWith('%') || msg.content.startsWith('!exraid')) {
 
+        
+        
+        delmsgdocanal("raids-pinhal-novo");
+        
+        
             let raidcanal = msg.channel.name;
 
             //  let role = msg.guild.roles.find("name", raidcanal);

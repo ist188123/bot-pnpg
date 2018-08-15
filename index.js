@@ -177,10 +177,10 @@ client.on("message", async (msg) => {
                 //--------------------------------
                 //le todas as mensagens do canal
                 //------------------------
-                channel.name.fetchMessages({ limit: 100 }).then(msg => {
+                msg.guild.channels.find("name", channel.name).fetchMessages({ limit: 100 }).then(msg => {
                     msg.forEach(msg => {
 
-
+                    msg.reply("aqui 3"+channel.name);
 
                         //msg inicia com %
                         if (msg.content.startsWith('%')) {

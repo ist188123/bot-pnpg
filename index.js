@@ -93,9 +93,12 @@ msg.guild.channels.forEach(channel => {
 });
 
      //le os canais e apaga as mensagens
-     for(a=0;a<listedChannels.length;a++)
-            delmsgdocanal(listedChannels[a].toString())
-
+     for(a=0;a<listedChannels.length;a++){
+       msg.reply(listedChannels[a].toString());
+            //delmsgdocanal(listedChannels[a].toString())
+       
+       
+     }
    
   }
   

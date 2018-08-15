@@ -79,7 +79,7 @@ let cor="0x00AE86";
   
   if (msg.channel.name.startsWith('raids-p')) {
   
-   if (msg.content.startsWith('-')) {
+   if (msg.content.startsWith('%xpto')) {
               
         const listedChannels = []; 
 msg.guild.channels.forEach(channel => { 

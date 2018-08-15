@@ -160,7 +160,7 @@ client.on("message", async (msg) => {
 
 
 
-                msg.reply("aqui 2");
+                msg.reply("aqui 2"+listedChannels[a].toString()));
 
 
                 raidcanal = msg.guild.channels.find("name", listedChannels[a].toString());
@@ -185,7 +185,7 @@ client.on("message", async (msg) => {
                 //--------------------------------
                 //le todas as mensagens do canal
                 //------------------------
-                msg.channel.fetchMessages({ limit: 100 }).then(msg => {
+                raidcanal.fetchMessages({ limit: 100 }).then(msg => {
                     msg.forEach(msg => {
 
 

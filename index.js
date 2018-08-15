@@ -116,7 +116,7 @@ let cor="0x00AE86";
 //+++++
 
 function delmsgdocanal(nomecanal) {
-    msg.channel.send("->" + autor + " ,saiu da RAID. " + nomecanal);
+    
     let xpto = msg.guild.channels.find("name", nomecanal).fetchMessages()
         .then(messages => messages.array().forEach(
             message => message.author.equals(autor) && message.delete()

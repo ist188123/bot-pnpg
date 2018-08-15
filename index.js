@@ -120,7 +120,7 @@ msg.guild.channels.forEach(channel => {
       setTimeout(function () {
 
         // msg.channel.send(bicho);
-        msg.channel.send("->" + autor + " ,saiu da RAID.");
+        msg.channel.send("->" + autor + " ,saiu da RAID. "+nomecanal;
       }, 1500);
 
   }

@@ -152,7 +152,7 @@ client.on("message", async (msg) => {
 
            
 
-                msg.reply("aqui 2"+channel.name);
+              //  msg.reply("aqui 2"+channel.name);
 
 
                 raidcanal = msg.guild.channels.find("name", channel.name);
@@ -180,7 +180,7 @@ client.on("message", async (msg) => {
                 msg.guild.channels.find("name", channel.name).fetchMessages({ limit: 100 }).then(msg => {
                     msg.forEach(msg => {
 
-                    msg.reply("aqui 3"+channel.name);
+                  //  msg.reply("aqui 3"+channel.name);
 
                         //msg inicia com %
                         if (msg.content.startsWith('%')) {
@@ -301,7 +301,7 @@ client.on("message", async (msg) => {
 
     //lista todos os elementos que tem a regra
     function criaRaid(canalRaid, bicho, adicional, participantesRaid, sponser) {
-         msg.reply("criaRaid"+canalRaid);
+     //    msg.reply("criaRaid"+canalRaid);
         try {
 
 

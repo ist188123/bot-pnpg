@@ -84,12 +84,12 @@ let cor="0x00AE86";
         const listedChannels = []; 
 msg.guild.channels.forEach(channel => { 
    // if(channel.permissionsFor(msg.author).has('VIEW_CHANNEL')) listedChannels.push(channel.name);
-  if(channel.permissionsFor(msg.author).has('VIEW_CHANNEL')) {
-         if(channel.name.startsWith('_raid'){
+ // if(channel.permissionsFor(msg.author).has('VIEW_CHANNEL')) {
+         if(channel.name.startsWith('_raid')){
             listedChannels.push(channel.name);
             }
   
-}
+//}
 });
 msg.channel.send(`You have access to: ${listedChannels.join('\n')}`);    
      

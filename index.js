@@ -178,7 +178,7 @@ if (msg.content.startsWith('👍') || msg.content.startsWith(':+1:') || msg.cont
 
 
 
-
+msg.reply("aqui");
 
         //--------------------------------
         //le todas as mensagens do canal

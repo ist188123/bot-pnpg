@@ -133,13 +133,42 @@ function delmsgdocanal(nomecanal) {
       if (msg.content.startsWith('👍') || msg.content.startsWith(':+1:')|| msg.content.startsWith('->') || msg.content.startsWith('%') || msg.content.startsWith('!exraid')) {
 
         
-        
+        //paga todas as mensagens do canal
            delmsgdocanal("raids-pinhal-novo");
         
         
-            let raidcanal = msg.channel.name;
+        
+        //-----
+        //le os canais que das raids _raids
+            const listedChannels = [];
+    msg.guild.channels.forEach(channel => {
+      
+        if (channel.name.startsWith('_raid')) {
+            listedChannels.push(channel.name);
+        }
 
-            //  let role = msg.guild.roles.find("name", raidcanal);
+        //}
+    });
+
+    //tira o nome dos canais
+    for (a = 0; a < listedChannels.length; a++) {
+     //   msg.reply(listedChannels[a].toString());
+        
+   
+        
+        
+        
+        
+      let raidcanal =   msg.guild.channels.find("name", listedChannels[a].toString())
+        
+        
+        
+        
+        //-----
+        
+          //pelo teste  let raidcanal = msg.channel.name;
+
+           
 
 
             var array = [];
@@ -250,7 +279,7 @@ function delmsgdocanal(nomecanal) {
       }, 1500);
     }
 
-
+      }
   }
 
 

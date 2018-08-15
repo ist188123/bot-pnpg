@@ -244,7 +244,7 @@ client.on("message", async (msg) => {
                 //   msg.channel.send(msg.author.toString() + ", inserido na RAID!");
 
                 //------------------------     
-                setTimeout(function () {
+               // setTimeout(function () {
 
 
                     // msg.channel.send("array 0"+array);                 
@@ -272,7 +272,7 @@ client.on("message", async (msg) => {
                     criaRaid(channel.name, pkmraid, result, qtatr, mewtwo);
 
 
-                }, 1500);
+               // }, 1500);
             
             }
         });

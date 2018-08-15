@@ -77,9 +77,9 @@ let cor="0x00AE86";
 
   //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
   
-  if (msg.channel.name.startsWith('raids-p')) {
+ function limpamsg(){ {
   
-   if (msg.content.startsWith('%xpto')) {
+   
               
         const listedChannels = []; 
 msg.guild.channels.forEach(channel => { 
@@ -100,14 +100,13 @@ msg.guild.channels.forEach(channel => {
        
      }
    
+ 
+    
+ 
   }
-    
-    
-    
-    
-    
-    
-    function delmsgdocanal(nomecanal){
+  
+  
+  function delmsgdocanal(nomecanal){
        msg.channel.send("->" + autor + " ,saiu da RAID. "+nomecanal);
    let xpto = msg.guild.channels.find("name",nomecanal ).fetchMessages()
         .then(messages => messages.array().forEach(
@@ -125,16 +124,6 @@ msg.guild.channels.forEach(channel => {
       }, 1500);
 
   }
-  
-    
-    
-    
-    
-  
-  }
-  
-  
-  
   
   
   
@@ -197,7 +186,17 @@ msg.guild.channels.forEach(channel => {
 
       if (msg.content.startsWith('👍') || msg.content.startsWith(':+1:')|| msg.content.startsWith('->') || msg.content.startsWith('%') || msg.content.startsWith('!exraid')) {
 
-            let raidcanal = msg.channel.name;
+            metenome();
+
+  }
+
+
+
+
+
+///------
+    function metenome(){
+let raidcanal = msg.channel.name;
 
             //  let role = msg.guild.roles.find("name", raidcanal);
 
@@ -310,18 +309,9 @@ msg.guild.channels.forEach(channel => {
       }, 1500);
     }
 
-
   }
 
-
-
-
-
-
-
-
-
-
+/-----
   //  if (msg.content.startsWith('%c')) {
   //  let canal = msg.content.substring(3);
 

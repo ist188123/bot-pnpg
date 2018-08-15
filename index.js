@@ -130,160 +130,158 @@ function delmsgdocanal(nomecanal) {
 
 //++++
 
-      if (msg.content.startsWith('👍') || msg.content.startsWith(':+1:')|| msg.content.startsWith('->') || msg.content.startsWith('%') || msg.content.startsWith('!exraid')) {
+     
+//-------------------------------------------
+if (msg.content.startsWith('👍') || msg.content.startsWith(':+1:') || msg.content.startsWith('->') || msg.content.startsWith('%') || msg.content.startsWith('!exraid')) {
 
-        
-        //paga todas as mensagens do canal
-           delmsgdocanal("raids-pinhal-novo");
-        
-        
-        
-        //-----
-        //le os canais que das raids _raids
-            const listedChannels = [];
+
+    //paga todas as mensagens do canal
+    delmsgdocanal("raids-pinhal-novo");
+
+
+
+    //-----
+    //le os canais que das raids _raids
+    const listedChannels = [];
     msg.guild.channels.forEach(channel => {
-      
+
         if (channel.name.startsWith('_raid')) {
             listedChannels.push(channel.name);
         }
 
         //}
     });
-
+    let raidcanal =""
     //tira o nome dos canais
     for (a = 0; a < listedChannels.length; a++) {
-     //   msg.reply(listedChannels[a].toString());
-        
-   
-        
-        
-        
-        
-      let raidcanal =   msg.guild.channels.find("name", listedChannels[a].toString())
-        
-        
-        
-        
+        //   msg.reply(listedChannels[a].toString());
+
+
+
+
+
+
+         raidcanal = msg.guild.channels.find("name", listedChannels[a].toString());
+
+
+
+
         //-----
-        
-          //pelo teste  let raidcanal = msg.channel.name;
 
-           
-
-
-            var array = [];
-            adicional = "";
-
-        
-
-           
-
-            //--------------------------------
-            //le todas as mensagens do canal
-            //------------------------
-            msg.channel.fetchMessages({ limit: 100 }).then(msg => {
-                msg.forEach(msg => {
+        //pelo teste  let raidcanal = msg.channel.name;
 
 
 
-                    //msg inicia com %
-                    if (msg.content.startsWith('%')) {
-                        pkmraid = msg.content.substring(1);
-                        //  msg.channel.send(pkmraid);
+
+        var array = [];
+        adicional = "";
+
+
+
+
+
+        //--------------------------------
+        //le todas as mensagens do canal
+        //------------------------
+        msg.channel.fetchMessages({ limit: 100 }).then(msg => {
+            msg.forEach(msg => {
+
+
+
+                //msg inicia com %
+                if (msg.content.startsWith('%')) {
+                    pkmraid = msg.content.substring(1);
+                    //  msg.channel.send(pkmraid);
+                }
+
+                if (msg.content.startsWith('!exraid')) {
+                    mewtwo = msg.content.substring(1);
+
+                }
+
+
+
+
+                //msg inicia com    
+                if (msg.content.startsWith('👍')) {
+
+
+
+
+
+                    if (msg.member.roles.has(team_valor.id)) {
+                        team_imagem = valor.toString();
+                        // msg.reply(team_imagem);
+                        quantidade++;
+                        array.push(team_imagem + " " + msg.author + " " + msg.content.substring(2));
+                        adicional = adicional + team_imagem + " " + msg.author + " " + msg.content.substring(2) + "\n";
                     }
 
-                    if (msg.content.startsWith('!exraid')) {
-                 mewtwo =msg.content.substring(1);
-              
-                  }
-
-
-
-
-                    //msg inicia com    
-                    if (msg.content.startsWith('👍')) {
-
-
-
-
-
-                        if (msg.member.roles.has(team_valor.id)) {
-                            team_imagem = valor.toString();
-                            // msg.reply(team_imagem);
-                            quantidade++;
-                            array.push(team_imagem + " " + msg.author + " " + msg.content.substring(2));
-                            adicional = adicional + team_imagem + " " + msg.author + " " + msg.content.substring(2) + "\n";
-                        }
-
-                        if (msg.member.roles.has(team_mystic.id)) {
-                            team_imagem = mystic.toString();
-                            // msg.reply(team_imagem);
-                            quantidade++;
-                            array.push(team_imagem + " " + msg.author + " " + msg.content.substring(2));
-                            adicional = adicional + team_imagem + " " + msg.author + " " + msg.content.substring(2) + "\n";
-                        }
-
-                        if (msg.member.roles.has(team_instinct.id)) {
-                            team_imagem = instinct.toString();
-                            // msg.reply(team_imagem);
-                            quantidade++;
-                            array.push(team_imagem + " " + msg.author + " " + msg.content.substring(2));
-                            adicional = adicional + team_imagem + " " + msg.author + " " + msg.content.substring(2) + "\n";
-                        }
-
-                        // 
+                    if (msg.member.roles.has(team_mystic.id)) {
+                        team_imagem = mystic.toString();
+                        // msg.reply(team_imagem);
+                        quantidade++;
+                        array.push(team_imagem + " " + msg.author + " " + msg.content.substring(2));
+                        adicional = adicional + team_imagem + " " + msg.author + " " + msg.content.substring(2) + "\n";
                     }
 
+                    if (msg.member.roles.has(team_instinct.id)) {
+                        team_imagem = instinct.toString();
+                        // msg.reply(team_imagem);
+                        quantidade++;
+                        array.push(team_imagem + " " + msg.author + " " + msg.content.substring(2));
+                        adicional = adicional + team_imagem + " " + msg.author + " " + msg.content.substring(2) + "\n";
+                    }
 
-                })
+                    // 
+                }
+
+
             })
+        })
 
-            //---- fim ler mensagens 
-
-
-
+        //---- fim ler mensagens 
 
 
 
-      //   msg.channel.send(msg.author.toString() + ", inserido na RAID!");
-
-      //------------------------     
-      setTimeout(function () {
-
-
-        // msg.channel.send("array 0"+array);                 
-        var result = [];
-
-
-        array.forEach(function (item) {
-          if (result.indexOf(item) < 0) {
-            result.push(item);
-          }
-        });
-
-        // msg.channel.send("result 1"+result);              
-
-        result = result.filter(item => item !== autor);
-        var qtatr = result.filter(item => item !== autor).length
-
-
-        //msg.channel.send("result 2"+result);            
-
-        //--------------------------------------               
 
 
 
-        criaRaid(raidcanal, pkmraid, result, qtatr, mewtwo);
+        //   msg.channel.send(msg.author.toString() + ", inserido na RAID!");
+
+        //------------------------     
+        setTimeout(function () {
 
 
-      }, 1500);
+            // msg.channel.send("array 0"+array);                 
+            var result = [];
+
+
+            array.forEach(function (item) {
+                if (result.indexOf(item) < 0) {
+                    result.push(item);
+                }
+            });
+
+            // msg.channel.send("result 1"+result);              
+
+            result = result.filter(item => item !== autor);
+            var qtatr = result.filter(item => item !== autor).length
+
+
+            //msg.channel.send("result 2"+result);            
+
+            //--------------------------------------               
+
+
+
+            criaRaid(raidcanal, pkmraid, result, qtatr, mewtwo);
+
+
+        }, 1500);
     }
 
-      }
-  }
-
-
-
+}
 
 
 

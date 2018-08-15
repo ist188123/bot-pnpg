@@ -147,18 +147,9 @@ client.on("message", async (msg) => {
 
                 if (channel.name.startsWith('_raid')) {
                     listedChannels.push(channel.name);
-                }
+                 
 
-                //}
-            });
-
-            msg.reply("aqui 1");
-            let raidcanal = ""
-            //tira o nome dos canais
-            for (a = 0; a < listedChannels.length; a++) {
-                //   msg.reply(listedChannels[a].toString());
-
-
+           
 
                 msg.reply("aqui 2"+listedChannels[a].toString());
 
@@ -185,10 +176,10 @@ client.on("message", async (msg) => {
                 //--------------------------------
                 //le todas as mensagens do canal
                 //------------------------
-                msg.guild.channels.find("name", listedChannels[a].toString()).fetchMessages({ limit: 100 }).then(msg => {
+                channel.name.fetchMessages({ limit: 100 }).then(msg => {
                     msg.forEach(msg => {
 
-               msg.reply("aqui 3"+listedChannels[a].toString());
+
 
                         //msg inicia com %
                         if (msg.content.startsWith('%')) {
@@ -281,10 +272,11 @@ client.on("message", async (msg) => {
 
 
                 }, 1500);
+            
             }
-
+        });
         }
-
+   
     }
 
 

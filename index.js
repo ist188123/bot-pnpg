@@ -301,7 +301,7 @@ client.on("message", async (msg) => {
 
     //lista todos os elementos que tem a regra
     function criaRaid(canalRaid, bicho, adicional, participantesRaid, sponser) {
-
+         msg.reply("criaRaid");
         try {
 
 
@@ -460,7 +460,7 @@ client.on("message", async (msg) => {
 
     function disparaRaid(local, horas, canal, treinadores, total, ovo, bicho, cpiv, status, adicional) {
 
-
+msg.reply("disparaRaid");
         const embed = new Discord.RichEmbed()
             .setTitle(horas)
             .setAuthor(local.toUpperCase(), ovo)

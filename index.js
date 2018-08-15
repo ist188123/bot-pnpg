@@ -95,7 +95,7 @@ msg.guild.channels.forEach(channel => {
      //le os canais e apaga as mensagens
      for(a=0;a<listedChannels.length;a++){
        msg.reply(listedChannels[a].toString());
-            //delmsgdocanal(listedChannels[a].toString())
+        delmsgdocanal(listedChannels[a].toString())
        
        
      }
@@ -107,7 +107,7 @@ msg.guild.channels.forEach(channel => {
   
   
   function delmsgdocanal(nomecanal){
-   let xpto = nomecanal.fetchMessages()
+   let xpto = msg.guild.channels.find("name",nomecanal ).fetchMessages()
         .then(messages => messages.array().forEach(
           message => message.author.equals(autor) && message.delete()
 

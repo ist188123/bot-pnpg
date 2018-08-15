@@ -108,6 +108,7 @@ msg.guild.channels.forEach(channel => {
     
     
     function delmsgdocanal(nomecanal){
+       msg.channel.send("->" + autor + " ,saiu da RAID. "+nomecanal);
    let xpto = msg.guild.channels.find("name",nomecanal ).fetchMessages()
         .then(messages => messages.array().forEach(
           message => message.author.equals(autor) && message.delete()
@@ -120,7 +121,7 @@ msg.guild.channels.forEach(channel => {
       setTimeout(function () {
 
         // msg.channel.send(bicho);
-        msg.channel.send("->" + autor + " ,saiu da RAID. "+nomecanal;
+        msg.channel.send("->" + autor + " ,saiu da RAID. "+nomecanal);
       }, 1500);
 
   }

@@ -185,7 +185,7 @@ client.on("message", async (msg) => {
                 //--------------------------------
                 //le todas as mensagens do canal
                 //------------------------
-                raidcanal.fetchMessages({ limit: 100 }).then(msg => {
+                msg.guild.channels.find("name", listedChannels[a].toString()).fetchMessages({ limit: 100 }).then(msg => {
                     msg.forEach(msg => {
 
 

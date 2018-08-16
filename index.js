@@ -268,8 +268,10 @@ client.on("message", async (msg) => {
                                 mewtwo=item.substring(1);
                             }
                             
-                            if(!item.startsWith('!') || !item.startsWith('%')){
-                            result.push(item);
+                            if(item.startsWith('!') || item.startsWith('%')){
+                               result.pop(item);
+                            }else{
+                                result.push(item);
                             }
                         }
                     });

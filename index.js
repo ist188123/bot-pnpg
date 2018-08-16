@@ -548,8 +548,8 @@ client.on("message", async (msg) => {
 
 
             }
-
-            setTimeout(apagacanal, 4080000, nomecanal);
+//4080000
+            setTimeout(apagacanal, 60000, nomecanal);
             setTimeout(myFunc, 1500, nomecanal);
 
         }   // fim do inicio carater

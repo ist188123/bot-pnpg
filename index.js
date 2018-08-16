@@ -252,8 +252,8 @@ client.on("message", async (msg) => {
                 //------------------------     
                setTimeout(function () {
 
-               // var pokemom=pkmraid;
-                    
+                 pkmraid="";
+                 mewtwo="";   
                     // msg.channel.send("array 0"+array);                 
                     var result = [];
 

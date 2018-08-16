@@ -252,7 +252,7 @@ client.on("message", async (msg) => {
                 //------------------------     
                setTimeout(function () {
 
-                var pokemom=pkmraid;
+               // var pokemom=pkmraid;
                     
                     // msg.channel.send("array 0"+array);                 
                     var result = [];
@@ -261,7 +261,12 @@ client.on("message", async (msg) => {
                     array.forEach(function (item) {
                         if (result.indexOf(item) < 0) {
                             
-                            
+                            if(item.startsWith('%')){
+                                pkmraid=item.substring(1);
+                            }
+                            if(item.startsWith('!')){
+                                mewtwo=item.substring(1);
+                            }
                             
                             
                             result.push(item);
@@ -280,7 +285,7 @@ client.on("message", async (msg) => {
 
 
 
-                    criaRaid(channel.name, pokemom, result, qtatr, mewtwo);
+                    criaRaid(channel.name, pkmraid, result, qtatr, mewtwo);
 
 
                 }, 1500);

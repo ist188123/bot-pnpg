@@ -335,7 +335,7 @@ client.on("message", async (msg) => {
             var braid = ovo;
             //var bicho="";
 
-
+            cor = "0x00AE86";
 
 
             var tiporaid = canalRaid.substring(5, 6);

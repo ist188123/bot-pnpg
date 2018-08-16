@@ -190,13 +190,13 @@ client.on("message", async (msg) => {
                         //msg inicia com %
                         if (msg.content.startsWith('%')) {
                             pkmraid = msg.content.substring(1);
-                            
+                            array.push(msg.content);
                             //  msg.channel.send(pkmraid);
                         }
 
                         if (msg.content.startsWith('!exraid')) {
                             mewtwo = msg.content.substring(1);
-
+                            array.push(msg.content);
                         }
 
 
@@ -260,6 +260,10 @@ client.on("message", async (msg) => {
 
                     array.forEach(function (item) {
                         if (result.indexOf(item) < 0) {
+                            
+                            
+                            
+                            
                             result.push(item);
                         }
                     });

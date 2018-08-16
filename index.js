@@ -269,7 +269,7 @@ client.on("message", async (msg) => {
                             }
                             
                             if(item.startsWith('!') || item.startsWith('%')){
-                               result.pop(item);
+                               
                             }else{
                                 result.push(item);
                             }

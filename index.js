@@ -379,9 +379,16 @@ client.on("message", async (msg) => {
 
                 braid = ovo;
 
+                if (bicho.startsWith('hundoom')) {
+                    braid = "https://exraidspinhalnovo.webnode.pt/_files/200000040-1e1dc1f153/450/houndoom.png";
+                    cpiv = "**BOSS CP** : 2730220\n**CP** 1445 <:nevoeiro:478895508551761930><:sol:478895508413349910>2529\n";
+                   
+                    status = "<:agua:478587230730846210><:luta:478587139756392448><:ground:478587230168809477><:pedra:478587231200739328>"+
+                        "Machamp\nHariyama\nBlaziken\nKyogre";
+                }
 
                 if (bicho.startsWith('golem')) {
-                    braid = " https://exraidspinhalnovo.webnode.pt/_files/200000037-85af786acf/450/golem.png";
+                    braid = "https://exraidspinhalnovo.webnode.pt/_files/200000037-85af786acf/450/golem.png";
                     cpiv = "20 CP 1666";
                     status = "Duplo fraco contra WATER e GRASS\nKyogre Waterfall - Hydro Pump\nGyarados Waterfall - Hydro Pump\nGroudon Mud Shot - Solar Beam"
                 }
@@ -548,8 +555,8 @@ client.on("message", async (msg) => {
 
 
             }
-//4080000
-            setTimeout(apagacanal, 60000, nomecanal);
+//
+            setTimeout(apagacanal, 4080000, nomecanal);
             setTimeout(myFunc, 1500, nomecanal);
 
         }   // fim do inicio carater

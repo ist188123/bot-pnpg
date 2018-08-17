@@ -18,7 +18,7 @@ client.on("message", async (msg) => {
         
         let apiKey = process.env.WHEATHER;
 let city = "portland";
-let url = "http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}"
+let url = "http://api.openweathermap.org/data/2.5/weather?q=pinhal%20novo,pt&appid=e5b13f9f228fb556488b01e0cb51be00"
 
 msg.reply(url)
         

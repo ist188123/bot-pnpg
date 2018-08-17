@@ -14,21 +14,16 @@ client.on("message", async (msg) => {
     
     
     if (msg.content.startsWith('tempo')) {
-    msg
-    let request = require('request');
-
-let apiKey = '*****************************';
-let city = 'portland';
-let url = 'http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}';
-
-request(url, function (err, response, body) {
-  if(err){
-    msg.reply('error:', error);
-  } else {
-    msg.reply('body:', body);
-  }
-});
     
+        
+        let apiKey = process.env.WHEATHER;
+let city = "portland";
+let url = "http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}"
+
+msg.reply(url)
+        
+        
+        
     
 }
     

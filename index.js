@@ -13,8 +13,8 @@ client.on("message", async (msg) => {
     
     
     
-    if (msg.content.startsWith('tempo') {
-    
+    if (msg.content.startsWith('tempo')) {
+    msg
     let request = require('request');
 
 let apiKey = '*****************************';

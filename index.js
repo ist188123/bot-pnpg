@@ -13,15 +13,18 @@ client.on("message", async (msg) => {
     
     
     
-    if (msg.content.startsWith('tempo')) {
+if (msg.content.startsWith('tempo')) {
     
         
-        let apiKey = process.env.WHEATHER;
+let apiKey = process.env.WHEATHER;
 let city = "portland";
 let url = "http://api.openweathermap.org/data/2.5/weather?q=pinhal%20novo,pt&appid=e5b13f9f228fb556488b01e0cb51be00"
-let weather = JSON.parse(body)
-msg.reply(weather)
-        
+
+   
+
+
+
+
        
     
 }

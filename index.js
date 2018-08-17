@@ -22,7 +22,13 @@ let url = "http://api.openweathermap.org/data/2.5/weather?q=pinhal%20novo,pt&app
 
 msg.reply(url)
         
-        
+       request(url, function (err, response, body) {
+  if(err){
+    msg.reply('error:', error);
+  } else {
+    msg.reply('body:', body);
+  }
+}); 
         
     
 }

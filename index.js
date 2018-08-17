@@ -9,6 +9,47 @@ const prefix = "+";
 
 
 client.on("message", async (msg) => {
+    
+    
+    
+    
+    if (msg.content.startsWith('tempo') {
+    
+    let request = require('request');
+
+let apiKey = '*****************************';
+let city = 'portland';
+let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
+
+request(url, function (err, response, body) {
+  if(err){
+    msg.reply('error:', error);
+  } else {
+    msg.reply('body:', body);
+  }
+});
+    
+    
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     let mewtwo = "";
     let cor = "0x00AE86";
     let mais = "";

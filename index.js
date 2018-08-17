@@ -13,20 +13,7 @@ client.on("message", async (msg) => {
     
     
     
-if (msg.content.startsWith('tempo')) {
-    
-
-
-
-
-
-       
-    
-}
-    
-    
-    
-    
+  
     
     
     

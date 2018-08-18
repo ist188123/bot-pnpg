@@ -587,7 +587,7 @@ if (bicho.startsWith('rhydon')) {
             text = msg.content.substring(1);
 
             //LE A MENSAGEM EXCLUINDO O !
-           var text = msg.content.substring(1);
+          // var text = msg.content.substring(1);
 
             var canal = '_raid' + text
             canal = canal.split('!').join('').toLowerCase();

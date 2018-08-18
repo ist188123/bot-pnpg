@@ -336,7 +336,9 @@ client.on("message", async (msg) => {
             //var bicho="";
 
             cor = "0x00AE86";
-
+            
+            
+            canalRaid=canalRaid.replace('! ','!');
 
             var tiporaid = canalRaid.substring(5, 6);
 

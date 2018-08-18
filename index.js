@@ -14,11 +14,15 @@ client.on("message", async (msg) => {
     
      if (msg.content.startsWith('xpto')) {
     
-    const request = require('request');
-request('http://api.openweathermap.org/data/2.5/weather?q=pinhal%20novo,pt&appid=e5b13f9f228fb556488b01e0cb51be00', { json: true }, (err, res, body) => {
-if (err) { return console.log(err); }
-msg.reply(body);
+  
+let city = "portland";
+const url = "http://api.openweathermap.org/data/2.5/weather?q=pinhal%20novo,pt&appid=e5b13f9f228fb556488b01e0cb51be00";
 
+const http = require("http");
+
+
+http.get(url, response => {
+ msg.reply(response) 
 });
     
      } 

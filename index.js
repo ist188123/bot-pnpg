@@ -9,6 +9,14 @@ const prefix = "+";
 
 
 client.on("message", async (msg) => {
+    
+    try {
+    
+    
+    
+    
+    
+    
     let mewtwo = "";
     let cor = "0x00AE86";
     let mais = "";
@@ -336,8 +344,8 @@ client.on("message", async (msg) => {
             //var bicho="";
 
             cor = "0x00AE86";
-            
-            
+
+
             var tiporaid = canalRaid.substring(5, 6);
 
 
@@ -579,25 +587,19 @@ if (bicho.startsWith('rhydon')) {
     if (msg.channel.name == 'lab-prof-willow') {
 
         if (msg.content.startsWith("!5") || msg.content.startsWith("!4") || msg.content.startsWith("!3")) {
-
-            var text=msg.content;
-            text=text.replace('! ','!');
-            text=text.replace('! ','!');
-
-            text = msg.content.substring(1);
-
+            
+            
+            
             //LE A MENSAGEM EXCLUINDO O !
-          // var text = msg.content.substring(1);
-
+            var text = msg.content.substring(1);
             var canal = '_raid' + text
             canal = canal.split('!').join('').toLowerCase();
             var nomecanal = canal.split(' ').join('-').toLowerCase();
             //cria canal
             if (msg.guild.channels.find("name", nomecanal)) {
             } else {
-
-          
-             }
+                msg.guild.createChannel(canal, "text");
+            }
 //
             setTimeout(apagacanal, 4580000, nomecanal);
             setTimeout(myFunc, 1500, nomecanal);
@@ -644,6 +646,17 @@ if (bicho.startsWith('rhydon')) {
 
     //--- fim teste ----
 
+        
+        
+        
+     } catch (err) {
+            console.log(err);
+
+
+        }    
+        
+        
+        
 });
 
 client.login(process.env.BOT_TOKEN);

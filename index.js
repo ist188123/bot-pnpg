@@ -22,7 +22,7 @@ const http = require("http");
 
 
 http.get(url, response => {
- msg.reply(response) 
+ msg.reply(url) 
 });
     
      } 

@@ -592,11 +592,12 @@ if (bicho.startsWith('rhydon')) {
             
             //LE A MENSAGEM EXCLUINDO O !
             var text = msg.content.substring(1);
+            msg.reply(text)
           
-            var canal = '_raid' + text
+            var canal = '_raid' + text;
             canal = canal.split('!').join('').toLowerCase();
             var nomecanal = canal.split(' ').join('-').toLowerCase();
-           
+           msg.reply(nomecanal);
             //cria canal
             if (msg.guild.channels.find("name", nomecanal)) {
             }else{

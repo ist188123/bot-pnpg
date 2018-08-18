@@ -597,11 +597,13 @@ if (bicho.startsWith('rhydon')) {
             var canal = '_raid' + text;
             canal = canal.split('!').join('').toLowerCase();
             var nomecanal = canal.split(' ').join('-').toLowerCase();
+            nomecanal = nomecanal.replace('--', '-');
+
            msg.reply(nomecanal);
             //cria canal
             if (msg.guild.channels.find("name", nomecanal)) {
             }else{
-                msg.guild.createChannel(canal, "text");
+                msg.guild.createChannel(nomecanal, "text");
             }
 //
             setTimeout(apagacanal, 4580000, nomecanal);

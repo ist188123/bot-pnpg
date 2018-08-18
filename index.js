@@ -597,12 +597,14 @@ if (bicho.startsWith('rhydon')) {
             } else {
 
                 msg.guild.createChannel(canal, "text");
-
-
-            }
+             setTimeout(function () {
+                msg.guild.channels.find("name", arg).sendMessage("Olá Treinadores.\nEste canal é temporário se será apagado dentro em 1 Hora e 30 minutos.");
+           
+             },1500);
+             }
 //
             setTimeout(apagacanal, 4580000, nomecanal);
-            setTimeout(myFunc, 1500, nomecanal);
+           // setTimeout(myFunc, 1500, nomecanal);
 
         }   // fim do inicio carater
 

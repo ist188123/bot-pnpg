@@ -337,9 +337,7 @@ client.on("message", async (msg) => {
 
             cor = "0x00AE86";
             
-            canalRaid=canalRaid.replace('! ','!');
-            canalRaid=canalRaid.replace('! ','!');
-
+            
             var tiporaid = canalRaid.substring(5, 6);
 
 
@@ -582,12 +580,14 @@ if (bicho.startsWith('rhydon')) {
 
         if (msg.content.startsWith("!5") || msg.content.startsWith("!4") || msg.content.startsWith("!3")) {
 
+            var text=msg.content;
+            text=text.replace('! ','!');
+            text=text.replace('! ','!');
 
-
-
+            text = msg.content.substring(1);
 
             //LE A MENSAGEM EXCLUINDO O !
-            var text = msg.content.substring(1);
+           var text = msg.content.substring(1);
 
             var canal = '_raid' + text
             canal = canal.split('!').join('').toLowerCase();

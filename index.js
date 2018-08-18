@@ -9,27 +9,6 @@ const prefix = "+";
 
 
 client.on("message", async (msg) => {
-    
-    
-    
-     if (msg.content.startsWith('xpto')) {
-    
-  
-let city = "portland";
-const url = "http://api.openweathermap.org/data/2.5/weather?q=pinhal%20novo,pt&appid=e5b13f9f228fb556488b01e0cb51be00";
-
-const http = require("http");
-
-
-http.get(url, response => {
- msg.reply(url) 
-});
-    
-     } 
-    
-    
-    
-    
     let mewtwo = "";
     let cor = "0x00AE86";
     let mais = "";
@@ -389,6 +368,27 @@ http.get(url, response => {
                     cpiv = "1574-1967 1650-2063"
                     status = "<:psiquico:478587230483513346><:voador:478587231259590676><:fada:478587230814863372>\nAlakazam: Futuresight(33.00)\nEspeon: Futuresight(35.60)\nExeggutor: Confusion(30.10)\nCharizard: Overheat(32.20)\nDragonite: Dragon Hurricane(33.95)";
                 }
+                
+                
+                if (bicho.startsWith('piloswine')) {
+    braid = "https://exraidspinhalnovo.webnode.pt/_files/200000041-e63f3e7363/450/poliswine.png";
+    cpiv = "**BOSS CP** : 13663\n**CP** 1305 <:sol:478895508413349910> <:gelo:478587230164615174> 1631\n";
+    status = "<:fogo:478587230747754543> <:luta:478587139756392448> <:erva:478587230814994432> " +
+        "<:steel:478587109725306880> <:steel:478587109725306880>\n" +
+        "ENTEI\n " +
+        "Fire Fang - Overheat \n" +
+        "Kyogre\n" +
+        "Waterfall -	Hydro Pump \n" +
+        "Moltres\n" +
+        "Fire Spin -	Overheat \n" +
+        "Machamp\n" +
+        "Counter - Dynamic Punch \n";
+    
+}
+                
+                
+                
+                
             }
             //----     
 
@@ -400,6 +400,28 @@ http.get(url, response => {
 
                 braid = ovo;
 
+                
+                
+                
+if (bicho.startsWith('rhydon')) {
+    braid = "https://exraidspinhalnovo.webnode.pt/_files/200000042-e928beb0f2/450/rhydon.png";
+    cpiv = "**BOSS CP** : 30512\n**CP** 1886 <:sol:478895508413349910> <:nevoeiro:478895508551761930> 2357\n";
+    status = "<:chuva:478895508673527808> <:sol:478895508413349910> " +
+    "Kyogre\n"+
+    "Waterfall	Hydro Pump WATER\n	"+
+    "Venusaur\n"+
+    "Vine Whip -	Frenzy Plant\n "+
+    "Poliwrath\n"+
+    "Bubble -	Hydro Pump\n "+
+    "Gyarados\n"+
+    "Waterfall -	Hydro Pump \n	"+
+    "Exeggutor\n"+
+    "Bullet Seed -	Solar Beam ";
+}
+
+                
+                
+                
                 if (bicho.startsWith('hundoom')) {
                     braid = "https://exraidspinhalnovo.webnode.pt/_files/200000040-1e1dc1f153/450/houndoom.png";
                     cpiv = "**BOSS CP** : 2730220\n**CP** 1445 <:nevoeiro:478895508551761930><:sol:478895508413349910>2529\n";

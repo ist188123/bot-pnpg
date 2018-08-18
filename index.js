@@ -600,7 +600,7 @@ if (bicho.startsWith('rhydon')) {
              }
 //
             setTimeout(apagacanal, 4580000, nomecanal);
-           // setTimeout(myFunc, 1500, nomecanal);
+            setTimeout(myFunc, 1500, nomecanal);
 
         }   // fim do inicio carater
 

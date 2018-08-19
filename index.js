@@ -65,21 +65,23 @@ client.on("message", async (msg) => {
     //---------------------------------------------------		
     //fim informacao
     //---------------------------------------------------		
+function horaCanal(offset) {
 
+    d = new Date();
+
+    utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+
+    nd = new Date(utc + (3600000*offset));
+
+    return  nd.toLocaleString();
+
+}
 
 
     function myFunc(arg) {
-        var date = new Date();
-        var sunriseMills = date.getTime();      
-        
-         var horaAtual = new Date(sunriseMills) ;
-         // .toLocaleTimeString( { timeZone: 'UTC',hour: '2-digit', minute: '2-digit'} );
-        
-         var tempoCanal = new Date(sunriseMills+4580000) ;
-         // .toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
         
         
-        msg.guild.channels.find("name", arg).sendMessage("Olá Treinadores.\nEste canal é temporário criado às "+horaAtual+" e será apagado às : "+tempoCanal);
+        msg.guild.channels.find("name", arg).sendMessage("Olá Treinadores.\nEste canal é temporário e será apagado às : "+horaCanal('+2.5'));
     }
 
 

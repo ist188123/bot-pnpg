@@ -91,6 +91,10 @@ return textTime = new Date(sunriseMills+(3600000*offset))
    
     description: "Este canal é temporário e será apagado as "+horaCanal('+2.5'),
     fields: [
+        {
+        name: "Para participar",
+        value: ":thumbsup:"
+      },
       {
         name: "Inserir POKEMON",
         value: "exemplo: %regirock"

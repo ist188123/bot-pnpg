@@ -13,22 +13,7 @@ client.on("message", async (msg) => {
     try {
     
     
-    if (msg.content.startsWith('1')) {
-        var request = require("request")
-
-var url = "http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=e5b13f9f228fb556488b01e0cb51be00"
-
-request({
-    url: url,
-    json: true
-}, function (error, response, body) {
-
-    if (!error && response.statusCode === 200) {
-        msg.reply(body) // Print the json response
-    }
-})
-        
-    }        
+            
     
     
     
@@ -88,10 +73,10 @@ request({
         var sunriseMills = date.getTime();      
         
          var horaAtual = new Date(sunriseMills) 
-          .toLocaleTimeString( { hour: '2-digit', minute: '2-digit' });
+          .toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
         
          var tempoCanal = new Date(sunriseMills+4580000) 
-          .toLocaleTimeString( { hour: '2-digit', minute: '2-digit' });
+          .toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
         
         
         msg.guild.channels.find("name", arg).sendMessage("Olá Treinadores.\nEste canal é temporário criado às "+horaAtual+" e será apagado às : "+tempoCanal);

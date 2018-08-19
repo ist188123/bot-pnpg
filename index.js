@@ -76,9 +76,9 @@ return textTime = new Date(sunriseMills+(3600000*offset))
 
 
     function myFunc(arg) {
-        var textoMensagem="Para adicionar:\nPokemon, exemplo: %regirock\nGinásio em pontuação, exemplo: !exraid\nPara mais informação consultar #willow-tutorial."
+        var textoMensagem="Codigos que podes utilizar:\nAdicionar pokemon, exemplo: %regirock\nGinásio em pontuação, exemplo: !exraid\nPara mais informação consultar "+msg.guild.channels.find("name", "willow-tutorial");
         
-        msg.guild.channels.find("name", arg).sendMessage("Olá Treinadores.\n"+textoMensagem+"\nEste canal é temporário e será apagado às : "+horaCanal('+2.5'));
+        msg.guild.channels.find("name", arg).sendMessage("Olá Treinadores,\n"+textoMensagem+"\nEste canal é temporário e será apagado às : "+horaCanal('+2.5'));
     }
 
 

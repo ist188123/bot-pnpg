@@ -69,7 +69,7 @@ client.on("message", async (msg) => {
 
 
     function myFunc(arg) {
-        
+        var date = new Date();
         var sunriseMills = date.getTime();        
 
          var tempoCanal = new Date(sunriseMills+4580000) 

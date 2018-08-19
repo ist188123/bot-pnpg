@@ -87,20 +87,17 @@ return textTime = new Date(sunriseMills+(3600000*offset))
       name: "Olá Treinadores,",
       icon_url: client.user.avatarURL
     },
-    title: "Inscrição",
+    title: "RAID BOSS",
    
     description: "Este canal é temporário e será apagado as "+horaCanal('+2.5'),
-    fields: [{
-        name: "Inscrever na RAID",
-        value: "\:thumbsup:"
+    fields: [
+      {
+        name: "INSERIR POKEMON",
+        value: "%regirock"
       },
       {
-        name: "Masked links",
-        value: "You can put [masked links](http://google.com) inside of rich embeds."
-      },
-      {
-        name: "Markdown",
-        value: "You can put all the *usual* **__Markdown__** inside of them."
+        name: "GINÁSIO EM PONTUAÇÃO",
+        value: "!exraid"
       }
     ],
     timestamp: new Date(),

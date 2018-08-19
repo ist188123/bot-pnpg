@@ -104,7 +104,7 @@ return textTime = new Date(sunriseMills+(3600000*offset))
         value: "!exraid"
       },
         {
-        name: "Informação",
+        name: "Mais Informação",
         value: "Consultar "+msg.guild.channels.find("name", "willow-tutorial")
       }
     ],

@@ -73,7 +73,7 @@ client.on("message", async (msg) => {
         var sunriseMills = date.getTime();      
         
          var horaAtual = new Date(sunriseMills) 
-          .toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
+          .toLocaleTimeString( { timeZone: 'UTC',hour: '2-digit', minute: '2-digit'} );
         
          var tempoCanal = new Date(sunriseMills+4580000) 
           .toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });

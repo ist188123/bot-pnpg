@@ -69,7 +69,14 @@ client.on("message", async (msg) => {
 
 
     function myFunc(arg) {
-        msg.guild.channels.find("name", arg).sendMessage("Olá Treinadores.\nEste canal é temporário se será apagado dentro em 1 Hora e 30 minutos.");
+        
+        var sunriseMills = date.getTime();        
+
+         var tempoCanal = new Date(sunriseMills+4580000) 
+          .toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric' });
+        
+        
+        msg.guild.channels.find("name", arg).sendMessage("Olá Treinadores.\nEste canal é temporário se será apagado às : "+tempoCanal);
     }
 
 

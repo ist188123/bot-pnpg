@@ -66,15 +66,12 @@ client.on("message", async (msg) => {
     //fim informacao
     //---------------------------------------------------		
 function horaCanal(offset) {
+var d = new Date();
 
-    d = new Date();
+var sunriseMills = d.getTime() + (d.getTimezoneOffset() * 60000);;        
 
-    utc = d.getTime() + (d.getTimezoneOffset() * 60000);
-
-    nd = new Date(utc + (3600000*offset));
-
-    return  nd.toLocaleString();
-
+return textTime = new Date(sunriseMills+(3600000*offset)) 
+   .toLocaleTimeString( { hour: 'numeric', minute: 'numeric' });
 }
 
 

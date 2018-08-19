@@ -92,12 +92,16 @@ return textTime = new Date(sunriseMills+(3600000*offset))
     description: "Este canal é temporário e será apagado as "+horaCanal('+2.5'),
     fields: [
       {
-        name: "INSERIR POKEMON",
-        value: "%regirock"
+        name: "Inserir POKEMON",
+        value: "exemplo: %regirock"
       },
       {
-        name: "GINÁSIO EM PONTUAÇÃO",
+        name: "Ginásio em pontuação",
         value: "!exraid"
+      },
+        {
+        name: "Informação",
+        value: "Consultar "+msg.guild.channels.find("name", "willow-tutorial")
       }
     ],
     timestamp: new Date(),

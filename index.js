@@ -73,10 +73,10 @@ client.on("message", async (msg) => {
         var sunriseMills = date.getTime();      
         
          var horaAtual = new Date(sunriseMills) 
-          .toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric' });
+          .toLocaleTimeString( { hour: 'numeric', minute: 'numeric' });
         
          var tempoCanal = new Date(sunriseMills+4580000) 
-          .toLocaleTimeString('en-US', { hour: 'numeric', minute: 'numeric' });
+          .toLocaleTimeString( { hour: 'numeric', minute: 'numeric' });
         
         
         msg.guild.channels.find("name", arg).sendMessage("Olá Treinadores.\nEste canal é temporário criado às "+horaAtual+" e será apagado às : "+tempoCanal);

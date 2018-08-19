@@ -72,11 +72,11 @@ client.on("message", async (msg) => {
         var date = new Date();
         var sunriseMills = date.getTime();      
         
-         var horaAtual = new Date(sunriseMills) 
-          .toLocaleTimeString( { timeZone: 'UTC',hour: '2-digit', minute: '2-digit'} );
+         var horaAtual = new Date(sunriseMills) ;
+         // .toLocaleTimeString( { timeZone: 'UTC',hour: '2-digit', minute: '2-digit'} );
         
-         var tempoCanal = new Date(sunriseMills+4580000) 
-          .toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
+         var tempoCanal = new Date(sunriseMills+4580000) ;
+         // .toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit' });
         
         
         msg.guild.channels.find("name", arg).sendMessage("Olá Treinadores.\nEste canal é temporário criado às "+horaAtual+" e será apagado às : "+tempoCanal);

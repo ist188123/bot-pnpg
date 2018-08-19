@@ -84,15 +84,15 @@ return textTime = new Date(sunriseMills+(3600000*offset))
     msg.guild.channels.find("name", arg).sendMessage({embed: {
     color: 3447003,
     author: {
-      name: client.user.username,
+      name: "Olá Treinadores,",
       icon_url: client.user.avatarURL
     },
-    title: "This is an embed",
-    url: "http://google.com",
-    description: "This is a test embed to showcase what they look like and what they can do.",
+    title: "Inscrição",
+   
+    description: "Este canal é temporário e será apagado as "+horaCanal('+2.5'),
     fields: [{
-        name: "Fields",
-        value: "They can have different fields with small headlines."
+        name: "Inscrever na RAID",
+        value: "\:thumbsup:"
       },
       {
         name: "Masked links",
@@ -106,7 +106,7 @@ return textTime = new Date(sunriseMills+(3600000*offset))
     timestamp: new Date(),
     footer: {
       icon_url: client.user.avatarURL,
-      text: "© Example"
+      text: "Equipa - PKG Pinhal Novo, "
     }
   }
 });

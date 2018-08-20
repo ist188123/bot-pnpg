@@ -89,10 +89,12 @@ return textTime = new Date(sunriseMills+(3600000*offset))
     },
     title: "RAID BOSS",
    
-    description: "Este canal é temporário e será apagado as "+horaCanal('+2.5'),
+    description: "Este canal é temporário e será apagado as "+horaCanal('+2.5')+
+        +"\nRaids ativas consultar "+msg.guild.channels.find("name", "raids-pinhal-novo")
+        +"\nMais informação consultar "+msg.guild.channels.find("name", "willow-tutorial"),
     fields: [
         {
-        name: "Para participar",
+        name: "Participar",
         value: ":thumbsup:"
       },
       {
@@ -102,10 +104,6 @@ return textTime = new Date(sunriseMills+(3600000*offset))
       {
         name: "Ginásio em pontuação",
         value: "!exraid"
-      },
-        {
-        name: "Mais Informação",
-        value: "Consultar "+msg.guild.channels.find("name", "willow-tutorial")
       }
     ],
     timestamp: new Date(),

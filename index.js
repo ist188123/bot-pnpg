@@ -85,13 +85,13 @@ return textTime = new Date(sunriseMills+(3600000*offset))
       name: "Olá Treinadores.",
       icon_url: client.user.avatarURL
     },
-    title: "RAID BOSS",
+    
    
-    description: "Para participar insira :thumbsup: ",
+    description: "Este canal é temporário.",
     fields: [
       {
-        name: "Valido até ás : "+horaCanal('+2.5'),
-        value: "Este canal é temporário e será apagado, para mais informação consultar "+msg.guild.channels.find("name", "willow-tutorial")
+        name: "Valido até ás : "+horaCanal('+2.5')
+       
       }
     ],
     timestamp: new Date(),

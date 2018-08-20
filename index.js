@@ -85,13 +85,8 @@ return textTime = new Date(sunriseMills+(3600000*offset))
     msg.guild.channels.find("name", arg).sendMessage({embed: {
     color: 16580627,
    title: "Olá Treinadores.",
-    description:"Este canal é temporário e será apagado às",
-       fields: [
-        {
-        name: horaCanal('+2.5'),
-        value: ''
-      }
-    ],
+    description:"Este canal é temporário e será apagado às "+horaCanal('+2.5'),
+      
    
     timestamp: new Date(),
     footer: {

@@ -85,7 +85,7 @@ return textTime = new Date(sunriseMills+(3600000*offset))
       name: "Olá Treinadores,",
       icon_url: client.user.avatarURL
     },
-    title: "RAID BOSS",
+    title: "<:valor:476770420977172490><:mystic:476770487486382083><:instinct:476770553315721217>RAID BOSS",
    
     description: "Para participar insira :thumbsup: .",
     fields: [

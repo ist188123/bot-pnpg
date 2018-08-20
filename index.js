@@ -79,36 +79,39 @@ return textTime = new Date(sunriseMills+(3600000*offset))
       //  var textoMensagem="Codigos que podes utilizar:\nAdicionar pokemon, exemplo: %regirock\nGinásio em pontuação, exemplo: !exraid\nPara mais informação consultar "+msg.guild.channels.find("name", "willow-tutorial");
         
       //  msg.guild.channels.find("name", arg).sendMessage("Olá Treinadores,\n"+textoMensagem+"\nEste canal é temporário e será apagado às : "+horaCanal('+2.5'));
-   
-        
- 
-        
-        
-    
-   msg.guild.channels.find("name", arg).sendMessage({embed: {
+   message.channel.send({embed: {
     color: 16580627,
     author: {
-      name: "Olá Treinadores,",
+      name: client.user.username,
       icon_url: client.user.avatarURL
     },
-    title: "RAID BOSS",
-   
-    description:"Olá Treinadores,\nRaids ativas consultar "+msg.guild.channels.find("name", "raids-pinhal-novo")
-        +"\nMais informação consultar "+msg.guild.channels.find("name", "willow-tutorial"), 
-        
-    fields: [
-        {
-        name: "Este canal é temporário e será apagado as "+horaCanal('+2.5'),
-        value: ''
+    title: "This is an embed",
+    url: "http://google.com",
+    description: "This is a test embed to showcase what they look like and what they can do.",
+    fields: [{
+        name: "Fields",
+        value: "They can have different fields with small headlines."
+      },
+      {
+        name: "Masked links",
+        value: "You can put [masked links](http://google.com) inside of rich embeds."
+      },
+      {
+        name: "Markdown",
+        value: "You can put all the *usual* **__Markdown__** inside of them."
       }
     ],
     timestamp: new Date(),
     footer: {
       icon_url: client.user.avatarURL,
-      text: "Equipa - PKG Pinhal Novo, "
+      text: "© Example"
     }
   }
 });
+        
+ 
+        
+   
     
     
     

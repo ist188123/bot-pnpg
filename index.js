@@ -79,31 +79,33 @@ return textTime = new Date(sunriseMills+(3600000*offset))
       //  var textoMensagem="Codigos que podes utilizar:\nAdicionar pokemon, exemplo: %regirock\nGinásio em pontuação, exemplo: !exraid\nPara mais informação consultar "+msg.guild.channels.find("name", "willow-tutorial");
         
       //  msg.guild.channels.find("name", arg).sendMessage("Olá Treinadores,\n"+textoMensagem+"\nEste canal é temporário e será apagado às : "+horaCanal('+2.5'));
-  msg.guild.channels.find("name", arg).sendMessage({embed: {
+ 
+        
+ 
+    msg.guild.channels.find("name", arg).sendMessage({embed: {
     color: 16580627,
     author: {
-      name: "Olá Treinadores.",
-      icon_url:"https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png"
+      name: "Olá Treinadores,",
+      icon_url: client.user.avatarURL
     },
-    title: "Olá Treinadores.",
+    title: "RAID BOSS",
    
-    description: "Este canal é temporário.",
+    description:"Olá Treinadores,\nRaids ativas consultar "+msg.guild.channels.find("name", "raids-pinhal-novo")
+        +"\nMais informação consultar "+msg.guild.channels.find("name", "willow-tutorial"), 
+        
     fields: [
-      {
-        name: "Valido até ás : "+horaCanal('+2.5'),
-       value: ""
+        {
+        name: "Este canal é temporário e será apagado as "+horaCanal('+2.5'),
+        value: ''
       }
     ],
     timestamp: new Date(),
     footer: {
-      icon_url:"https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png",
+      icon_url: "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png",
       text: "Equipa - PKG Pinhal Novo, "
     }
   }
-});
-        
- 
-        
+});    
    
     
     

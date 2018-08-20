@@ -83,9 +83,9 @@ return textTime = new Date(sunriseMills+(3600000*offset))
     color: 16580627,
     author: {
       name: "Olá Treinadores.",
-      icon_url: client.user.avatarURL
+      icon_url:"https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png"
     },
-    
+    title: "Olá Treinadores.",
    
     description: "Este canal é temporário.",
     fields: [

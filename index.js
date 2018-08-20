@@ -83,8 +83,10 @@ return textTime = new Date(sunriseMills+(3600000*offset))
         
       msg.guild.channels.find("name", arg).sendMessage({embed: {
   color: 16580627,
-  description: "Este canal é temporário e será apagado as "+horaCanal('+2.5'),
-          timestamp: new Date(),
+  description:  "Olá Treinadores,\nRaids ativas consultar "+msg.guild.channels.find("name", "raids-pinhal-novo")
+        +"\nMais informação consultar "+msg.guild.channels.find("name", "willow-tutorial")
+         + "Este canal é temporário e será apagado as "+horaCanal('+2.5'),
+     timestamp: new Date(),
     footer: {
       icon_url: client.user.avatarURL,
       text: "Equipa - PKG Pinhal Novo, "

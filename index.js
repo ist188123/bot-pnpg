@@ -84,8 +84,8 @@ return textTime = new Date(sunriseMills+(3600000*offset))
  
     msg.guild.channels.find("name", arg).sendMessage({embed: {
     color: 16580627,
-  
-    description:"Olá Treinadores,\nEste canal é temporário e será apagado às : **"+horaCanal('+2.5')+"**"
+   title: "Olá Treinadores.",
+    description:"Este canal é temporário e será apagado às : **"+horaCanal('+2.5')+"**"
         +"\nMais informação consultar "+msg.guild.channels.find("name", "willow-tutorial"), 
    
     timestamp: new Date(),

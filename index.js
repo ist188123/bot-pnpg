@@ -90,8 +90,8 @@ return textTime = new Date(sunriseMills+(3600000*offset))
     description: "Utilize este canal para inscrição.",
     fields: [
       {
-        name: "Este canal é temporário e será apagado às : "+horaCanal('+2.5'),
-        value: " "
+        name: "Valido até ás : "+horaCanal('+2.5'),
+        value: "Este canal é temporário e será apagado."
       }
     ],
     timestamp: new Date(),

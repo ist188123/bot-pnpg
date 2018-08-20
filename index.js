@@ -82,29 +82,22 @@ return textTime = new Date(sunriseMills+(3600000*offset))
   msg.guild.channels.find("name", arg).sendMessage({embed: {
     color: 16580627,
     author: {
-      name: client.user.username,
+      name: "Olá Treinadores,",
       icon_url: client.user.avatarURL
     },
-    title: "This is an embed",
-    url: "http://google.com",
-    description: "This is a test embed to showcase what they look like and what they can do.",
-    fields: [{
-        name: "Fields",
-        value: "They can have different fields with small headlines."
-      },
+    title: "Utilize para inscrição na RAID BOSS",
+   
+    description: "",
+    fields: [
       {
-        name: "Masked links",
-        value: "You can put [masked links](http://google.com) inside of rich embeds."
-      },
-      {
-        name: "Markdown",
-        value: "You can put all the *usual* **__Markdown__** inside of them."
+        name: "Este canal é temporário e será apagado às : "+horaCanal('+2.5'),
+        value: ""
       }
     ],
     timestamp: new Date(),
     footer: {
       icon_url: client.user.avatarURL,
-      text: "© Example"
+      text: "Equipa - PKG Pinhal Novo, "
     }
   }
 });

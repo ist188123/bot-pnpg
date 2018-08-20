@@ -82,20 +82,20 @@ return textTime = new Date(sunriseMills+(3600000*offset))
    
     
     msg.guild.channels.find("name", arg).sendMessage({embed: {
-    color: 3447003,
+    color: '#FF0000',
     author: {
       name: "Olá Treinadores,",
       icon_url: client.user.avatarURL
     },
     title: "RAID BOSS",
    
-    description: "Este canal é temporário e será apagado as ",
+    description:"\nRaids ativas consultar "+msg.guild.channels.find("name", "raids-pinhal-novo")
+        +"\nMais informação consultar "+msg.guild.channels.find("name", "willow-tutorial"), ,
         
     fields: [
         {
-        name: horaCanal('+2.5'),
-        value: "\nRaids ativas consultar "+msg.guild.channels.find("name", "raids-pinhal-novo")
-        +"\nMais informação consultar "+msg.guild.channels.find("name", "willow-tutorial"),
+        name: "Este canal é temporário e será apagado as "+horaCanal('+2.5'),
+        value: ''
       }
     ],
     timestamp: new Date(),

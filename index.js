@@ -83,7 +83,12 @@ return textTime = new Date(sunriseMills+(3600000*offset))
         
       msg.guild.channels.find("name", arg).sendMessage({embed: {
   color: 3447003,
-  description: "A very simple Embed!"
+  description: "A very simple Embed!",
+          timestamp: new Date(),
+    footer: {
+      icon_url: client.user.avatarURL,
+      text: "Equipa - PKG Pinhal Novo, "
+    }
 }});
         
         

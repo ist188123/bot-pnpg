@@ -90,7 +90,7 @@ return textTime = new Date(sunriseMills+(3600000*offset))
     title: "RAID BOSS",
    
     description:"\nRaids ativas consultar "+msg.guild.channels.find("name", "raids-pinhal-novo")
-        +"\nMais informação consultar "+msg.guild.channels.find("name", "willow-tutorial"), ,
+        +"\nMais informação consultar "+msg.guild.channels.find("name", "willow-tutorial"), 
         
     fields: [
         {

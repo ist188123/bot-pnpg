@@ -85,13 +85,18 @@ return textTime = new Date(sunriseMills+(3600000*offset))
     msg.guild.channels.find("name", arg).sendMessage({embed: {
     color: 16580627,
    title: "Olá Treinadores.",
-    description:"Este canal é temporário e será apagado às : **"+horaCanal('+2.5')+"**"
-        +"\nMais informação consultar "+msg.guild.channels.find("name", "willow-tutorial"), 
+    description:"Este canal é temporário e será apagado às",
+       fields: [
+        {
+        name: horaCanal('+2.5'),
+        value: ''
+      }
+    ],
    
     timestamp: new Date(),
     footer: {
       icon_url: "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png",
-      text: "Para mais informação consultar "+msg.guild.channels.find("name", "willow-tutorial")+"\nEquipa - PKG Pinhal Novo, "
+      text: "Para mais informação consultar "+msg.guild.channels.find("name", "willow-tutorial")+" "+"\nEquipa - PKG Pinhal Novo, "
     }
  
  }});    

@@ -87,11 +87,11 @@ return textTime = new Date(sunriseMills+(3600000*offset))
     },
     title: "RAID BOSS",
    
-    description: "Utilize este canal para inscrição.",
+    description: "Insira :thumpsup: para inscrição.",
     fields: [
       {
         name: "Valido até ás : "+horaCanal('+2.5'),
-        value: "Este canal é temporário e será apagado."
+        value: "Este canal é temporário e será apagado, para mais informação consultar "+msg.guild.channels.find("name", "willow-tutorial"
       }
     ],
     timestamp: new Date(),

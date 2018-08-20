@@ -87,7 +87,7 @@ return textTime = new Date(sunriseMills+(3600000*offset))
     },
     title: "RAID BOSS",
    
-    description: "Insira :thumpsup: para inscrição.",
+    description: "Para participar insira :thumbsup: .",
     fields: [
       {
         name: "Valido até ás : "+horaCanal('+2.5'),

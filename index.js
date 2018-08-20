@@ -87,11 +87,11 @@ return textTime = new Date(sunriseMills+(3600000*offset))
     },
     title: "Utilize para inscrição na RAID BOSS",
    
-    description: "",
+    description: "jj",
     fields: [
       {
         name: "Este canal é temporário e será apagado às : "+horaCanal('+2.5'),
-        value: ""
+        value: "kk"
       }
     ],
     timestamp: new Date(),

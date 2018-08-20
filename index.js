@@ -81,21 +81,34 @@ return textTime = new Date(sunriseMills+(3600000*offset))
       //  msg.guild.channels.find("name", arg).sendMessage("Olá Treinadores,\n"+textoMensagem+"\nEste canal é temporário e será apagado às : "+horaCanal('+2.5'));
    
         
-      msg.guild.channels.find("name", arg).sendMessage({embed: {
-  color: 16580627,
-  description:  "Olá Treinadores,\nRaids ativas consultar "+msg.guild.channels.find("name", "raids-pinhal-novo")
-        +"\nMais informação consultar "+msg.guild.channels.find("name", "willow-tutorial")
-         + "Este canal é temporário e será apagado as "+horaCanal('+2.5'),
-     timestamp: new Date(),
+ 
+        
+        
+    
+   msg.guild.channels.find("name", arg).sendMessage({embed: {
+    color: 16580627,
+    author: {
+      name: "Olá Treinadores,",
+      icon_url: client.user.avatarURL
+    },
+    title: "RAID BOSS",
+   
+    description:"Olá Treinadores,\nRaids ativas consultar "+msg.guild.channels.find("name", "raids-pinhal-novo")
+        +"\nMais informação consultar "+msg.guild.channels.find("name", "willow-tutorial"), 
+        
+    fields: [
+        {
+        name: "Este canal é temporário e será apagado as "+horaCanal('+2.5'),
+        value: ''
+      }
+    ],
+    timestamp: new Date(),
     footer: {
       icon_url: client.user.avatarURL,
       text: "Equipa - PKG Pinhal Novo, "
     }
-}});
-        
-        
-    
-   
+  }
+});
     
     
     

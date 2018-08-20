@@ -82,7 +82,7 @@ return textTime = new Date(sunriseMills+(3600000*offset))
   msg.guild.channels.find("name", arg).sendMessage({embed: {
     color: 16580627,
     author: {
-      name: "Olá Treinadores,<:valor:476770420977172490> <:mystic:476770487486382083> <:instinct:476770553315721217>",
+      name: "Olá Treinadores.",
       icon_url: client.user.avatarURL
     },
     title: "RAID BOSS",
@@ -96,7 +96,7 @@ return textTime = new Date(sunriseMills+(3600000*offset))
     ],
     timestamp: new Date(),
     footer: {
-      icon_url: client.user.avatarURL,
+      icon_url:"https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.pngL",
       text: "Equipa - PKG Pinhal Novo, "
     }
   }

@@ -85,13 +85,13 @@ return textTime = new Date(sunriseMills+(3600000*offset))
       name: "Olá Treinadores,",
       icon_url: client.user.avatarURL
     },
-    title: "Utilize para inscrição na RAID BOSS",
+    title: "RAID BOSS",
    
-    description: "jj",
+    description: "Utilize este canal para inscrição.",
     fields: [
       {
         name: "Este canal é temporário e será apagado às : "+horaCanal('+2.5'),
-        value: "kk"
+        value: " "
       }
     ],
     timestamp: new Date(),

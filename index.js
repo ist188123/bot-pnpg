@@ -82,12 +82,12 @@ return textTime = new Date(sunriseMills+(3600000*offset))
   msg.guild.channels.find("name", arg).sendMessage({embed: {
     color: 16580627,
     author: {
-      name: "Olá Treinadores,",
+      name: "Olá Treinadores,<:valor:476770420977172490><:mystic:476770487486382083><:instinct:476770553315721217>",
       icon_url: client.user.avatarURL
     },
-    title: "<:valor:476770420977172490><:mystic:476770487486382083><:instinct:476770553315721217>RAID BOSS",
+    title: "RAID BOSS",
    
-    description: "Para participar insira :thumbsup: .",
+    description: "Para participar insira :thumbsup: ",
     fields: [
       {
         name: "Valido até ás : "+horaCanal('+2.5'),

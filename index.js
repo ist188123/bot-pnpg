@@ -91,7 +91,7 @@ return textTime = new Date(sunriseMills+(3600000*offset))
     timestamp: new Date(),
     footer: {
       icon_url: "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png",
-      text: "Equipa - PKG Pinhal Novo, "
+      text: "Para mais informação consultar "+msg.guild.channels.find("name", "willow-tutorial")+"\nEquipa - PKG Pinhal Novo, "
     }
  
  }});    

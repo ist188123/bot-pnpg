@@ -82,7 +82,7 @@ return textTime = new Date(sunriseMills+(3600000*offset))
    
         
       msg.guild.channels.find("name", arg).sendMessage({embed: {
-  color: 3447003,
+  color: 990000,
   description: "A very simple Embed!",
           timestamp: new Date(),
     footer: {

@@ -79,7 +79,7 @@ return textTime = new Date(sunriseMills+(3600000*offset))
       //  var textoMensagem="Codigos que podes utilizar:\nAdicionar pokemon, exemplo: %regirock\nGinásio em pontuação, exemplo: !exraid\nPara mais informação consultar "+msg.guild.channels.find("name", "willow-tutorial");
         
       //  msg.guild.channels.find("name", arg).sendMessage("Olá Treinadores,\n"+textoMensagem+"\nEste canal é temporário e será apagado às : "+horaCanal('+2.5'));
-   message.channel.send({embed: {
+  msg.guild.channels.find("name", arg).sendMessage({embed: {
     color: 16580627,
     author: {
       name: client.user.username,

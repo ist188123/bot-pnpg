@@ -91,7 +91,7 @@ return textTime = new Date(sunriseMills+(3600000*offset))
     fields: [
       {
         name: "Valido até ás : "+horaCanal('+2.5'),
-        value: "Este canal é temporário e será apagado, para mais informação consultar "+msg.guild.channels.find("name", "willow-tutorial"
+        value: "Este canal é temporário e será apagado, para mais informação consultar "+msg.guild.channels.find("name", "willow-tutorial")
       }
     ],
     timestamp: new Date(),

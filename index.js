@@ -394,7 +394,7 @@ client.on("message", async (msg) => {
                 if (bicho.startsWith('machamp')) {
                     braid = "https://exraidspinhalnovo.webnode.pt/_files/200000031-dcf97ddeea/450/pokemon_icon_068_00.png";
                     bosscp="18144";
-                    cpiv = "1574-1967 1650-2063"
+                    cpiv = "1574-1967 / 1650-2063 <:nuvens:478895508681916416>"
                     status = "<:psiquico:478587230483513346><:voador:478587231259590676><:fada:478587230814863372>\n"+
                     "Alakazam: Futuresight(33.00)\nEspeon: Futuresight(35.60)\nExeggutor: Confusion(30.10)\n"+
                         "Charizard: Overheat(32.20)\nDragonite: Dragon Hurricane(33.95)\n"+

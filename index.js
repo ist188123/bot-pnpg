@@ -654,7 +654,7 @@ client.on("message", async (msg) => {
             canal = canal.split('!').join('').toLowerCase();
             var nomecanal = canal.split(' ').join('-').toLowerCase();
              msg.reply(nomecanal); 
-           // nomecanal = nomecanal.replace(/--/gi, '-');
+            nomecanal = nomecanal.replace(/--/gi, '-');
             
             msg.reply(nomecanal); 
             if (msg.guild.channels.find("name", nomecanal)) {

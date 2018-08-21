@@ -497,7 +497,7 @@ client.on("message", async (msg) => {
                     status = "\n" +
                         "<:dark:478587231183831049> <:pedra:478587231200739328>\n"+
                        "**2 X Fraco** <:luta:478587139756392448>\n"+
-                        "Machamp Dynamic Punch\n" +
+                        "Machamp\nDynamic Punch\n" +
                     "Hariyama\n"+ 
 "Counter 	Dynamic Punch\n"+  
 "Blaziken\n"+ 

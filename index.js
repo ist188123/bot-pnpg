@@ -631,7 +631,7 @@ client.on("message", async (msg) => {
 
             //LE A MENSAGEM EXCLUINDO O !
             var text = msg.content.substring(1);
-
+            text=text.replace('-',' ');
             var canal = '_raid' + text
             canal = canal.split('!').join('').toLowerCase();
             var nomecanal = canal.split(' ').join('-').toLowerCase();

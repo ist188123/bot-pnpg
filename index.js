@@ -643,7 +643,7 @@ client.on("message", async (msg) => {
               var nomeoriginal= msg.content.substring(1);
 
             //LE A MENSAGEM EXCLUINDO O !
-            var text = nomeoriginal.replace('-',' ');
+            var text = nomeoriginal.replace(/-/gi,' ');
            
             msg.reply(nomeoriginal)
             msg.reply(text)
@@ -653,7 +653,7 @@ client.on("message", async (msg) => {
             canal = canal.split('!').join('').toLowerCase();
             var nomecanal = canal.split(' ').join('-').toLowerCase();
              msg.reply(nomecanal); 
-            nomecanal = nomecanal.replace('--', '-');
+            nomecanal = nomecanal.replace(/--/gi, '-');
             
             msg.reply(nomecanal); 
             if (msg.guild.channels.find("name", nomecanal)) {

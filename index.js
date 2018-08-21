@@ -640,11 +640,12 @@ client.on("message", async (msg) => {
 
 
 
-
+              var nomeoriginal= msg.content.substring(1);
 
             //LE A MENSAGEM EXCLUINDO O !
-            var text = msg.content.substring(1);
-            text=text.replace('-',' ');
+            var text = nomeoriginal.text.replace('-',' ');
+           
+            msg.reply(nomeoriginal)
             msg.reply(text)
             var canal = '_raid' + text
             canal = canal.split('!').join('').toLowerCase();

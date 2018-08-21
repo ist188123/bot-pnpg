@@ -640,12 +640,13 @@ client.on("message", async (msg) => {
 
 
 
-              var nomeoriginal= msg.content.substring(1);
+              var text= msg.content.substring(1);
 
             //LE A MENSAGEM EXCLUINDO O !
-            var text = nomeoriginal.replace(/-/gi,' ');
+            var text=text.replace(/[`~@#$%^&*()_|+\-=?;:'",.<>\{\}\[\]\\\/]/gi, '');
+            text=text.replace(/\s\s+/g, ' ');;
            
-            msg.reply(nomeoriginal)
+            msg.reply(text)
             msg.reply(text)
             
             var canal = '_raid' + text
@@ -653,7 +654,7 @@ client.on("message", async (msg) => {
             canal = canal.split('!').join('').toLowerCase();
             var nomecanal = canal.split(' ').join('-').toLowerCase();
              msg.reply(nomecanal); 
-            nomecanal = nomecanal.replace(/--/gi, '-');
+           // nomecanal = nomecanal.replace(/--/gi, '-');
             
             msg.reply(nomecanal); 
             if (msg.guild.channels.find("name", nomecanal)) {

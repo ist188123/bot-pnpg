@@ -398,7 +398,7 @@ client.on("message", async (msg) => {
                     status = "<:psiquico:478587230483513346><:voador:478587231259590676><:fada:478587230814863372>\n"+
                     "Alakazam: Futuresight(33.00)\nEspeon: Futuresight(35.60)\nExeggutor: Confusion(30.10)\n"+
                         "Charizard: Overheat(32.20)\nDragonite: Dragon Hurricane(33.95)"+
-                        "**1 Treinador:**"+
+                        "**__1 Treinador:__**"+
                         "Pokemons nível superior a 32"+
                      "<:psiquico:478587230483513346>"+
                         "Mewtwo\nAlakazam\nEspeon\nLugia\nExeggutor";

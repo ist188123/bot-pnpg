@@ -490,8 +490,21 @@ client.on("message", async (msg) => {
                 }
 
                 if (bicho.startsWith('tyra')) {
-                    bosscp="";
+                    bosscp="34707";
+                    cpiv = "**CP** 2097 / 2621 <:nevoeiro:478895508551761930> <:forrado:478895508706820126>\n";
+                    bosscp="34707";
                     braid = "https://exraidspinhalnovo.webnode.pt/_files/200000029-e0378e12f0/450/tyra.png";
+                    status = "\n" +
+                        "<:dark:478587231183831049> <:pedra:478587231200739328>\n"+
+                       "**2 X Fraco** <:luta:478587139756392448>\n"+
+                        "Machamp Dynamic Punch\n" +
+                    "Hariyama\n"+ 
+"Counter 	Dynamic Punch\n"+  
+"Blaziken\n"+ 
+"Counter 	Focus Blast\n"+  
+"Kyogre\n"+ 
+"Waterfall 	Hydro Pump";  
+                        
                 }
             } //----  
 

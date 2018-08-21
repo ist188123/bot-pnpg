@@ -647,9 +647,12 @@ client.on("message", async (msg) => {
            
             msg.reply(nomeoriginal)
             msg.reply(text)
+            
             var canal = '_raid' + text
+            
             canal = canal.split('!').join('').toLowerCase();
             var nomecanal = canal.split(' ').join('-').toLowerCase();
+             msg.reply(nomecanal); 
             nomecanal = nomecanal.replace('--', '-');
             
             msg.reply(nomecanal); 

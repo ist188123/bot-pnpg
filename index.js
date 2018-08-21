@@ -397,9 +397,9 @@ client.on("message", async (msg) => {
                     cpiv = "1574-1967 1650-2063"
                     status = "<:psiquico:478587230483513346><:voador:478587231259590676><:fada:478587230814863372>\n"+
                     "Alakazam: Futuresight(33.00)\nEspeon: Futuresight(35.60)\nExeggutor: Confusion(30.10)\n"+
-                        "Charizard: Overheat(32.20)\nDragonite: Dragon Hurricane(33.95)"+
-                        "**__1 Treinador:__**"+
-                        "Pokemons nível superior a 32\n"+
+                        "Charizard: Overheat(32.20)\nDragonite: Dragon Hurricane(33.95)\n"+
+                        "**__1 Treinador:__**\n"+
+                        "Pokemons nível +32\n"+
                      "<:psiquico:478587230483513346>\n"+
                         "Mewtwo\nAlakazam\nEspeon\nLugia\nExeggutor";
                 }

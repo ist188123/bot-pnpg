@@ -399,8 +399,8 @@ client.on("message", async (msg) => {
                     "Alakazam: Futuresight(33.00)\nEspeon: Futuresight(35.60)\nExeggutor: Confusion(30.10)\n"+
                         "Charizard: Overheat(32.20)\nDragonite: Dragon Hurricane(33.95)"+
                         "**__1 Treinador:__**"+
-                        "Pokemons nível superior a 32"+
-                     "<:psiquico:478587230483513346>"+
+                        "Pokemons nível superior a 32\n"+
+                     "<:psiquico:478587230483513346>\n"+
                         "Mewtwo\nAlakazam\nEspeon\nLugia\nExeggutor";
                 }
 

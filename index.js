@@ -643,7 +643,7 @@ client.on("message", async (msg) => {
               var nomeoriginal= msg.content.substring(1);
 
             //LE A MENSAGEM EXCLUINDO O !
-            var text = nomeoriginal.text.replace('-',' ');
+            var text = nomeoriginal.replace('-',' ');
            
             msg.reply(nomeoriginal)
             msg.reply(text)

@@ -394,7 +394,7 @@ client.on("message", async (msg) => {
                 if (bicho.startsWith('machamp')) {
                     braid = "https://exraidspinhalnovo.webnode.pt/_files/200000031-dcf97ddeea/450/pokemon_icon_068_00.png";
                     bosscp="18144";
-                    cpiv = "1574-1967 / 1650-2063 <:nuvens:478895508681916416>"
+                    cpiv = "**CP** 1574-1967 / 1650-2063 <:nevoeiro:478895508551761930>"
                     status = "<:psiquico:478587230483513346><:voador:478587231259590676><:fada:478587230814863372>\n"+
                     "Alakazam: Futuresight(33.00)\nEspeon: Futuresight(35.60)\nExeggutor: Confusion(30.10)\n"+
                         "Charizard: Overheat(32.20)\nDragonite: Dragon Hurricane(33.95)\n"+
@@ -506,7 +506,7 @@ client.on("message", async (msg) => {
                 if (bicho.startsWith('regirock')) {
                     braid = "https://exraidspinhalnovo.webnode.pt/_files/200000039-889a38996c/450/regirock-2.png";
                     bosscp="41777";
-                    cpiv = "**CP** 1682-1764 / 2103-2205 <:forrado:478895508706820126> \n";
+                    cpiv = "**CP** 1682-1764 / 2103-2205 <:nuvens:478895508681916416> \n";
                     status = "<:luta:478587139756392448><:ground:478587230168809477><:agua:478587230730846210><:steel:478587109725306880>\n" +
                         "Kyogre Waterfall-Hydro Pump\n" +
                         "Groudon Mud Shot - Solar Beam \n" +

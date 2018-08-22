@@ -82,7 +82,7 @@ client.on("message", async (msg) => {
                 timestamp: new Date(),
                 footer: {
                     icon_url: "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png",
-                    text: "Equipa - PKG Pinhal Novo,"
+                    text: "Desenvolvido por: @Damasc010 - PKG Pinhal Novo,"
                 }
 
             }
@@ -597,7 +597,7 @@ client.on("message", async (msg) => {
             */
             .setColor(cor)
             .setDescription("Use o canal " + msg.guild.channels.find("name", canal))
-            .setFooter("Equipa - PKG Pinhal Novo, pubicado a, ", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
+            .setFooter("Desenvolvido por:@Damasc010 - PKG Pinhal Novo, pubicado ", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
             // .setImage("http://i.imgur.com/yVpymuV.png")
 
             .setThumbnail(bicho)

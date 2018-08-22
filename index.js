@@ -82,7 +82,7 @@ client.on("message", async (msg) => {
                 timestamp: new Date(),
                 footer: {
                     icon_url: "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png",
-                    text: "Desenvolvido por: @Damasc010 - PKG Pinhal Novo,"
+                    text: "Desenvolvido por: <@456742617414238208>\nPKG Pinhal Novo, publicado, "
                 }
 
             }
@@ -690,7 +690,7 @@ client.on("message", async (msg) => {
                  */
                 .setColor(0x00AE86)
                 .setDescription(texto)
-                .setFooter("Equipa - PKG Pinhal Novo, pubicado ", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
+                .setFooter("Desenvolvido por: <@456742617414238208>\nPKG Pinhal Novo, publicado,  ", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
 
 
                 .setThumbnail("https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png")

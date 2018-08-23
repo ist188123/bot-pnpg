@@ -10,7 +10,7 @@ var fs = require('fs')
      if (msg.content.startsWith('!xpto')) {
 
 //msg.reply("coisa");/
-      msg.reply(jsonData);
+      msg.reply(jsonData.RAIDS._raid4.tyra.cpboss);
       
     
       

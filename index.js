@@ -13,7 +13,7 @@ var request = require("request")
      if (msg.channel.name.startsWith('!xpto')) {
 
 var jsonData = require('./users.json');
-msg.reply(jsonData.Test_Session.test_SessionID[0].DataURL);
+msg.reply(jsonData.RAIDS);
      }
      
      

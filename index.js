@@ -12,7 +12,7 @@ var url = "http://api.openweathermap.org/data/2.5/weather?q=pinhal novo,uk&appid
      
      if (msg.channel.name.startsWith('!xpto')) {
 
-var jsonData = require('./pkpn.json');
+var jsonData = require('./raidspn.json');
 msg.reply(jsonData.RAIDS);
      }
      

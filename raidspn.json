@@ -1,0 +1,93 @@
+{
+    "RAIDS": {
+        "_raid5": 
+            {
+                "regirock": {
+                    "imagem":"https://exraidspinhalnovo.webnode.pt/_files/200000039-889a38996c/450/regirock-2.png",
+                    "cpboss": "41777",
+                    "weather" :"cloud",
+                    "cp":"1682-1764 / 2103-2205",
+                    "fraco":"Kyogre Waterfall-Hydro Pump\nGroudon Mud Shot - Solar Beam \nMachamp Counter - Dynamic Punch"
+                   
+
+
+                },
+
+                "ohoh": {
+                    "imagem":"https://exraidspinhalnovo.webnode.pt/_files/200000039-889a38996c/450/regirock-2.png",
+                    "cpboss": "41777",
+                    "weather" :"cloud",
+                    "cp":"1682-1764 / 2103-2205",
+                    "fraco":"Kyogre Waterfall-Hydro Pump\nGroudon Mud Shot - Solar Beam \nMachamp Counter - Dynamic Punch"
+                   
+
+
+                },
+                "regis": {
+                    "imagem":"https://exraidspinhalnovo.webnode.pt/_files/200000039-889a38996c/450/regirock-2.png",
+                    "cpboss": "41777",
+                    "weather" :"cloud",
+                    "cp":"1682-1764 / 2103-2205",
+                    "fraco":"Kyogre Waterfall-Hydro Pump\nGroudon Mud Shot - Solar Beam \nMachamp Counter - Dynamic Punch"
+                   
+
+
+                }
+
+
+            }
+
+        ,
+
+
+        "_raid4": 
+            {
+                "tyra": {
+                    "imagem":"https://exraidspinhalnovo.webnode.pt/_files/200000039-889a38996c/450/regirock-2.png",
+                    "cpboss": "41777",
+                    "weather" :"cloud",
+                    "cp":"1682-1764 / 2103-2205",
+                    "fraco":"Kyogre Waterfall-Hydro Pump\nGroudon Mud Shot - Solar Beam \nMachamp Counter - Dynamic Punch"
+                   
+
+
+                },
+
+                "absol": {
+                    "imagem":"https://exraidspinhalnovo.webnode.pt/_files/200000039-889a38996c/450/regirock-2.png",
+                    "cpboss": "41777",
+                    "weather" :"cloud",
+                    "cp":"1682-1764 / 2103-2205",
+                    "fraco":"Kyogre Waterfall-Hydro Pump\nGroudon Mud Shot - Solar Beam \nMachamp Counter - Dynamic Punch"
+                   
+
+
+                },
+                "golem": {
+                    "imagem":"https://exraidspinhalnovo.webnode.pt/_files/200000039-889a38996c/450/regirock-2.png",
+                    "cpboss": "41777",
+                    "weather" :"cloud",
+                    "cp":"1682-1764 / 2103-2205",
+                    "fraco":"Kyogre Waterfall-Hydro Pump\nGroudon Mud Shot - Solar Beam \nMachamp Counter - Dynamic Punch"
+                   
+
+
+                }
+
+
+            }
+
+        
+
+
+
+
+
+
+
+
+
+
+     
+    }
+}

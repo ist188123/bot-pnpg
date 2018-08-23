@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 const client = new Discord.Client();
 
-var jsonData = require('./raidspn.json');
+var jsonData = require('raidspn.json');
 
 
  client.on("message", async (msg) => {

@@ -9,8 +9,8 @@ var jsonData = require('./raidspn.json');
      
      if (msg.channel.name.startsWith('!xpto')) {
 
-
-msg.reply(jsonData.RAIDS);
+msg.reply("coisa");
+//msg.reply(jsonData.RAIDS);
      }
      
      

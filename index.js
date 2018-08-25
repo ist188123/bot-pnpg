@@ -24,7 +24,7 @@ client.on("message", async (msg) => {
             
             
             var jsonData = require('./xx.json');
-
+msg.reply("aqui");
 
 var tiporaid = x[0];
 var bicho = x[1];

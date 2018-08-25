@@ -19,8 +19,9 @@ client.on("message", async (msg) => {
             
          //++++++   
             
+            msg.reply(x[0]);
             
-            
+             msg.reply(x[1]);
             
             
             var jsonData = require('./xx.json');
@@ -57,7 +58,7 @@ switch (tiporaid) {
 //
 
 
-console.log("ovo switch "+ovo);
+msg.reply("ovo switch "+ovo);
 
 //
 

@@ -14,7 +14,88 @@ client.on("message", async (msg) => {
             
             
             var x=msg.content.substring(1);
-msg.reply(x)
+            x=x.substring(1);
+              x=x.split(' ')
+            
+         //++++++   
+            
+            
+            
+            
+            
+            var jsonData = require('./xx.json');
+
+
+var tiporaid = x[0];
+var bicho = x[1];
+var braid = "";
+var bosscp = "";
+var ovo="";
+
+var raids = jsonData.map(x => x)
+
+var tamanhoFicheiro = Object.keys(raids).length;
+
+
+
+switch (tiporaid) {
+
+    case "3":
+        ovo = "https://exraidspinhalnovo.webnode.pt/_files/200000027-959cf96a39/200/4.png";
+        braid = ovo;
+        break;
+    case "4":
+        ovo = "https://exraidspinhalnovo.webnode.pt/_files/200000027-959cf96a39/200/4.png";
+        braid = ovo;
+        break;
+    case "5":
+        ovo = "https://exraidspinhalnovo.webnode.pt/_files/200000019-4d5f84e5ec/200/Egg_Raid_Legendary.png";
+        braid = ovo;
+        break;
+}
+
+//
+
+
+console.log("ovo switch "+ovo);
+
+//
+
+for (var x = 0; x < tamanhoFicheiro; x++) {
+   
+    if (tiporaid==raids[x].nivel && bicho==raids[x].boss){
+        ovo = raids[x].imagem;
+        braid = raids[x].imagem;
+        bosscp = raids[x].bosscp;
+        cpvi = raids[x].cpiv + " " + raids[x].weather
+        status = raids[x].fraco + "\n" + raids[x].status
+    }
+}
+
+
+
+
+msg.reply("ovo "+ovo);
+msg.reply("boss "+braid);
+msg.reply("boss cp "+bosscp);
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+//++++++++++++++++++++++++++
            
         }
    

@@ -14,7 +14,7 @@ client.on("message", async (msg) => {
             
             
             var x=msg.content.substring(1);
-            x=x.substring(1);
+           
               x=x.split(' ')
             
          //++++++   

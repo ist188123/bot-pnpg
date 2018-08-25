@@ -384,7 +384,7 @@ client.on("message", async (msg) => {
 
 //----- novo 
             
-var jsonData = require('./xx.json');
+var jsonData = require('./raidspn.json');
 var raids = jsonData.map(x => x)
 var tamanhoFicheiro = Object.keys(raids).length;
 

@@ -11,7 +11,10 @@ const prefix = "+";
 client.on("message", async (msg) => {
     
         if (msg.content.startsWith('!')) {
-msg.reply("oi");
+            
+            
+            var x=msg.content.substring(1);
+msg.reply(x)
            
         }
    

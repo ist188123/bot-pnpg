@@ -39,7 +39,13 @@ client.on("message", async (msg) => {
     if (resposta[msg.content]) {
         msg.channel.send({embed: {
   color: 16580627,
-  description: resposta[msg.content]
+  description: "Resposta a : "+msg.content+"\n"+resposta[msg.content],
+            timestamp: new Date(),
+                footer: {
+                    icon_url: "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png",
+                    text: "Equipa - PKG Pinhal Novo,"
+                }
+
 }});
         
         

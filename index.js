@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
-
+var resposta = require('./resposta.json');
 const client = new Discord.Client();
-
+var jsonData = require('./raidspn.json');
 const prefix = "+";
 
 
@@ -34,24 +34,10 @@ client.on("message", async (msg) => {
     //---------------------------------------------------	
     //informação 	
     //---------------------------------------------------	
-    const responseObject = {
-        "autor": "Damasc010, Paulo Rosário!",
-        "versão": "v3.01 de agosto 2018 - Pokemon go Pinhal Novo",
-        "regirock": "**REGIROCK**\n" +
-            "**BOSS CP** : 41777\nNível 20 CP 1764 Nível 25 CP 2205\n" +
-            "<:luta:478587139756392448><:ground:478587230168809477><:agua:478587230730846210><:steel:478587109725306880>\n" +
-            "Kyogre Waterfall-Hydro Pump\n" +
-            "Groudon Mud Shot - Solar Beam \n" +
-            "Machamp Counter - Dynamic Punch",
+   
 
-        "machamp": "RAID BOSS CP 18144\nCaptura 100% IV : 1574-1967 1650-2063\n" +
-            "**Fraco contra:**\n<:psiquico:478587230483513346><:voador:478587231259590676><:fada:478587230814863372>\n" +
-            "Alakazam: Futuresight(33.00)\nEspeon: Futuresight(35.60)\nExeggutor: Confusion(30.10)\nCharizard: Overheat(32.20)\nDragonite: Dragon Hurricane(33.95)"
-
-    };
-
-    if (responseObject[msg.content]) {
-        msg.channel.send(responseObject[msg.content]);
+    if (resposta[msg.content]) {
+        msg.channel.send(resposta[msg.content]);
 
     }
     //---------------------------------------------------		
@@ -384,7 +370,7 @@ client.on("message", async (msg) => {
 
 //----- novo 
             
-var jsonData = require('./raidspn.json');
+
 var raids = jsonData.map(x => x)
 var tamanhoFicheiro = Object.keys(raids).length;
 

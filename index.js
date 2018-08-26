@@ -39,6 +39,7 @@ client.on("message", async (msg) => {
     if (resposta[msg.content]) {
         msg.channel.send({embed: {
   color: 16580627,
+       addField :"BOSS CP ",
   description: "Resposta a : "+msg.content+"\n"+resposta[msg.content],
             timestamp: new Date(),
                 footer: {

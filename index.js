@@ -411,7 +411,7 @@ switch (tiporaid) {
 for (var x = 0; x < tamanhoFicheiro; x++) {
    
     if (tiporaid==raids[x].nivel && bicho==raids[x].boss){
-        ovo = raids[x].imagem;
+        
         braid = raids[x].imagem;
         bosscp = raids[x].bosscp;
         cpiv = raids[x].cpiv + " " + raids[x].bosted

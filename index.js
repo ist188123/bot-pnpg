@@ -38,7 +38,7 @@ client.on("message", async (msg) => {
 
     if (resposta[msg.content]) {
         msg.channel.send({embed: {
-  color: 3447003,
+  color: 16580627,
   description: resposta[msg.content]
 }});
         

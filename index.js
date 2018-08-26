@@ -414,7 +414,7 @@ for (var x = 0; x < tamanhoFicheiro; x++) {
         ovo = raids[x].imagem;
         braid = raids[x].imagem;
         bosscp = raids[x].bosscp;
-        cpiv = raids[x].cpiv + " " + raids[x].weather
+        cpiv = raids[x].cpiv + " " + raids[x].bosted
         status = raids[x].weather + "\n" + raids[x].counter
     }
 }      

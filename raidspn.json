@@ -6,8 +6,8 @@
             "bosscp": "32000",
             "cpiv": "20 CP 1666",
             "bosted":"<:nuvens:478579734322872321>",
-            "weather": "",
-            "fraco": "Duplo fraco contra WATER e GRASS\nKyogre Waterfall - Hydro Pump\nGyarados Waterfall - Hydro Pump\nGroudon Mud Shot - Solar Beam"
+            "counter": "",
+            "counter": "Duplo fraco contra WATER e GRASS\nKyogre Waterfall - Hydro Pump\nGyarados Waterfall - Hydro Pump\nGroudon Mud Shot - Solar Beam"
         },
         {
             "nivel": "5",
@@ -17,6 +17,16 @@
             "cpiv": "1682-1764 / 2103-2205",
             "bosted":"<:nuvens:478579734322872321>",
             "weather": "<:nuvens:478579734322872321>",
-            "fraco": "Kyogre Waterfall-Hydro Pump\nGroudon Mud Shot - Solar Beam \nMachamp Counter - Dynamic Punch"
+            "counter": "Kyogre Waterfall-Hydro Pump\nGroudon Mud Shot - Solar Beam \nMachamp Counter - Dynamic Punch"
+        },
+        {
+            "nivel": "5",
+            "boss": "ohoh",
+            "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000039-889a38996c/450/regirock-2.png",
+            "bosscp": "48276",
+            "cpiv": "2222 / 2778",
+            "bosted":" <:sol:478895508413349910> <:vento:478895508685979648>",
+            "weather": " <:eletrico:478587230508548097> <:agua:478587230730846210>",
+            "counter": "Tyranitar\nSmack Down - Stone Edge\nOmastar\nRock Throw - Rock Slide\nGolem\nRock Throw - Rock Blast\nKyogre\nWaterfall -	Hydro Pump"
         }
     ]

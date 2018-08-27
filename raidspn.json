@@ -3,7 +3,6 @@
     {
         "nivel": "3",
         "boss": "machamp",
-        "bossnome" : "MACHAMP",
         "bosstipo":"<:luta:478587139756392448>",
         "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000031-dcf97ddeea/450/pokemon_icon_068_00.png",
         "bosscp": "18144",
@@ -16,7 +15,6 @@
     {
         "nivel": "3",
         "boss": "piloswine",
-         "bossnome" : "PILOSWINE",
         "bosstipo":"<:gelo:478587230164615174><:ground:478587230168809477>",
         "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000041-e63f3e7363/450/poliswine.png",
         "bosscp": "13663",
@@ -30,7 +28,6 @@
     {
         "nivel": "3",
         "boss": "golem",
-         "bossnome" : "GOLEM",
         "bosstipo":" ",
         "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000037-85af786acf/450/golem.png",
         "bosscp": "32000",
@@ -43,7 +40,6 @@
     {
         "nivel": "4",
         "boss": "rhydon",
-         "bossnome" : "RHYDON",
         "bosstipo":" ",
         "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000042-e928beb0f2/450/rhydon.png",
         "bosscp": "30512",
@@ -56,7 +52,6 @@
     {
         "nivel": "4",
         "boss": "hundoom",
-         "bossnome" : "HUNDOOM",
         "bosstipo":" ",
         "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000040-1e1dc1f153/450/houndoom.png",
         "bosscp": "27302",
@@ -69,7 +64,6 @@
     {
         "nivel": "4",
         "boss": "absol",
-         "bossnome" : "ABSOL",
         "bosstipo":"<:dark:478587231183831049>",
         "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000028-3bf1a3ce89/450/apsol.png",
         "bosscp": "26262",
@@ -82,7 +76,6 @@
     {
         "nivel": "4",
         "boss": "tyra",
-         "bossnome" : "TYRANITAR",
         "bosstipo":"<:pedra:478587231200739328><:dark:478587231183831049>",
         "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000029-e0378e12f0/450/tyra.png",
         "bosscp": "24707",
@@ -97,7 +90,6 @@
     {
         "nivel": "5",
         "boss": "regirock",
-         "bossnome" : "REGIROCK",
          "bosstipo":"<:dark:478587231183831049>",
         "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000039-889a38996c/450/regirock-2.png",
         "bosscp": "41777",
@@ -110,7 +102,6 @@
     {
         "nivel": "5",
         "boss": "regis",
-         "bossnome" : "REGISTEL",
          "bosstipo":"<:dark:478587231183831049>",
         "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000035-0751e084bd/450/registeel.png",
         "bosscp": "41777",
@@ -123,7 +114,6 @@
     {
         "nivel": "5",
         "boss": "regice",
-         "bossnome" : "REGICE",
          "bosstipo":"<:dark:478587231183831049>",
         "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000018-6874a696da/450/regice.png",
         "bosscp": "41777",
@@ -136,7 +126,6 @@
     {
         "nivel": "5",
         "boss": "articune",
-         "bossnome" : "ARTICUNE",
          "bosstipo":"<:dark:478587231183831049>",
         "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000030-050b3060a3/450/articune.png",
         "bosscp": "41777",
@@ -148,7 +137,7 @@
 
     {
         "nivel": "5",
-        "boss": "ohoh",
+        "boss": "hooh",
          "bosstipo":"<:dark:478587231183831049>",
         "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000026-5ec255fb74/450/Ho-Oh.png",
         "bosscp": "48276",

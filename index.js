@@ -414,7 +414,7 @@ for (var x = 0; x < tamanhoFicheiro; x++) {
         braid = raids[x].imagem;
        
         cpiv = raids[x].cpiv + " " + raids[x].bosted;
-        bosscp = raids[x].bosscp+" "+raids[x].bosstipo+"\n"+cpiv;
+        bosscp = raids[x].bossnome+"\nBOSS CP : "+raids[x].bosscp+"\n BOSS Tipo : "+raids[x].bosstipo;
         status = raids[x].fraco + "\n" + raids[x].counter;
     }
 }      
@@ -475,7 +475,7 @@ for (var x = 0; x < tamanhoFicheiro; x++) {
              */
             .setTimestamp()
             .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
-            .addField("BOSS CP "+cpboss, cpiv)
+            .addField("BOSS : "+cpboss, cpiv)
 
             /*
              * lista dos jogadores que vão RAID.

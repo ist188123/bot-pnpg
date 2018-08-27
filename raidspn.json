@@ -90,6 +90,7 @@
     {
         "nivel": "5",
         "boss": "regirock",
+         "bosstipo":"<:dark:478587231183831049>",
         "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000039-889a38996c/450/regirock-2.png",
         "bosscp": "41777",
         "cpiv": "1682-1764 / 2103-2205",
@@ -101,6 +102,7 @@
     {
         "nivel": "5",
         "boss": "regis",
+         "bosstipo":"<:dark:478587231183831049>",
         "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000035-0751e084bd/450/registeel.png",
         "bosscp": "41777",
         "cpiv": "1222-1292 / 1528-1615",
@@ -112,6 +114,7 @@
     {
         "nivel": "5",
         "boss": "regice",
+         "bosstipo":"<:dark:478587231183831049>",
         "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000018-6874a696da/450/regice.png",
         "bosscp": "41777",
         "cpiv": "1682-1764 / 2103-2205",
@@ -123,6 +126,7 @@
     {
         "nivel": "5",
         "boss": "articune",
+         "bosstipo":"<:dark:478587231183831049>",
         "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000030-050b3060a3/450/articune.png",
         "bosscp": "41777",
         "cpiv": "1682-1764 / 2103-2205",
@@ -134,6 +138,7 @@
     {
         "nivel": "5",
         "boss": "ohoh",
+         "bosstipo":"<:dark:478587231183831049>",
         "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000026-5ec255fb74/450/Ho-Oh.png",
         "bosscp": "48276",
         "cpiv": "2222 / 2778",

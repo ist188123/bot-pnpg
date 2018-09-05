@@ -145,7 +145,7 @@ client.on("message", async (msg) => {
             const listedChannels = [];
             msg.guild.channels.forEach(channel => {
 
-                if (channel.name.startsWith('_raid')) {
+                if (channel.name.startsWith('_raid4fun')) {
                     listedChannels.push(channel.name);
 
 

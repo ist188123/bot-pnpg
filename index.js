@@ -104,40 +104,7 @@ client.on("message", async (msg) => {
 
 
 
-    if (msg.channel.name.startsWith('_raid')) {
-
-
-
-
-
-
-        //apaga mensagem - retira da raid
-        if (msg.content.startsWith('👎')) {
-            autor = msg.author;
-
-
-            // msg.reply(msg.channel.name);//nome do canal onde esta
-
-
-            let xpto = msg.channel.fetchMessages()
-                .then(messages => messages.array().forEach(
-                    message => message.author.equals(autor) && message.delete()
-
-
-
-                ));
-
-
-            setTimeout(function () {
-
-                // msg.channel.send(bicho);
-                msg.channel.send("->" + autor + " ,saiu da RAID.");
-            }, 1500);
-
-
-        }
-        //fim ----
-
+   
 
 
         //+++++

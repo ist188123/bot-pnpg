@@ -20,9 +20,9 @@ client.on("message", async (msg) => {
     let adicional = "";
     
 
-    let team_mystic = msg.guild.roles.find("name", "TEAM MYSTIC");
-    let team_valor = msg.guild.roles.find("name", "TEAM VALOR");
-    let team_instinct = msg.guild.roles.find("name", "TEAM INSTINCT");
+    let team_mystic = msg.guild.roles.find("name", "4FUN");
+    let team_valor = msg.guild.roles.find("name", "4FUN");
+    let team_instinct = msg.guild.roles.find("name", "4FUN");
 
     //imagens equipas
     let team_imagem = "";
@@ -168,7 +168,7 @@ client.on("message", async (msg) => {
 
 
             //paga todas as mensagens do canal
-            delmsgdocanal("raids-pinhal-novo");
+            delmsgdocanal("raids-4-fun");
 
 
 
@@ -489,7 +489,7 @@ for (var x = 0; x < tamanhoFicheiro; x++) {
             .addBlankField(true)
             .addField("\n\n\n\n\n\Fraco contra:", status, true);
 
-        msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage({ embed });
+        msg.guild.channels.find("name", "raids-4-fun").sendMessage({ embed });
 
 
     }
@@ -503,7 +503,7 @@ for (var x = 0; x < tamanhoFicheiro; x++) {
 
     //----criar canal ---
 
-    if (msg.channel.name == 'lab-prof-willow') {
+    if (msg.channel.name == 'lab-prof-buddy') {
 
         if (msg.content.startsWith("!5") || msg.content.startsWith("!4") || msg.content.startsWith("!3")) {
 

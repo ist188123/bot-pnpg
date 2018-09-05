@@ -503,7 +503,7 @@ for (var x = 0; x < tamanhoFicheiro; x++) {
 
     //----criar canal ---
 
-    if (msg.channel.name == 'lab-prof-willow') {
+    if (msg.channel.name == 'lab-prof-buddy') {
 
         if (msg.content.startsWith("!5") || msg.content.startsWith("!4") || msg.content.startsWith("!3")) {
 
@@ -567,8 +567,8 @@ for (var x = 0; x < tamanhoFicheiro; x++) {
 
 
 
-            msg.guild.channels.find("name", "informacao").sendMessage({ embed });
-            msg.guild.channels.find("name", "chat").sendMessage({ embed });
+            msg.guild.channels.find("name", "informacao4fun").sendMessage({ embed });
+            msg.guild.channels.find("name", "chat-4-fun").sendMessage({ embed });
 
 
         }

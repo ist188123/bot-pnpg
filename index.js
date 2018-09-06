@@ -529,7 +529,20 @@ for (var x = 0; x < tamanhoFicheiro; x++) {
             } else {
 
                 msg.guild.createChannel(nomecanal, "text");
-
+msg.guild.channels.find("name", nomecanal).overwritePermissions(msg.guild.roles.find('name', '@everyone'), { 
+                    'CREATE_INSTANT_INVITE' : false,        'VIEW_CHANNEL': false,
+                    'CONNECT': false,                       'SPEAK': false
+                 });
+                 msg.guild.channels.find("name", nomecanal).overwritePermissions(msg.guild.roles.find('name', 'TEAM VALOR'), { 
+                    'CREATE_INSTANT_INVITE' : false,        'VIEW_CHANNEL': false,
+                    'CONNECT': false,                       'SPEAK': false
+                 });
+                
+                msg.guild.channels.find("name", nomecanal).overwritePermissions(msg.guild.roles.find('name', 'TEAM MYSTIC'), { 
+                    'CREATE_INSTANT_INVITE' : false,        'VIEW_CHANNEL': false,
+                    'CONNECT': false,                       'SPEAK': false
+                 });
+                
 
             }
             //

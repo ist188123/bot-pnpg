@@ -533,15 +533,7 @@ msg.guild.channels.find("name", nomecanal).overwritePermissions(msg.guild.roles.
                     'CREATE_INSTANT_INVITE' : false,        'VIEW_CHANNEL': false,
                     'CONNECT': false,                       'SPEAK': false
                  });
-                 msg.guild.channels.find("name", nomecanal).overwritePermissions(msg.guild.roles.find('name', 'TEAM VALOR'), { 
-                    'CREATE_INSTANT_INVITE' : false,        'VIEW_CHANNEL': false,
-                    'CONNECT': false,                       'SPEAK': false
-                 });
-                
-                msg.guild.channels.find("name", nomecanal).overwritePermissions(msg.guild.roles.find('name', 'TEAM MYSTIC'), { 
-                    'CREATE_INSTANT_INVITE' : false,        'VIEW_CHANNEL': false,
-                    'CONNECT': false,                       'SPEAK': false
-                 });
+                 
                 
 
             }

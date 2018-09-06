@@ -75,6 +75,13 @@ client.on("message", async (msg) => {
                     'CONNECT': false,                       'SPEAK': false
                  });
         
+        
+        
+         msg.guild.channels.find("name", arg).overwritePermissions(msg.guild.roles.find('name', '4FUN'), { 
+                    'CREATE_INSTANT_INVITE' : false,        'VIEW_CHANNEL': true,
+                    'CONNECT': false,                       'SPEAK': false
+                 });
+        
 // fim define permissoes do ncanal
         msg.guild.channels.find("name", arg).sendMessage({
             embed: {

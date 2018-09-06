@@ -69,8 +69,13 @@ client.on("message", async (msg) => {
 
 
     function myFunc(arg) {
-
-
+        //define as permissoes do canal
+       msg.guild.channels.find("name", arg).overwritePermissions(msg.guild.roles.find('name', '@everyone'), { 
+                    'CREATE_INSTANT_INVITE' : false,        'VIEW_CHANNEL': false,
+                    'CONNECT': false,                       'SPEAK': false
+                 });
+        
+// fim define permissoes do ncanal
         msg.guild.channels.find("name", arg).sendMessage({
             embed: {
                 color: 16580627,
@@ -529,10 +534,7 @@ for (var x = 0; x < tamanhoFicheiro; x++) {
             } else {
 
                 msg.guild.createChannel(nomecanal, "text");
-msg.guild.channels.find("name", nomecanal).overwritePermissions(msg.guild.roles.find('name', '@everyone'), { 
-                    'CREATE_INSTANT_INVITE' : false,        'VIEW_CHANNEL': false,
-                    'CONNECT': false,                       'SPEAK': false
-                 });
+
                  
                 
 

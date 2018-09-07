@@ -93,7 +93,7 @@ client.on("message", async (msg) => {
                 timestamp: new Date(),
                 footer: {
                     icon_url: "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png",
-                    text: "Equipa - PKG Pinhal Novo,"
+                    text: "Desenvolvido por Damasc010\nPokemong Go - Pinhal Novo,"
                 }
 
             }

@@ -116,9 +116,8 @@ client.on("message", async (msg) => {
 
 
 
-    if (msg.channel.name.startsWith('_fraid')) {
-
-
+    if (msg.channel.name.startsWith('_nive')) {
+    
 
 
 
@@ -190,7 +189,7 @@ client.on("message", async (msg) => {
             const listedChannels = [];
             msg.guild.channels.forEach(channel => {
 
-                if (channel.name.startsWith('_fraid')) {
+                if (channel.name.startsWith('_nive')) {
                     listedChannels.push(channel.name);
 
 
@@ -529,7 +528,7 @@ for (var x = 0; x < tamanhoFicheiro; x++) {
            
             
             
-            var canal = '_fraid' + text
+            var canal = '_nive' + text
             
             canal = canal.split('!').join('').toLowerCase();
             var nomecanal = canal.split(' ').join('-').toLowerCase();

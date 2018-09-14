@@ -44,7 +44,7 @@ client.on("message", async (msg) => {
             timestamp: new Date(),
                 footer: {
                     icon_url: "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png",
-                    text: "By Damasc010, PKG - Pinhal Novo, pubicado "
+                    text: "Desenvolvido por Damasc010 - Pinhal Novo, pubicado "
                 }
 
 }});
@@ -69,20 +69,8 @@ client.on("message", async (msg) => {
 
 
     function myFunc(arg) {
-        //define as permissoes do canal
-       msg.guild.channels.find("name", arg).overwritePermissions(msg.guild.roles.find('name', '@everyone'), { 
-                    'CREATE_INSTANT_INVITE' : false,        'VIEW_CHANNEL': false,
-                    'CONNECT': false,                       'SPEAK': false
-                 });
-        
-        
-        
-         msg.guild.channels.find("name", arg).overwritePermissions(msg.guild.roles.find('name', '4FUN'), { 
-                    'CREATE_INSTANT_INVITE' : false,        'VIEW_CHANNEL': true,
-                    'CONNECT': false,                       'SPEAK': false
-                 });
-        
-// fim define permissoes do ncanal
+
+
         msg.guild.channels.find("name", arg).sendMessage({
             embed: {
                 color: 16580627,
@@ -93,7 +81,7 @@ client.on("message", async (msg) => {
                 timestamp: new Date(),
                 footer: {
                     icon_url: "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png",
-                    text: "By Damasc010, PKG - Pinhal Novo, pubicado "
+                    text: "Desenvolvido por Damasc010 - Pinhal Novo, pubicado "
                 }
 
             }
@@ -116,8 +104,9 @@ client.on("message", async (msg) => {
 
 
 
-    if (msg.channel.name.startsWith('_nive')) {
-    
+    if (msg.channel.name.startsWith('_raid')) {
+
+
 
 
 
@@ -179,7 +168,7 @@ client.on("message", async (msg) => {
 
 
             //paga todas as mensagens do canal
-            delmsgdocanal("raids-4-fun");
+            delmsgdocanal("raids-pinhal-novo");
 
 
 
@@ -189,7 +178,7 @@ client.on("message", async (msg) => {
             const listedChannels = [];
             msg.guild.channels.forEach(channel => {
 
-                if (channel.name.startsWith('_nive')) {
+                if (channel.name.startsWith('_raid')) {
                     listedChannels.push(channel.name);
 
 
@@ -477,7 +466,7 @@ for (var x = 0; x < tamanhoFicheiro; x++) {
             */
             .setColor(cor)
             .setDescription("Use o canal " + msg.guild.channels.find("name", canal))
-            .setFooter("By Damasc010, PKG - Pinhal Novo, pubicado ", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
+            .setFooter("Desenvolvido por Damasc010, PKG - Pinhal Novo, pubicado ", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
             // .setImage("http://i.imgur.com/yVpymuV.png")
 
             .setThumbnail(bicho)
@@ -500,7 +489,7 @@ for (var x = 0; x < tamanhoFicheiro; x++) {
             .addBlankField(true)
             .addField("\n\n\n\n\n\Fraco contra:", status, true);
 
-        msg.guild.channels.find("name", "raids-4-fun").sendMessage({ embed });
+        msg.guild.channels.find("name", "raids-pinhal-novo").sendMessage({ embed });
 
 
     }
@@ -514,7 +503,7 @@ for (var x = 0; x < tamanhoFicheiro; x++) {
 
     //----criar canal ---
 
-    if (msg.channel.name == 'lab-prof-buddy') {
+    if (msg.channel.name == 'lab-prof-willow') {
 
         if (msg.content.startsWith("!5") || msg.content.startsWith("!4") || msg.content.startsWith("!3")) {
 
@@ -528,7 +517,7 @@ for (var x = 0; x < tamanhoFicheiro; x++) {
            
             
             
-            var canal = '_nive' + text
+            var canal = '_raid' + text
             
             canal = canal.split('!').join('').toLowerCase();
             var nomecanal = canal.split(' ').join('-').toLowerCase();
@@ -541,8 +530,6 @@ for (var x = 0; x < tamanhoFicheiro; x++) {
 
                 msg.guild.createChannel(nomecanal, "text");
 
-                 
-                
 
             }
             //
@@ -571,7 +558,7 @@ for (var x = 0; x < tamanhoFicheiro; x++) {
                  */
                 .setColor(0x00AE86)
                 .setDescription(texto)
-                .setFooter("By Damasc010, PKG - Pinhal Novo, pubicado ", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
+                .setFooter("Desenvolvido por Damasc010, PKG - Pinhal Novo, pubicado ", "https://exraidspinhalnovo.webnode.pt/_files/200000022-231042409e/200/damasc010.png")
 
 
                 .setThumbnail("https://exraidspinhalnovo.webnode.pt/_files/200000025-adf2daee85/450/Pryce.png")
@@ -580,8 +567,8 @@ for (var x = 0; x < tamanhoFicheiro; x++) {
 
 
 
-            msg.guild.channels.find("name", "informacao4fun").sendMessage({ embed });
-            msg.guild.channels.find("name", "chat-4-fun").sendMessage({ embed });
+            msg.guild.channels.find("name", "informacao").sendMessage({ embed });
+            msg.guild.channels.find("name", "chat").sendMessage({ embed });
 
 
         }

@@ -28,13 +28,35 @@
     {
         "nivel": "3",
         "boss": "golem",
-        "bosstipo":"<:sol:478895508413349910> <:nuvens:478579734322872321> ",
+        "bosstipo":"<:ground:478587230168809477><:pedra:478587231200739328>",
         "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000037-85af786acf/450/golem.png",
         "bosscp": "32000",
         "cpiv": "20 CP 1666",
-        "bosted":"<:nuvens:478579734322872321>",
-        "fraco": "",
+        "bosted":"<:sol:478895508413349910> <:nuvens:478579734322872321> ",
+        "fraco": "2X <:agua:478587230730846210><:erva:478587230814994432>",
         "counter": "Duplo fraco contra WATER e GRASS\nKyogre Waterfall - Hydro Pump\nGyarados Waterfall - Hydro Pump\nGroudon Mud Shot - Solar Beam"
+    },
+    {
+        "nivel": "4",
+        "boss": "snorlax",
+        "bosstipo":" <:normal:478587230298963968>",
+        "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000053-b3ee1b4e8b/450/Snorlax.png",
+        "bosscp": "25419",
+        "cpiv": "1917 / 2396",
+        "bosted":"<:nuvens:478895508681916416>",
+        "fraco": "<:luta:478587139756392448><:fantasma:478587230839898127><:steel:478587109725306880><:pedra:478587231200739328>",
+        "counter": "Machamp Dynamic Punch + Close Combat\nTyranitar Bite + Stone Edge\nDragonite DragonTail + Outrage"
+    },
+    {
+        "nivel": "4",
+        "boss": "lapras",
+        "bosstipo":" <:agua:478587230730846210><:gelo:478587230164615174>",
+        "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000054-3eefb3fe9f/450/lapras.png",
+        "bosscp": "21768",
+        "cpiv": "1487 / 1859",
+        "bosted":"<:neve:478895508639973386><:chuva:478895508673527808>",
+        "fraco": "<:eletrico:478587230508548097><:erva:478587230814994432><:luta:478587139756392448><:pedra:478587231200739328>",
+        "counter": "Raiku\nMachamp\nHariyama\nMewtwo\nZapdos"
     },
 
     {
@@ -43,7 +65,7 @@
         "bosstipo":" ",
         "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000042-e928beb0f2/450/rhydon.png",
         "bosscp": "30512",
-        "cpiv": "1886 / 2357",
+        "cpiv": "1886 / 2357 ",
         "bosted":"<:sol:478895508413349910> <:nuvens:478579734322872321>",
         "fraco": "<:chuva:478895508673527808> <:sol:478895508413349910> ",
         "counter": "Kyogre\nWaterfall Hydro Pump \nVenusaur\nVine Whip - Frenzy Plant\nPoliwrath\nBubble - Hydro Pump\nGyarados\nWaterfall - Hydro Pump \nExeggutor\nBullet Seed - Solar Beam "
@@ -84,17 +106,51 @@
         "fraco": "<:agua:478587230730846210><:erva:478587230814994432><:ground:478587230168809477><:fada:478587230814863372><:steel:478587109725306880><:inseto:478587230479188003> 2X <:luta:478587139756392448>",
         "counter": "Machamp\nDynamic Punch\nHariyama\nCounter - Dynamic Punch\nBlaziken\nCounter - Focus Blast\nKyogre\nWaterfall - Hydro Pump"
     },
+    {
+        "nivel": "5",
+        "boss": "zapdos",
+         "bosstipo":" <:eletrico:478587230508548097><:voador:478587231259590676>  ",
+        "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000052-61bc062bd1/450/zapdos.png",
+        "bosscp": "42961",
+        "cpiv": "1820–1902 / 2275–2378",
+        "bosted":" <:vento:478895508685979648><:chuva:478895508673527808> ",
+        "fraco": "<:pedra:478587231200739328><:gelo:478587230164615174>",
+        "counter": "Tyranitar Smack Down + Stone Edge\nRayquaza Dragon Tail + Outrage\nGolem Rock Throw + Stone Edge "
+    },
 
+    
+    {
+        "nivel": "5",
+        "boss": "moltres",
+         "bosstipo":" <:fogo:478587230747754543><:voador:478587231259590676>  ",
+        "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000050-289e8299a1/450/moltres.png",
+        "bosscp": "41953",
+        "cpiv": "1788–1870 / 2235–2337",
+        "bosted":" <:vento:478895508685979648><:sol:478895508413349910> ",
+        "fraco": "<:agua:478587230730846210><:pedra:478587231200739328><:eletrico:478587230508548097>",
+        "counter": "Tyranitar Smack Down + Stone Edge\nGolem Rock Throw + Stone Edge\nKyogre Waterfall + Hydro Pump "
+    },
 
+{
+        "nivel": "5",
+        "boss": "mewtwo",
+         "bosstipo":" <:psiquico:478587230483513346> ",
+        "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000023-29ab72ab0f/450/Mewtwo.png",
+        "bosscp": "49430",
+        "cpiv": "1682-2275 / 2103-2844",
+        "bosted":" <:vento:478895508685979648> ",
+        "fraco": "<:dark:478587231183831049><:inseto:478587230479188003><:fantasma:478587230839898127>",
+        "counter": "Tyranitar Bite + Crunch (Bite - Stone Edge)\nGyarados Bite + Crunch (Bite + Hydro Pump)\nRayquaza Dragon Tail + Outrage\nDragonite Dragon Tail + Outrage"
+    },
 
     {
         "nivel": "5",
         "boss": "regirock",
-         "bosstipo":"<:dark:478587231183831049>",
+         "bosstipo":" <:pedra:478587231200739328> ",
         "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000039-889a38996c/450/regirock-2.png",
         "bosscp": "41777",
         "cpiv": "1682-1764 / 2103-2205",
-        "bosted":"<:nuvens:478579734322872321>",
+        "bosted":" <:nuvens:478895508681916416> ",
         "fraco": "<:luta:478587139756392448><:ground:478587230168809477><:agua:478587230730846210><:steel:478587109725306880>",
         "counter": "Kyogre Waterfall-Hydro Pump\nGroudon Mud Shot - Solar Beam \nMachamp Counter - Dynamic Punch"
     },
@@ -102,7 +158,7 @@
     {
         "nivel": "5",
         "boss": "regis",
-         "bosstipo":"<:dark:478587231183831049>",
+         "bosstipo":"<:pedra:478587231200739328>",
         "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000035-0751e084bd/450/registeel.png",
         "bosscp": "41777",
         "cpiv": "1222-1292 / 1528-1615",
@@ -126,7 +182,7 @@
     {
         "nivel": "5",
         "boss": "articune",
-         "bosstipo":"<:dark:478587231183831049>",
+         "bosstipo":"<:gelo:478587230164615174> <:voador:478587231259590676>",
         "imagem": "https://exraidspinhalnovo.webnode.pt/_files/200000030-050b3060a3/450/articune.png",
         "bosscp": "41777",
         "cpiv": "1682-1764 / 2103-2205",
